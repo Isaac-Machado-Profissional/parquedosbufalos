@@ -1,0 +1,55 @@
+body {
+    background-color: #ffffff;
+}
+
+.logo {
+    
+    flex-shrink: 0; /* Impede que a logo encolha */
+    margin-right: auto; /* Garante que a logo fique na extrema esquerda */
+    padding: 0px;
+    height: 6rem;
+    position: absolute;
+    left: 0;
+
+}
+
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    padding: 0 20px;
+    background-color: #ececec;
+    color: #fff;
+    height: 60px;
+
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin: 20px;
+}
