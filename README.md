@@ -6,7 +6,7 @@ Uma breve descrição sobre o que esse projeto faz e para quem ele é
 ## Extensões para ver o projeto com o Visual Studio
 
  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
- - [Awesome README](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+ - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Documentação
 
@@ -40,6 +40,11 @@ Instale o node-modules com o NPM para o visualizar o projeto no FRONT-END
 ```bash
     cd front-end
     npm install
+```
+Insira o comando abaixo para executar o projeto de FRONT-END no navegador
+
+```bash
+    npm start
 ```
 
 Em caso de sucesso, o projeto rodará na porta *9000*.
