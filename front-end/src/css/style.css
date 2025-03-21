@@ -1,0 +1,107 @@
+body {
+    background-color: #ffffff;
+}
+
+.logo {
+    
+    flex-shrink: 0; /* Impede que a logo encolha */
+    margin-right: auto; /* Garante que a logo fique na extrema esquerda */
+    padding: 0px;
+    height: 6rem;
+    position: absolute;
+    left: 0;
+
+}
+
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    padding: 0 20px;
+    background-color: #ececec;
+    color: #fff;
+    height: 60px;
+
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container-home-first-screen {
+    position: relative;
+    
+    width: 100%;
+    height: 650px;
+    
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.text-home-container {
+    display: flex; /* Ativa o Flexbox */
+    margin-top: -20px;
+    flex-direction: column; /* Coloca os itens em coluna (um em cima do outro) */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    position: absolute; /* Fixa a posição */
+    top: 50%; /* Alinha o contêiner no centro da tela verticalmente */
+    left: 50%; /* Alinha o contêiner no centro da tela horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.h1-home-center {
+    
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 8vh;
+    color: white; /* Garante que o texto seja visível */
+    background-color: rgba(0, 0, 0, 0.050); /* Fundo escuro semi-transparente */
+    padding: 10px; /* Espaçamento interno */
+    transform: translateY(-50%); /* Ajusta o alinhamento perfeito */
+    z-index: 2;
+
+}
+
+.p1-home-center {
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 3vh;
+    color: #ffffff;
+    z-index: 1;
+    background-color: rgba(241, 238, 238, 0.050);
+    transform: translateY(50%); /* Ajusta o alinhamento perfeito */
+    text-shadow: 1px 1px 8px #000000;
+}
+
+.img-mountain-background {
+    background-image: url('../assets/Montain-EUA.png'); /* Insira o caminho da imagem */
+    background-repeat: no-repeat; /* Impede que a imagem seja replicada */
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center 60%;
+    border-radius: 15px;
+    position: absolute; /* Texto posicionado dentro do contêiner */
+
+    top: 20px; /* Define a posição na parte superior */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); 
+    color: white; /* Garante que o texto seja visível */
+    padding: 50px; /* Espaçamento interno */
+    width: 80%;
+    height: 35vh;
+}
+
+
