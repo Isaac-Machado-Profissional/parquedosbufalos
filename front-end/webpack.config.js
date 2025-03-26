@@ -55,7 +55,7 @@ module.exports = {
       directory: path.join(__dirname, ''), // Diretório q vai catar pra upar p servidor
     },
     compress: true, // Ativar compressão gzip
-    port: 9000, // Porta 
+    port: 9001, // Porta 
     open: true, // Abrir automaticamente o navgg
   },
   mode: 'development', 
