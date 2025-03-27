@@ -1,0 +1,20 @@
+h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+}
+
+.text-home-container p {
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.nav-button li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 635;
+}
