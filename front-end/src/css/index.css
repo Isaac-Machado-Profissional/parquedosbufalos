@@ -1,4 +1,4 @@
-/*Topo d menu*/
+/*FIRST HOME SCREEN*/
 
 body {
     background-color: #ffffff;
@@ -6,8 +6,8 @@ body {
 
 .logo {
 
-    flex-shrink: 0;
-    /* Impede que a logo encolha */
+    flex-shrink: 0; 
+    /* Impede que a logo encolha */ 
     margin-right: auto;
     /* Garante que a logo fique na extrema esquerda */
     padding: 0px;
@@ -57,16 +57,15 @@ body {
 
 .text-home-container {
     display: flex;
-    /* Ativa o Flexbox */
     margin-top: -20px;
     flex-direction: column;
-    /* Coloca os itens em coluna (um em cima do outro) */
     justify-content: center;
-    /* Centraliza verticalmente */
-    align-items: center;
     /* Centraliza horizontalmente */
+    align-items: center;
+     /* Centraliza verticalmente */
+
     position: absolute;
-    /* Fixa a posição */
+    /* Posicao absoluta pra se manter fiel conforme muda resolucao*/
     top: 50%;
     /* Alinha o contêiner no centro da tela verticalmente */
     left: 50%;
@@ -75,25 +74,22 @@ body {
     /* Centraliza o texto */
 }
 
-.h1-home-center {
+.text-home-container h1 {
 
     position: absolute;
     white-space: nowrap;
     text-align: center;
     font-size: 8vh;
     color: white;
-    /* Garante que o texto seja visível */
     background-color: rgba(0, 0, 0, 0.050);
-    /* Fundo escuro semi-transparente */
-    /* Espaçamento interno */
     transform: translateY(-50%);
-    /* Ajusta o alinhamento perfeito */
     z-index: 2;
 
 }
 
-.p1-home-center {
+.text-home-container p {
     position: absolute;
+    margin-top: 50px;
     white-space: nowrap;
     text-align: center;
     font-size: 3vh;
@@ -101,15 +97,12 @@ body {
     z-index: 1;
     background-color: rgba(241, 238, 238, 0.050);
     transform: translateY(50%);
-    /* Ajusta o alinhamento perfeito */
     text-shadow: 1px 1px 8px #000000;
 }
 
 .img-mountain-background {
-    background-image: url('../assets/index/Montain-EUA.png');
-    /* Insira o caminho da imagem */
+    background-image: url('../assets/index/Montain-EUA.png'); /*Insira o caminho da imagem central da home-screen*/
     background-repeat: no-repeat;
-    /* Impede que a imagem seja replicada */
     background-size: cover;
     background-attachment: fixed;
     background-position: center 60%;
@@ -117,39 +110,37 @@ body {
     
 
     position: absolute;
-    /* Texto posicionado dentro do contêiner */
-
-    top: 20px;
-    /* Define a posição na parte superior */
+    top: 20px; 
     left: 50%;
     /* Centraliza horizontalmente */
     transform: translateX(-50%);
     color: white;
-    /* Garante que o texto seja visível */
     padding: 50px;
-    /* Espaçamento interno */
     width: 80%;
     height: 35vh;
 }
 
-/* Atividades do Parque */
+
+
+/* ATIVIDADES DO PARQUE : */
 .atividades-do-parque-container {
 
-    /* display: flex; Perguntar pra galera dps */
-    /* justify-self: center; */
-    /* width: 80%; Perguntar pra galera dps */
-    margin-left: 80px;
-    margin-right: 80px;
+    /* display: flex; Perguntar pra galera dps ----------------------------------------------**** */
+    /* justify-self: center; Perguntar pra galera dps ----------------------------------------------**** */ 
+    /* width: 80%; Perguntar pra galera dps ----------------------------------------------*****/
+    margin-left: 100px;
+    margin-right: 100px;
     height: 600px;
-    
-   
     
 
 }
 
 .atividades-do-parque-titulo {
 
-    /* margin-top: 100px; Perguntar pra galera dps*/
+    /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
+    margin-bottom: 40px;
+    
+    margin-top: -05px;
     font-size: 4vh;
 
 }
@@ -162,10 +153,6 @@ body {
     grid-template-rows: auto auto auto;
     column-gap: 80px; 
     list-style: none;
-    
-    
-    
-
 
 }
 
@@ -177,14 +164,13 @@ body {
     height: 180px;
     border-radius: 8px;
    
-
 }
 
 .card_activity-of-park h2 {
     
     grid-row: 2;
-    
     gap: 5px;
+    font-size: 3vh;
    
 }
 
@@ -193,8 +179,19 @@ body {
     grid-row: 3;
     margin-left: 10px;
     width: 150px;
+    color: #5f5959;
+    
 
 }
 
-/* Plano de Gestão da ONU */
+
+
+/* PLANO DE GESTÃO DA ONU:  */
+
+.plano-de-gestao-da-onu-container {
+    
+        margin-left: 100px;
+        margin-right: 100px;
+        height: 600px;
+}
 
