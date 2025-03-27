@@ -271,7 +271,7 @@ body {
 
 }
 
-.plano-de-gestao-da-onu-menu ul{
+.plano-de-gestao-da-onu-menu #content {
     flex-direction: column;
     
 }
@@ -293,10 +293,23 @@ body {
 
     /* position: relative; */
     /* align-items: flex-start; */
-    margin-top: -70px;
+    margin-left: 35px;
+    margin-top: -60px;
     width: 450px;
     height: 450px;
     border-radius: 8px;
-    
-  
+      
 }
+
+
+.plano-gestao-onu-2botoes {
+    display: flex;
+    gap: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+
