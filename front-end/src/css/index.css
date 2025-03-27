@@ -17,6 +17,8 @@ body {
 
 }
 
+
+
 /* NAVIGATION BUTTONS */
 
 .nav-bar {
@@ -89,6 +91,10 @@ body {
     
 }
 
+
+
+
+/*HOME-SCREEN: */
 .container-home-first-screen {
     position: relative;
 
@@ -181,16 +187,18 @@ body {
     /* width: 80%; Perguntar pra galera dps ----------------------------------------------*****/
     margin-left: 100px;
     margin-right: 100px;
+    width: 1180px;
     height: 600px;
+    justify-self: center;
+    
     
 
 }
 
-.atividades-do-parque-titulo {
+.atividades-do-parque-container h1 {
 
     /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
     margin-bottom: 40px;
-    
     margin-top: -05px;
     font-size: 32px;
 
@@ -242,9 +250,53 @@ body {
 /* PLANO DE GESTÃO DA ONU:  */
 
 .plano-de-gestao-da-onu-container {
-    
+        
         margin-left: 100px;
         margin-right: 100px;
+        width: 1180px;
         height: 600px;
+        max-width: 1200px;
+        justify-self: center;
+        
+        
+
 }
 
+
+.plano-de-gestao-da-onu-menu {
+
+    margin-bottom: 20px;
+    display: flex;
+    
+
+}
+
+.plano-de-gestao-da-onu-menu ul{
+    flex-direction: column;
+    
+}
+
+.plano-de-gestao-da-onu-menu li{
+    width: 70%;
+    list-style: none;
+    
+}
+
+.plano-de-gestao-da-onu-menu li p3 {
+    position: relative;
+    left: 40px;
+    color: #5f5959;
+}
+
+
+.plano-de-gestao-da-onu-menu img {
+
+    /* position: relative; */
+    /* align-items: flex-start; */
+    margin-top: -70px;
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+    
+  
+}
