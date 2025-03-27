@@ -8,3 +8,6 @@ Um breve CRUD em desenvolvimento back-end usando Express, Nodemon e Body Parser
  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+## Exemplo do fluxo dos apontamentos de back-end com o banco de dados
+
+- back-end-parque-dos-bufalos.drawio
