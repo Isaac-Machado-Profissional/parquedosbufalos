@@ -1,8 +1,8 @@
 import "../css/style.css";
 
- // Função para alterar o conteúdo dinamicamente
+ // Função para alterar o conteúdo dinamicamente do plano de Gestão
 function showSection(section) {
-    var content = document.getElementById('content');
+    var content = document.getElementById('plano-gestao-do-parque_dynamic-content');
 
     if (section === 'section1') {
         content.innerHTML = `
@@ -38,18 +38,26 @@ function showSection(section) {
                         <h3> Construção do Nosso Parque </h3>
                         <p3> Atividade em colaboração com o C.E.U Alvarenga com o Fundamental 1, ensinando valores fundamentais de sustentabilidade à natureza. </p3>
                 </li>
-                        
-
                 
             </ul>
         `;
     }
+
+     // Removendo 'active' de todos os botões
+     document.querySelectorAll(".plano-gestao-onu_dynamic-buttons button").forEach((btn) => {
+        btn.classList.remove("active");
+    });
+
+    // Adicionando 'active' apenas ao botão clicado
+    document.querySelector(`button[data-section="${section}"]`).classList.add("active");
 }
+    // Adicionando os eventos de clique nos botões dinamicamente
+document.querySelectorAll(".plano-gestao-onu_dynamic-buttons button").forEach((button) => {
+    button.addEventListener("click", function () {
+        showSection(this.dataset.section);
+    });
+});
 
-// Garantindo que a função seja acessível
 window.showSection = showSection; // Expondo a função globalmente
-
-window.onload = function() {
-    showSection('section1');
-};
+window.onload = function() {showSection('section1');} // Chama a function pra mostrar a seção 1 p nós assim q;
 
