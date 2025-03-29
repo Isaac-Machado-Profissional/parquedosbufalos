@@ -174,7 +174,7 @@ body {
     color: white;
     padding: 50px;
     width: 80%;
-    height: 35vh;
+    height: 40vh;
 }
 
 
@@ -185,9 +185,11 @@ body {
     /* display: flex; Perguntar pra galera dps ----------------------------------------------**** */
     /* justify-self: center; Perguntar pra galera dps ----------------------------------------------**** */ 
     /* width: 80%; Perguntar pra galera dps ----------------------------------------------*****/
+    margin-top: -50px;
     margin-left: 100px;
     margin-right: 100px;
     width: 1180px;
+    max-width: 90%;
     height: 600px;
     justify-self: center;
     
@@ -198,9 +200,10 @@ body {
 .atividades-do-parque-container h1 {
 
     /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
+    
     margin-bottom: 40px;
     margin-top: -05px;
-    font-size: 32px;
+    
 
 }
 
@@ -218,7 +221,7 @@ body {
 .card_activity-of-park img {
     
   
-    grid-row: 1;
+ 
     width: 180px;
     height: 180px;
     border-radius: 8px;
@@ -227,20 +230,25 @@ body {
 
 .card_activity-of-park h2 {
     
-    grid-row: 2;
+
     gap: 5px;
-    font-size: 20px;
+    
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 650;;
    
 }
 
 .card_activity-of-park p {
 
-    grid-row: 3;
+  
     margin-left: 10px;
     width: 150px;
     color: #5f5959;
     margin-top: -05px;
-    font-size: 16px;
+    
+    margin-left: 20px;
 
 
 }
@@ -254,12 +262,18 @@ body {
         margin-left: 100px;
         margin-right: 100px;
         width: 1180px;
-        height: 600px;
-        max-width: 1200px;
+        /* height: 600px; */
+        max-width: 90%;
         justify-self: center;
-        
-        
 
+
+}
+
+.plano-de-gestao-da-onu-container h1 {
+    
+    margin-top: 100px;
+    margin-bottom: 20px;
+    
 }
 
 
@@ -273,6 +287,11 @@ body {
 
 .plano-de-gestao-da-onu-menu #content {
     flex-direction: column;
+    
+}
+
+.plano-de-gestao-da-onu-menu h3 {
+    margin-top: 20px;
     
 }
 
@@ -313,7 +332,7 @@ body {
 }
 
 .plano-gestao-onu_dynamic-buttons button {
-
+    
     padding: 12px 24px;
     font-size: 16px;
     font-weight: bold;
@@ -327,12 +346,15 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 .plano-gestao-onu_dynamic-buttons button:hover {
 
     color: rgb(0, 0, 0);
     transform: scale(1.05);
+    
 
 }
+
 
 .plano-gestao-onu_dynamic-buttons button:active {
     transform: scale(0.95);
@@ -346,4 +368,135 @@ body {
     color: rgb(0, 0, 0);
     /* color: white; PERGUNTAR PRA GALERA DEPOISSSSSSSSSSSSS -------------------**** */
     box-shadow: 0px 0px 12px rgb(9, 255, 0);
+}
+
+
+
+
+
+/* MIDIAS POSTS: */
+
+.midias-container {
+    padding-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    width: 1180px;
+    max-width: 90%;
+    height: 600px;
+    justify-self: center;
+    
+}
+
+.midias-container button {
+    
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 15%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #dedede;
+    
+}
+
+
+.midias-container button {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+    
+}
+
+.midias-container button:hover {
+    transform: scale(1.1);
+
+}
+
+
+.opniao-publica-container {
+    padding-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    width: 1180px;
+    max-width: 90%;
+    height: 600px;
+    justify-self: center;
+}
+
+
+.opniao-publica-container p {
+    margin-left: 40px;
+}
+
+footer {
+    height: 300px;
+    background-color: #343333;
+    width: 100vw; /* Garante que ocupe toda a largura da viewport */
+    min-width: 100%;
+    max-width: 100%;
+}
+
+footer .container {
+    
+    position: relative;
+    top: 30px;
+    justify-self: center;
+    padding-bottom: 40px;
+    padding: 10px 20px;
+    color: white;
+    width: 100vw;
+   
+}
+footer .col-1 {
+    width: 70px !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+    padding: 0px;
+}
+
+footer .col-2 {
+    width: 100px !important;
+    min-width: 100px !important;
+    max-width: 120px !important;
+    padding: 0px;
+}
+
+footer .container a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+footer .container .row {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+ 
+}
+
+footer .container a::after {
+    content: ""; /* Elemento vazio obrigatório */
+    position: absolute;
+    left: 50%;
+    bottom: -3px; /* Distância do texto */
+    width: 0%; /* Começa invisível */
+    height: 3px; /* Altura da linha */
+    background-color: rgb(255, 255, 255); /* Cor da linha */
+    transition: width 0.3s ease, left 0.3s ease; /* Suaviza a animação */
+    transform: translateX(-50%);
+}
+
+
+footer .container a:hover::after {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
