@@ -1,20 +1,38 @@
-h2 {
-    font-family: 'Inter', sans-serif;
+h3, h2, h1 {
+    font-family: 'Inter', sans-serif ;
+    font-weight: bold;
 }
 
-p {
-    font-family: 'Inter', sans-serif;
-}
-
-h1 {
-    font-family: 'Inter', sans-serif;
-}
-
-.text-home-container p {
-    font-family: 'Inria Sans', sans-serif;
+p, p1, p2, p3 {
+    font-family: 'Inter', sans-serif ;
 }
 
 .nav-button li {
     font-family: 'Inter', sans-serif;
     font-weight: 635;
+}
+
+
+h1 {
+    font-size: 32px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+
+.plano-de-gestao-da-onu-container h3{
+    
+    font-size: 20px;
+}
+
+.plano-de-gestao-da-onu-container p3{
+    
+    font-size: 16px;
 }
