@@ -3,6 +3,12 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 
+const porta = process.env.PORTA || 8080; // Definindo a porta do servidor
+
+// Inicia o servidor na porta configurada
+app.listen(porta, () => {
+  console.log('Servidor Back-End rodando na porta: ' + porta + '!');
+});
 
 // Middleware onde tive dificuldades em puxar a API do Facebook/Instagram, junto ao Meta For Developers...
 // https://developers.facebook.com/
@@ -38,9 +44,4 @@ const app = express();
 //   }
 // });
 
-// const porta = process.env.PORTA || 8080; // Definindo a porta do servidor
 
-// // Inicia o servidor na porta configurada
-// app.listen(porta, () => {
-//   console.log('Servidor Back-End rodando na porta: ' + porta + '!');
-// });
