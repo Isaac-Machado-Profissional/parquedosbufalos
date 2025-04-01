@@ -1,0 +1,105 @@
+.placeholder {
+    height: 800px;
+}
+
+/* Container da Newsletter */
+.newsletter-container {
+    background: #39c439; 
+    padding: 80px 20px;
+}
+
+/* Grid principal */
+.newsletter-container .row {
+    display: grid;
+    grid-template-columns: 1fr; /* Define apenas uma coluna central */
+    justify-content: center;
+    text-align: center;
+}
+
+/* Título */
+
+/* Formulário */
+.newsletter-container .col {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+
+.newsletter-container .col h1 {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* Input e Botão alinhados em Grid */
+.newsletter-container form {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Campo de Entrada */
+.newsletter-container input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.newsletter-container .form-control {
+    height: calc((1.5em * 1.5) + (.75rem + 5px)) !important;
+}
+
+
+/* Efeito ao Focar no Input */
+.newsletter-container input:focus {
+    border-color: #40ff40;
+    outline: none;
+    box-shadow: 0px 0px 8px #40ff40(2, 255, 56, 0.5);
+}
+
+.valid-feedback,
+.invalid-feedback {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  font-size: 0.875em;
+}
+
+/* Botão de Envio */
+.newsletter-container button {
+    /* background: linear-gradient(90deg, #007bff, #0056b3); */
+    background-color: #219445;
+    margin-top: 30px;
+    justify-self: center;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    width: 50%;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Efeito Hover no Botão */
+.newsletter-container button:hover {
+    /* background: linear-gradient(90deg, #0056b3, #007bff); */
+    transform: scale(1.05);
+}
+

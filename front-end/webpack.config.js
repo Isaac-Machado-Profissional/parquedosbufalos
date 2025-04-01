@@ -41,7 +41,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html', // Vai catar o index.html 
       filename: 'index.html', // Nome gerado
+      inject: true, // Scripts injetados automaticamente no HTML
 
+    }),
+
+    new HtmlWebpackPlugin({
+      template: 'src/html/about.html', // Catar o about.html
+      filename: 'about.html', // Nome gerado
+      inject: true,
     }),
 
     new MiniCssExtractPlugin({
@@ -52,12 +59,22 @@ module.exports = {
 
 
   devServer: { // Configurações do servidor local
-    static: {
-      directory: path.join(__dirname, ''), // Diretório q vai catar pra upar p servidor
-    },
+    static: [
+
+      {
+        directory: path.join(__dirname, ''), // Diretório q vai catar pra upar p servidor
+      },
+      {
+        directory: path.join(__dirname, 'src/html'), // Pegar também os outros arquivos.html p Hot-Swap
+      }
+    ],
+
     compress: true, // Ativar compressão gzip
     port: 9000, // Porta 
     open: true, // Abrir automaticamente o navgg
+    hot: true, // Ativa o Hot Module Replacement (HMR)
+    liveReload: true,
+    watchFiles: ['**/*.html'], // Monitora TODOS os arquivos HTML
   },
   mode: 'development', 
 };

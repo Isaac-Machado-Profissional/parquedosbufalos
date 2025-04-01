@@ -83,9 +83,9 @@ document.querySelectorAll(".midias-container button").forEach((button) => {
 // Middleware onde tive dificuldades em puxar a API do Facebook/Instagram, junto ao Meta For Developers...
 // https://developers.facebook.com/
 
-const appId = 'xxxxxxAppId'; // Seu App ID
-const redirectUri = 'http://localhost:8080/callback'; // O mesmo URI redirect configurado lá no Facebook
-const authUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${appId}&redirect_uri=${redirectUri}&scope=pages_show_list,pages_manage_metadata,instagram_basic`;
+// const appId = 'xxxxxxAppId'; // Seu App ID
+// const redirectUri = 'http://localhost:8080/callback'; // O mesmo URI redirect configurado lá no Facebook
+// const authUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${appId}&redirect_uri=${redirectUri}&scope=pages_show_list,pages_manage_metadata,instagram_basic`;
 
 // Redireciona para o login do Facebook definido acima com const authUrl
 window.location.href = authUrl;
