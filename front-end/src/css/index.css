@@ -411,6 +411,13 @@ body {
     
 }
 
+.midias-container p {
+    margin-left: 80px;
+    margin-top: 80px;
+    
+   
+}
+
 .midias-container button:hover {
     transform: scale(1.1);
 

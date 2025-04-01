@@ -51,13 +51,44 @@ function showSection(section) {
     // Adicionando 'active' apenas ao botão clicado
     document.querySelector(`button[data-section="${section}"]`).classList.add("active");
 }
+
+window.showSection = showSection; // Expondo a função globalmente
+window.onload = function() {showSection('section1');} // Chama a function pra mostrar a seção 1 p nós assim q;
+
+
     // Adicionando os eventos de clique nos botões dinamicamente
 document.querySelectorAll(".plano-gestao-onu_dynamic-buttons button").forEach((button) => {
     button.addEventListener("click", function () {
         showSection(this.dataset.section);
-    });
-});
+    })
 
-window.showSection = showSection; // Expondo a função globalmente
-window.onload = function() {showSection('section1');} // Chama a function pra mostrar a seção 1 p nós assim q;
+})
+
+// Função para alterar dinamicamente o conteúdo de mídias sociais ao clicar no Insta
+document.querySelectorAll(".midias-container button").forEach((button) => {
+    button.addEventListener("click", function () {
+        let outputDiv = document.getElementById("output-instagram");
+
+        if (outputDiv.childElementCount === 0) {
+            // Se não existir nada dentro da div, cria um <p>
+            let p = document.createElement("p");
+            p.textContent = "Instagram API resultados aqui";
+            outputDiv.appendChild(p);
+        } else {
+            // Se já existir algo, não faz nada
+            outputDiv.innerHTML = "";
+        }
+})})
+
+// Middleware onde tive dificuldades em puxar a API do Facebook/Instagram, junto ao Meta For Developers...
+// https://developers.facebook.com/
+
+const appId = 'xxxxxxAppId'; // Seu App ID
+const redirectUri = 'http://localhost:8080/callback'; // O mesmo URI redirect configurado lá no Facebook
+const authUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${appId}&redirect_uri=${redirectUri}&scope=pages_show_list,pages_manage_metadata,instagram_basic`;
+
+// Redireciona para o login do Facebook definido acima com const authUrl
+window.location.href = authUrl;
+;
+
 
