@@ -1,0 +1,510 @@
+/*FIRST HOME SCREEN*/
+
+body {
+    background-color: #ffffff;
+}
+
+.logo {
+
+    flex-shrink: 0; 
+    /* Impede que a logo encolha */ 
+    margin-right: auto;
+    /* Garante que a logo fique na extrema esquerda */
+    padding: 0px;
+    height: 6rem;
+    position: absolute;
+    left: 0;
+
+}
+
+
+
+/* NAVIGATION BUTTONS */
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: #fff;
+    height: 60px;
+
+}
+
+.nav-button {
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+
+.nav-button li {
+    display: inline;
+    
+    
+}
+
+.nav-button li a {
+    position: relative;
+    font-size: 1.05rem;
+    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 10px 15px;
+
+
+}
+
+/* Linha d baixo qnd encosta  */
+.nav-button li a::after {
+    content: ""; /* Elemento vazio obrigatório */
+    position: absolute;
+    left: 50%;
+    bottom: -3px; /* Distância do texto */
+    width: 0%; /* Começa invisível */
+    height: 3px; /* Altura da linha */
+    background-color: rgb(0, 0, 0); /* Cor da linha */
+    transition: width 0.3s ease, left 0.3s ease; /* Suaviza a animação */
+    transform: translateX(-50%);
+}
+
+
+.nav-button li a:hover::after {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+
+.nav-button li a.active {
+    background-color: #21F421;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+
+/*HOME-SCREEN: */
+.container-home-first-screen {
+    position: relative;
+
+    min-width: 100%;
+    min-height: 50vh;
+    width: 100%;
+    height: 410px;
+
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.text-home-container {
+    display: flex;
+    margin-top: -20px;
+    flex-direction: column;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+     /* Centraliza verticalmente */
+
+    position: absolute;
+    /* Posicao absoluta pra se manter fiel conforme muda resolucao*/
+    top: 50%;
+    /* Alinha o contêiner no centro da tela verticalmente */
+    left: 50%;
+    /* Alinha o contêiner no centro da tela horizontalmente */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.text-home-container h1 {
+
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 8vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.050);
+    transform: translateY(-50%);
+    z-index: 2;
+
+}
+
+.text-home-container p {
+    position: absolute;
+    margin-top: 50px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 3vh;
+    color: #ffffff;
+    z-index: 1;
+    background-color: rgba(241, 238, 238, 0.050);
+    transform: translateY(50%);
+    text-shadow: 1px 1px 8px #000000;
+    
+
+}
+
+.img-mountain-background {
+    background-image: url('../assets/index/Montain-EUA.png'); /*Insira o caminho da imagem central da home-screen*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 60%;
+    border-radius: 15px;
+    
+
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+    color: white;
+    padding: 50px;
+    width: 80%;
+    height: 40vh;
+}
+
+
+
+/* ATIVIDADES DO PARQUE : */
+.atividades-do-parque-container {
+
+    /* display: flex; Perguntar pra galera dps ----------------------------------------------**** */
+    /* justify-self: center; Perguntar pra galera dps ----------------------------------------------**** */ 
+    /* width: 80%; Perguntar pra galera dps ----------------------------------------------*****/
+    margin-top: -50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 1180px;
+    max-width: 90%;
+    height: 600px;
+    justify-self: center;
+    
+    
+
+}
+
+.atividades-do-parque-container h1 {
+
+    /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
+    
+    margin-bottom: 40px;
+    margin-top: -05px;
+    
+
+}
+
+.card_activity-of-park {
+
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: auto auto auto;
+    column-gap: 80px; 
+    list-style: none;
+
+}
+
+.card_activity-of-park img {
+    
+  
+ 
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+   
+}
+
+.card_activity-of-park h2 {
+    
+
+    gap: 5px;
+    
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 650;;
+   
+}
+
+.card_activity-of-park p {
+
+  
+    margin-left: 10px;
+    width: 150px;
+    color: #5f5959;
+    margin-top: -05px;
+    
+    margin-left: 20px;
+
+
+}
+
+
+
+/* PLANO DE GESTÃO DA ONU:  */
+
+.plano-de-gestao-da-onu-container {
+        
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 1180px;
+        /* height: 600px; */
+        max-width: 90%;
+        justify-self: center;
+
+
+}
+
+.plano-de-gestao-da-onu-container h1 {
+    
+    margin-top: 100px;
+    margin-bottom: 20px;
+    
+}
+
+
+.plano-de-gestao-da-onu-menu {
+
+    margin-bottom: 20px;
+    display: flex;
+    
+
+}
+
+.plano-de-gestao-da-onu-menu #content {
+    flex-direction: column;
+    
+}
+
+.plano-de-gestao-da-onu-menu h3 {
+    margin-top: 20px;
+    
+}
+
+.plano-de-gestao-da-onu-menu li{
+    width: 70%;
+    list-style: none;
+    
+}
+
+.plano-de-gestao-da-onu-menu li p3 {
+    position: relative;
+    left: 40px;
+    color: #5f5959;
+}
+
+
+.plano-de-gestao-da-onu-menu img {
+
+    /* position: relative; */
+    /* align-items: flex-start; */
+    margin-left: 35px;
+    margin-top: -60px;
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+      
+}
+
+
+.plano-gestao-onu_dynamic-buttons {
+    display: flex;
+    gap: 70px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+.plano-gestao-onu_dynamic-buttons button {
+    
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #dedede;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.plano-gestao-onu_dynamic-buttons button:hover {
+    
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    
+
+}
+
+
+.plano-gestao-onu_dynamic-buttons button:active {
+    transform: scale(0.95);
+}
+
+.plano-gestao-onu_dynamic-buttons button.active {
+    
+    background: linear-gradient(90deg, #40ff40, #179407);
+    box-shadow: 0px 0px 12px rgb(10, 104, 7);
+    
+    /* background: linear-gradient(40deg, #1eff00, #c4ffc2);  Gradiente top meo depois analisar */
+    /* background: black; PERGUNTAR PRA GALERA DEPOIS --------------------------**** */
+    color: rgb(0, 0, 0);
+    /* color: white; PERGUNTAR PRA GALERA DEPOISSSSSSSSSSSSS -------------------**** */
+}
+
+
+
+
+
+/* MIDIAS POSTS: */
+
+.midias-container {
+    padding-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    width: 1180px;
+    max-width: 90%;
+    height: 600px;
+    justify-self: center;
+    
+}
+
+.midias-container button {
+    
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 15%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #dedede;
+    
+}
+
+
+.midias-container button {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+    
+}
+
+.midias-container p {
+    margin-left: 80px;
+    margin-top: 80px;
+    
+   
+}
+
+.midias-container button:hover {
+    transform: scale(1.1);
+
+}
+
+
+.opniao-publica-container {
+    padding-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    width: 1180px;
+    max-width: 90%;
+    height: 600px;
+    justify-self: center;
+}
+
+
+.opniao-publica-container p {
+    margin-left: 40px;
+}
+
+footer {
+    height: 300px;
+    background-color: #343333;
+    width: 100vw !important; /* Garante que ocupe toda a largura da viewport */
+    min-width: 100%;
+    max-width: 100%;
+}
+
+footer .container {
+    
+    position: relative;
+    top: 30px;
+    justify-self: center;
+    padding-bottom: 40px;
+    padding: 10px 20px;
+    color: white;
+    width: 100vw;
+   
+}
+footer .col-1 {
+    width: 70px !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+    padding: 0px;
+}
+
+footer .col-2 {
+    width: 100px !important;
+    min-width: 100px !important;
+    max-width: 120px !important;
+    padding: 0px;
+}
+
+footer .container a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+footer .container .row {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+ 
+}
+
+footer .container a::after {
+    content: ""; /* Elemento vazio obrigatório */
+    position: absolute;
+    left: 50%;
+    bottom: -3px; /* Distância do texto */
+    width: 0%; /* Começa invisível */
+    height: 3px; /* Altura da linha */
+    background-color: rgb(255, 255, 255); /* Cor da linha */
+    transition: width 0.3s ease, left 0.3s ease; /* Suaviza a animação */
+    transform: translateX(-50%);
+}
+
+
+footer .container a:hover::after {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
