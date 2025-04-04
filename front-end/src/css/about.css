@@ -2,10 +2,84 @@
     height: 800px;
 }
 
-/* Container da Newsletter */
+
+/*SOBRE NÓS: */
+
+.aboutUs-container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 1180px;
+    max-width: 90%;
+    height: 1000px;
+    justify-self: center;
+    text-align: center;
+}
+
+.aboutUs-container p {
+    text-align: center; 
+    /* Verificarei como ficará melhor. */
+
+}
+
+
+
+/* MAPA BRASIL */
+
+.map-brazil-container img{
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+.map-brazil-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; /* Melhor que absolute na maioria dos casos */
+    cursor: zoom-in;
+    display: flex; /* Para alinhar corretamente os itens dentro */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.zoom-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, transform-origin 0.5s ease;
+  }
+
+  .zoomed {
+    transform: scale(2); /* Zoom de 2x */
+    cursor: zoom-out;
+  }
+
+
+
+/*FORMAS DE CONTATO: */
+
+.contact-form-container {
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 80px;
+    width: 1180px;
+    max-width: 90%;
+    justify-self: center;
+    text-align: center;
+}
+
+
+/* NEWSLETTER: */
+
+
 .newsletter-container {
-    background: #39c439; 
+    background: #74C474; 
     padding: 80px 20px;
+
+
 }
 
 /* Grid principal */
@@ -102,4 +176,3 @@
     /* background: linear-gradient(90deg, #0056b3, #007bff); */
     transform: scale(1.05);
 }
-

@@ -3,16 +3,26 @@ html, body {
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px){
+
+
     body {
-        transform: scale(0.5); /* Reduz o tamanho para 50% */
+        transform: scale(0.5); /* Reduz o tamanho para 50%*/
         transform-origin: top left; /* Mantém o ponto de origem fixo */
         width: 200vw; /* Evita cortes laterais */
+        min-width: 100%;
         height: 200vh; /* Evita que o conteúdo fique escondido */
+        min-height: 100%;
         overflow-x: hidden; /* Remove scroll horizontal */
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    img {
+        max-width: 100%; /* Garante que as imagens não ultrapassem a largura da tela */
+        height: auto; /* Mantém a proporção das imagens */
+
     }
 
     .atividades-do-parque-container, .plano-de-gestao-da-onu-container, .midias-container, .opniao-publica-container  {
@@ -42,6 +52,7 @@ html, body {
         margin-top: 20px;
     }
 
+    
 
 }
 

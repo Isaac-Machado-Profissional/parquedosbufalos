@@ -193,7 +193,6 @@ body {
     height: 600px;
     justify-self: center;
     
-    
 
 }
 
@@ -389,6 +388,13 @@ body {
     
 }
 
+.midias-container p {
+    margin-left: 80px;
+    margin-top: 80px;
+    
+   
+}
+
 .midias-container button {
     
     display: flex;
@@ -401,23 +407,10 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #dedede;
-    
-}
-
-
-.midias-container button {
-    width: 70px;
-    height: 70px;
     transition: transform 0.3s ease;
-    
+
 }
 
-.midias-container p {
-    margin-left: 80px;
-    margin-top: 80px;
-    
-   
-}
 
 .midias-container button:hover {
     transform: scale(1.1);
