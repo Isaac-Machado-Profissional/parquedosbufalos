@@ -3,6 +3,7 @@
 }
 
 
+
 /*SOBRE NÓS: */
 
 .aboutUs-container {
@@ -16,11 +17,13 @@
     text-align: center;
 }
 
+
 .aboutUs-container p {
     text-align: center; 
     /* Verificarei como ficará melhor. */
 
 }
+
 
 
 
@@ -58,6 +61,7 @@
 
 
 
+
 /*FORMAS DE CONTATO: */
 
 .contact-form-container {
@@ -72,6 +76,7 @@
 }
 
 
+
 /* NEWSLETTER: */
 
 
@@ -81,6 +86,8 @@
 
 
 }
+
+
 
 /* Grid principal */
 .newsletter-container .row {
