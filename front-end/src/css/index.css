@@ -267,6 +267,8 @@ body {
         /* height: 600px; */
         max-width: 90%;
         justify-self: center;
+        /* flex-direction: column; */
+
 
 
 }
@@ -298,7 +300,7 @@ body {
 }
 
 .plano-de-gestao-da-onu-menu #content {
-    flex-direction: column;
+        flex-direction: column;
     
 }
 

@@ -1,9 +1,3 @@
-/* html, body {
-    height: 100%; 
-    margin: 0;
-}
- */
-
 
  /*CELULAR:*/
 
@@ -81,61 +75,103 @@
         margin-top: -20px;
     }
 
-    .plano-de-gestao-da-onu-container {
-        margin-top: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 90%;
-        max-width: 100%;
-        height: 100%;
-        justify-self: center;}
+    .plano-de-gestao-da-onu-menu {
+        
+        flex-direction: column; /* um em cima do outro */
+    }
+    
     
 
     .plano-de-gestao-da-onu-menu img {
 
         /* position: relative; */
         /* align-items: flex-start; */
-        width: 30vw;
-        height: 10vh;
-        margin-left: 35px;
-        margin-top: 60px;
-
+        order: -1;
+        /* object-fit: contain; */
+        justify-items: center;
+        width: 80%;
+        height: auto;
+        margin-top: -35px;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-right: 35px; */
+        margin-bottom: 35px;
         border-radius: 8px;
           
     }
 
     .plano-de-gestao-da-onu-menu p {
-        padding-bottom: 20px;
         font-size: 0.75rem;
         
         
     }
 
     .plano-gestao-onu_dynamic-buttons { 
-        margin-top: 20px;
+        margin-top: -30px;
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .midias-container {
 
         justify-self: center;
         margin-top: 1200px;
+        width: 80%;
+        margin: 0px;
+    }
+    .footer {
+        justify-self: center;
     }
 
+    .opniao-publica-container {
+        justify-self: center;
+        margin-top: 1200px;
+        width: 80%;
+        margin: 0px;
+    }
+    .footer, .row, .container {
+        padding: 0px !important;
+        width: 90vw !important;
+        
+        justify-self: center;
+        
+    }
 
+    
 }
 
-@media (min-width: 0px) and (max-width: 300px){
+@media (min-width: 0px) and (max-width: 400px){
     
     .text-home-container p {
-        font-size: 1rem;
+        font-size: 0.85rem;
         white-space: normal;
         width: 220px;
     }
 
-    .atividades-do-parque-container img {
-        width: 100%;
-        height: 35%;
+    .plano-de-gestao-da-onu-container {
+        margin: 0px;
+        width: 90%;
+        max-width: 100%;
+        height: 100%;
+        justify-self: center;
     }
+
+    .atividades-do-parque-container {
+        margin-top: 05px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 90%;
+        max-width: 100%;
+        height: 100%;
+        justify-self: center;
+        justify-items: center;
+        
+    }
+
+    
+
     .card-body {
         display: block;
         width: 100% !important;
@@ -155,9 +191,64 @@
         display: block;
         width: 100% !important;
         position: relative;
-        top: -30px;
+        top: -15px;
         
     }
+
+    .plano-de-gestao-da-onu-menu {
+        
+        flex-direction: column; /* um em cima do outro */
+    }
+    
+
+    .plano-de-gestao-da-onu-menu img {
+
+        /* position: relative; */
+        /* align-items: flex-start; */
+        order: -1;
+        /* object-fit: contain; */
+        justify-items: center;
+        width: 50%;
+        height: auto;
+        margin-top: -35px;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-right: 35px; */
+        margin-bottom: 35px;
+        border-radius: 8px;
+          
+    }
+
+    .plano-gestao-onu_dynamic-buttons { 
+        margin-top: -30px;
+        gap: 50px;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    .plano-gestao-onu_dynamic-buttons button {
+        font-size: 0.5rem;
+        width: auto;
+        
+
+        
+    }
+
+    .midias-container {
+        width: 80%;
+        margin: 0;
+    }
+
+    .opniao-publica-container {
+        width: 80%;
+        margin: 0;
+    }
+
+    .footer, .row, .container {
+        padding: 0px !important;
+        width: 90vw !important;
+    }
+
 }
 
 /*DEPOIS EU CONTINUO*/
