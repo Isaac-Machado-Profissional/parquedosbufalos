@@ -2,7 +2,7 @@
  /*CELULAR:*/
 
 
-@media (min-width: 300px) and (max-width: 768px){
+ @media (min-width: 300px) and (max-width: 768px){
 
 
     /* body {
@@ -64,7 +64,8 @@
    
 
     .atividades-do-parque-container h2 {
-        font-size: 0.69rem !important;
+        font-size: 0.80rem !important;
+        text-align: center;
         width: 100% !important;
         
     }
@@ -73,8 +74,30 @@
         font-size: 0.5rem !important;
         width: 100% !important;
         margin-top: -20px;
+       
+    }
+    .card-body {
+        padding: 0px;
+        margin-top: 10px;
     }
 
+    .card-title {
+        width: 100% important;
+        white-space: wrap;
+        display: block;
+    }
+
+    .card-text {
+        font-size: 1rem !important;
+        top: -5px;
+        position: relative;
+        
+        
+        
+    }
+
+
+    
     .plano-de-gestao-da-onu-menu {
         
         flex-direction: column; /* um em cima do outro */
@@ -103,7 +126,6 @@
     .plano-de-gestao-da-onu-menu p {
         font-size: 0.75rem;
         
-        
     }
 
     .plano-gestao-onu_dynamic-buttons { 
@@ -131,10 +153,9 @@
         width: 80%;
         margin: 0px;
     }
-    .footer, .row, .container {
+    .footer .row .container {
         padding: 0px !important;
         width: 90vw !important;
-        
         justify-self: center;
         
     }

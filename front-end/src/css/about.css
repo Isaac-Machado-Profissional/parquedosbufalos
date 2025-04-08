@@ -84,7 +84,6 @@
     background: #74C474; 
     padding: 80px 20px;
 
-
 }
 
 
@@ -117,6 +116,9 @@
     margin-bottom: 20px;
 }
 
+.newsletter-container {
+    text-align: center;
+}
 
 /* Input e Botão alinhados em Grid */
 .newsletter-container form {
@@ -180,6 +182,6 @@
 
 /* Efeito Hover no Botão */
 .newsletter-container button:hover {
-    /* background: linear-gradient(90deg, #0056b3, #007bff); */
-    transform: scale(1.05);
+    background: #47be47;
+    /* transform: scale(1.05); */
 }
