@@ -144,7 +144,9 @@
 }
 
 .newsletter-container .form-control {
-    height: calc((1.5em * 1.5) + (.75rem + 5px)) !important;
+    justify-self: center;
+    max-width: 80%;
+    height: calc((1.5rem * 1.5) + (.75rem + 3px)) ;
 }
 
 
@@ -158,6 +160,7 @@
 .valid-feedback,
 .invalid-feedback {
   position: absolute;
+  top: 205px;
   left: 0;
   height: 20px;
   font-size: 0.875em;
