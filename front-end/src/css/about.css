@@ -188,3 +188,9 @@
     background: #47be47;
     /* transform: scale(1.05); */
 }
+
+.newsletter-container button:focus {
+    background-color: #21F421 !important;
+    box-shadow: 0px 0px 8px #74C474 !important;
+    outline: #2d992d !important
+}
