@@ -17,7 +17,7 @@ Uma breve descrição sobre o que esse projeto faz e para quem ele é
 Clone o projeto pelo *GitHub*
 
 ```bash
-  git clone https://github.com/demostenesbr/parquedosbufalos.git
+  git clone https://github.com/Dj-xfrag/parquedosbufalos.git
 ```
 
 ## Regras para o Git
