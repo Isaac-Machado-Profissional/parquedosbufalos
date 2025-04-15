@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  
   entry: './src/javascript/script.js', // Arquivo de entrada
   output: {
     filename: 'bundle.js', // Nome do bundle gerado
@@ -12,69 +11,61 @@ module.exports = {
   },
   module: {
     rules: [
-      
-    {
-        test: /\.js$/, // Regras para arquivos JS
+      {
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
-            loader: 'babel-loader',	
-            options: {
-                presets: ['@babel/preset-env']
-            }
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
         }
-    },
-
-    {
+      },
+      {
         test: /\.css$/, 
         use: [MiniCssExtractPlugin.loader, 'css-loader']
-    },
-
+      },
       {
         test: /\.html$/, // Processar arquivos HTML
         use: ['html-loader'],
       },
     ],
   },
-
-
+  resolve: {
+    extensions: ['.js'],
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html', // Vai catar o index.html 
-      filename: 'index.html', // Nome gerado
-      inject: true, // Scripts injetados automaticamente no HTML
-
-    }),
-
-    new HtmlWebpackPlugin({
-      template: 'src/html/about.html', // Catar o about.html
-      filename: 'about.html', // Nome gerado
+      template: './index.html',
+      filename: 'index.html',
       inject: true,
     }),
-
     new MiniCssExtractPlugin({
-        filename: 'style.css',
+      filename: 'style.css', // Nome do arquivo CSS gerado
     }),
-
   ],
-
-
   devServer: { // Configurações do servidor local
     static: [
-
       {
-        directory: path.join(__dirname, ''), // Diretório q vai catar pra upar p servidor
+        directory: path.join(__dirname, ''), // Diretório que vai ser servido
       },
       {
-        directory: path.join(__dirname, 'src/html'), // Pegar também os outros arquivos.html p Hot-Swap
+        directory: path.join(__dirname, 'src'), // Pegar também os arquivos HTML para Hot-Swap
       }
     ],
-
+    proxy: [
+      {
+        context: ['/api'], // Caminho da requisição a ser redirecionada
+        target: 'http://localhost:8080', // Endereço do backend
+        changeOrigin: true, // Para alterar o cabeçalho de origem
+        secure: false, // Se o backend não usar HTTPS, deixe como false
+      },
+    ],
+    
     compress: true, // Ativar compressão gzip
     port: 9000, // Porta 
-    open: true, // Abrir automaticamente o navgg
+    open: true, // Abrir automaticamente o navegador
     hot: true, // Ativa o Hot Module Replacement (HMR)
-    liveReload: true,
-    watchFiles: ['**/*.html'], // Monitora TODOS os arquivos HTML
   },
-  mode: 'development', 
+  mode: 'development',
 };

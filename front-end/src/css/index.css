@@ -14,7 +14,6 @@ body {
 }
 
 
-
 /* NAVIGATION BUTTONS */
 
 .nav-bar-container {
@@ -425,10 +424,7 @@ body {
 }
 
 .midias-container p {
-    margin-left: 80px;
-    margin-top: 80px;
     
-   
 }
 
 .midias-container button {

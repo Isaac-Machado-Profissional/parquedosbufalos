@@ -1,0 +1,38 @@
+/* Container geral para cada post */
+.instagram-post {
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    background-color: #fff;
+    max-width: 540px;
+    margin: 20px auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* Estilo para a imagem */
+  .instagram-post-image img {
+    width: 100% !important;
+
+  }
+  
+  /* Área de informações do post */
+  .instagram-post-info {
+    padding: 10px;
+  }
+  
+  /* Legenda do post */
+  .instagram-caption {
+    color: #262626;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  /* Link para o Insta */
+  .instagram-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #3897f0;
+    font-weight: bold;
+  }
+  
