@@ -13,13 +13,13 @@
 }
 
 .transparency p{
-    width: 30vw;
+    width: 32vw;
     margin: 0 auto;
 }
 
 .text-container {
     display: flex;
-    height: 100vh;
+    height: 50vh;
 }
 
 .left {
@@ -30,7 +30,7 @@
     flex-direction: column;
     gap: 10px;
     border-right: 1px solid #ccc;
-    overflow-y: auto;
+    
 }
 
 .right {

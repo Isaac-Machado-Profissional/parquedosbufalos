@@ -1,8 +1,11 @@
 /*FIRST HOME SCREEN*/
-
-body {
-    background-color: #ffffff;
-}
+html, body {
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  
 
 .logo {
 
@@ -110,16 +113,14 @@ header {
 /*HOME-SCREEN: */
 .container-home-first-screen {
     position: relative;
-
-    min-width: 100%;
-    min-height: 50vh;
     width: 100%;
-    height: 410px;
-
+    height: 350px;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 1;
+    margin-bottom: 1vh;
+
 
 }
 
@@ -148,7 +149,7 @@ header {
     position: absolute;
     white-space: nowrap;
     text-align: center;
-    font-size: 6vw;
+    font-size: 60px; 
     color: white;
     background-color: rgba(0, 0, 0, 0.050);
     transform: translateY(-50%);
@@ -161,7 +162,7 @@ header {
     margin-top: 50px;
     white-space: nowrap;
     text-align: center;
-    font-size: 3vh;
+    font-size: 25px;
     color: #ffffff;
     z-index: 1;
     background-color: rgba(241, 238, 238, 0.050);
@@ -173,13 +174,11 @@ header {
 
 .img-mountain-background {
     background-image: url('../assets/index/Montain-EUA.png'); /*Insira o caminho da imagem central da home-screen*/
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center 60%;
-    border-radius: 15px;
-    
-
+    border-radius: 1em;
     position: absolute;
     top: 20px; 
     left: 50%;
@@ -187,8 +186,10 @@ header {
     transform: translateX(-50%);
     color: white;
     padding: 50px;
-    width: 80%;
-    height: 40vh;
+    width: 80vw;
+    height: 90%;
+    display: block;
+    max-width: 2000px; /* Garante que nunca estoure o container */
 }
 
 
@@ -199,7 +200,7 @@ header {
     /* display: flex; Perguntar pra galera dps ----------------------------------------------**** */
     /* justify-self: center; Perguntar pra galera dps ----------------------------------------------**** */ 
     /* width: 80%; Perguntar pra galera dps ----------------------------------------------*****/
-    margin-top: -60px;
+    /* margin-top: -60px; */
     margin-left: 100px;
     margin-right: 100px;
     justify-self: center;
@@ -238,10 +239,9 @@ header {
 .atividades-do-parque-container img {
     
     margin-top: 10px;
-    width: 100%;
+    width: 100vw;
     height: 40%;
     max-width: 100% !important;
-
     border-radius: 8px;
    
 }
@@ -255,7 +255,7 @@ header {
 .atividades-do-parque-container p {
 
     color: #5f5959;
-    margin-top: -05px;
+    margin-top: -2vh;
 
 }
 
@@ -465,24 +465,22 @@ header {
     margin-left: 40px;
 }
 
+
 footer {
-    height: 300px;
+    height: 50vh;
+    
+    /* max-height: 300px; */
     background-color: #343333;
-    width: 100vw !important; /* Garante que ocupe toda a largura da viewport */
-    min-width: 100%;
-    max-width: 100%;
+    max-height: 100%;
+    overflow-y: hidden;
+
 }
 
-footer .container {
-    
-    position: relative;
-    top: 30px;
-    justify-self: center;
-    padding-bottom: 40px;
-    padding: 10px 20px;
-    color: white;
-    width: 100vw;
-   
+footer .row {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100% !important; /* Garante que ocupe toda a largura da viewport */
 }
 footer .col-1 {
     width: 70px !important;
@@ -498,14 +496,14 @@ footer .col-2 {
     padding: 0px;
 }
 
-footer .container a {
+footer .footer-container a {
     color: white;
     text-decoration: none;
     
 }
 
 
-footer .container .row {
+footer .footer-container .row {
     color: white;
     display: flex;
     justify-content: center;
@@ -514,7 +512,7 @@ footer .container .row {
  
 }
 
-footer .container a::after {
+footer .footer-container a::after {
     content: ""; /* Elemento vazio obrigatório */
     position: absolute;
     left: 50%;
@@ -527,7 +525,7 @@ footer .container a::after {
 }
 
 
-footer .container a:hover::after {
+footer .footer-container a:hover::after {
     width: 100%;
     color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
