@@ -1,9 +1,40 @@
+.transparency-container {
+    margin-top: 50px;
+    
+}
+
+
 .transparency h1{
     text-align: center;
-
-
+    overflow-wrap: break-word;
+    hyphens: auto;
+    margin: 0 auto;
 
 }
+
 .transparency p{
-    text-align: center;
+    width: 30vw;
+    margin: 0 auto;
 }
+
+.text-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    width: 35%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.right {
+    width: 75%;
+    padding: 30px;
+    /* overflow-y: auto; */
+  }

@@ -1,23 +1,27 @@
- 
-
-
-
-/*SOBRE NÓS: */
+ /*SOBRE NÓS: */
 
 .aboutUs-container {
     margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
+    justify-self: center;
     width: 1180px;
     max-width: 90%;
-    height: 1000px;
-    justify-self: center;
+    list-style: none;
+    text-align: center;
+   
+    
+}
+
+.aboutUs-container h1 {
+    
     text-align: center;
 }
 
 
 .aboutUs-container p {
-    text-align: center; 
+    width: 80vw;
+    margin: 0 auto;
     /* Verificarei como ficará melhor. */
 
 }
@@ -63,15 +67,30 @@
 /*FORMAS DE CONTATO: */
 
 .contact-form-container {
-    margin-top: 80px;
+    margin-top: 10vh;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 80px;
-    width: 1180px;
-    max-width: 90%;
     justify-self: center;
+    max-width: 90%;
+    list-style: none;
     text-align: center;
+    
 }
+
+.contact-form-container p {
+    width: 80vw;
+    margin: 0 auto;
+    
+}
+
+.contact-form-container a {
+    margin-top: 2vh;
+    display: flex;
+    
+    justify-self: center;
+    align-items: center;
+}
+
 
 
 
@@ -95,6 +114,7 @@
 }
 
 /* Título */
+
 
 /* Formulário */
 .newsletter-container .col {

@@ -16,14 +16,13 @@ body {
 
 /* NAVIGATION BUTTONS */
 
-.nav-bar-container {
+header {
 
-    justify-content: space-between;
-    align-items: flex-start;
+   
     background-color: #ffffff;
     color: #fff;
-    margin-top: 20px;
-    height: 50px;
+    
+   
 
 }
 
@@ -36,7 +35,6 @@ body {
 .navbar {
     list-style: none;
     
-    margin: 20px;
     gap: 1rem;
     
     border-radius: 10px;
@@ -423,7 +421,8 @@ body {
     
 }
 
-.midias-container p {
+.midias-container .card {
+    margin-top: 20px;
     
 }
 

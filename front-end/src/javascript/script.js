@@ -79,4 +79,8 @@ document.querySelectorAll(".midias-container button").forEach((button) => {
       outputDiv.innerHTML = "";
     }
   });
-});
+}
+
+
+
+);

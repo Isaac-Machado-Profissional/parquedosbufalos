@@ -33,13 +33,12 @@ export const renderInstagramPosts = async () => {
       // Escolhe o elemento de mídia de acordo com o tipo
       let mediaElement = "";
       if (post.media_type === "VIDEO") {
-        // Verifica se o thumbnail_url está disponível; caso contrário, pode usar uma imagem padrão
         const thumbnail = post.thumbnail_url ? post.thumbnail_url : post.media_url;
         mediaElement = `
-          <div class="video-thumbnail position-relative">
+          <div class="video-thumbnail position-relative" data-video-url="${post.media_url}">
             <img src="${thumbnail}" class="card-img-top" alt="${post.caption || 'Sem legenda'}">
-            <span class="play-icon position-absolute" style="top:50%; left:50%; transform: translate(-50%, -50%); font-size: 3rem; color: rgba(255,255,255,0.8);">
-              &#9658;
+            <span class="play-icon position-absolute" style="top:50%; left:50%; transform: translate(-50%, -50%);">
+              <i class="bi bi-play-circle-fill" style="font-size: 3rem; color: rgba(255,255,255,0.8);"></i>
             </span>
           </div>
         `;
@@ -98,4 +97,5 @@ export const renderInstagramPosts = async () => {
   } else {
     container.innerHTML = "<p>Nenhum post encontrado.</p>";
   }
+
 };

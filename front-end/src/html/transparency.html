@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Parque dos Búfalos</title>
-        <link rel="icon" href="../assets/Logo-Parque-dos-Bufalos.ico" type="image/x-icon">
+        <link rel="icon" href="../assets/Logo-Parque-dos-Bufalos(2.0).ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+        
         <script src="../javascript/script.js"></script>
+
         <link href="../css/style.css" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">    
                 
@@ -27,7 +28,7 @@
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="../assets/Logo-Parque-dos-Bufalos.ico" alt="Logo do Parque dos Búfalos" class="logo">
+                    <img src="../assets/Logo-Parque-dos-Bufalos_png.ico" alt="Logo do Parque dos Búfalos" class="logo">
                 </a>
         
                 <!-- Botão "Hamburger" para Mobile -->
@@ -46,12 +47,41 @@
             </div>
         </nav>
     </header>
+    <main> 
+        <div class="transparency-container"> 
+            <div class="transparency"> 
+                <h1>Transparência</h1>
+                <p>Problematizações e tópicos debatidos em referência a 
+                    situações reais que afligem a região do Jardim Apurá.</p>
+        </div>
 
-    <div class="transparency"> 
-        <h1>Transparência</h1>
-        <p>Problematizações e tópicos debatidos em referência a 
-            situações reais que afligem a região do Jardim Apurá.</p>
-        
+        <div class="text-container"> 
+
+            <div class="left">
+                <button onClick="showText('1-meio_ambiente')">Meio Ambiente</button>
+                <button onClick="showText('2-educacao')">Educação</button>
+                <button onClick="showText('3-construcao')">Construção</button>
+                <button onClick="showText('4-orgaos_publicos')">Órgãos Públicos</button>
+                <button onClick="showText('5-animais')">Animais</button>
+                <button onClick="showText('6-preservacao')">Preservação</button>
+            </div>
+
+            <div class="right" id="displayText"> 
+                <p>Clique em um botão à esquerda para ver o conteúdo aqui. </p>
+                <script src="..//javascript/components/text/texts.js"></script>
+
+            </div>
+            
+
+        </div>
+
+
+
+    </main>
+
+    
+
+
     </div>
       <footer> 
         <div class="container">
