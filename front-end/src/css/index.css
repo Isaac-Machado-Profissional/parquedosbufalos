@@ -468,11 +468,8 @@ header {
 
 footer {
     height: 50vh;
-    
-    /* max-height: 300px; */
     background-color: #343333;
     max-height: 100%;
-    overflow-y: hidden;
 
 }
 
