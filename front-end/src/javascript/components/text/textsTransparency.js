@@ -1,4 +1,4 @@
-function showText(code) {
+function showTextTransparency(code) {
     const texts = {
       '1-meio_ambiente': `
         <p><strong>Meio Ambiente:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti..</p>

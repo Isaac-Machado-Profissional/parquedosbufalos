@@ -1,7 +1,5 @@
-import { fetchInstagramFeed } from '../services/instagramService.js';
-
-export const renderInstagramPosts = async () => {
-  // Busca os posts do Instagram
+export const renderInstagramPosts = async (fetchInstagramFeed) => {
+  // Agora, use a função importada dinamicamente
   const posts = await fetchInstagramFeed();
   const container = document.querySelector('#output-instagram');
 
@@ -10,18 +8,14 @@ export const renderInstagramPosts = async () => {
     return;
   }
 
-  // Atrasa o carregamnto pq depois quero fazer uma animacao de loading aq cpa
   await new Promise((resolve) => setTimeout(resolve, 500));
   container.innerHTML = "";
 
-  // Limita p 6 posts (2 linhas com 3 posts cada)
   if (posts && posts.data) {
     const postsToDisplay = posts.data.slice(0, 6);
     let html = "";
     
     postsToDisplay.forEach((post, index) => {
-
-      // Truncar a legenda
       const fullCaption = post.caption || "";
       let truncatedCaption = fullCaption;
       let shouldTruncate = false;
@@ -30,7 +24,6 @@ export const renderInstagramPosts = async () => {
         shouldTruncate = true;
       }
       
-      // Escolhe o elemento de mídia de acordo com o tipo
       let mediaElement = "";
       if (post.media_type === "VIDEO") {
         const thumbnail = post.thumbnail_url ? post.thumbnail_url : post.media_url;
@@ -45,13 +38,11 @@ export const renderInstagramPosts = async () => {
       } else {
         mediaElement = `<img src="${post.media_url}" class="card-img-top" alt="${post.caption || 'Sem legenda'}">`;
       }
-
-      // Inicia uma nova linha a cada 3 posts
+    
       if (index % 3 === 0) {
         html += `<div class="row">`;
       }
-
-      // Constrói o card para cada post usando o grid do Bootstrap
+    
       html += `
         <div class="col-4 mb-4">
           <div class="card">
@@ -69,8 +60,7 @@ export const renderInstagramPosts = async () => {
           </div>
         </div>
       `;
-
-      // Fecha a linha após 3 posts ou se for o último
+    
       if (index % 3 === 2 || index === postsToDisplay.length - 1) {
         html += `</div>`;
       }
@@ -78,7 +68,6 @@ export const renderInstagramPosts = async () => {
     
     container.innerHTML = html;
 
-    // Listener para alternar a exibição da legenda (mais/menos)
     document.querySelectorAll('.toggle-caption').forEach(link => {
       link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -95,7 +84,21 @@ export const renderInstagramPosts = async () => {
       });
     });
   } else {
-    container.innerHTML = "<p>Nenhum post encontrado. https://www.instagram.com/parquedostestes/</p>";
+    container.innerHTML = "<p>Nenhum post encontrado. <br> https://www.instagram.com/parquedostestes/</p>";
   }
+}
 
-};
+document.querySelectorAll(".midias-container button").forEach((button) => {
+  button.addEventListener("click", async function () {
+    let outputDiv = document.getElementById("output-instagram");
+
+    if (outputDiv.childElementCount === 0) {
+      outputDiv.innerHTML = "<p>Carregando...</p>";
+      const { fetchInstagramFeed } = await import('../services/instagramService.js');
+      // Passa a função importada para renderInstagramPosts
+      await renderInstagramPosts(fetchInstagramFeed);
+    } else {
+      outputDiv.innerHTML = "";
+    }
+  });
+});
