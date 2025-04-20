@@ -66,6 +66,7 @@ header {
     color: rgb(51, 51, 51) !important; /* Cor do texto */
     padding: 10px 15px;
     display: inline-block;
+
     gap: 10px;
 
 }
