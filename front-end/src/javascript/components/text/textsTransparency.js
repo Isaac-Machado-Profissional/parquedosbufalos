@@ -28,7 +28,7 @@ function showTextTransparency(code, container) {
             <div class="col-6 col-md-4 col-lg-3 col-custom">
               <div class="custom-card">
                 <img class="img-fluid" src="https://th.bing.com/th/id/OIP.wvM_yWrrGpOh4etfCwRV6wHaEQ?rs=1&pid=ImgDetMain" alt="Imagem 1">
-                        <h7> Cachorro </h7>
+                        <h7> Lobo Terrível </h7>
               </div>
             </div>
 

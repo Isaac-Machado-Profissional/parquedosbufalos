@@ -1,15 +1,17 @@
 /*FIRST HOME SCREEN*/
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    
-    
-  }
-  
+
+
+}
+
 
 .logo {
 
-    flex-shrink: 0; /* Impede que a logo encolha */ 
+    flex-shrink: 0;
+    /* Impede que a logo encolha */
     padding: 0px;
     width: 80px;
     height: 80px;
@@ -21,11 +23,11 @@ html, body {
 
 header {
 
-   
+
     background-color: #ffffff;
     color: #fff;
-    
-   
+
+
 
 }
 
@@ -37,15 +39,15 @@ header {
 
 .navbar {
     list-style: none;
-    
+
     gap: 1rem;
-    
+
     border-radius: 10px;
     transition: all 0.3s ease;
-    
-
 
 }
+
+
 
 .navbar li {
     display: inline-block;
@@ -56,14 +58,16 @@ header {
     text-align: center;
     font-weight: 600;
     font-size: 1.05rem;
-    
+
 }
 
 .navbar li a {
     position: relative;
     font-size: 1.05rem;
-    text-decoration: none; /* Remove o sublinhado */
-    color: rgb(51, 51, 51) !important; /* Cor do texto */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: rgb(51, 51, 51) !important;
+    /* Cor do texto */
     padding: 10px 15px;
     display: inline-block;
 
@@ -78,16 +82,22 @@ header {
 
 /* Linha d baixo qnd encosta  */
 .navbar li a::after {
-    content: ""; /* Elemento vazio obrigatório */
+    content: "";
+    /* Elemento vazio obrigatório */
     position: absolute;
     left: 50%;
-    bottom: -3px; /* Distância do texto */
-    width: 0%; /* Começa invisível */
-    height: 3px; /* Altura da linha */
-    background-color: rgb(0, 0, 0); /* Cor da linha */
-    transition: width 0.3s ease, left 0.3s ease; /* Suaviza a animação */
+    bottom: -3px;
+    /* Distância do texto */
+    width: 0%;
+    /* Começa invisível */
+    height: 3px;
+    /* Altura da linha */
+    background-color: rgb(0, 0, 0);
+    /* Cor da linha */
+    transition: width 0.3s ease, left 0.3s ease;
+    /* Suaviza a animação */
     transform: translateX(-50%);
-    
+
 }
 
 
@@ -105,7 +115,7 @@ header {
     padding-left: 20px !important;
     padding-right: 20px !important;
     font-weight: 700 !important;
-    
+
 }
 
 
@@ -132,7 +142,7 @@ header {
     justify-content: center;
     /* Centraliza horizontalmente */
     align-items: center;
-     /* Centraliza verticalmente */
+    /* Centraliza verticalmente */
 
     position: absolute;
     /* Posicao absoluta pra se manter fiel conforme muda resolucao*/
@@ -150,7 +160,7 @@ header {
     position: absolute;
     white-space: nowrap;
     text-align: center;
-    font-size: 60px; 
+    font-size: 60px;
     color: white;
     background-color: rgba(0, 0, 0, 0.050);
     transform: translateY(-50%);
@@ -169,19 +179,20 @@ header {
     background-color: rgba(241, 238, 238, 0.050);
     transform: translateY(50%);
     text-shadow: 1px 1px 8px #000000;
-    
+
 
 }
 
 .img-mountain-background {
-    background-image: url('../assets/index/Montain-EUA.png'); /*Insira o caminho da imagem central da home-screen*/
+    background-image: url('../assets/index/Montain-EUA.png');
+    /*Insira o caminho da imagem central da home-screen*/
     /* background-repeat: no-repeat; */
     background-size: cover;
     /* background-attachment: fixed; */
     background-position: center 60%;
     border-radius: 1em;
     position: absolute;
-    top: 20px; 
+    top: 20px;
     left: 50%;
     /* Centraliza horizontalmente */
     transform: translateX(-50%);
@@ -190,7 +201,8 @@ header {
     width: 80vw;
     height: 90%;
     display: block;
-    max-width: 2000px; /* Garante que nunca estoure o container */
+    max-width: 2000px;
+    /* Garante que nunca estoure o container */
 }
 
 
@@ -199,7 +211,7 @@ header {
 .atividades-do-parque-container {
 
     /* display: flex; Perguntar pra galera dps ----------------------------------------------**** */
-    /* justify-self: center; Perguntar pra galera dps ----------------------------------------------**** */ 
+    /* justify-self: center; Perguntar pra galera dps ----------------------------------------------**** */
     /* width: 80%; Perguntar pra galera dps ----------------------------------------------*****/
     /* margin-top: -60px; */
     margin-left: 100px;
@@ -208,7 +220,7 @@ header {
     width: 1180px;
     max-width: 90%;
     list-style: none;
-    
+
 
 }
 
@@ -218,19 +230,22 @@ header {
     /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
     position: relative;
     top: -05px;
-    min-height: 3rem; /* ajusta conforme necessário */
-    justify-content: center; /* opcional, se quiser centralizar horizontalmente também */
+    min-height: 3rem;
+    /* ajusta conforme necessário */
+    justify-content: center;
+    /* opcional, se quiser centralizar horizontalmente também */
     text-align: center;
-    
+
 
 }
+
 .card-text {
     position: relative;
     margin-right: auto;
     margin-left: auto;
     top: -10px;
     margin-top: 40px;
-    
+
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -238,19 +253,19 @@ header {
 
 
 .atividades-do-parque-container img {
-    
+
     margin-top: 10px;
     width: 100vw;
     height: 40%;
     max-width: 100% !important;
     border-radius: 8px;
-   
+
 }
 
 .atividades-do-parque-container h2 {
-    
+
     font-weight: 650;
-   
+
 }
 
 .atividades-do-parque-container p {
@@ -265,40 +280,40 @@ header {
 /* PLANO DE GESTÃO DA ONU:  */
 
 .plano-de-gestao-da-onu-container {
-        
-        margin-left: 100px;
-        margin-right: 100px;
-        width: 1180px;
-        /* height: 600px; */
-        max-width: 90%;
-        justify-self: center;
-        /* flex-direction: column; */
+
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 1180px;
+    /* height: 600px; */
+    max-width: 90%;
+    justify-self: center;
+    /* flex-direction: column; */
 
 
 
 }
 
 .plano-de-gestao-da-onu-container h1 {
-    
+
     margin-top: 100px;
     margin-bottom: 20px;
-    
+
 }
 
 .plano-de-gestao-da-onu-container p {
-    
+
     position: relative;
     top: -5px;
 
 }
 
 .plano-de-gestao-da-onu-container img {
-        
-        position: relative;
-        top: 40px;
-        max-width: 400px;
-        max-height: 400px;
-        border-radius: 8px;
+
+    position: relative;
+    top: 40px;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 8px;
 }
 
 
@@ -306,18 +321,18 @@ header {
 
     margin-bottom: 20px;
     display: flex;
-    
+
 
 }
 
 .plano-de-gestao-da-onu-menu #content {
-        flex-direction: column;
-    
+    flex-direction: column;
+
 }
 
 .plano-de-gestao-da-onu-menu h3 {
     margin-top: 20px;
-    
+
 }
 
 .plano-de-gestao-da-onu-container p {
@@ -328,10 +343,10 @@ header {
     font-weight: 600;
 }
 
-.plano-de-gestao-da-onu-menu li{
+.plano-de-gestao-da-onu-menu li {
     width: 70%;
     list-style: none;
-    
+
 }
 
 .plano-de-gestao-da-onu-menu li p {
@@ -350,7 +365,7 @@ header {
     width: 450px;
     height: 450px;
     border-radius: 8px;
-      
+
 }
 
 
@@ -365,7 +380,7 @@ header {
 }
 
 .plano-gestao-onu_dynamic-buttons button {
-    
+
     padding: 12px 24px;
     font-size: 16px;
     font-weight: bold;
@@ -380,24 +395,29 @@ header {
 }
 
 
-.plano-gestao-onu_dynamic-buttons button:hover {
-    
+/*TAB:*/
+
+.plano-gestao-onu_dynamic-buttons button:hover, .plano-gestao-onu_dynamic-buttons button:focus-visible {
+
     color: rgb(0, 0, 0);
     transform: scale(1.05);
-    
 
+    outline: 2px solid #000;
+    /* Pode trocar a cor/borda */
+    outline-offset: 10px;
+    border-radius: 6px;
+    /* Outros estilos do hover que você desejar */
 }
-
 
 .plano-gestao-onu_dynamic-buttons button:active {
     transform: scale(0.95);
 }
 
 .plano-gestao-onu_dynamic-buttons button.active {
-    
+
     background: linear-gradient(90deg, #40ff40, #179407);
     box-shadow: 0px 0px 12px rgb(10, 104, 7);
-    
+
     /* background: linear-gradient(40deg, #1eff00, #c4ffc2);  Gradiente top meo depois analisar */
     /* background: black; PERGUNTAR PRA GALERA DEPOIS --------------------------**** */
     color: rgb(0, 0, 0);
@@ -414,21 +434,21 @@ header {
     padding-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
-    
+
     width: 1180px;
     max-width: 90%;
     /* height: 900px; */
     justify-self: center;
-    
+
 }
 
 .midias-container .card {
     margin-top: 20px;
-    
+
 }
 
 .midias-container button {
-    
+
     display: flex;
     justify-content: center;
     margin-left: 40px;
@@ -444,7 +464,7 @@ header {
 }
 
 
-.midias-container button:hover {
+.midias-container button:hover, .midias-container button:focus-visible {
     transform: scale(1.1);
 
 }
@@ -454,7 +474,7 @@ header {
     padding-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
-    
+
     width: 1180px;
     max-width: 90%;
     height: 600px;
@@ -474,51 +494,37 @@ footer {
 
 }
 
-footer .row {
-    padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100% !important; /* Garante que ocupe toda a largura da viewport */
-}
-footer .col-1 {
-    width: 70px !important;
-    min-width: 70px !important;
-    max-width: 70px !important;
-    padding: 0px;
-}
-
-footer .col-2 {
-    width: 100px !important;
-    min-width: 100px !important;
-    max-width: 120px !important;
-    padding: 0px;
-}
-
 footer .footer-container a {
     color: white;
     text-decoration: none;
-    
+
 }
 
 
 footer .footer-container .row {
+    padding-top: 50px;
     color: white;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 0px;
- 
+    text-align: center; 
+    gap: 2vw;
+
 }
 
+
 footer .footer-container a::after {
-    content: ""; /* Elemento vazio obrigatório */
+    content: "";
+    /* Elemento vazio obrigatório */
     position: absolute;
     left: 50%;
-    bottom: -3px; /* Distância do texto */
-    width: 0%; /* Começa invisível */
-    height: 3px; /* Altura da linha */
-    background-color: rgb(255, 255, 255); /* Cor da linha */
-    transition: width 0.3s ease, left 0.3s ease; /* Suaviza a animação */
+    bottom: -3px;
+    /* Distância do texto */
+    width: 0%;
+    /* Começa invisível */
+    height: 3px;
+    /* Altura da linha */
+    background-color: rgb(255, 255, 255);
+    /* Cor da linha */
+    transition: width 0.3s ease, left 0.3s ease;
+    /* Suaviza a animação */
     transform: translateX(-50%);
 }
 

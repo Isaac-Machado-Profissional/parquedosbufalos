@@ -13,10 +13,8 @@
 }
 
 .transparency p {
-
-
-    width: 50%;
-    max-width: 600px; /* ou qualquer valor que funcione bem visualmente */
+    width: 80%;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -77,12 +75,11 @@
 
 /* ACESSIBILIDE --- QUANDO DER TAB VAI FICAR FOCADO E COM UM OUTLINE TOP */
 .accordion-header:focus-visible {
+    color: rgb(0, 0, 0); /* Cor de fundo ao passar o mouse */
     outline: 2px solid #000; /* Pode trocar a cor/borda */
     outline-offset: -2px;
     border-radius: 6px; 
 }
-
-
 
 .accordion-title {
     /* margin: 0 auto;
@@ -133,11 +130,17 @@
     width: 100%;
 }
 
+.col-custom {
+    margin-bottom: 15px;
+    
+   
+}
 
 .transparency-animals .custom-card {
     justify-self: center;
     margin-top: 15px;
     margin-bottom: 10px;
+    border-radius: 15px;
     width: 80%;
     aspect-ratio: 1 / 1.1;
     /* levemente mais alto que quadrado */
@@ -152,14 +155,11 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;             /* ocupa toda a coluna */
-    margin: 0;                /* remova margens que atrapalham */
     transition: padding 0.3 ease;
 
 }
 
-.col-custom {
-    margin-bottom: 15px;
-}
+
 
 .transparency-animals .custom-card img {
     width: 100%;
@@ -178,3 +178,13 @@
     width: 100%;
 
 }
+
+.transparency-animals .custom-card h7 {
+    margin-top: auto;
+    margin-left: 0 auto;
+    text-align: center;
+    color: #000;
+
+}
+
+

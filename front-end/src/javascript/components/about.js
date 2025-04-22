@@ -1,26 +1,49 @@
 // MAPA BRASIL:::
 
+// Seleciona o elemento da imagem
 const img = document.getElementById("mapa-brasil");
-    let zoomLevel = 1; // Começa no nível normal
-    const zoomMax = 4; // Define o nível máximo de zoom
-    const zoomStep = 1; // Define de quanto em quanto o zoom aumenta
 
-    img.addEventListener("click", (e) => {
-      const rect = img.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
+// Variáveis para controlar o zoom
+let zoomLevel = 1;    // Nível inicial
+const zoomMax = 4;    // Nível máximo de zoom
+const zoomStep = 1;   // Incremento de zoom
 
-      if (zoomLevel < zoomMax) {
-        zoomLevel += zoomStep; // Aumenta o zoom
-        img.style.transformOrigin = `${x}% ${y}%`; // Define o foco do zoom
-        img.style.transform = `scale(${zoomLevel})`;
-      } else {
-        zoomLevel = 1; // Reseta o zoom quando atinge o máximo
-        img.style.transformOrigin = "center";
-        img.style.transform = "scale(1)";
-      }
-    });
+// Função para alternar o zoom, tratando clique e teclado
+function toggleZoom(e) {
+  // Se for evento de teclado, e a tecla não for Enter, não faz nada.
+  if (e.type === "keydown" && e.key !== "Enter" && e.keyCode !== 13) {
+    return;
+  }
 
+  // Define as posições x e y para a origem do zoom.
+  // Para evento de clique, calculamos baseado na posição do mouse.
+  // Para evento de teclado, utilizamos valores padrão (centro da imagem).
+  let x, y;
+  if (e.type === "click") {
+    const rect = img.getBoundingClientRect();
+    x = ((e.clientX - rect.left) / rect.width) * 100;
+    y = ((e.clientY - rect.top) / rect.height) * 100;
+  } else {
+    // Para teclado, definimos o centro da imagem
+    x = 70;
+    y = 70;
+  }
+
+  // Aplica o zoom ou reseta se atingir o máximo
+  if (zoomLevel < zoomMax) {
+    zoomLevel += zoomStep;
+    img.style.transformOrigin = `${x}% ${y}%`;
+    img.style.transform = `scale(${zoomLevel})`;
+  } else {
+    zoomLevel = 1;
+    img.style.transformOrigin = "center";
+    img.style.transform = "scale(1)";
+  }
+}
+
+// Registra os listeners para clique e teclado
+img.addEventListener("click", toggleZoom);
+img.addEventListener("keydown", toggleZoom);
 
 // NEWSLETTER:::
 

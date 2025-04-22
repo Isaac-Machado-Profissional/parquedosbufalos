@@ -1,14 +1,26 @@
+/*OVERALL SETTINGS: */
 
- /*CELULAR:*/
+@media (max-width: 1000px){
+    #navbarMobile .nav-item {
+        margin-top: 1vh;
+    }
+}
+
+/*CELULAR:*/
 
 
- @media (min-width: 300px) and (max-width: 768px){
+@media (min-width: 300px) and (max-width: 768px) {
 
+    h1 {
+        font-size: 32px;
+    }
 
     .nav-bar {
         margin: 0.5rem;
-       
+
     }
+
+
 
 
     .nav-button {
@@ -17,9 +29,10 @@
         font-size: 0.5rem;
 
     }
+
     .text-home-container h1 {
         font-size: 2.5rem;
-        
+
     }
 
     .text-home-container p {
@@ -27,14 +40,14 @@
         white-space: normal;
         width: 220px;
     }
-    
+
     .img-mountain-background {
         width: 97%;
-       
+
     }
 
-    
-    
+
+
 
 
 
@@ -46,25 +59,23 @@
         max-width: 100%;
         height: 100%;
         justify-self: center;
-        
-    }
 
-   
+    }
 
     .atividades-do-parque-container h2 {
         font-size: 0.80rem !important;
         text-align: center;
         width: 100% !important;
-        
+
     }
 
     .atividades-do-parque-container p {
         font-size: 0.5rem !important;
         width: 100% !important;
         margin-top: -2vh;
-       
+
     }
-    
+
     .card-body {
         padding: 0px;
         margin-top: 10px;
@@ -80,19 +91,20 @@
         font-size: 1rem !important;
         top: -5px;
         position: relative;
-        
-        
-        
+
+
+
     }
 
 
-    
+
     .plano-de-gestao-da-onu-menu {
-        
-        flex-direction: column; /* um em cima do outro */
+
+        flex-direction: column;
+        /* um em cima do outro */
     }
-    
-    
+
+
 
     .plano-de-gestao-da-onu-menu img {
 
@@ -109,15 +121,15 @@
         /* margin-right: 35px; */
         margin-bottom: 35px;
         border-radius: 8px;
-          
+
     }
 
     .plano-de-gestao-da-onu-menu p {
         font-size: 0.75rem;
-        
+
     }
 
-    .plano-gestao-onu_dynamic-buttons { 
+    .plano-gestao-onu_dynamic-buttons {
         margin-top: -30px;
 
         margin-left: auto;
@@ -132,6 +144,7 @@
         width: 80%;
         margin: 0px;
     }
+
     .footer {
         justify-self: center;
     }
@@ -142,33 +155,35 @@
         width: 80%;
         margin: 0px;
     }
+
     .footer .row .container {
         padding: 0px !important;
         width: 90vw !important;
         justify-self: center;
-        
+
     }
 
-    
+
 }
 
 /*TABLET: */
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .img-mountain-background {
-        
+
         width: 80vw;
         height: 53%;
         display: block;
-        max-width: 100%; /* Garante que nunca estoure o container */
+        max-width: 100%;
+        /* Garante que nunca estoure o container */
     }
 
 }
 
 
 /* RELÓGIO: */
-@media (min-width: 0px) and (max-width: 400px){
-    
+@media (min-width: 0px) and (max-width: 400px) {
+
     .text-home-container h1 {
         font-size: 1.2rem;
     }
@@ -198,19 +213,20 @@
         height: 100%;
         justify-self: center;
         justify-items: center;
-        
+
     }
+
     .atividades-do-parque-container img {
-    
+
         margin-top: 10px;
         width: 100vw;
         height: 20%;
         max-width: 100% !important;
         border-radius: 8px;
-       
+
     }
 
-    
+
 
     .card-body {
         display: block;
@@ -232,14 +248,15 @@
         width: 100% !important;
         position: relative;
         top: -50px;
-        
+
     }
 
     .plano-de-gestao-da-onu-menu {
-        
-        flex-direction: column; /* um em cima do outro */
+
+        flex-direction: column;
+        /* um em cima do outro */
     }
-    
+
 
     .plano-de-gestao-da-onu-menu img {
 
@@ -256,22 +273,23 @@
         /* margin-right: 35px; */
         margin-bottom: 35px;
         border-radius: 8px;
-          
+
     }
 
-    .plano-gestao-onu_dynamic-buttons { 
+    .plano-gestao-onu_dynamic-buttons {
         margin-top: -30px;
         gap: 50px;
         margin-left: auto;
         margin-right: auto;
-       
+
     }
+
     .plano-gestao-onu_dynamic-buttons button {
         font-size: 0.5rem;
         width: auto;
-        
 
-        
+
+
     }
 
     .midias-container {
@@ -284,7 +302,9 @@
         margin: 0;
     }
 
-    .footer, .row, .container {
+    .footer,
+    .row,
+    .container {
         padding: 0px !important;
         width: 90vw !important;
     }
