@@ -6,8 +6,8 @@ function showTextParkManagement(section) {
         content.innerHTML = `
             <ul>
                     <li>
-                        <h3> Votação anual para o Representante do Parque </h3>
-                        <p> Votação que ocorre anualmente para o próximo representante do parque, acompanhe em nossas redes! </p>
+                        <h3> Votação bienal para o Representante do Parque </h3>
+                        <p> Votação que ocorre a cada 2 anos para o próximo representante do parque, acompanhe em nossas mídias! </p>
 
                     </li>
 
@@ -19,7 +19,7 @@ function showTextParkManagement(section) {
                         
                     <li>
                         <h3> Constantes Reuniões  </h3>
-                        <p> Inscreva-se em nossa Newsletter e receba os links para participação das reuniões do Parque! </p>
+                        <p> Inscreva-se em nossa <a href="../../../html/about.html?scrollTo=newsletter" id="newsletter-link">Newsletter</a> e receba os links para participação das reuniões do Parque! </p>
                     </li>
                     
             </ul>       
@@ -39,10 +39,20 @@ function showTextParkManagement(section) {
                 
             </ul>
         `;
+        document.getElementById("newsletter-link").addEventListener("click", function (e) {
+            e.preventDefault();
+          
+            // Marca que queremos rolar até o newsletter
+            sessionStorage.setItem("scrollToNewsletter", "true");
+          
+            // Redireciona
+            window.location.href = this.href;
+          });
+
     }
 
      // Removendo 'active' de todos os botões
-     document.querySelectorAll(".plano-gestao-onu_dynamic-buttons button").forEach((btn) => {
+     document.querySelectorAll(".parkManagement_dynamic-buttons button").forEach((btn) => {
         btn.classList.remove("active");
     });
 
@@ -50,12 +60,12 @@ function showTextParkManagement(section) {
     document.querySelector(`button[data-section="${section}"]`).classList.add("active");
 }
 
-window.showTextParkManagement = showTextParkManagement; // Expondo a função globalmente
+window.showTextParkManagement = showTextParkManagement; 
 window.onload = function() {showTextParkManagement('section1');} // Chama a function pra mostrar a seção 1 p nós assim q;
 
 
     // Adicionando os eventos de clique nos botões dinamicamente
-document.querySelectorAll(".plano-gestao-onu_dynamic-buttons button").forEach((button) => {
+document.querySelectorAll(".parkManagement_dynamic-buttons button").forEach((button) => {
     button.addEventListener("click", function () {
         showTextParkManagement(this.dataset.section);
     })

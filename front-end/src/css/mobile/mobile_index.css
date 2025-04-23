@@ -98,7 +98,7 @@
 
 
 
-    .plano-de-gestao-da-onu-menu {
+    .parkManagement-menu {
 
         flex-direction: column;
         /* um em cima do outro */
@@ -106,7 +106,7 @@
 
 
 
-    .plano-de-gestao-da-onu-menu img {
+    .parkManagement-menu img {
 
         /* position: relative; */
         /* align-items: flex-start; */
@@ -120,16 +120,18 @@
         margin-right: auto;
         /* margin-right: 35px; */
         margin-bottom: 35px;
-        border-radius: 8px;
+        border-radius: 0px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
 
     }
 
-    .plano-de-gestao-da-onu-menu p {
+    .parkManagement-menu p {
         font-size: 0.75rem;
 
     }
 
-    .plano-gestao-onu_dynamic-buttons {
+    .parkManagement_dynamic-buttons {
         margin-top: -30px;
 
         margin-left: auto;
@@ -196,7 +198,7 @@
         overflow-wrap: break-word
     }
 
-    .plano-de-gestao-da-onu-container {
+    .parkManagement-container {
         margin: 0px;
         width: 90%;
         max-width: 100%;
@@ -251,14 +253,14 @@
 
     }
 
-    .plano-de-gestao-da-onu-menu {
+    .parkManagement-menu {
 
         flex-direction: column;
         /* um em cima do outro */
     }
 
 
-    .plano-de-gestao-da-onu-menu img {
+    .parkManagement-menu img {
 
         /* position: relative; */
         /* align-items: flex-start; */
@@ -276,7 +278,7 @@
 
     }
 
-    .plano-gestao-onu_dynamic-buttons {
+    .parkManagement_dynamic-buttons {
         margin-top: -30px;
         gap: 50px;
         margin-left: auto;
@@ -284,7 +286,7 @@
 
     }
 
-    .plano-gestao-onu_dynamic-buttons button {
+    .parkManagement_dynamic-buttons button {
         font-size: 0.5rem;
         width: auto;
 

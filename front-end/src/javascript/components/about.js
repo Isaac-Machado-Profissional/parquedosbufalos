@@ -65,3 +65,22 @@ emailInput.addEventListener('input', () => {
     emailInput.classList.remove('is-valid');
   }
 });
+
+// Listener pra pegar e descer até a newslleter caso o link seja clicado
+window.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const scrollTo = urlParams.get("scrollTo");
+
+  if (scrollTo === "newsletter") {
+    const target = document.getElementById("newsletter-form");
+
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }, 500); // dá um tempo para o conteúdo carregar antes de rolar
+    }
+  }
+});

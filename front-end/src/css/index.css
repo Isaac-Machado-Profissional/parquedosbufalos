@@ -279,7 +279,7 @@ header {
 
 /* PLANO DE GESTÃO DA ONU:  */
 
-.plano-de-gestao-da-onu-container {
+.parkManagement-container {
 
     margin-left: 100px;
     margin-right: 100px;
@@ -293,21 +293,21 @@ header {
 
 }
 
-.plano-de-gestao-da-onu-container h1 {
+.parkManagement-container h1 {
 
     margin-top: 100px;
     margin-bottom: 20px;
 
 }
 
-.plano-de-gestao-da-onu-container p {
+.parkManagement-container p {
 
     position: relative;
     top: -5px;
 
 }
 
-.plano-de-gestao-da-onu-container img {
+.parkManagement-container img {
 
     position: relative;
     top: 40px;
@@ -317,7 +317,7 @@ header {
 }
 
 
-.plano-de-gestao-da-onu-menu {
+.parkManagement-menu {
 
     margin-bottom: 20px;
     display: flex;
@@ -325,17 +325,17 @@ header {
 
 }
 
-.plano-de-gestao-da-onu-menu #content {
+.parkManagement-menu #content {
     flex-direction: column;
 
 }
 
-.plano-de-gestao-da-onu-menu h3 {
+.parkManagement-menu h3 {
     margin-top: 20px;
 
 }
 
-.plano-de-gestao-da-onu-container p {
+.parkManagement-container p {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #5f5959;
@@ -343,23 +343,40 @@ header {
     font-weight: 600;
 }
 
-.plano-de-gestao-da-onu-menu li {
+.parkManagement-container a {
+    color: rgb(105, 105, 105);
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: transparent;
+    transition:
+        color 0.5s ease,
+        text-decoration-color 0.5s ease,
+}
+
+.parkManagement-container a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration-color: rgb(63, 63, 63);
+}
+
+
+.parkManagement-menu li {
     width: 70%;
     list-style: none;
 
 }
 
-.plano-de-gestao-da-onu-menu li p {
+.parkManagement-menu li p {
     position: relative;
     left: 40px;
     color: #5f5959;
 }
 
 
-.plano-de-gestao-da-onu-menu img {
+.parkManagement-menu img {
 
-    /* position: relative; */
-    /* align-items: flex-start; */
+    /* position: relative;
+    align-items: flex-start; */
     margin-left: 35px;
     margin-top: -60px;
     width: 450px;
@@ -369,7 +386,7 @@ header {
 }
 
 
-.plano-gestao-onu_dynamic-buttons {
+.parkManagement_dynamic-buttons {
     display: flex;
     gap: 70px;
     margin-top: -40px;
@@ -379,7 +396,7 @@ header {
 
 }
 
-.plano-gestao-onu_dynamic-buttons button {
+.parkManagement_dynamic-buttons button {
 
     padding: 12px 24px;
     font-size: 16px;
@@ -394,7 +411,7 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.plano-gestao-onu_dynamic-buttons button:focus-visible {
+.parkManagement_dynamic-buttons button:focus-visible {
     transform: scale(1.05);
 
     outline: 2px solid #000;
@@ -406,18 +423,18 @@ header {
 
 /*TAB:*/
 
-.plano-gestao-onu_dynamic-buttons button:hover {
+.parkManagement_dynamic-buttons button:hover {
     color: rgb(0, 0, 0);
     transform: scale(1.05);
     border-radius: 6px;
     /* Outros estilos do hover que você desejar */
 }
 
-.plano-gestao-onu_dynamic-buttons button:active {
+.parkManagement_dynamic-buttons button:active {
     transform: scale(0.95);
 }
 
-.plano-gestao-onu_dynamic-buttons button.active {
+.parkManagement_dynamic-buttons button.active {
 
     background: linear-gradient(90deg, #40ff40, #179407);
     box-shadow: 0px 0px 12px rgb(10, 104, 7);
@@ -468,7 +485,8 @@ header {
 }
 
 
-.midias-container button:hover, .midias-container button:focus-visible {
+.midias-container button:hover,
+.midias-container button:focus-visible {
     transform: scale(1.1);
 
 }
@@ -508,7 +526,7 @@ footer .footer-container a {
 footer .footer-container .row {
     padding-top: 50px;
     color: white;
-    text-align: center; 
+    text-align: center;
     gap: 2vw;
 
 }
