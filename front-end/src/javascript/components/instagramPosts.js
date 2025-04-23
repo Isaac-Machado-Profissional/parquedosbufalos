@@ -83,6 +83,25 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
     });
 
     container.innerHTML = html;
+
+    // Registra o listener de clique usando event delegation para os links de toggle
+    container.addEventListener('click', function (e) {
+      if (e.target.classList.contains('toggle-caption')) {
+        e.preventDefault();
+        const captionEl = e.target.closest('.instagram-caption');
+        const expanded = captionEl.getAttribute('data-expanded') === 'true';
+
+        if (expanded) {
+          // Volta para a versão truncada
+          captionEl.innerHTML = captionEl.getAttribute('data-truncatedtext');
+          captionEl.setAttribute('data-expanded', 'false');
+        } else {
+          // Expande para a legenda completa
+          captionEl.innerHTML = captionEl.getAttribute('data-fulltext');
+          captionEl.setAttribute('data-expanded', 'true');
+        }
+      }
+    });
   } else {
     container.innerHTML = `<p>Nenhum post encontrado.<br> https://www.instagram.com/parquedostestes/</p>`;
   }
