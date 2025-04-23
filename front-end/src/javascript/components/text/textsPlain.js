@@ -19,10 +19,12 @@ function showTextParkManagement(section) {
                         
                     <li>
                         <h3> Constantes Reuniões  </h3>
-                        <p> Inscreva-se em nossa <a href="../../../html/about.html?scrollTo=newsletter" id="newsletter-link">Newsletter</a> e receba os links para participação das reuniões do Parque! </p>
+                        <p> Inscreva-se em nossa <a href="../../../html/about.html?scrollTo=newsletter" id="newsletter-form">Newsletter</a> e receba os links para participação das reuniões do Parque! </p>
+
                     </li>
                     
             </ul>       
+            
         `;
     } else if (section === 'section2') {
         content.innerHTML = `
@@ -39,18 +41,7 @@ function showTextParkManagement(section) {
                 
             </ul>
         `;
-        document.getElementById("newsletter-link").addEventListener("click", function (e) {
-            e.preventDefault();
-          
-            // Marca que queremos rolar até o newsletter
-            sessionStorage.setItem("scrollToNewsletter", "true");
-          
-            // Redireciona
-            window.location.href = this.href;
-          });
-
     }
-
      // Removendo 'active' de todos os botões
      document.querySelectorAll(".parkManagement_dynamic-buttons button").forEach((btn) => {
         btn.classList.remove("active");
