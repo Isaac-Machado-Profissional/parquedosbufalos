@@ -1,22 +1,25 @@
-@media (min-width: 300px) and (max-width: 768px){
 
-    .calendar-container iframe {
-        width: 100vw !important;
-    }
-}
 
 @media (min-width: 768px) and (max-width: 1000px){
 
     .calendar-container iframe {
-        width: 100vw !important;
-        height: 65vh !important;
+        width: 90vw !important;
+        height: 70vh !important;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 768px){
+
+    .calendar-container iframe {
+        width: 90vw !important;
+        height: 50vh !important;
     }
 }
 
 @media (min-width: 0px) and (max-width: 300px){
 
     .calendar-container iframe {
-        width: 100vw !important;
+        width: 90vw !important;
         height: 100vh !important;
     }
 }

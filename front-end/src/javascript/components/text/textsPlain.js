@@ -1,6 +1,6 @@
 // Função para alterar o conteúdo dinamicamente do plano de Gestão
 function showTextParkManagement(section) {
-    var content = document.getElementById('plano-gestao-do-parque_dynamic-content');
+    var content = document.getElementById('parkManagement-content');
 
     if (section === 'section1') {
         content.innerHTML = `

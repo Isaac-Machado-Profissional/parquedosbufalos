@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -109,7 +109,7 @@
 
             <div class="parkManagement-menu">
 
-                <ul id="plano-gestao-do-parque_dynamic-content">
+                <ul id="parkManagement-content">
                     <!-- Conteúdo carregado dinamicamente -->
                 </ul>
                 <img src="src/assets/index/parkManagement/Plano_gestao.jpg"
@@ -138,9 +138,34 @@
                         <p class="instagram-caption">${post.caption || ''}</p>
                         <a class="instagram-link" href="${post.permalink}" target="_blank">Ver no Instagram</a>
                     </div> -->
-
                 </div>
 
+            </div>
+        </div>
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Header com apenas o botão de fechar -->
+                    <div class="modal-header justify-content-end">
+                        <button type="button" class="bi bi-x" data-bs-dismiss="modal" aria-label="Fechar"><i
+                                class=""></i></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <video
+                          id="videoPlayer"
+                          class="video-js vjs-default-skin w-100"
+                          controls
+                          preload="auto"
+                          data-setup='{}'>
+                          <!-- fonte será atualizada dinamicamente -->
+                        </video>
+                      </div>
+                      
+                    <!-- Footer para exibir o título ou trecho do vídeo -->
+                    <div class="modal-footer justify-content-center">
+                        <p id="videoModalFooter" class="mb-0"></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -153,27 +178,27 @@
 
     <footer>
         <div class="container footer-container text-center">
-          <!-- Wrapper auto‑sized e centralizado -->
-          <div class="d-inline-block">
-            
-            <!-- LINHA ÚNICA EM DESKTOP: os 4 + Sobre -->
-            <div class="row gx-3">
-              <div class="col-auto"><a href="index.html">Início</a></div>
-              <div class="col-auto"><a href="src/html/history.html">História</a></div>
-              <div class="col-auto"><a href="src/html/transparency.html">Transparência</a></div>
-              <div class="col-auto"><a href="src/html/news.html">Notícias</a></div>
-              <!-- “Sobre” só aparece aqui em ≥md -->
-              <div class="col-auto d-none d-md-block"><a href="src/html/about.html">Sobre</a></div>
+            <!-- Wrapper auto‑sized e centralizado -->
+            <div class="d-inline-block">
+
+                <!-- LINHA ÚNICA EM DESKTOP: os 4 + Sobre -->
+                <div class="row gx-3">
+                    <div class="col-auto"><a href="index.html">Início</a></div>
+                    <div class="col-auto"><a href="src/html/history.html">História</a></div>
+                    <div class="col-auto"><a href="src/html/transparency.html">Transparência</a></div>
+                    <div class="col-auto"><a href="src/html/news.html">Notícias</a></div>
+                    <!-- “Sobre” só aparece aqui em ≥md -->
+                    <div class="col-auto d-none d-md-block"><a href="src/html/about.html">Sobre</a></div>
+                </div>
+
+                <!-- QUEBRA + “Sobre” EM MOBILE: só em <md -->
+                <div class="row gx-0 mt-3 justify-content-start d-flex d-md-none">
+                    <div class="col-auto"><a href="src/html/about.html">Sobre</a></div>
+                </div>
+
             </div>
-            
-            <!-- QUEBRA + “Sobre” EM MOBILE: só em <md -->
-            <div class="row gx-0 mt-3 justify-content-start d-flex d-md-none">
-                <div class="col-auto"><a href="src/html/about.html">Sobre</a></div>
-            </div>
-            
-          </div>
         </div>
-      </footer>
+    </footer>
     <script src="src/javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

@@ -121,8 +121,7 @@
         /* margin-right: 35px; */
         margin-bottom: 35px;
         border-radius: 0px;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
+        border-radius: 8px;
 
     }
 
@@ -185,7 +184,7 @@
 
 /* RELÓGIO: */
 @media (min-width: 0px) and (max-width: 400px) {
-
+    
     .text-home-container h1 {
         font-size: 1.2rem;
     }
@@ -194,9 +193,18 @@
         font-size: 0.80rem;
 
         white-space: normal;
-        width: 220px;
         overflow-wrap: break-word
     }
+
+    h1 {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
 
     .parkManagement-container {
         margin: 0px;
@@ -246,11 +254,19 @@
 
     .card-text {
         font-size: 0.3rem !important;
-        display: block;
+        display: inline-block;
         width: 100% !important;
         position: relative;
-        top: -50px;
-
+        padding-bottom: 50px;
+        /* top: -20vh; */
+    }
+    
+    
+    .card-body p {
+        width: 100%;
+        margin: 0; /* Garante que o <p> não tenha espaçamento interno extra */
+        white-space: normal;
+        
     }
 
     .parkManagement-menu {
@@ -280,10 +296,18 @@
 
     .parkManagement_dynamic-buttons {
         margin-top: -30px;
-        gap: 50px;
+        gap: 10px;
         margin-left: auto;
         margin-right: auto;
 
+    }
+
+    .parkManagement_dynamic-buttons button {
+        width: auto;
+    }
+
+    .parkManagement-menu ul {
+        padding: 0px;
     }
 
     .parkManagement_dynamic-buttons button {

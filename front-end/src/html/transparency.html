@@ -55,33 +55,29 @@
         <div class="transparency-container">
             <div class="transparency">
                 <h1>Transparência</h1>
-                <p>Problematizações e tópicos debatidos em referência a situações problema que afligem a região do Jardim Apurá.</p>
+                <p>Problematizações e tópicos debatidos em referência a situações problema que afligem a região do
+                    Jardim Apurá.</p>
             </div>
 
             <div class="accordion">
                 <!-- Item 1: Meio Ambiente -->
                 <div class="accordion-item">
 
-                    <button class="accordion-header"
-                            aria-expanded="false"
-                            aria-controls="content-1-meio_ambiente"
-                            id="content-1-meio_ambiente"
-                            onclick="toggleAccordion(this, '1-meio_ambiente')">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="content-1-meio_ambiente"
+                        id="content-1-meio_ambiente" onclick="toggleAccordion(this, '1-meio_ambiente')">
                         <span class="accordion-title">Meio Ambiente</span>
                         <span class="arrow">&#9660;</span>
 
                     </button>
 
-                    
+
                     <div class="accordion-content"></div>
                 </div>
 
                 <!-- Item 2: Educação -->
                 <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this, '2-educacao')"
-                            aria-expanded="false"
-                            aria-controls="content-2-educacao"
-                            id="content-2-educacao">
+                    <button class="accordion-header" onclick="toggleAccordion(this, '2-educacao')" aria-expanded="false"
+                        aria-controls="content-2-educacao" id="content-2-educacao">
                         <span class="accordion-title">Educação</span>
                         <span class="arrow">&#9660;</span>
                     </button>
@@ -91,9 +87,7 @@
                 <!-- Item 3: Construção -->
                 <div class="accordion-item">
                     <button class="accordion-header" onclick="toggleAccordion(this, '3-construcao')"
-                            aria-expanded="false"
-                            aria-controls="content-3-construcao"
-                            id="content-3-construcao">
+                        aria-expanded="false" aria-controls="content-3-construcao" id="content-3-construcao">
                         <span class="accordion-title">Construção</span>
                         <span class="arrow">&#9660;</span>
                     </button>
@@ -103,9 +97,7 @@
                 <!-- Item 4: Órgãos Públicos -->
                 <div class="accordion-item">
                     <button class="accordion-header" onclick="toggleAccordion(this, '4-orgaos_publicos')"
-                            aria-expanded="false"
-                            aria-controls="content-4-orgaos_publicos"
-                            id="content-4-orgaos_publicos">
+                        aria-expanded="false" aria-controls="content-4-orgaos_publicos" id="content-4-orgaos_publicos">
                         <span class="accordion-title">Órgãos Públicos</span>
                         <span class="arrow">&#9660;</span>
                     </button>
@@ -114,10 +106,8 @@
 
                 <!-- Item 5: Animais -->
                 <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this, '5-animais')"
-                            aria-expanded="false"
-                            aria-controls="content-5-animais"
-                            id="content-5-animais">
+                    <button class="accordion-header" onclick="toggleAccordion(this, '5-animais')" aria-expanded="false"
+                        aria-controls="content-5-animais" id="content-5-animais">
                         <span class="accordion-title">Animais</span>
                         <span class="arrow">&#9660;</span>
                     </button>
@@ -127,9 +117,7 @@
                 <!-- Item 6: Preservação -->
                 <div class="accordion-item">
                     <button class="accordion-header" onclick="toggleAccordion(this, '6-preservacao')"
-                            aria-expanded="false"
-                            aria-controls="content-6-preservacao"
-                            id="content-6-preservacao">
+                        aria-expanded="false" aria-controls="content-6-preservacao" id="content-6-preservacao">
                         <span class="accordion-title">Preservação</span>
                         <span class="arrow">&#9660;</span>
                     </button>
@@ -141,26 +129,27 @@
     </div>
     <footer>
         <div class="container footer-container text-center">
-          <!-- Wrapper auto‑sized e centralizado -->
-          <div class="d-inline-block">
-            
-            <!-- LINHA ÚNICA EM DESKTOP: os 4 + Sobre -->
-            <div class="row gx-3">
-              <div class="col-auto"><a href="../../index.html">Início</a></div>
-              <div class="col-auto"><a href="src/html/history.html">História</a></div>
-              <div class="col-auto"><a href="src/html/transparency.html">Transparência</a></div>
-              <div class="col-auto"><a href="src/html/news.html">Notícias</a></div>
-              <!-- “Sobre” só aparece aqui em ≥md -->
-              <div class="col-auto d-none d-md-block"><a href="src/html/about.html">Sobre</a></div>
+            <!-- Wrapper auto‑sized e centralizado -->
+            <div class="d-inline-block">
+
+                <!-- LINHA ÚNICA EM DESKTOP: os 4 + Sobre -->
+                <div class="row gx-3">
+                    <div class="col-auto"><a href="../../index.html">Início</a></div>
+                    <div class="col-auto"><a href="./history.html">História</a></div>
+                    <div class="col-auto"><a href="./transparency.html">Transparência</a></div>
+                    <div class="col-auto"><a href="./news.html">Notícias</a></div>
+                    <!-- “Sobre” só aparece aqui em ≥md -->
+                    <div class="col-auto d-none d-md-block"><a href="src/html/about.html">Sobre</a></div>
+                </div>
+                <!-- QUEBRA + “Sobre” EM MOBILE: só em <md -->
+                <div class="row gx-0 mt-3 justify-content-start d-flex d-md-none">
+                    <div class="col-auto"><a href="src/html/about.html">Sobre</a></div>
+                </div>
+
             </div>
-            <!-- QUEBRA + “Sobre” EM MOBILE: só em <md -->
-            <div class="row gx-0 mt-3 justify-content-start d-flex d-md-none">
-                <div class="col-auto"><a href="src/html/about.html">Sobre</a></div>
-            </div>
-            
-          </div>
         </div>
-      </footer>
+    </footer>
+
     <script src="../javascript/components/text/textsTransparency.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

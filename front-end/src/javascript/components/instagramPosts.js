@@ -1,3 +1,6 @@
+import videojs from '../../assets/video-js-v8.22.0/video.js';
+import '../../assets/video-js-v8.22.0/video-js.css';
+
 export const renderInstagramPosts = async (fetchInstagramFeed) => {
   // Busca os posts via a função importada
   const posts = await fetchInstagramFeed();
@@ -13,7 +16,7 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
   container.innerHTML = "";
 
   if (posts && posts.data) {
-    // Limita para 6 posts
+    // Limita para 3 posts (por exemplo)
     const postsToDisplay = posts.data.slice(0, 3);
     let html = "";
 
@@ -22,35 +25,72 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
       let truncatedCaption = fullCaption;
       let shouldTruncate = false;
 
-      // Se a legenda tiver mais de 80 caracteres, a truncamos para os primeiros 50
-      if (fullCaption.length > 150) {
-        truncatedCaption = fullCaption.substring(0, 100);
+      // Trunca a legenda se for maior que 100 caracteres
+      if (fullCaption.length > 30) {
+        truncatedCaption = fullCaption.substring(0, 30);
         shouldTruncate = true;
       }
 
       let mediaElement = "";
+
+      // Manipula cada tipo de mídia
       if (post.media_type === "VIDEO") {
+        // Para vídeos: exibe a thumbnail com data-caption para uso no modal
         const thumbnail = post.thumbnail_url ? post.thumbnail_url : post.media_url;
         mediaElement = `
-          <div class="video-thumbnail position-relative" data-video-url="${post.media_url}">
-            <img src="${thumbnail}" class="card-img-top" alt="${post.caption || 'Sem legenda'}">
-            <span class="play-icon position-absolute" style="top:50%; left:50%; transform: translate(-50%, -50%);">
-              <i class="bi bi-play-circle-fill" style="font-size: 3rem; color: rgba(255,255,255,0.8);"></i>
-            </span>
+        <div class="video-thumbnail position-relative" 
+          data-video-url="${post.media_url}" 
+          data-caption="${post.caption ? post.caption.substring(0, 30) : 'Vídeo'}"
+          style="cursor: pointer;">
+    
+          <img src="${thumbnail}" class="card-img-top" alt="${post.caption || 'Sem legenda'}">
+    
+          <span class="play-button">
+            <i class="bi bi-circle-fill"></i>
+            <i class="bi bi-play-fill"></i>
+          </span>
+        </div>
+        `;
+      } else if (post.media_type === "CAROUSEL_ALBUM" && post.children && post.children.data) {
+        // Se for post carrossel, monta um slider (utilizando o Bootstrap Carousel)
+        let carouselItems = "";
+        post.children.data.forEach((child, childIndex) => {
+          carouselItems += `
+            <div class="carousel-item ${childIndex === 0 ? "active" : ""}">
+              <img src="${child.media_url}" class="d-block w-100" alt="${post.caption || 'Imagem do post'}">
+            </div>
+          `;
+        });
+        mediaElement = `
+          <div id="carousel${post.id}" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              ${carouselItems}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel${post.id}" data-bs-slide="prev">
+              <span class="carousel-custom-icon">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+              </span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel${post.id}" data-bs-slide="next">
+              <span class="carousel-custom-icon">
+                <i class="bi bi-arrow-right-circle-fill"></i>
+              </span>
+            </button>
           </div>
         `;
       } else {
+        // Para imagem única ou outros tipos de post
         mediaElement = `<img src="${post.media_url}" class="card-img-top" alt="${post.caption || 'Sem legenda'}">`;
       }
 
-      // Abre nova linha a cada 3 posts
+      // Abre uma nova linha a cada 3 posts
       if (index % 3 === 0) {
         html += `<div class="row">`;
       }
 
       let captionHTML = "";
       if (shouldTruncate) {
-        // Usamos .replace(/"/g, '&quot;') para garantir que nenhuma aspa quebre o atributo
         const truncatedHTML = `${truncatedCaption} … <a href="#" class="toggle-caption">mais</a>`;
         const fullHTML = `${fullCaption} <a href="#" class="toggle-caption">menos</a>`;
         captionHTML = `
@@ -84,7 +124,7 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
 
     container.innerHTML = html;
 
-    // Registra o listener de clique usando event delegation para os links de toggle
+    // Listener para a funcionalidade de toggle (mais/menos) nas legendas
     container.addEventListener('click', function (e) {
       if (e.target.classList.contains('toggle-caption')) {
         e.preventDefault();
@@ -92,11 +132,9 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
         const expanded = captionEl.getAttribute('data-expanded') === 'true';
 
         if (expanded) {
-          // Volta para a versão truncada
           captionEl.innerHTML = captionEl.getAttribute('data-truncatedtext');
           captionEl.setAttribute('data-expanded', 'false');
         } else {
-          // Expande para a legenda completa
           captionEl.innerHTML = captionEl.getAttribute('data-fulltext');
           captionEl.setAttribute('data-expanded', 'true');
         }
@@ -118,4 +156,44 @@ document.querySelectorAll(".midias-container button").forEach((button) => {
       outputDiv.innerHTML = "";
     }
   });
+});
+
+// Inicializa o Video.js
+
+const videoJsPlayer = videojs('videoPlayer', {
+  autoplay: false,
+  controls: true,
+  fluid: true,      // para responsividade
+  controlBar: {
+    volumePanel: { inline: true }
+  }
+});
+
+document.addEventListener('click', function (e) {
+  const thumb = e.target.closest('.video-thumbnail');
+  if (!thumb) return;
+
+  e.preventDefault();
+  const videoUrl = thumb.getAttribute('data-video-url');
+  const caption = thumb.getAttribute('data-caption') || 'Vídeo';
+  if (!videoUrl) return;
+
+  // Atualiza rodapé
+  document.getElementById('videoModalFooter').textContent = caption;
+
+  // Troca a fonte do Video.js e prepara reprodução
+  videoJsPlayer.src({ src: videoUrl, type: 'video/mp4' });  // define nova src :contentReference[oaicite:3]{index=3}
+  videoJsPlayer.load();                                      // recarrega o elemento
+  videoJsPlayer.play();                                      // toca automaticamente
+
+  // Abre o modal
+  const modalEl = document.getElementById('videoModal');
+  const bsModal = new bootstrap.Modal(modalEl);
+  bsModal.show();
+
+  // No fechamento, pausa e limpa fonte
+  modalEl.addEventListener('hidden.bs.modal', function () {
+    videoJsPlayer.pause();
+    videoJsPlayer.src({ src: '', type: '' });
+  }, { once: true });
 });

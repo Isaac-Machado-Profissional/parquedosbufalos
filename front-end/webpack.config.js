@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const porta = 9000
 
 module.exports = {
   entry: './src/javascript/script.js', // Arquivo de entrada
@@ -13,13 +14,13 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /node_modules|video.min.js/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+            compact: false,
+          },
+        },
       },
       {
         test: /\.css$/, 
@@ -63,7 +64,7 @@ module.exports = {
     ],
     
     compress: true, // Ativar compressão gzip
-    port: 9000, // Porta 
+    port: porta, // Porta 
     open: true, // Abrir automaticamente o navegador
     hot: true, // Ativa o Hot Module Replacement (HMR)
   },
