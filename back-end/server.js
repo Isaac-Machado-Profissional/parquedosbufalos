@@ -2,7 +2,7 @@ require('dotenv').config(); // Carrega as variáveis do .env
 
 const express = require('express');
 const app = express();
-const instagramRoutes = require('./routes/instagramRoutes');
+const instagramRoutes = require('./src/api/routes/instagramRoutes');
 
 app.use(express.json());
 
