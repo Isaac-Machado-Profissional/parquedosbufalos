@@ -85,29 +85,18 @@
 
     </div>
 
-    <div class="newsletter-container">
-        <form id="newsletter-form" class="needs-validation" novalidate>
-            <div class="row justify-content-center">
-                <div class="col justify-content-center">
-                    <div class="row justify-content-center">
-                        <h1>Newsletter</h1>
-                    </div>
-                    <div class="row justify-content-center">
-                        <p>Insira seu e-mail e receba notícias e avisos da região!</p>
-                    </div>
-
-                    <div class="row justify-content-center">
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail"
-                            required />
-                        <div class="valid-feedback">E-mail válido!</div>
-                        <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
-                </div>
-            </div>
+    <div class="newsletter-container" id="newsletter-container">
+        <form id="newsletter-form" class="needs-validation col" novalidate>
+            <h1>Newsletter</h1>
+            <p>Insira seu e-mail e receba notícias e avisos da região!</p>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" required />
+            
+            <div class="valid-feedback">E-mail válido!</div>
+            <div class="invalid-feedback">E-mail inválido.</div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+    </div>
+    </form>
     </div>
 
 
@@ -123,11 +112,11 @@
                     <div class="col-auto"><a href="./transparency.html">Transparência</a></div>
                     <div class="col-auto"><a href="./news.html">Notícias</a></div>
                     <!-- “Sobre” só aparece aqui em ≥md -->
-                    <div class="col-auto d-none d-md-block"><a href="src/html/about.html">Sobre</a></div>
+                    <div class="col-auto d-none d-md-block"><a href="./about.html">Sobre</a></div>
                 </div>
                 <!-- QUEBRA + “Sobre” EM MOBILE: só em <md -->
                 <div class="row gx-0 mt-3 justify-content-start d-flex d-md-none">
-                    <div class="col-auto"><a href="src/html/about.html">Sobre</a></div>
+                    <div class="col-auto"><a href="./about.html">Sobre</a></div>
                 </div>
             </div>
         </div>

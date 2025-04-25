@@ -25,7 +25,7 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
       let truncatedCaption = fullCaption;
       let shouldTruncate = false;
 
-      // Trunca a legenda se for maior que 100 caracteres
+      // Trunca a legenda se for maior que 30 caracteres
       if (fullCaption.length > 30) {
         truncatedCaption = fullCaption.substring(0, 30);
         shouldTruncate = true;
@@ -145,9 +145,10 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
   }
 };
 
-document.querySelectorAll(".midias-container button").forEach((button) => {
-  button.addEventListener("click", async function () {
-    const outputDiv = document.getElementById("output-instagram");
+document.addEventListener("DOMContentLoaded", function () {
+  const outputDiv = document.getElementById("output-instagram");
+
+  async function toggleInstagramFeed() {
     if (outputDiv.childElementCount === 0) {
       outputDiv.innerHTML = "<p>Carregando...</p>";
       const { fetchInstagramFeed } = await import('../services/instagramService.js');
@@ -155,8 +156,17 @@ document.querySelectorAll(".midias-container button").forEach((button) => {
     } else {
       outputDiv.innerHTML = "";
     }
+  }
+
+  // Roda a função automaticamente assim que a página carregar
+  toggleInstagramFeed();
+
+  // Adiciona o evento de clique para alternar o estado
+  document.querySelectorAll(".midias-container button").forEach((button) => {
+    button.addEventListener("click", toggleInstagramFeed);
   });
 });
+
 
 // Inicializa o Video.js
 
@@ -182,7 +192,7 @@ document.addEventListener('click', function (e) {
   document.getElementById('videoModalFooter').textContent = caption;
 
   // Troca a fonte do Video.js e prepara reprodução
-  videoJsPlayer.src({ src: videoUrl, type: 'video/mp4' });  // define nova src :contentReference[oaicite:3]{index=3}
+  videoJsPlayer.src({ src: videoUrl, type: 'video/mp4' }); 
   videoJsPlayer.load();                                      // recarrega o elemento
   videoJsPlayer.play();                                      // toca automaticamente
 

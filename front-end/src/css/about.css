@@ -99,7 +99,8 @@
 
 .newsletter-container {
     background: #74C474; 
-    padding: 80px 20px;
+    padding: 10%;
+    text-align: center;
 
 }
 
@@ -111,32 +112,44 @@
     grid-template-columns: 1fr; /* Define apenas uma coluna central */
     justify-content: center;
     text-align: center;
+    
 }
 
 /* Título */
 
 
 /* Formulário */
+
 .newsletter-container .col {
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0px;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
+    width: 100%;
+
+    
+}
+.newsletter-container .row {
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    
+
+    
 }
 
+
+
 .newsletter-container .col h1 {
+    margin: 20px;
     color: #000;
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.newsletter-container {
-    text-align: center;
-}
+
 
 /* Input e Botão alinhados em Grid */
 .newsletter-container form {
@@ -175,20 +188,12 @@
     box-shadow: 0px 0px 8px #40ff40(2, 255, 56, 0.5);
 }
 
-.valid-feedback,
-.invalid-feedback {
-  position: absolute;
-  top: 205px;
-  left: 0;
-  height: 20px;
-  font-size: 0.875em;
-}
-
 /* Botão de Envio */
 .newsletter-container button {
     /* background: linear-gradient(90deg, #007bff, #0056b3); */
     background-color: #219445;
-    margin-top: 30px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     justify-self: center;
     color: rgb(255, 255, 255);
     padding: 12px;
@@ -211,4 +216,11 @@
     background-color: #21F421 !important;
     box-shadow: 0px 0px 8px #74C474 !important;
     outline: #2d992d !important
+}
+
+
+input .form-control {
+    margin: 0 auto !important;
+    justify-self: center !important;
+    padding: 0 auto auto !important;
 }

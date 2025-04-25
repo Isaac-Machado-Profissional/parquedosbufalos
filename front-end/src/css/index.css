@@ -243,7 +243,7 @@ header {
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    top: -10px;
+    top: 1vh;
     margin-top: 40px;
 
     padding-right: 20px;

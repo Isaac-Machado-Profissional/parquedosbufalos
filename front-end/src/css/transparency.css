@@ -57,6 +57,12 @@
 
 }
 
+.accordion-content img {
+    display: block;
+    margin: 10px auto;
+}
+
+
 .accordion-header:hover {
     color: rgb(0, 0, 0); /* Cor de fundo ao passar o mouse */
 }
@@ -129,6 +135,22 @@
     word-break: break-word;
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .col-custom {
     margin-bottom: 15px;

@@ -6,7 +6,7 @@ function showTextParkManagement(section) {
         content.innerHTML = `
             <ul>
                     <li>
-                        <h3> Votação bienal para o Representante do Parque </h3>
+                        <h3> Votação Bienal para o Representante do Parque </h3>
                         <p> Votação que ocorre a cada 2 anos para o próximo representante do parque, acompanhe em nossas mídias! </p>
 
                     </li>
@@ -19,7 +19,7 @@ function showTextParkManagement(section) {
                         
                     <li>
                         <h3> Constantes Reuniões  </h3>
-                        <p> Inscreva-se em nossa <a href="../../../html/about.html?scrollTo=newsletter" id="newsletter-form">Newsletter</a> e receba os links para participação das reuniões do Parque! </p>
+                        <p> Inscreva-se em nossa <a href="../../../html/about.html?scrollTo=newsletter" id="newsletter-container">Newsletter</a> e receba os links para participação das reuniões do Parque! </p>
 
                     </li>
                     

@@ -72,7 +72,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const scrollTo = urlParams.get("scrollTo");
 
   if (scrollTo === "newsletter") {
-    const target = document.getElementById("newsletter-form");
+    const target = document.getElementById("newsletter-container");
 
     if (target) {
       setTimeout(() => {
