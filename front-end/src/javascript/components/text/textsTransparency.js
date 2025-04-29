@@ -1,4 +1,13 @@
-// Função modificada para receber um container e preencher o conteúdo nele
+import { showAnimals } from './animais.js';
+
+
+document.querySelectorAll('.accordion-header').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const code = btn.dataset.code;
+    toggleAccordion(btn, code);
+  });
+});
+
 function showTextTransparency(code, container) {
   const texts = {
     '1-meio_ambiente': `
@@ -12,78 +21,24 @@ function showTextTransparency(code, container) {
     
       </p>
     `,
+    
     '2-educacao': `
       <p><strong>A Educação aos redores do Jardim Apurá se mostra com uma constante dificuldade de acesso, principalmente às crianças, com mais de 8km de distância de uma escola<br></strong> 
       <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.</p>
     `,
-    '3-construcao': `
+    '3-agua' : '<p> <strong>A questão Hídrica</strong> que cerca os arredores do Parque dos Búfalos se faz necessário conhecimento prévio de sua situação, com a qual brevemente podemos descrever como de extrema poluição por volta do que cerca toda a <strong>Represa Billings</strong></p>',
+
+    '4-construcao': `
       <p><strong>A Construção e reforma do Parque deve ser um ponto importante a </strong> 
       <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.</p>
     `,
-    '4-orgaos_publicos': `
+    '5-orgaos_publicos': `
       <p><strong>Os órgãos públicos deveriam dar a importância necessária a um parque tão grande quanto este, mais de 65 hectares originais de terra <br> </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.</p>
     `,
-    '5-animais': `
-      <p><strong>A fauna local do parque dos búfalos é de prestígio nacional, com... </strong>
-      <br>Lorem Ipsum Morbi a congue nisi. adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus<br></p>
-          <div class="row transparency-animals">
-            <div class="col-6 col-md-4 col-lg-3 col-custom">
-              <div class="custom-card">
-                <img class="img-fluid" src="https://th.bing.com/th/id/OIP.wvM_yWrrGpOh4etfCwRV6wHaEQ?rs=1&pid=ImgDetMain" alt="Imagem 1">
-                        <h7> Lobo Terrível </h7>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3 col-custom">
-              <div class="custom-card">
-                <img class="img-fluid" src="https://i.pinimg.com/736x/e2/41/d4/e241d40c48058183f08a348fcbc80514.jpg" alt="Imagem 2">
-                        <h7> Cachorro </h7>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3 col-custom">
-              <div class="custom-card">
-                <img class="img-fluid" src="https://th.bing.com/th/id/OIP.GyAZttUj6ASIbA9OMmL1DAHaIS?w=685&h=766&rs=1&pid=ImgDetMain" alt="Imagem 3">
-                          <h7> Cachorro </h7>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3 col-custom">
-              <div class="custom-card">
-                <img class="img-fluid" src="https://i.pinimg.com/736x/4a/8c/c7/4a8cc7b18d90d6b7abf19d130ac078dc.jpg" alt="Imagem 4">
-                <h7> Cachorra </h7>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-custom">
-              <div class="custom-card">
-                <img class="img-fluid" src="https://th.bing.com/th/id/OIP.SydGdkzEyM3f6spfKzmgRAAAAA?w=300&h=250&rs=1&pid=ImgDetMain" alt="Imagem 4">
-                <h7> Pikachu </h7>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-custom">
-              <div class="custom-card">
-                <img class="img-fluid" src="https://th.bing.com/th/id/OIP.1AoZz5SaP2nSFJX8Uw1ZZgHaH_?rs=1&pid=ImgDetMain" alt="Imagem 4">
-                <h7> Squirdle </h7>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-custom">
-              <div class="custom-card">
-                <img class="img-fluid" src="https://th.bing.com/th/id/OIP.880MLhVwckHNM8P-LjpdegHaHa?rs=1&pid=ImgDetMain" alt="Imagem 4">
-                <h7> Celebi </h7>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-custom">
-              <div class="custom-card">
-                <img class="img-fluid" src="https://th.bing.com/th/id/R.0c1d913edb60278c054710fc5a7d2689?rik=t1N94Mt79jMQXg&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Imagem 4">
-                <h7> Greeninja </h7>
-              </div>
-            </div>
-
-          </div>
-    `,
-    '6-preservacao': `
+    '6-animais': showAnimals,
+    '7-preservacao': `
       <p><strong>Preservação:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.</p>
     `
   };

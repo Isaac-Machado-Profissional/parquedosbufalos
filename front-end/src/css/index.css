@@ -1,8 +1,7 @@
 /*FIRST HOME SCREEN*/
-html,
-body {
-    margin: 0;
-    padding: 0;
+html {
+    background-color: #ffffff;
+    background-color: #343333;
 
 
 }
@@ -510,10 +509,8 @@ header {
 
 
 footer {
-    height: 70vh;
+    height: 300px;
     background-color: #343333;
-    max-height: 100%;
-
 }
 
 footer .footer-container a {

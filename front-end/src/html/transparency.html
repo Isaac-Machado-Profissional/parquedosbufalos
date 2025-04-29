@@ -33,13 +33,11 @@
                     <img src="../assets/Logo-Parque-dos-Bufalos_png.ico" alt="Logo do Parque dos Búfalos" class="logo">
                 </a>
 
-                <!-- Botão "Hamburger" para Mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile"
                     aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Itens de Navegação -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarMobile">
                     <ul class="navbar-nav nav-button">
                         <li class="nav-item"><a href="../../index.html" class="nav-link ">Início</a></li>
@@ -63,8 +61,9 @@
                 <!-- Item 1: Meio Ambiente -->
                 <div class="accordion-item">
 
-                    <button class="accordion-header" aria-expanded="false" aria-controls="content-1-meio_ambiente"
-                        id="content-1-meio_ambiente" onclick="toggleAccordion(this, '1-meio_ambiente')">
+                    <button class="accordion-header" data-code="1-meio_ambiente"
+                        aria-expanded="false" 
+                        aria-controls="content-1-meio_ambiente" id="content-1-meio_ambiente">
                         <span class="accordion-title">Meio Ambiente</span>
                         <span class="arrow">&#9660;</span>
 
@@ -76,7 +75,8 @@
 
                 <!-- Item 2: Educação -->
                 <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this, '2-educacao')" aria-expanded="false"
+                    <button class="accordion-header" data-code="2-educacao"
+                        aria-expanded="false"
                         aria-controls="content-2-educacao" id="content-2-educacao">
                         <span class="accordion-title">Educação</span>
                         <span class="arrow">&#9660;</span>
@@ -84,30 +84,44 @@
                     <div class="accordion-content"></div>
                 </div>
 
-                <!-- Item 3: Construção -->
+                <!-- Item 3: Agua -->
                 <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this, '3-construcao')"
-                        aria-expanded="false" aria-controls="content-3-construcao" id="content-3-construcao">
+                    <button class="accordion-header" data-code="3-agua"
+                        aria-expanded="false"
+                        aria-controls="content-3-agua" id="content-3-agua">
+                        <span class="accordion-title">Água</span>
+                        <span class="arrow">&#9660;</span>
+                    </button>
+                    <div class="accordion-content"></div>
+                </div>
+
+                <!-- Item 4: Construção -->
+                <div class="accordion-item">
+                    <button class="accordion-header" data-code="4-construcao"
+                        aria-expanded="false" 
+                        aria-controls="content-3-construcao" id="content-3-construcao">
                         <span class="accordion-title">Construção</span>
                         <span class="arrow">&#9660;</span>
                     </button>
                     <div class="accordion-content"></div>
                 </div>
 
-                <!-- Item 4: Órgãos Públicos -->
+                <!-- Item 5: Órgãos Públicos -->
                 <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this, '4-orgaos_publicos')"
-                        aria-expanded="false" aria-controls="content-4-orgaos_publicos" id="content-4-orgaos_publicos">
+                    <button class="accordion-header" data-code="5-orgaos_publicos"
+                        aria-expanded="false" 
+                        aria-controls="content-4-orgaos_publicos" id="content-4-orgaos_publicos">
                         <span class="accordion-title">Órgãos Públicos</span>
                         <span class="arrow">&#9660;</span>
                     </button>
                     <div class="accordion-content"></div>
                 </div>
 
-                <!-- Item 5: Animais -->
+                <!-- Item 6: Animais -->
                 <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this, '5-animais')" aria-expanded="false"
-                        aria-controls="content-5-animais" id="content-5-animais">
+                    <button class="accordion-header" data-code="6-animais" 
+                        aria-expanded="false"
+                        aria-controls="content-5-animais" id="content-6-animais">
                         <span class="accordion-title">Animais</span>
                         <span class="arrow">&#9660;</span>
                     </button>
@@ -116,7 +130,7 @@
 
                 <!-- Item 6: Preservação -->
                 <div class="accordion-item">
-                    <button class="accordion-header" onclick="toggleAccordion(this, '6-preservacao')"
+                    <button class="accordion-header" data-code="7-preservacao"
                         aria-expanded="false" aria-controls="content-6-preservacao" id="content-6-preservacao">
                         <span class="accordion-title">Preservação</span>
                         <span class="arrow">&#9660;</span>
@@ -129,10 +143,8 @@
     </div>
     <footer>
         <div class="container footer-container text-center">
-            <!-- Wrapper auto‑sized e centralizado -->
-            <div class="d-inline-block">
 
-                <!-- LINHA ÚNICA EM DESKTOP: os 4 + Sobre -->
+            <div class="d-inline-block">
                 <div class="row gx-3">
                     <div class="col-auto"><a href="../../index.html">Início</a></div>
                     <div class="col-auto"><a href="./history.html">História</a></div>
@@ -150,7 +162,7 @@
         </div>
     </footer>
 
-    <script src="../javascript/components/text/textsTransparency.js"></script>
+    <script type="module" src="../javascript/components/text/textsTransparency.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

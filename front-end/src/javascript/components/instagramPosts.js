@@ -129,14 +129,19 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
       if (e.target.classList.contains('toggle-caption')) {
         e.preventDefault();
         const captionEl = e.target.closest('.instagram-caption');
-        const expanded = captionEl.getAttribute('data-expanded') === 'true';
 
-        if (expanded) {
-          captionEl.innerHTML = captionEl.getAttribute('data-truncatedtext');
-          captionEl.setAttribute('data-expanded', 'false');
+        if (captionEl) {
+          const expanded = captionEl.getAttribute('data-expanded') === 'true';
+
+          if (expanded) {
+            captionEl.innerHTML = captionEl.getAttribute('data-truncatedtext') || '';
+            captionEl.setAttribute('data-expanded', 'false');
+          } else {
+            captionEl.innerHTML = captionEl.getAttribute('data-fulltext') || '';
+            captionEl.setAttribute('data-expanded', 'true');
+          }
         } else {
-          captionEl.innerHTML = captionEl.getAttribute('data-fulltext');
-          captionEl.setAttribute('data-expanded', 'true');
+          console.warn('Legenda .instagram-caption não encontrada.');
         }
       }
     });
@@ -192,7 +197,7 @@ document.addEventListener('click', function (e) {
   document.getElementById('videoModalFooter').textContent = caption;
 
   // Troca a fonte do Video.js e prepara reprodução
-  videoJsPlayer.src({ src: videoUrl, type: 'video/mp4' }); 
+  videoJsPlayer.src({ src: videoUrl, type: 'video/mp4' });
   videoJsPlayer.load();                                      // recarrega o elemento
   videoJsPlayer.play();                                      // toca automaticamente
 
