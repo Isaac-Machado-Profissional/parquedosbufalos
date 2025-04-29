@@ -140,10 +140,15 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.col-custom {
+    margin-top: 20px;
+}
+
 .transparency-animals .custom-card {
     justify-self: center;
     border-radius: 15px;
-    width: 90%;
+    width: 100%;
     aspect-ratio: 1 / 1.1;
     /* levemente mais alto que quadrado */
     display: flex;
@@ -164,9 +169,9 @@
 
 .transparency-animals .custom-card img {
     width: 100%;
-    height: auto;
-    max-height: 50%;
-    object-fit: contain;
+    margin: 0px;
+    height: 70%;
+    object-fit: cover;
     background-color: #fff;
 }
 
@@ -181,8 +186,9 @@
 }
 
 .transparency-animals .custom-card h7 {
-    margin-top: auto;
-    margin-left: 0 auto;
+    font-size: clamp(8px, 2vw, 16px);
+    margin: auto auto auto auto;
+    /* padding: 0px 15% 15% 15%; */
     text-align: center;
     color: #000;
 

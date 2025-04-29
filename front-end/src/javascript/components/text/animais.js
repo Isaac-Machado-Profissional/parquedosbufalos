@@ -2,7 +2,7 @@ export const showAnimals = `
       <div class="animals-row transparency-animals row">
         <div class="col-6 col-md-4 col-lg-3 col-custom">
           <div class="custom-card">
-              <img class="img-fluid" src="../../assets/transparency/animals/Alma-de-gato.jpg" alt="Alma-de-gato">
+              <img src="../../assets/transparency/animals/Alma-de-gato.jpg" alt="Alma-de-gato">
                 <h7>Alma-de-gato</h7>
           </div>
         </div>
@@ -273,7 +273,7 @@ export const showAnimals = `
         <div class="col-6 col-md-4 col-lg-3 col-custom">
           <div class="custom-card">
               <img class="img-fluid" src="../../assets/transparency/animals/Pica-pau-do-campo2.jpg" alt="Pica-pau-do-campo.">
-                <h7></h7>
+                <h7>Pica-pau-do-campo</h7>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3 col-custom">
