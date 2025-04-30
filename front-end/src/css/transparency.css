@@ -43,12 +43,12 @@
 
 
 .accordion-header {
-    color: rgb(51,51,51);
+    color: rgb(51, 51, 51);
     background-color: unset;
     padding: 15px;
     cursor: pointer;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 100%;
     border: none;
     font-size: 16px;
@@ -64,27 +64,32 @@
 
 
 .accordion-header:hover {
-    color: rgb(0, 0, 0); /* Cor de fundo ao passar o mouse */
+    color: rgb(0, 0, 0);
+    /* Cor de fundo ao passar o mouse */
 }
 
 .accordion-item.active .accordion-header {
-    color: rgb(0, 0, 0); /* Cor de fundo ao clicar */
+    color: rgb(0, 0, 0);
+    /* Cor de fundo ao clicar */
     font-weight: 700;
 }
 
 
 /* NO CLICK DO MOUSE NAO QUERO OUTLINE ESTRANHO*/
 .accordion-header:focus {
-    outline: solid 1px #000; /* Pode trocar a cor/borda */
+    outline: none;
+    /* Pode trocar a cor/borda */
     /* border-radius: 10px; */
 }
 
 /* ACESSIBILIDE --- QUANDO DER TAB VAI FICAR FOCADO E COM UM OUTLINE TOP */
 .accordion-header:focus-visible {
-    color: rgb(0, 0, 0); /* Cor de fundo ao passar o mouse */
-    outline: 2px solid #000; /* Pode trocar a cor/borda */
+    color: rgb(0, 0, 0);
+    /* Cor de fundo ao passar o mouse */
+    outline: 2px solid #000;
+    /* Pode trocar a cor/borda */
     outline-offset: -2px;
-    border-radius: 6px; 
+    border-radius: 6px;
 }
 
 .accordion-title {
@@ -137,7 +142,7 @@
 }
 
 .animals-row {
-    margin-top: 20px;
+    /* margin-top: -20px; */
     margin-bottom: 20px;
 }
 
@@ -145,7 +150,43 @@
     margin-top: 20px;
 }
 
+/* estado hover-ativo: permite vazar o conteúdo */
+.accordion-content,
+.accordion-item,
+.accordion {
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.8s ease, z-index 0.8s ease;
+    /* Suaviza a transição de z-index */
+}
+
+/* Estados liberados: vaza tudo */
+.custom-card.libera-overflow,
+.accordion-content.libera-overflow,
+.accordion-item.libera-overflow,
+.accordion.libera-overflow {
+    overflow: visible !important;
+}
+
+.custom-card {
+    background-color: #d6d6d693; /* ou qualquer que seja o cinza desejado */
+    position: relative; /* necessário para z-index funcionar corretamente */
+    transition: transform 0.8s ease, z-index 0.8s ease;
+    z-index: 1;
+    cursor: zoom-in;
+}
+
+/* Hover só se não estiver desativado */
+.custom-card:hover:not(.hover-desativado) {
+    transform: scale(1.5);
+    z-index: 999;
+    cursor: zoom-out;
+}
+
+
+
 .transparency-animals .custom-card {
+    position: relative;
     justify-self: center;
     border-radius: 15px;
     width: 100%;
@@ -160,7 +201,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;             /* ocupa toda a coluna */
+    height: 100%;
+    /* ocupa toda a coluna */
     transition: padding 0.3 ease;
 
 }
@@ -168,6 +210,8 @@
 
 
 .transparency-animals .custom-card img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     width: 100%;
     margin: 0px;
     height: 70%;
@@ -186,6 +230,7 @@
 }
 
 .transparency-animals .custom-card h7 {
+    border-radius: 15px;
     font-size: clamp(8px, 2vw, 16px);
     margin: auto auto auto auto;
     /* padding: 0px 15% 15% 15%; */
@@ -193,5 +238,3 @@
     color: #000;
 
 }
-
-

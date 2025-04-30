@@ -10,17 +10,16 @@ function showTextParkManagement(section) {
                         <p> Votação que ocorre a cada 2 anos para o próximo representante do parque, acompanhe em nossas mídias! </p>
 
                     </li>
-
-                    <li>
-                        <h3> Reforma do Parque </h3>
-                        <p> O Parque necessita de atenção quanto à sua construção, ampliação e manutenção.  </p>
-
-                    </li>
                         
                     <li>
-                        <h3> Constantes Reuniões  </h3>
-                        <p> Inscreva-se em nossa <a href="../../../html/about.html?scrollTo=newsletter" id="newsletter-container">Newsletter</a> e receba os links para participação das reuniões do Parque! </p>
-
+                        <h3> Constantes Reuniões </h3>
+                        <p> Acompanhe nosso <strong><a href="../../html/news.html">Calendário de Eventos</a></strong> e receba os links para participação das reuniões do Parque! </p>
+                        
+                    </li>
+                     <li>
+                        <h3> Notícias Mensais </h3>
+                        <p> Inscreva-se em nossa <a href="../../../html/about.html?scrollTo=newsletter" id="newsletter-container">Newsletter</a> e receba as últimas notícias do parque de antemão! </p>
+                        
                     </li>
                     
             </ul>       

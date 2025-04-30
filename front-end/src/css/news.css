@@ -2,10 +2,8 @@
     padding-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
-    /* height: 900px; */
     justify-self: center;
-    /* text-align: center; */
-    /* align-items: center;  */
+
 }
 
 .news-container h1 {
@@ -15,7 +13,6 @@
 
 .calendar-container {
     width: 100%;
-    /* text-align: center; */
     overflow: visible;
 
     justify-content: center;
@@ -32,7 +29,8 @@
 .latestNews-container {
     height: 300px;
 }
-
 .videos-container {
-    height: 300px;
+    justify-self: center;
+    margin-bottom: 200px;
+    
 }

@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules|video.min.js/,
         use: {
           loader: 'babel-loader',
@@ -22,6 +22,7 @@ module.exports = {
           },
         },
       },
+    
       {
         test: /\.css$/, 
         use: [MiniCssExtractPlugin.loader, 'css-loader']
@@ -33,7 +34,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({

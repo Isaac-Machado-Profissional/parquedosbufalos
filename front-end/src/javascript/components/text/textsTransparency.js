@@ -1,12 +1,98 @@
 import { showAnimals } from './animais.js';
 
-
 document.querySelectorAll('.accordion-header').forEach(btn => {
   btn.addEventListener('click', () => {
     const code = btn.dataset.code;
     toggleAccordion(btn, code);
   });
 });
+
+// Delegação de eventos para capturar hover em qualquer custom-card
+let overflowTimeout = null;
+let activeCard = null;
+let lastInteractionTime = 10; // Timestamp da última interação
+
+const INTERACTION_DELAY = 10; // Delay em milissegundos
+const HIDE_OVERFLOW_DELAY = 700; // Delay para esconder o overflow ao desativar o hover
+
+// Hover: ativa mesmo se estiver desativado
+document.body.addEventListener('mouseover', e => {
+  const now = Date.now();
+  if (now - lastInteractionTime < INTERACTION_DELAY) return;
+  lastInteractionTime = now;
+
+  const card = e.target.closest('.custom-card');
+  if (!card) return;
+
+  if (overflowTimeout) {
+    clearTimeout(overflowTimeout);
+    overflowTimeout = null;
+  }
+
+  // Remove a classe 'hover-desativado' ao passar o mouse
+  card.classList.remove('hover-desativado');
+
+  activeCard = card;
+  applyOverflow(card, true);
+});
+
+document.body.addEventListener('mouseout', e => {
+  const card = e.target.closest('.custom-card');
+  if (!card || card !== activeCard) return;
+
+  overflowTimeout = setTimeout(() => {
+    applyOverflow(card, false);
+    activeCard = null;
+    overflowTimeout = null;
+  }, HIDE_OVERFLOW_DELAY); // Delay ajustado para transição mais suave
+});
+
+// Clique: alterna hover ativo/desativo e aplica overflow corretamente
+document.body.addEventListener('click', e => {
+  const now = Date.now();
+  if (now - lastInteractionTime < INTERACTION_DELAY) return;
+  lastInteractionTime = now;
+
+  const card = e.target.closest('.custom-card');
+  if (!card) return;
+
+  const desativado = card.classList.toggle('hover-desativado');
+
+  if (desativado) {
+    // Desativando o hover: aguarda o delay para esconder overflow
+    if (overflowTimeout) {
+      clearTimeout(overflowTimeout);
+      overflowTimeout = null;
+    }
+
+    overflowTimeout = setTimeout(() => {
+      applyOverflow(card, false); // Remove overflow após o delay
+      activeCard = null;
+    }, HIDE_OVERFLOW_DELAY);
+  } else {
+    // Reativando o hover
+    if (overflowTimeout) {
+      clearTimeout(overflowTimeout);
+      overflowTimeout = null;
+    }
+
+    applyOverflow(card, true);
+    activeCard = card;
+  }
+});
+
+function applyOverflow(card, show) {
+  const elements = [
+    card,
+    card.closest('.accordion-content'),
+    card.closest('.accordion-item'),
+    card.closest('.accordion')
+  ].filter(Boolean);
+
+  elements.forEach(el => {
+    el.classList[show ? 'add' : 'remove']('libera-overflow');
+  });
+}
 
 function showTextTransparency(code, container) {
   const texts = {
@@ -42,7 +128,6 @@ function showTextTransparency(code, container) {
       <p><strong>Preservação:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.</p>
     `
   };
-
   container.innerHTML = texts[code] || '<p>Conteúdo não encontrado.</p>';
 }
 
@@ -59,7 +144,6 @@ function toggleAccordion(header, code) {
   const item = header.parentElement;
   const content = item.querySelector('.accordion-content');
   const isActive = item.classList.contains('active');
-
   // ABERTO 1 POR VEZ:
   document.querySelectorAll('.accordion-item.active').forEach(i => {
     if (i !== item) {

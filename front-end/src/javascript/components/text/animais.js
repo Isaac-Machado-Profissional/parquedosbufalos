@@ -1,4 +1,5 @@
 export const showAnimals = `
+      <br>
       <div class="animals-row transparency-animals row">
         <div class="col-6 col-md-4 col-lg-3 col-custom">
           <div class="custom-card">
