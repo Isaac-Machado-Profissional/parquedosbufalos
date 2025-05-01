@@ -223,7 +223,6 @@ header {
 
 }
 
-
 .card-title {
 
     /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
@@ -254,8 +253,8 @@ header {
 .atividades-do-parque-container img {
 
     margin-top: 10px;
-    width: 100vw;
-    height: 40%;
+    width: 100%;
+    height: 30%;
     max-width: 100% !important;
     border-radius: 8px;
 

@@ -6,20 +6,42 @@
         width: 90vw !important;
         height: 70vh !important;
     }
+
+    .videos-item {
+      
+        max-width: 300px !important; /* Limita a largura máxima */
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    
+    }
+    
 }
 
-@media (min-width: 300px) and (max-width: 768px){
+@media (min-width: 400px) and (max-width: 768px){
 
     .calendar-container iframe {
         width: 90vw !important;
         height: 50vh !important;
     }
+    .videos-item {
+        
+        width: 30vw !important; 
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    
+    }
+    
 }
 
-@media (min-width: 0px) and (max-width: 300px){
+@media (min-width: 0px) and (max-width: 400px){
 
     .calendar-container iframe {
         width: 90vw !important;
         height: 100vh !important;
     }
+    .videos-item {
+      
+        width: 30vw !important; 
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    
+    }
+    
 }
