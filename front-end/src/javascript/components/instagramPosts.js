@@ -63,9 +63,29 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
             </div>
           `;
         });
+        let indicators = `<div class="carousel-indicators">`;
+        post.children.data.forEach((_, i) => {
+          indicators += `
+            <button 
+              type="button" 
+              data-bs-target="#carousel${post.id}" 
+              data-bs-slide-to="${i}" 
+              class="custom-indicator ${i === 0 ? 'active' : ''}" 
+              data-bs-interval="false"
+              aria-current="${i === 0 ? 'true' : 'false'}" 
+              aria-label="Slide ${i + 1}">
+                <span class="progress-ball"></span>
+            </button>
+          `;
+        });
+        indicators += `</div>`;
+        // Imagens carrossel
         mediaElement = `
           <div id="carousel${post.id}" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+          <div class="carousel-indicators">
+          ${indicators}
+         </div>  
+          <div class="carousel-inner">
               ${carouselItems}
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel${post.id}" data-bs-slide="prev">
@@ -158,7 +178,7 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
           // 🔼 Adiciona margem apenas se for o último
           const allCaptions = container.querySelectorAll('.instagram-caption');
           const isLast = captionEl === allCaptions[allCaptions.length - 1];
-          captionEl.style.marginBottom = isLast ? '100px' : '';
+          captionEl.style.marginBottom = '150px';
         }
       }
     });
@@ -170,25 +190,45 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const outputDiv = document.getElementById("output-instagram");
+  const buttonImg = document.getElementById("buttonImg");
 
   async function toggleInstagramFeed() {
-    if (outputDiv.childElementCount === 0) {
-      outputDiv.innerHTML = "<p>Carregando...</p>";
-      const { fetchInstagramFeed } = await import('../services/instagramService.js');
+    const isEmpty = outputDiv.childElementCount === 0;
+
+    if (isEmpty) {
+      outputDiv.innerHTML = `
+        <div class="instagram-loading"></div>
+      `;
+      const { fetchInstagramFeed } = await import(
+        "../services/instagramService.js"
+      );
       await renderInstagramPosts(fetchInstagramFeed);
+
+      // troca para colorido e revela
+      buttonImg.src =
+        "src/assets/index/instagram-logo/Instagram-logo-color.png";
+      requestAnimationFrame(() => {
+        buttonImg.classList.add("reveal");
+      });
     } else {
       outputDiv.innerHTML = "";
+
+      // esconde colorido
+      buttonImg.classList.remove("reveal");
+      // após a animação, volta o src para B&W
+      setTimeout(() => {
+        buttonImg.src =
+          "src/assets/index/instagram-logo/Instagram-logo-black-white.png";
+      }, 400);
     }
   }
 
-  // Roda a função automaticamente assim que a página carregar
   toggleInstagramFeed();
-
-  // Adiciona o evento de clique para alternar o estado
-  document.querySelectorAll(".midias-container button").forEach((button) => {
-    button.addEventListener("click", toggleInstagramFeed);
-  });
+  document
+    .querySelectorAll(".midias-container button")
+    .forEach((btn) => btn.addEventListener("click", toggleInstagramFeed));
 });
+
 
 
 

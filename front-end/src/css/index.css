@@ -483,14 +483,88 @@ header {
 
 }
 
+/* CSS */
+/* container do botão */
+.insta-button {
+    position: relative;
+    width: 50px;
+    /* ajuste */
+    height: 50px;
+    /* ajuste */
+    background-image: url("../assets/index//instagram-logo/Instagram-logo-black-white.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.midia-button-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* máscara: metade preta (visível), metade transparente (invisível) */
+    -webkit-mask-image: linear-gradient(to right, black 50%, transparent 50%);
+    -webkit-mask-size: 200% 100%;
+    -webkit-mask-position: right;
+    mask-image: linear-gradient(to right, black 50%, transparent 50%);
+    mask-size: 200% 100%;
+    mask-position: right;
+    transition: mask-position 0.4s ease-in-out;
+}
+
+.midia-button-img.reveal {
+    -webkit-mask-position: left;
+    mask-position: left;
+}
+
+/* Container centralizado */
+.instagram-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* ajuste conforme seu layout */
+  }
+  
+  /* O anel giratório */
+  .instagram-loading::before {
+    content: "";
+    box-sizing: border-box;
+    width: 3rem;
+    height: 3rem;
+    border: 0.4rem solid transparent;
+    border-top-color: #f58529;    /* instagramgram gradient start */
+    border-right-color: #dd2a7b;  /* mid */
+    border-bottom-color: #8134af; /* end */
+    border-radius: 50%;
+    animation: insta-spin 1s linear infinite;
+  }
+  
+  /* Animação de giro */
+  @keyframes insta-spin {
+    to { transform: rotate(360deg); }
+  }
+
 
 .midias-container button:hover,
 .midias-container button:focus-visible {
     transform: scale(1.1);
 
 }
+.midias-container button:focus {
+    outline: none;
+}
 
-
+.midias-container button:focus-visible {
+    outline: 2px solid #000;
+    /* Pode trocar a cor/borda */
+    outline-offset: 5px;
+}
 .opniao-publica-container {
     padding-top: 100px;
     margin-left: 100px;

@@ -105,7 +105,7 @@
 
 
 .accordion-header .arrow {
-    transition: transform 0.2s ease;
+    transition: transform 0.8s ease;
 }
 
 /* Quando o item está ativo, a seta gira 180° */

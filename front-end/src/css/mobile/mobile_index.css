@@ -20,9 +20,6 @@
 
     }
 
-
-
-
     .nav-button {
 
         gap: 0.5rem;
@@ -45,11 +42,6 @@
         width: 97%;
 
     }
-
-
-
-
-
 
     .atividades-do-parque-container {
         margin-top: 05px;
@@ -96,15 +88,11 @@
 
     }
 
-
-
     .parkManagement-menu {
 
         flex-direction: column;
         /* um em cima do outro */
     }
-
-
 
     .parkManagement-menu img {
 
@@ -146,6 +134,11 @@
         margin: 0px;
     }
 
+    .instagram-link {
+        left: 10% !important;
+        right: 10% !important;
+    }
+
     .footer {
         justify-self: center;
     }
@@ -177,6 +170,12 @@
         display: block;
         max-width: 100%;
         /* Garante que nunca estoure o container */
+    }
+    .instagram-link {
+        margin-top: 20px !important;
+        margin-bottom: 0px !important;
+        left: 10% !important;
+        right: 10% !important;
     }
 
 }
@@ -321,6 +320,13 @@
     .midias-container {
         width: 80%;
         margin: 0;
+    }
+
+    .instagram-link {
+        margin-top: 20px !important;
+        margin-bottom: 0px !important;
+        left: 10% !important;
+        right: 10% !important;
     }
 
     .opniao-publica-container {
