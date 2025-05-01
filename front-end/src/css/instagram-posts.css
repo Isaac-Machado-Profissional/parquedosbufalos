@@ -1,14 +1,31 @@
 .instagram-post {
-  padding: 12px 16px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  border-radius: 15px;
+}
+
+.instagram-post img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.card-body {
+  min-height: 250px !important;
+}
+
+p .instagram-caption {
+  margin: 20px auto 0px auto;
+  min-height: 250px !important;
+ 
+  /* font-size: 14px; */
+  /* line-height: 1.3; */
 }
 
 .instagram-caption {
-  min-height: 50px;
-  font-size: 14px;
-  line-height: 1.3;
+  justify-self: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10vh;
 }
 
 .toggle-caption {
@@ -29,22 +46,46 @@
 
 
 .instagram-link {
+  position: absolute;
+  bottom: 10px;
+  left: 30%;
+  right: 30%;
   display: block;
   justify-self: center !important;
   font-size: 14px;
   text-decoration: none;
-  color: #00376b;
+  color: #dae0e6;
+  border-width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgb(0, 149, 246);
   font-weight: 600;
+}
 
+.instagram-link:hover {
+  color: #dae0e6; /* mesma cor do estado normal */
+  text-decoration: none;
+  background-color: rgb(0, 117, 196); /* mesma cor do estado normal */
+}
+
+.card-img-top {
+  border-radius: 0px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 /*MODAL*/
 
-
-.modal-header button {
-  border: none;
+.video-js, .user-active{
+  padding: 50% 50% 50% 50% !important;
 }
-
+#videoModal video {
+  width: 100%;
+  height: 100%;
+  
+}
 /* VIDEO SETTINGS: */ 
 
 
@@ -100,12 +141,13 @@
 }
 
 
+
+   
 /* CARROSSEL SETTINGS: */
 
 .carousel {
   position: relative;
   width: 100%;
-  overflow: hidden;
   padding: 0;
   margin: 0;
 }
@@ -122,6 +164,7 @@
   z-index: 10;
   margin: 10px !important;
   width: 30px !important;
+  overflow: visible !important;
 
 }
 
@@ -134,17 +177,17 @@
 }
 
 
-.bi-arrow-left-circle-fill::before, .bi-arrow-right-circle-fill::before {
+.carousel-custom-icon svg, .carousel-custom-icon svg {
   font-size: 3rem;
-  color: white !important;
-  background-color: #000;
+  color: rgb(0, 0, 0);
+  /* background-color: #000; */
   border-radius: 55%;
 }
 
-.carousel-custom-icon i {
-  font-size: 1.5rem;
-  color: black;
-  transition: color 0.2s ease-in-out;
+.lni-chevron-left-circle:hover, .lni-chevron-left-circle:hover {
+  color: rgb(0, 0, 0) !important;
+  /* background-color: #000; */
+  border-radius: 55%;
 }
 
 
@@ -154,15 +197,17 @@
 /*VIDEO.JS: */
 
 .video-js .vjs-control-bar {
-  background-color: rgba(0, 0, 0, 0) !important; /* ex: preto semitransparente */
+  background-color: rgba(255, 255, 255, 0.13) !important; /* ex: preto semitransparente */
 }
 
 /* ou só o painel de volume: */
-.video-js .vjs-volume-panel {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
 
 
-.vjs-volume-panel .vjs-control .vjs-volume-panel-horizontal .vjs-icon-placeholder::before {
-  background-color: rgba(0, 0, 0, 0) !important;
+
+.vjs-icon-placeholder {
+  background-color: rgba(255, 255, 255, 0.13) !important; /* ex: preto semitransparente */
+
+  color: rgb(255, 255, 255) !important; /* Defina a cor que deseja para os ícones, neste caso verde */
+
+
 }

@@ -26,8 +26,8 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
       let shouldTruncate = false;
 
       // Trunca a legenda se for maior que 30 caracteres
-      if (fullCaption.length > 30) {
-        truncatedCaption = fullCaption.substring(0, 30);
+      if (fullCaption.length > 125) {
+        truncatedCaption = fullCaption.substring(0, 125);
         shouldTruncate = true;
       }
 
@@ -41,14 +41,16 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
         <div class="video-thumbnail position-relative" 
           data-video-url="${post.media_url}" 
           data-caption="${post.caption ? post.caption.substring(0, 30) : 'Vídeo'}"
-          style="cursor: pointer;">
-    
+          style="cursor: pointer;"
+          tabindex="0"
+          role="button"
+          aria-label="Reproduzir vídeo">
           <img src="${thumbnail}" class="card-img-top" alt="${post.caption || 'Sem legenda'}">
-    
-          <span class="play-button">
-            <i class="bi bi-circle-fill"></i>
-            <i class="bi bi-play-fill"></i>
-          </span>
+
+            <span class="play-button">
+              <i class="bi bi-circle-fill"></i>
+              <i class="bi bi-play-fill"></i>
+            </span>
         </div>
         `;
       } else if (post.media_type === "CAROUSEL_ALBUM" && post.children && post.children.data) {
@@ -68,20 +70,25 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel${post.id}" data-bs-slide="prev">
               <span class="carousel-custom-icon">
-                <i class="bi bi-arrow-left-circle-fill"></i>
+                <svg width="48" height="48" viewBox="0 0 25 24" fill="white" xmlns="http://www.w3.org/2000/svg" transform="rotate(360 0 0)">
+                <path d="M14.1085 9.28033C14.4013 8.98744 14.4013 8.51256 14.1085 8.21967C13.8156 7.92678 13.3407 7.92678 13.0478 8.21967L9.79779 11.4697C9.5049 11.7626 9.5049 12.2374 9.79779 12.5303L13.0478 15.7803C13.3407 16.0732 13.8156 16.0732 14.1085 15.7803C14.4013 15.4874 14.4013 15.0126 14.1085 14.7197L11.3888 12L14.1085 9.28033Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3281 2C6.80528 2 2.32812 6.47715 2.32812 12C2.32812 17.5228 6.80528 22 12.3281 22C17.851 22 22.3281 17.5228 22.3281 12C22.3281 6.47715 17.851 2 12.3281 2ZM3.82812 12C3.82812 7.30558 7.6337 3.5 12.3281 3.5C17.0225 3.5 20.8281 7.30558 20.8281 12C20.8281 16.6944 17.0225 20.5 12.3281 20.5C7.6337 20.5 3.82812 16.6944 3.82812 12Z" fill="white"/>
+                </svg>
               </span>
             </button>
-
             <button class="carousel-control-next" type="button" data-bs-target="#carousel${post.id}" data-bs-slide="next">
               <span class="carousel-custom-icon">
-                <i class="bi bi-arrow-right-circle-fill"></i>
+                <svg width="48" height="48" viewBox="0 0 25 24" fill="white" xmlns="http://www.w3.org/2000/svg" transform="rotate(180 0 0)">
+                <path d="M14.1085 9.28033C14.4013 8.98744 14.4013 8.51256 14.1085 8.21967C13.8156 7.92678 13.3407 7.92678 13.0478 8.21967L9.79779 11.4697C9.5049 11.7626 9.5049 12.2374 9.79779 12.5303L13.0478 15.7803C13.3407 16.0732 13.8156 16.0732 14.1085 15.7803C14.4013 15.4874 14.4013 15.0126 14.1085 14.7197L11.3888 12L14.1085 9.28033Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3281 2C6.80528 2 2.32812 6.47715 2.32812 12C2.32812 17.5228 6.80528 22 12.3281 22C17.851 22 22.3281 17.5228 22.3281 12C22.3281 6.47715 17.851 2 12.3281 2ZM3.82812 12C3.82812 7.30558 7.6337 3.5 12.3281 3.5C17.0225 3.5 20.8281 7.30558 20.8281 12C20.8281 16.6944 17.0225 20.5 12.3281 20.5C7.6337 20.5 3.82812 16.6944 3.82812 12Z" fill="white"/>
+                </svg>
               </span>
             </button>
           </div>
         `;
       } else {
         // Para imagem única ou outros tipos de post
-        mediaElement = `<img src="${post.media_url}" class="card-img-top" alt="${post.caption || 'Sem legenda'}">`;
+        mediaElement = `<img src="${post.media_url}" class="card-img-top w-100 h-100" alt="${post.caption || 'Sem legenda'}">`;
       }
 
       // Abre uma nova linha a cada 3 posts
@@ -91,7 +98,7 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
 
       let captionHTML = "";
       if (shouldTruncate) {
-        const truncatedHTML = `${truncatedCaption} … <a href="#" class="toggle-caption">mais</a>`;
+        const truncatedHTML = `${truncatedCaption}…<a href="#" class="toggle-caption">mais</a>`;
         const fullHTML = `${fullCaption} <a href="#" class="toggle-caption">menos</a>`;
         captionHTML = `
           <p class="instagram-caption"
@@ -125,26 +132,37 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
     container.innerHTML = html;
 
     // Listener para a funcionalidade de toggle (mais/menos) nas legendas
+    // Listener para a funcionalidade de toggle (mais/menos) nas legendas
     container.addEventListener('click', function (e) {
       if (e.target.classList.contains('toggle-caption')) {
         e.preventDefault();
         const captionEl = e.target.closest('.instagram-caption');
 
-        if (captionEl) {
-          const expanded = captionEl.getAttribute('data-expanded') === 'true';
-
-          if (expanded) {
-            captionEl.innerHTML = captionEl.getAttribute('data-truncatedtext') || '';
-            captionEl.setAttribute('data-expanded', 'false');
-          } else {
-            captionEl.innerHTML = captionEl.getAttribute('data-fulltext') || '';
-            captionEl.setAttribute('data-expanded', 'true');
-          }
-        } else {
+        if (!captionEl) {
           console.warn('Legenda .instagram-caption não encontrada.');
+          return;
+        }
+
+        const expanded = captionEl.getAttribute('data-expanded') === 'true';
+
+        if (expanded) {
+          captionEl.innerHTML = captionEl.getAttribute('data-truncatedtext') || '';
+          captionEl.setAttribute('data-expanded', 'false');
+
+          // 🔽 Remove a margin inline para voltar ao padrão CSS
+          captionEl.style.marginBottom = '';
+        } else {
+          captionEl.innerHTML = captionEl.getAttribute('data-fulltext') || '';
+          captionEl.setAttribute('data-expanded', 'true');
+
+          // 🔼 Adiciona margem apenas se for o último
+          const allCaptions = container.querySelectorAll('.instagram-caption');
+          const isLast = captionEl === allCaptions[allCaptions.length - 1];
+          captionEl.style.marginBottom = isLast ? '100px' : '';
         }
       }
     });
+
   } else {
     container.innerHTML = `<p>Nenhum post encontrado.<br> https://www.instagram.com/parquedostestes/</p>`;
   }
@@ -173,42 +191,68 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Inicializa o Video.js
 
-const videoJsPlayer = videojs('videoPlayer', {
+
+
+// Função para abrir o modal e reproduzir o vídeo
+// Definir a função globalmente// Definir a função globalmente
+// Definir a função globalmente
+
+// Inicializa o Video.js
+window.videoJsPlayer = videojs('videoPlayer', {
   autoplay: false,
   controls: true,
-  fluid: true,      // para responsividade
+  fluid: true,  // Responsividade
   controlBar: {
-    volumePanel: { inline: true }
-  }
+    volumePanel: { inline: true },
+    subtitlesButton: true,  // Garante que o botão de legendas será mostrado
+    liveDisplay: true,  // Se for um vídeo ao vivo
+  },
 });
+window.openAndPlayVideo = function (clickedElement) {
+  const videoElement = clickedElement.closest('.video-thumbnail');
+  const videoUrl = videoElement ? videoElement.getAttribute('data-video-url') : '';
+  const caption = videoElement ? videoElement.getAttribute('data-caption') : '';
 
-document.addEventListener('click', function (e) {
-  const thumb = e.target.closest('.video-thumbnail');
-  if (!thumb) return;
-
-  e.preventDefault();
-  const videoUrl = thumb.getAttribute('data-video-url');
-  const caption = thumb.getAttribute('data-caption') || 'Vídeo';
   if (!videoUrl) return;
 
-  // Atualiza rodapé
-  document.getElementById('videoModalFooter').textContent = caption;
+  window.videoJsPlayer.src({ src: videoUrl, type: 'video/mp4' });
+  window.videoJsPlayer.load();
+  window.videoJsPlayer.play();
 
-  // Troca a fonte do Video.js e prepara reprodução
-  videoJsPlayer.src({ src: videoUrl, type: 'video/mp4' });
-  videoJsPlayer.load();                                      // recarrega o elemento
-  videoJsPlayer.play();                                      // toca automaticamente
-
-  // Abre o modal
   const modalEl = document.getElementById('videoModal');
   const bsModal = new bootstrap.Modal(modalEl);
   bsModal.show();
 
-  // No fechamento, pausa e limpa fonte
+  const modalCaption = modalEl.querySelector('.modal-caption');
+  if (modalCaption) modalCaption.textContent = caption || 'Sem legenda disponível';
+
+  const modalFooter = modalEl.querySelector('#videoModalFooter');
+  if (modalFooter) modalFooter.textContent = caption || 'Título não disponível';
+
   modalEl.addEventListener('hidden.bs.modal', function () {
-    videoJsPlayer.pause();
-    videoJsPlayer.src({ src: '', type: '' });
+    window.videoJsPlayer.pause();
+    window.videoJsPlayer.currentTime(0);
+    window.videoJsPlayer.src({ src: '', type: '' });
+    window.videoJsPlayer.load();
+
+    if (modalCaption) modalCaption.textContent = '';
+    if (modalFooter) modalFooter.textContent = '';
   }, { once: true });
+};
+
+// Usando event delegation para lidar com o clique nas miniaturas
+document.querySelector('#output-instagram').addEventListener('click', function (e) {
+  const thumbnail = e.target.closest('.video-thumbnail');
+  if (thumbnail) {
+    window.openAndPlayVideo(thumbnail);
+  }
+});
+
+// Adiciona o evento de pressionamento da tecla Enter ou Espaço
+document.querySelector('#output-instagram').addEventListener('keypress', function (e) {
+  const thumbnail = e.target.closest('.video-thumbnail');
+  if (thumbnail && (e.key === 'Enter' || e.key === ' ')) {
+    window.openAndPlayVideo(thumbnail);
+  }
 });
