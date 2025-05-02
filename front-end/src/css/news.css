@@ -41,6 +41,54 @@
     margin-bottom: 10px;
 }
 
+.news-highlighted .card-title {
+
+    /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
+    /* position: relative; */
+    /* width: 150px; */
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+    text-align: center;
+    top: -05px;
+    margin-bottom: 20px;
+}
+.news-highlighted .card-text {
+    /* position: relative; */
+    width: 800px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 3vh;
+    margin-top: 20px;
+    padding-right: 20px;
+}  
+
+.news-latest .card-title {
+
+    /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
+    /* position: relative; */
+    /* width: 150px; */
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+    text-align: center;
+    top: -05px;
+    margin-bottom: 20px;
+}
+.news-latest .card-text {
+    /* position: relative; */
+    width: 200px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 3vh;
+    margin-top: 20px;
+    padding-right: 20px;
+}  
+
 .news-latest {
     display: flex;
     flex-direction: row;
@@ -55,8 +103,8 @@
 
 .news-latest h5 {
     margin-top: 10px; 
-    margin-bottom: 10px;
 }
+
 
 .videos-container {
     margin-top: 100px;

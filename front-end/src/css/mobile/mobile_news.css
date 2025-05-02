@@ -28,6 +28,28 @@
         padding-bottom: 56.25%; /* 16:9 aspect ratio */
     
     }
+
+    .news-highlighted .card-text {
+        /* position: relative; */
+        width: 300px !important;
+    }  
+    
+
+    .news-latest .card-title {
+
+        /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
+        /* position: relative; */
+        /* width: 150px; */
+        height: 100px !important;
+    }
+    .news-latest .card-text {
+        /* position: relative; */
+        width: 140px !important;
+        margin-top: 20px;
+        padding-right: 20px;
+    }  
+
+
     
 }
 
@@ -43,5 +65,28 @@
         padding-bottom: 56.25%; /* 16:9 aspect ratio */
     
     }
+
+    .news-highlighted .card-text {
+        /* position: relative; */
+        /* margin-top: 20px; */
+        width: 100px !important;
+        margin-top: 20px;
+    }  
+    
+
+    .news-latest .card-title {
+
+        /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
+        /* position: relative; */
+        /* width: 150px; */
+        height: 180px !important;
+        margin-bottom: 40px !important;
+    }
+    .news-latest .card-text {
+        /* position: relative; */
+        width: 80px !important;
+        margin-top: 20px;
+        padding-right: 20px;
+    }  
     
 }
