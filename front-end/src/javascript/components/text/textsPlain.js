@@ -37,6 +37,11 @@ function showTextParkManagement(section) {
                         <h3> Construção do Nosso Parque </h3>
                         <p> Atividade em colaboração com o C.E.U Alvarenga com o Fundamental 1, ensinando valores fundamentais de sustentabilidade à natureza. </p>
                 </li>
+
+                <li>
+                        <h3> Última atividade importante </h3>
+                        <p> Última atividade importantemente ocorrida no <strong>PASSADO</strong>. </p>
+                </li>
                 
             </ul>
         `;

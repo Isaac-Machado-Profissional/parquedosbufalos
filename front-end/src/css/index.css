@@ -223,30 +223,31 @@ header {
 
 }
 
-.atividades-do-parque-container .card-title {
+
+.card-title {
 
     /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
-    /* position: relative; */
-    /* width: 150px; */
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-self: center;
-    text-align: center;
+    position: relative;
     top: -05px;
-    margin-bottom: 20px;
+    min-height: 3rem;
+    /* ajusta conforme necessário */
+    justify-content: center;
+    /* opcional, se quiser centralizar horizontalmente também */
+    text-align: center;
 
 
 }
 
-.atividades-do-parque-container .card-text {
-    /* position: relative; */
-    width: 200px;
-    margin-left: auto;
+.card-text {
+    position: relative;
     margin-right: auto;
-    bottom: 3vh;
-    margin-top: 20px;
-    padding-left: 10px;
+    margin-left: auto;
+    top: 1vh;
+    margin-top: 40px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 
@@ -254,8 +255,8 @@ header {
 .atividades-do-parque-container img {
 
     margin-top: 10px;
-    width: 100%;
-    height: 30%;
+    width: 100vw;
+    height: 230px;
     max-width: 100% !important;
     border-radius: 8px;
 
