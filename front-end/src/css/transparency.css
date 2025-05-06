@@ -1,6 +1,6 @@
 .transparency-container {
     margin-top: 50px;
-
+    margin-bottom: 50px;
 }
 
 
@@ -44,7 +44,7 @@
 
 .accordion-header {
     color: rgb(51, 51, 51);
-    padding: 15px 15px 0px 15px;
+    padding: 15px 15px 5px 15px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -56,6 +56,35 @@
     background: none;
 
 }
+
+.accordion-header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* espaço entre o ícone e o texto */
+}
+
+.toggle-icon {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 6px;
+    background-color: transparent;
+    stroke: black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estilo "ativo" com fundo preto e ícone branco */
+.toggle-icon.active {
+    background-color: rgb(0, 0, 0);
+    stroke: white;
+}
+
+.accordion-item:not(.active) .custom-card {
+    pointer-events: none;
+    /* opcionalmente: opacity: 0.5; para visual */
+  }
+  
 
 .accordion-content img {
     display: block;
@@ -111,6 +140,8 @@
 /* Quando o item está ativo, a seta gira 180° */
 .accordion-item.active .accordion-header .arrow {
     transform: rotate(180deg);
+    border-color: white;  /* Borda branca */
+    background-color: black;  /* Fundo preto */
 }
 
 /* Dentro do Accordion */

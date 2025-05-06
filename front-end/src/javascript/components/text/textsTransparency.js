@@ -1,21 +1,16 @@
 import { showAnimals } from './animais.js';
-
-document.querySelectorAll('.accordion-header').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const code = btn.dataset.code;
-    toggleAccordion(btn, code);
-  });
-});
-
-// Delegação de eventos para capturar hover em qualquer custom-card
+// --- Variáveis de estado (JS puro) ---
 let overflowTimeout = null;
 let activeCard = null;
-let lastInteractionTime = 10; // Timestamp da última interação
+let lastInteractionTime = 0;
 
-const INTERACTION_DELAY = 10; // Delay em milissegundos
-const HIDE_OVERFLOW_DELAY = 700; // Delay para esconder o overflow ao desativar o hover
+const INTERACTION_DELAY = 0;
+const HIDE_DELAY        = 50000;
+console.log('início', Date.now());
+setTimeout(() => console.log('fim', Date.now()), 50000);
 
-// Hover: ativa mesmo se estiver desativado
+// --- Listeners de hover / click em .custom-card ---------------------
+
 document.body.addEventListener('mouseover', e => {
   const now = Date.now();
   if (now - lastInteractionTime < INTERACTION_DELAY) return;
@@ -24,14 +19,12 @@ document.body.addEventListener('mouseover', e => {
   const card = e.target.closest('.custom-card');
   if (!card) return;
 
-  if (overflowTimeout) {
+  if (overflowTimeout !== null) {
     clearTimeout(overflowTimeout);
     overflowTimeout = null;
   }
 
-  // Remove a classe 'hover-desativado' ao passar o mouse
   card.classList.remove('hover-desativado');
-
   activeCard = card;
   applyOverflow(card, true);
 });
@@ -44,10 +37,9 @@ document.body.addEventListener('mouseout', e => {
     applyOverflow(card, false);
     activeCard = null;
     overflowTimeout = null;
-  }, HIDE_OVERFLOW_DELAY); // Delay ajustado para transição mais suave
+  }, HIDE_DELAY);
 });
 
-// Clique: alterna hover ativo/desativo e aplica overflow corretamente
 document.body.addEventListener('click', e => {
   const now = Date.now();
   if (now - lastInteractionTime < INTERACTION_DELAY) return;
@@ -57,40 +49,87 @@ document.body.addEventListener('click', e => {
   if (!card) return;
 
   const desativado = card.classList.toggle('hover-desativado');
+  clearTimeout(overflowTimeout);
 
   if (desativado) {
-    // Desativando o hover: aguarda o delay para esconder overflow
-    if (overflowTimeout) {
-      clearTimeout(overflowTimeout);
-      overflowTimeout = null;
-    }
-
     overflowTimeout = setTimeout(() => {
-      applyOverflow(card, false); // Remove overflow após o delay
+      applyOverflow(card, false);
       activeCard = null;
-    }, HIDE_OVERFLOW_DELAY);
-  } else {
-    // Reativando o hover
-    if (overflowTimeout) {
-      clearTimeout(overflowTimeout);
       overflowTimeout = null;
-    }
-
-    applyOverflow(card, true);
+    }, HIDE_DELAY);
+  } else {
     activeCard = card;
+    applyOverflow(card, true);
   }
 });
 
+// --- Accordion -------------------------------------------------------
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const code = header.dataset.code;
+    toggleAccordion(header, code);
+  });
+});
+
+function toggleAccordion(header, code) {
+  const item    = header.parentElement;
+  const content = item.querySelector('.accordion-content');
+  const wasActive = item.classList.contains('active');
+
+  // Fecha todos os outros
+  document.querySelectorAll('.accordion-item.active').forEach(other => {
+    if (other !== item) closeAccordionItem(other);
+  });
+
+  // Abre ou fecha o clicado
+  if (wasActive) {
+    closeAccordionItem(item);
+  } else {
+    openAccordionItem(item, code);
+  }
+}
+
+function openAccordionItem(item, code) {
+  const header  = item.querySelector('.accordion-header');
+  const content = item.querySelector('.accordion-content');
+
+  item.classList.add('active');
+  showTextTransparency(code, content);
+  content.style.maxHeight = content.scrollHeight + 'px';
+
+  header.querySelector('.toggle-icon')?.classList.add('active');
+  header.querySelector('.arrow')?.classList.add('active');
+
+  applyOverflow(item, true);
+}
+
+function closeAccordionItem(item) {
+  const header  = item.querySelector('.accordion-header');
+  const content = item.querySelector('.accordion-content');
+
+  item.classList.remove('active');
+  content.style.maxHeight = null;
+
+  header.querySelector('.toggle-icon')?.classList.remove('active');
+  header.querySelector('.arrow')?.classList.remove('active');
+
+  applyOverflow(item, false);
+}
+
+// --- Overflow Utility ----------------------------------------------
+
 function applyOverflow(card, show) {
-  const elements = [
+  const els = [
     card,
     card.closest('.accordion-content'),
     card.closest('.accordion-item'),
     card.closest('.accordion')
   ].filter(Boolean);
 
-  elements.forEach(el => {
-    el.classList[show ? 'add' : 'remove']('libera-overflow');
+  els.forEach(el => {
+    if (show) el.classList.add('libera-overflow');
+    else      el.classList.remove('libera-overflow');
   });
 }
 
@@ -139,40 +178,3 @@ window.addEventListener("resize", () => {
   });
 });
 
-
-function toggleAccordion(header, code) {
-  const item = header.parentElement;
-  const content = item.querySelector('.accordion-content');
-  const isActive = item.classList.contains('active');
-  // ABERTO 1 POR VEZ:
-  document.querySelectorAll('.accordion-item.active').forEach(i => {
-    if (i !== item) {
-      i.classList.remove('active');
-      const cc = i.querySelector('.accordion-content');
-      cc.style.maxHeight = null; // Retira o max-height para fechar o item
-    }
-  });
-
-  // Agora, alterna o estado (abrir ou fechar) do item clicado
-  if (!isActive) {
-    item.classList.add("active");
-    // Carrega o conteúdo dinamicamente
-    showTextTransparency(code, content);
-    // Define a altura máxima para que o conteúdo expanda suavemente
-    content.style.maxHeight = content.scrollHeight + "px";
-  } else {
-    item.classList.remove("active");
-    // Fecha o item redefinindo a altura
-    content.style.maxHeight = null;
-  }
-
-  // Caso haja imagens, reajusta a altura após o carregamento
-  const imgs = content.querySelectorAll("img");
-  imgs.forEach(img => {
-    img.onload = () => {
-      if (content.style.maxHeight) {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    };
-  });
-}

@@ -70,7 +70,7 @@
 
     .atividades-do-parque-container img {
 
-        height: 10vh;
+        height: 100px;
     }
 
     .atividades-do-parque-container .card-body {
@@ -180,6 +180,8 @@
         left: 10% !important;
         right: 10% !important;
     }
+
+    
 
 }
 
