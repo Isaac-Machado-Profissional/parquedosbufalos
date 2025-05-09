@@ -13,17 +13,19 @@
 
 .calendar-container {
     width: 100%;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
     overflow: hidden;
-
-    justify-content: center;
 }
 
 .calendar-container iframe {
     width: 80vw;
-    max-width: 1500px;
+    max-width: 1100px;
     height: 60vh;
     min-height: 400px;
     max-height: 400px;
+    border-radius: 15px;
 }
 
 .news-container h2 {

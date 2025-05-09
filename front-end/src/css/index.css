@@ -124,86 +124,74 @@ header {
 .container-home-first-screen {
     position: relative;
     width: 100%;
-    height: 350px;
+    margin: 20px auto;
+    height: 100vh;
+    min-height: 300px;
+
     align-items: center;
     text-align: center;
-    /* overflow: hidden; */
+    overflow: hidden;
+
     z-index: 1;
     margin-bottom: 1vh;
 
 
 }
 
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    color: white;
+
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    /* Remova qualquer border-radius aqui para não conflitar */
+    z-index: 0;
+    /* opcional se quiser que o vídeo siga o contorno */
+}
+
+
 .text-home-container {
-    display: flex;
-    margin-top: -20px;
-    flex-direction: column;
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-
     position: absolute;
-    /* Posicao absoluta pra se manter fiel conforme muda resolucao*/
-    top: 50%;
-    /* Alinha o contêiner no centro da tela verticalmente */
+    top: 30%;
     left: 50%;
-    /* Alinha o contêiner no centro da tela horizontalmente */
-    text-align: center;
-    /* Centraliza o texto */
-}
-
-.text-home-container h1 {
-
-    margin-top: 2rem;
-    position: absolute;
-    white-space: nowrap;
-    text-align: center;
-    font-size: 60px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.050);
-    transform: translateY(-50%);
-    z-index: 2;
-
-}
-
-.text-home-container p {
-    position: absolute;
-    margin-top: 50px;
-    white-space: nowrap;
-    text-align: center;
-    font-size: 25px;
-    color: #ffffff;
-    z-index: 1;
-    background-color: rgba(241, 238, 238, 0.050);
-    transform: translateY(50%);
-    text-shadow: 1px 1px 8px #000000;
-
-
-}
-
-.img-mountain-background {
-    background-image: url('../assets/index/Montain-EUA.png');
-    /*Insira o caminho da imagem central da home-screen*/
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    /* background-attachment: fixed; */
-    background-position: center 60%;
-    border-radius: 1em;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    /* Centraliza horizontalmente */
     transform: translateX(-50%);
+    z-index: 1;
     color: white;
-    padding: 50px;
-    width: 80vw;
-    height: 90%;
-    display: block;
-    max-width: 2000px;
-    /* Garante que nunca estoure o container */
+    max-width: 600px;
 }
 
+/* Removi position:absolute daqui e uso margin para espaçar */
+.text-home-container h1 {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 60px;
+    white-space: nowrap;
+    text-shadow: 0px 1px 20px #000;
+}
+
+/* Também relativo dentro do container, sem absolute */
+.text-home-container p {
+    margin: 0;
+    font-size: 25px;
+    white-space: nowrap;
+    text-shadow: 0px 1px 20px #000;
+}
 
 
 /* ATIVIDADES DO PARQUE : */
@@ -213,6 +201,9 @@ header {
     /* justify-self: center; Perguntar pra galera dps ----------------------------------------------**** */
     /* width: 80%; Perguntar pra galera dps ----------------------------------------------*****/
     /* margin-top: -60px; */
+    position: relative;
+    /* para não se misturar com o vídeo */
+    margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
     justify-self: center;
@@ -617,13 +608,14 @@ header {
     text-decoration: none;
     font-weight: 500;
     transition: background 0.3s ease;
-  }
-  
-  .review-button:hover {
+}
+
+.review-button:hover {
     background-color: #ffffff;
     color: #007bff;
     text-decoration: none;
-  }
+}
+
 .googlemaps-container:hover {
     border: 2px solid #000000;
 }

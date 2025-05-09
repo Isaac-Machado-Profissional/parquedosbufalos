@@ -11,6 +11,15 @@
 
 @media (min-width: 300px) and (max-width: 768px) {
 
+    .container-home-first-screen {
+        position: relative;
+        width: 100%;
+        max-width: 2000px;
+        margin: 20px auto;
+        height: 80vh;
+
+    }
+
     h1 {
         font-size: 32px;
     }
@@ -35,12 +44,6 @@
     .text-home-container p {
         font-size: 1.20rem;
         white-space: normal;
-        width: 220px;
-    }
-
-    .img-mountain-background {
-        width: 97%;
-
     }
 
     .atividades-do-parque-container {
