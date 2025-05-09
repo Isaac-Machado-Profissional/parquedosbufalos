@@ -139,7 +139,9 @@
     
 }
 
-
+.newsletter-container p {
+    margin: 20px;
+}
 
 .newsletter-container .col h1 {
     margin: 20px;
@@ -183,9 +185,10 @@
 
 /* Efeito ao Focar no Input */
 .newsletter-container input:focus {
-    border-color: #40ff40;
+    border-color: none;
     outline: none;
-    box-shadow: 0px 0px 8px #40ff40(2, 255, 56, 0.5);
+    box-shadow: none;
+    border: 2px solid rgb(134, 134, 134);
 }
 
 /* Botão de Envio */

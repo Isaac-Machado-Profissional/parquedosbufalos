@@ -3,7 +3,7 @@
 @media (min-width: 768px) and (max-width: 1000px){
 
     .calendar-container iframe {
-        width: 90vw !important;
+        width: 100vw !important;
         height: 70vh !important;
     }
 

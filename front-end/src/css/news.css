@@ -13,12 +13,13 @@
 
 .calendar-container {
     width: 100%;
+    overflow: hidden;
 
     justify-content: center;
 }
 
 .calendar-container iframe {
-    width: 100%;
+    width: 80vw;
     max-width: 1500px;
     height: 60vh;
     min-height: 400px;

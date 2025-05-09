@@ -529,27 +529,33 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px; /* ajuste conforme seu layout */
-  }
-  
-  /* O anel giratório */
-  .instagram-loading::before {
+    height: 150px;
+    /* ajuste conforme seu layout */
+}
+
+/* O anel giratório */
+.instagram-loading::before {
     content: "";
     box-sizing: border-box;
     width: 3rem;
     height: 3rem;
     border: 0.4rem solid transparent;
-    border-top-color: #f58529;    /* instagramgram gradient start */
-    border-right-color: #dd2a7b;  /* mid */
-    border-bottom-color: #8134af; /* end */
+    border-top-color: #f58529;
+    /* instagramgram gradient start */
+    border-right-color: #dd2a7b;
+    /* mid */
+    border-bottom-color: #8134af;
+    /* end */
     border-radius: 50%;
     animation: insta-spin 1s linear infinite;
-  }
-  
-  /* Animação de giro */
-  @keyframes insta-spin {
-    to { transform: rotate(360deg); }
-  }
+}
+
+/* Animação de giro */
+@keyframes insta-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
 .midias-container button:hover,
@@ -557,6 +563,7 @@ header {
     transform: scale(1.1);
 
 }
+
 .midias-container button:focus {
     outline: none;
 }
@@ -566,27 +573,60 @@ header {
     /* Pode trocar a cor/borda */
     outline-offset: 5px;
 }
+
 .opniao-publica-container {
     padding-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 40px;
     width: 1180px;
     max-width: 90%;
     justify-self: center;
 }
 
+.googlemaps-container {
+    border: 2px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
 
 .googlemaps-container iframe {
-    width: 100%;
-    height: 60vh;
-    min-height: 400px;
-    max-height: 400px;
-    border-radius: 15px;
-}
-.opniao-publica-container p {
-    margin-left: 40px;
+    border: none;
+    width: 100vw;
+    min-height: 300px;
+    height: 100%;
+    display: block;
+    border-radius: 0;
+
 }
 
+.review-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 3;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 2px solid #e2e0e0;
+    color: #007bff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .review-button:hover {
+    background-color: #ffffff;
+    color: #007bff;
+    text-decoration: none;
+  }
+.googlemaps-container:hover {
+    border: 2px solid #000000;
+}
 
 footer {
     height: 300px;
