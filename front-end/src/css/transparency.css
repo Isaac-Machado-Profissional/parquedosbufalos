@@ -83,8 +83,8 @@
 .accordion-item:not(.active) .custom-card {
     pointer-events: none;
     /* opcionalmente: opacity: 0.5; para visual */
-  }
-  
+}
+
 
 .accordion-content img {
     display: block;
@@ -140,8 +140,10 @@
 /* Quando o item está ativo, a seta gira 180° */
 .accordion-item.active .accordion-header .arrow {
     transform: rotate(180deg);
-    border-color: white;  /* Borda branca */
-    background-color: black;  /* Fundo preto */
+    border-color: white;
+    /* Borda branca */
+    background-color: black;
+    /* Fundo preto */
 }
 
 /* Dentro do Accordion */
@@ -273,4 +275,60 @@
     text-align: center;
     color: #000;
 
+}
+
+.list-center {
+    list-style: decimal;
+    /* para números */
+    padding-left: 1.5rem;
+    /* adiciona espaço para o número aparecer */
+    width: 500px;
+    margin: 0 0 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+.list-center li {
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.principal-list {
+    counter-reset: principal;
+    list-style: none;
+    padding-left: 0;
+}
+
+.principal-list>li {
+    counter-increment: principal;
+    counter-reset: subitem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.principal-list>li::before {
+    content: counter(principal) ". ";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.sublist  {
+    list-style: none;
+    counter-reset: subitem;
+    padding-left: 2rem;
+}
+
+.sublist>li {
+    counter-increment: subitem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.sublist>li::before {
+    content: counter(principal) "." counter(subitem) ". ";
+    position: absolute;
+    left: 0;
 }

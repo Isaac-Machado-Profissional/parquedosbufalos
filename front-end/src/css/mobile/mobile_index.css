@@ -250,7 +250,6 @@
 
     .atividades-do-parque-container .card-title {
         display: block;
-        width: 100% !important;
         /* font-size: 0.3rem !important; */
         white-space: wrap;
     }
@@ -259,7 +258,7 @@
         /* font-size: 0.3rem !important; */
         margin-top: 50px;
         display: inline-block;
-        width: 100% !important;
+        min-width: 70px !important;
         position: relative;
         padding-bottom: 50px;
         /* top: -20vh; */

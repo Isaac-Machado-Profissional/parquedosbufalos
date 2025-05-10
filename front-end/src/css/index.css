@@ -124,7 +124,7 @@ header {
 .container-home-first-screen {
     position: relative;
     width: 100%;
-    margin: 20px auto;
+    margin: 0px auto;
     height: 100vh;
     min-height: 300px;
 
@@ -594,27 +594,6 @@ header {
 
 }
 
-.review-button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 3;
-    display: inline-block;
-    background-color: #ffffff;
-    border: 2px solid #e2e0e0;
-    color: #007bff;
-    padding: 10px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.3s ease;
-}
-
-.review-button:hover {
-    background-color: #ffffff;
-    color: #007bff;
-    text-decoration: none;
-}
 
 .googlemaps-container:hover {
     border: 2px solid #000000;

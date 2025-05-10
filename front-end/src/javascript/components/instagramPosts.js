@@ -11,6 +11,29 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
     return;
   }
 
+  // Verficiar e aplicar links vindos da legenda do Instagram
+  function linkify(text) {
+  if (/<a\s/i.test(text)) {
+    // Já contém <a>, não processa novamente
+    return text;
+  }
+
+  return text
+    // 1) linka http:// e https://
+    .replace(
+      /(https?:\/\/[^\s<]+)/g,
+      url => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
+    )
+    // 2) linka www.
+    .replace(
+      /\bwww\.[^\s<]+\b/g,
+      url => {
+        const href = `https://${url}`;
+        return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+      }
+    );
+}
+
   // Simula um atraso para o loading
   await new Promise((resolve) => setTimeout(resolve, 500));
   container.innerHTML = "";
@@ -24,6 +47,8 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
       const fullCaption = post.caption || "";
       let truncatedCaption = fullCaption;
       let shouldTruncate = false;
+      const caption = post.caption || "";
+
 
       // Trunca a legenda se for maior que 30 caracteres
       if (fullCaption.length > 125) {
@@ -118,18 +143,18 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
 
       let captionHTML = "";
       if (shouldTruncate) {
-        const truncatedHTML = `${truncatedCaption}…<a href="#" class="toggle-caption">mais</a>`;
-        const fullHTML = `${fullCaption} <a href="#" class="toggle-caption">menos</a>`;
+        const truncatedHTML = `${linkify(truncatedCaption)}…<a href="#" class="toggle-caption"><br>mais</a>`;
+        const fullHTML = `${(linkify(fullCaption))} <a href="#" class="toggle-caption">menos</a>`;
         captionHTML = `
           <p class="instagram-caption"
              data-fulltext="${fullHTML.replace(/"/g, '&quot;')}"
              data-truncatedtext="${truncatedHTML.replace(/"/g, '&quot;')}"
              data-expanded="false">
-             ${truncatedHTML}
+            ${linkify(truncatedHTML)}
           </p>
         `;
       } else {
-        captionHTML = `<p class="instagram-caption">${fullCaption}</p>`;
+        captionHTML = `<p class="instagram-caption">${(linkify(fullCaption))}</p>`;
       }
 
       html += `
@@ -188,6 +213,7 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
   }
 };
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const outputDiv = document.getElementById("output-instagram");
   const buttonImg = document.getElementById("buttonImg");
@@ -227,18 +253,12 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelectorAll(".midias-container button")
     .forEach((btn) => btn.addEventListener("click", toggleInstagramFeed));
+
 });
 
-
-
-
-
-
 // Função para abrir o modal e reproduzir o vídeo
-// Definir a função globalmente// Definir a função globalmente
-// Definir a função globalmente
 
-// Inicializa o Video.js
+// Inicializa o Video.js globalmeente
 window.videoJsPlayer = videojs('videoPlayer', {
   autoplay: false,
   controls: true,
