@@ -7,15 +7,8 @@ html {
 }
 
 
-.logo {
+/* Menu lateral escondido inicialmente */
 
-    flex-shrink: 0;
-    /* Impede que a logo encolha */
-    padding: 0px;
-    width: 80px;
-    height: 80px;
-
-}
 
 
 /* NAVIGATION BUTTONS */

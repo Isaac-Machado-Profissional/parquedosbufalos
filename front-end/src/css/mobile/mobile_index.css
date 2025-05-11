@@ -1,10 +1,101 @@
 /*OVERALL SETTINGS: */
 
-@media (max-width: 1000px){
-    #navbarMobile .nav-item {
-        margin-top: 1vh;
-    }
+/* 2.1: Estado padrão: esconde logo mobile, mostra desktop */
+.logo-mobile {
+    display: none;
 }
+
+.navbar-toggler {
+    position: absolute;
+    /* O padrão do botão é absoluto */
+    transition: transform 0.5s ease-out;
+    z-index: 1200;
+}
+
+/* Quando o menu estiver aberto, o botão navbar-toggler ficará fixo */
+.navbar-toggler.fixed {
+    position: fixed !important;
+    /* Tornar o botão fixo quando o menu estiver aberto */
+    z-index: 1200;
+}
+
+#mobileMenu {
+    transform: translateX(-100%);
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background: white;
+    overflow-y: auto;
+    z-index: 1000;
+    padding-top: 80px;
+}
+
+#mobileMenu.open {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+
+@media (max-width: 1000px) {
+    .logo-desktop {
+        display: none !important;
+    }
+    
+    /* container precisa ser relative para o absolute funcionar */
+    .navbar.position-relative .container-fluid {
+        position: relative;
+    }
+
+    .container-fluid {
+        min-height: 60px !important;
+    }
+
+    /* mostra logo mobile, oculta desktop */
+    .logo-mobile {
+        padding-left: 20px !important;
+        margin: 80px auto -3vh auto;
+        position: absolute;
+
+        display: block;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+
+    .logo-mobile img {
+        margin-right: 20px;
+    }
+
+
+    .logo-desktop {
+        display: none;
+    }
+
+
+
+    #mobileMenu {
+        width: 50vw;
+    }
+
+    /* Quando o menu estiver ativo */
+
+
+    /* Estilização extra */
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+
+}
+
 
 /*CELULAR:*/
 
@@ -175,6 +266,7 @@
         max-width: 100%;
         /* Garante que nunca estoure o container */
     }
+
     .instagram-link {
         margin-top: 20px !important;
         margin-bottom: 0px !important;
@@ -182,14 +274,14 @@
         right: 10% !important;
     }
 
-    
+
 
 }
 
 
 /* RELÓGIO: */
 @media (min-width: 0px) and (max-width: 400px) {
-    
+
     .text-home-container h1 {
         font-size: 1.2rem;
     }
@@ -263,13 +355,14 @@
         padding-bottom: 50px;
         /* top: -20vh; */
     }
-    
-    
+
+
     .atividades-do-parque-container .card-body p {
         width: 100%;
-        margin: 0; /* Garante que o <p> não tenha espaçamento interno extra */
+        margin: 0;
+        /* Garante que o <p> não tenha espaçamento interno extra */
         white-space: normal;
-        
+
     }
 
     .parkManagement-menu {

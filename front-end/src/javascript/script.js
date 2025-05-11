@@ -1,8 +1,6 @@
 import "../css/style.css";
-import {showTextParkManagement} from "./components/text/textsPlain.js";
+import { showTextParkManagement } from "./components/text/textsPlain.js";
 showTextParkManagement();
 
-import {renderInstagramPosts} from "./components/instagramPosts";
+import { renderInstagramPosts } from "./components/instagramPosts";
 renderInstagramPosts();
-
-
