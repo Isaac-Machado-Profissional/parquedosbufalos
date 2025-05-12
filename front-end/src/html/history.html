@@ -30,23 +30,49 @@
             <div class="container-fluid">
 
                 <button class="navbar-toggler" type="button" id="menuToggle">
-                    <span class="navbar-toggler-icon"></span>
+                    <span onclick="this.classList.toggle('active')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
+                            <g stroke-width="6.5" stroke-linecap="round">
+                                <path d="M72 82.286h28.75" fill="#bla" fill-rule="evenodd" stroke="black" />
+                                <path
+                                    d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                                    fill="none" stroke="black" />
+                                <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="black" />
+                                <path
+                                    d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                                    fill="none" stroke="black" />
+                                <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="black" />
+                                <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="black" />
+                            </g>
+                        </svg>
+                    </span>
+
                 </button>
 
-                <a href="../../index.html" class="navbar-brand logo-mobile d-block d-lg-none ">
+                <a href="../../index.html" class="navbar-brand logo-mobile d-block d-lg-none mx-auto">
                     <img src="../assets/Logo-Parque-dos-Bufalos_png.ico" alt="Logo do Parque dos Búfalos">
                 </a>
 
-                <a href="../../index.html" class="navbar-brand logo-desktop d-none d-lg-block ">
+                <a href="index.html" class="navbar-brand logo-desktop d-none d-lg-block">
                     <img src="../assets/Logo-Parque-dos-Bufalos_png.ico" alt="Logo do Parque dos Búfalos">
                 </a>
 
-                <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu d-lg-none" id="mobileMenu">
                     <ul class="navbar-nav nav-button">
                         <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
                         <li class="nav-item"><a href="./history.html" class="nav-link active">História</a></li>
                         <li class="nav-item"><a href="./transparency.html" class="nav-link">Transparência</a>
                         </li>
+                        <li class="nav-item"><a href="./news.html" class="nav-link">Notícias</a></li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu d-none d-lg-block ms-auto">
+                    <ul class="navbar-nav nav-button flex-row">
+                        <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="./history.html" class="nav-link active">História</a></li>
+                        <li class="nav-item"><a href="./transparency.html" class="nav-link">Transparência</a></li>
                         <li class="nav-item"><a href="./news.html" class="nav-link">Notícias</a></li>
                         <li class="nav-item"><a href="./about.html" class="nav-link">Sobre</a></li>
                     </ul>
