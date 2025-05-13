@@ -14,8 +14,6 @@ html {
 /* NAVIGATION BUTTONS */
 
 header {
-
-
     background-color: #ffffff;
     color: #fff;
 
@@ -31,12 +29,9 @@ header {
 
 .navbar {
     list-style: none;
-
     gap: 1rem;
-
     border-radius: 10px;
     transition: all 0.3s ease;
-
 }
 
 

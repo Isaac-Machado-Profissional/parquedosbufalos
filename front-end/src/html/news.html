@@ -106,80 +106,112 @@
                     </div>
                 </div>
 
-                <h2>Últimas Notícias</h2>
-                <div class="row news-latest">
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <img src="https://images.pexels.com/photos/247512/pexels-photo-247512.jpeg"
-                                    alt="Imagem da Notícia 1">
-                                <h5 class="card-title">Búfalos e suas funções</h5>
-                                <p class="card-text">Além de serem muito resistentes, consideravelmente escalados a arar
-                                    terra...</p>
+
+                <div class="news-container">
+                    <h2>Últimas Notícias</h2>
+
+                    <div class="news-scroll-wrapper" id="news-wrapper">
+                        <div class="news-latest" id="news-carousel">
+                            <!-- Card 1 -->
+                            <div class="news-card-horizontal">
+                                <div class="card-body">
+                                    <img src="https://tse1.mm.bing.net/th/id/OIP.mgDlNCtNy9j8auPg-H_wGgHaEK?rs=1&pid=ImgDetMain"
+                                        alt="Notícia" class="news-img" />
+                                    <div class="card-text-content">
+                                        <h5 class="card-title">Vistoria do Parque dos Búfalos</h5>
+                                    </div>
+                                </div>
                             </div>
+
+                            <!-- Card 2 -->
+                            <div class="news-card-horizontal">
+                                <div class="card-body">
+                                    <img src="https://images.pexels.com/photos/247512/pexels-photo-247512.jpeg"
+                                        alt="Notícia" class="news-img" />
+                                    <div class="card-text-content">
+                                        <h5 class="card-title">Búfalos e sua incrível força de impulso</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="news-card-horizontal">
+                                <div class="card-body">
+                                    <img src="https://images.pexels.com/photos/30302414/pexels-photo-30302414/free-photo-of-emocionante-corrida-de-kambala-em-mangaluru-india.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Imagem da Última Notícia" class="news-img">
+                                    <div class="card-text-content">
+                                        <h5 class="card-title">Notícia Exemplo 2</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="news-card-horizontal">
+                                <div class="card-body">
+                                    <img src="https://images.pexels.com/photos/247512/pexels-photo-247512.jpeg"
+                                        alt="Notícia" class="news-img" />
+                                    <div class="card-text-content">
+                                        <h5 class="card-title">Notícia Exemplo 2</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="news-card-horizontal">
+                                <div class="card-body">
+                                    <img src="https://images.pexels.com/photos/247512/pexels-photo-247512.jpeg"
+                                        alt="Notícia" class="news-img" />
+                                    <div class="card-text-content">
+                                        <h5 class="card-title">Notícia Exemplo 2</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Adicione mais cards aqui -->
                         </div>
+
+
+
                     </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <img src="https://tse1.mm.bing.net/th/id/OIP.mgDlNCtNy9j8auPg-H_wGgHaEK?rs=1&pid=ImgDetMain"
-                                    alt="Imagem da Última Notícia 2">
-                                <h5 class="card-title">Vistoria do Parque dos Búfalos</h5>
-                                <p class="card-text text-break">Vistoria cancelada! Entenda.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <img src="https://images.pexels.com/photos/30302414/pexels-photo-30302414/free-photo-of-emocionante-corrida-de-kambala-em-mangaluru-india.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Imagem da Última Notícia 2">
-                                <h5 class="card-title">Búfalos e sua incrível força de impulso</h5>
-                                <p class="card-text">Um animal com até 15 cavalos de pura potência... </p>
-                            </div>
+                    <div class="slider-container">
+                        <input id="progress-slider" class="scrollbar-range" type="range" min="0" max="100" value="0" />
+                        <div class="range-info">
+                            <span id="range-label"></span>
                         </div>
                     </div>
                 </div>
-
-                <div class="videos-container">
-                    <h1>Vídeos</h1>
-
-                    <div class="youtube-container">
-                        <div class="video-item">
-                            <iframe width="390px" height="200px"
-                                src="https://www.youtube-nocookie.com/embed/SRsYrpCuh9Y?si=NYiAJ2ngLqwShn8c"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-item">
-                            <iframe width="390px" height="200px"
-                                src="https://www.youtube.com/embed/95urZ7Eq0W4?si=GKttHRG5eRpHxcrZ"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-item">
-                            <iframe width="390px" height="200px"
-                                src="https://www.youtube.com/embed/A4vRCmX9oYE?si=3aBf-N5d1Mtg4vmB"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-
 
             </div>
+        </div>
 
+        <div class="videos-container">
+            <h1 class="text-center">Vídeos</h1>
 
+            <div class="youtube-container">
+                <div class="video-item">
+                    <iframe width="390px" height="200px"
+                        src="https://www.youtube-nocookie.com/embed/SRsYrpCuh9Y?si=NYiAJ2ngLqwShn8c"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe width="390px" height="200px"
+                        src="https://www.youtube.com/embed/95urZ7Eq0W4?si=GKttHRG5eRpHxcrZ" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe width="390px" height="200px"
+                        src="https://www.youtube.com/embed/A4vRCmX9oYE?si=3aBf-N5d1Mtg4vmB" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
 
-
-
-
+        </div>
     </main>
-
 
     <footer>
         <div class="container footer-container text-center">
@@ -190,10 +222,8 @@
                     <div class="col-auto"><a href="./history.html">História</a></div>
                     <div class="col-auto"><a href="./transparency.html">Transparência</a></div>
                     <div class="col-auto"><a href="./news.html">Notícias</a></div>
-                    <!-- “Sobre” só aparece aqui em ≥md -->
                     <div class="col-auto d-none d-md-block"><a href="./about.html">Sobre</a></div>
                 </div>
-                <!-- QUEBRA + “Sobre” EM MOBILE: só em <md -->
                 <div class="row gx-0 mt-3 justify-content-start d-flex d-md-none">
                     <div class="col-auto"><a href="./about.html">Sobre</a></div>
                 </div>
@@ -201,6 +231,7 @@
             </div>
         </div>
     </footer>
+    <script src="../javascript/components/news.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../javascript/navbar.js"></script>

@@ -13,26 +13,30 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
 
   // Verficiar e aplicar links vindos da legenda do Instagram
   function linkify(text) {
-  if (/<a\s/i.test(text)) {
-    // Já contém <a>, não processa novamente
-    return text;
+    return text
+      // 1) Linka http:// e https://
+      .replace(
+        /(https?:\/\/[^\s<]+)/g,
+        url => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
+      )
+      // 2) Linka www.
+      .replace(
+        /\bwww\.[^\s<]+\b/g,
+        url => {
+          const href = `https://${url}`;
+          return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+        }
+      )
+      // 3) Linka domínios encurtadores como bit.ly, tinyurl, t.co etc.
+      .replace(
+        /\b(?:bit\.ly|tinyurl\.com|t\.co|is\.gd|buff\.ly|ow\.ly|rebrand\.ly|rb\.gy)\/[^\s<]+\b/gi,
+        url => {
+          const href = `https://${url}`;
+          return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+        }
+      );
   }
 
-  return text
-    // 1) linka http:// e https://
-    .replace(
-      /(https?:\/\/[^\s<]+)/g,
-      url => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
-    )
-    // 2) linka www.
-    .replace(
-      /\bwww\.[^\s<]+\b/g,
-      url => {
-        const href = `https://${url}`;
-        return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
-      }
-    );
-}
 
   // Simula um atraso para o loading
   await new Promise((resolve) => setTimeout(resolve, 500));
@@ -65,12 +69,12 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
         mediaElement = `
         <div class="video-thumbnail position-relative" 
           data-video-url="${post.media_url}" 
-          data-caption="${post.caption ? post.caption.substring(0, 30) : 'Vídeo'}"
+          data-caption="${post.caption ? post.caption.substring(0, 30).trim() + '…' : 'Vídeo...'}"
           style="cursor: pointer;"
           tabindex="0"
           role="button"
           aria-label="Reproduzir vídeo">
-          <img src="${thumbnail}" class="card-img-top" alt="${post.caption || 'Sem legenda'}">
+          <img src="${thumbnail}" class="card-img-top" alt="${post.caption || 'Sem legenda.'}">
 
             <span class="play-button">
               <i class="bi bi-circle-fill"></i>
@@ -144,7 +148,7 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
       let captionHTML = "";
       if (shouldTruncate) {
         const truncatedHTML = `${linkify(truncatedCaption)}…<a href="#" class="toggle-caption"><br>mais</a>`;
-        const fullHTML = `${(linkify(fullCaption))} <a href="#" class="toggle-caption">menos</a>`;
+        const fullHTML = `${(linkify(fullCaption))} <a href="#" class="toggle-caption"><br>menos</a>`;
         captionHTML = `
           <p class="instagram-caption"
              data-fulltext="${fullHTML.replace(/"/g, '&quot;')}"
@@ -176,7 +180,6 @@ export const renderInstagramPosts = async (fetchInstagramFeed) => {
 
     container.innerHTML = html;
 
-    // Listener para a funcionalidade de toggle (mais/menos) nas legendas
     // Listener para a funcionalidade de toggle (mais/menos) nas legendas
     container.addEventListener('click', function (e) {
       if (e.target.classList.contains('toggle-caption')) {

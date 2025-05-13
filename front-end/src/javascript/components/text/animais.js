@@ -5,7 +5,7 @@ export const showAnimals = `
         diferentes, dessas, as quais 27 estão associadas aos ambientes húmidos. 
       </p>
       <h6 class="text-center">
-        Acompanhe 71 fotos capturadas de algumas espécies que podem ser vistas:
+        Acompanhe algumas fotos capturadas do parque de algumas espécies que podem ser vistas:
       </h6>
       <div class="animals-row transparency-animals row">
         <div class="col-6 col-md-4 col-lg-3 col-custom">

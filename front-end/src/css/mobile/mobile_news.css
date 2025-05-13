@@ -1,17 +1,18 @@
-
-
-@media (min-width: 768px) and (max-width: 1000px){
-
+@media (min-width: 768px) and (max-width: 1000px) {
+ 
+  
     .calendar-container iframe {
         width: 100vw !important;
         height: 70vh !important;
     }
 
     .videos-item {
-      
-        max-width: 300px !important; /* Limita a largura máxima */
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    
+
+        max-width: 300px !important;
+        /* Limita a largura máxima */
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+
     }
 
     .news-highlighted .card-title {
@@ -27,6 +28,7 @@
         top: -05px;
         margin-bottom: 20px;
     }
+
     .news-highlighted .card-text {
         /* position: relative; */
         width: 400px !important;
@@ -36,30 +38,35 @@
         bottom: 3vh;
         margin-top: 20px;
         padding-right: 20px;
-    
-    
-}
-    
+
+    }
+
+ 
 }
 
-@media (min-width: 400px) and (max-width: 768px){
 
+
+@media (min-width: 400px) and (max-width: 768px) {
+   
+      
     .calendar-container iframe {
         width: 90vw !important;
         height: 50vh !important;
     }
+
     .videos-item {
-        
-        width: 30vw !important; 
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    
+
+        width: 30vw !important;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+
     }
 
     .news-highlighted .card-text {
         /* position: relative; */
         width: 300px !important;
-    }  
-    
+    }
+
 
     .news-latest .card-title {
 
@@ -68,28 +75,31 @@
         /* width: 150px; */
         height: 100px !important;
     }
+
     .news-latest .card-text {
         /* position: relative; */
         width: 140px !important;
         margin-top: 20px;
         padding-right: 20px;
-    }  
+    }
 
 
-    
+
 }
 
-@media (min-width: 0px) and (max-width: 400px){
+@media (min-width: 0px) and (max-width: 400px) {
 
     .calendar-container iframe {
         width: 90vw !important;
         height: 100vh !important;
     }
+
     .videos-item {
-      
-        width: 30vw !important; 
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    
+
+        width: 30vw !important;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+
     }
 
     .news-highlighted .card-text {
@@ -97,8 +107,8 @@
         /* margin-top: 20px; */
         width: 100px !important;
         margin-top: 20px;
-    }  
-    
+    }
+
 
     .news-latest .card-title {
 
@@ -108,11 +118,12 @@
         height: 180px !important;
         margin-bottom: 40px !important;
     }
+
     .news-latest .card-text {
         /* position: relative; */
         width: 80px !important;
         margin-top: 20px;
         padding-right: 20px;
-    }  
-    
+    }
+
 }

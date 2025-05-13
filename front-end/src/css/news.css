@@ -1,8 +1,10 @@
 .news-container {
-    padding-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-self: center;
+    margin: 50px auto;
+    padding: 0 1rem;
+    /* folga interna nas laterais */
+    max-width: 1200px;
+    /* largura máxima em desktop */
+    box-sizing: border-box;
 
 }
 
@@ -13,9 +15,9 @@
 
 .calendar-container {
     width: 100%;
-    display: flex;              
-    justify-content: center;    
-    align-items: center;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -28,19 +30,33 @@
     border-radius: 15px;
 }
 
+
 .news-container h2 {
     margin-top: 50px;
 }
 
 .news-highlighted img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
     width: 100%;
     height: 300px;
     object-fit: cover;
 
 }
+
 .news-highlighted h5 {
-    margin-top: 10px; 
-    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.news-highlighted .card {
+    border: 1px solid #444;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.news-highlighted .card-body {
+    padding: 0px 0px 20px 0px;
 }
 
 .news-highlighted .card-title {
@@ -56,6 +72,7 @@
     top: -05px;
     margin-bottom: 20px;
 }
+
 .news-highlighted .card-text {
     /* position: relative; */
     width: 800px;
@@ -65,55 +82,146 @@
     bottom: 3vh;
     margin-top: 20px;
     padding-right: 20px;
-}  
-
-.news-latest .card-title {
-
-    /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
-    /* position: relative; */
-    /* width: 150px; */
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-self: center;
-    text-align: center;
-    top: -05px;
-    margin-bottom: 20px;
 }
-.news-latest .card-text {
-    /* position: relative; */
-    width: 200px;
-    justify-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 3vh;
-    margin-top: 20px;
-    word-break: break-word;
-}  
 
+
+
+
+
+
+
+
+.news-card-horizontal {
+    border: 1px solid #000000;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.news-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Flex container dos cards */
 .news-latest {
     display: flex;
+    gap: 1rem;
+}
+
+/* Cada card */
+.news-card-horizontal {
+    border: 1px solid #444;
+    /* borda suave */
+    border-radius: 12px;
+    /* bordas arredondadas */
+
+    flex: 0 0 auto;
+    border-radius: 8px;
+
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteúdo interno do card */
+.news-card-horizontal .card-body {
+    display: flex;
+    padding: 0px 10px 0px 0px;
     flex-direction: row;
-}
-
-.news-latest img {
-    width: 100%;
     height: 150px;
-    object-fit: cover;
-    margin-right: 20px;
 }
 
-.news-latest h5 {
-    margin-top: 10px; 
+.news-card-horizontal .card-text-content {
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
+
+.news-card-horizontal .news-img {
+    flex: 0 0 70%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+
+/* ESCONDE scrollbar nativa */
+.news-scroll-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE10+ */
+}
+
+.news-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+/* CARROSSEL */
+.news-latest {
+    display: flex;
+    gap: 1rem;
+}
+
+/* SLIDER CUSTOM */
+/* Slider customizado */
+.scrollbar-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(to right,
+            #4caf50 var(--percent, 0%),
+            #ddd var(--percent, 0%));
+    cursor: pointer;
+    touch-action: none;
+}
+
+.scrollbar-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 60px;
+    background: #555;
+    border-radius: 12px;
+    cursor: grab;
+    transition: left 0.3s ease, background 0.3s ease;
+}
+
+.scrollbar-range::-moz-range-thumb {
+    height: 24px;
+    width: 60px;
+    background: #555;
+    border-radius: 12px;
+    cursor: grab;
+}
+
+
+
+
+
 
 
 .videos-container {
-    margin-top: 100px;
+    margin: 0 auto 50px auto;
     justify-self: center;
-    margin-bottom: 200px;
-    
+
 }
+
 .youtube-container {
     display: flex;
     flex-wrap: wrap;
@@ -123,13 +231,15 @@
 
 .videos-item {
     position: relative;
-  
-    max-width: 390px; /* Limita a largura máxima */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+
+    max-width: 390px;
+    /* Limita a largura máxima */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
 
 }
 
 
 .video-item iframe {
-  width: 100%;
+    width: 100%;
 }

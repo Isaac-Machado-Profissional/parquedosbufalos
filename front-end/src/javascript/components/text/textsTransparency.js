@@ -5,7 +5,7 @@ let activeCard = null;
 let lastInteractionTime = 0;
 
 const INTERACTION_DELAY = 0;
-const HIDE_DELAY        = 50000;
+const HIDE_DELAY = 50000;
 
 // --- Listeners de hover / click em .custom-card ---------------------
 
@@ -71,7 +71,7 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 });
 
 function toggleAccordion(header, code) {
-  const item    = header.parentElement;
+  const item = header.parentElement;
   const content = item.querySelector('.accordion-content');
   const wasActive = item.classList.contains('active');
 
@@ -89,7 +89,7 @@ function toggleAccordion(header, code) {
 }
 
 function openAccordionItem(item, code) {
-  const header  = item.querySelector('.accordion-header');
+  const header = item.querySelector('.accordion-header');
   const content = item.querySelector('.accordion-content');
 
   item.classList.add('active');
@@ -119,7 +119,7 @@ function openAccordionItem(item, code) {
 
 
 function closeAccordionItem(item) {
-  const header  = item.querySelector('.accordion-header');
+  const header = item.querySelector('.accordion-header');
   const content = item.querySelector('.accordion-content');
 
   item.classList.remove('active');
@@ -143,7 +143,7 @@ function applyOverflow(card, show) {
 
   els.forEach(el => {
     if (show) el.classList.add('libera-overflow');
-    else      el.classList.remove('libera-overflow');
+    else el.classList.remove('libera-overflow');
   });
 }
 
@@ -173,7 +173,7 @@ function showTextTransparency(code, container) {
         Parte acima retirado do site: https://capital.sp.gov.br/web/meio_ambiente/w/parque-municipal-jardim-apur%C3%A1-b%C3%BAfalos
       </p>
     `,
-    
+
     '2-educacao': `
     <br>
       <h5 class="text-center">Luta por escolas</h5>
@@ -200,7 +200,7 @@ function showTextTransparency(code, container) {
         Nesse pensamento, também sabemos que as demais infraestruturas são muito necessárias, como hospitais, postos, transporte mas a educação é de extrema urgência, principalmente para mães que precisam matricular seus filhos em escolas próximo onde mora e simplesmente escutam que não tem vagas, chega a ser frustrante.
       </p>
  `,
-    '3-agua' : `
+    '3-agua': `
       <p>
         <strong>A questão Hídrica</strong> que cerca os arredores do Parque dos Búfalos se faz necessário conhecimento prévio de sua situação e localização, dado que o parque fica colado à Represa Billings.
       </p>
@@ -326,10 +326,41 @@ function showTextTransparency(code, container) {
     `,
     '6-animais': showAnimals,
     '7-preservacao': `
-      <p><strong>Preservação:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.</p>
+    <br>
+      <h5 class="text-center"> Manifesto do Parque dos Búfalos</h5>
+      <p>
+        Em março de 2012, o então prefeito da cidade de São Paulo, Gilberto Kassab, decretou de utilidade pública a área conhecida como <strong>Parque dos Búfalos</strong>, visando a preservação ambiental através da futura implantação do parque como área de lazer para a população.
+      </p>
+      <p>
+        Em dezembro de 2013, o decreto foi revogado pelo atual prefeito, Fernando Haddad, com a intenção de construir moradias populares em cima de 19 nascentes, soterrando as últimas fontes naturais de água, responsáveis por abastecer a atual caixa d’água de São Paulo: a Represa Billings.
+      </p>
+      <p>
+        Em meio a maior crise de abastecimento hídrico de que temos notícia, é insana a construção de prédios em uma área de manancial, esta especificamente, utilizada para abastecer a região sul e oeste por meio da transposição para o reservatório Guarapiranga. Além desta, está prevista a transposição do chamado Corpo Central para o braço Rio Grande. Assim, as águas da Billings passarão a também abastecer o ABC e o Alto Tietê pela transposição do Rio Grande para o reservatório Taiaçupeba. Essa mesma água ainda é utilizada para a geração de energia na usina de Henry Borden, na cidade de Cubatão, na baixada Santista.
+      </p>
+      <p>
+        Em meio a maior crise de abastecimento hídrico de que temos notícia, é insana a construção de prédios em uma área de manancial, esta especificamente, utilizada para abastecer a região sul e oeste por meio da transposição para o reservatório Guarapiranga. Além desta, está prevista a transposição do chamado Corpo Central para o braço Rio Grande. Assim, as águas da Billings passarão a também abastecer o ABC e o Alto Tietê pela transposição do Rio Grande para o reservatório Taiaçupeba. Essa mesma água ainda é utilizada para a geração de energia na usina de Henry Borden, na cidade de Cubatão, na baixada Santista.
+      </p>
+
+      <p>
+        Como se não bastasse, o projeto de construção dos prédios no local é financiado por meio dos nossos impostos – sendo R$ 293,3 milhões vindos da União, R$ 72,8 milhões do Estado e R$ 13,7 milhões provenientes do município de São Paulo. Essa dinheirama toda está sendo destinada à destruição dos nossos mananciais já que a eventual construção dos prédios trará, como consequências, a drástica redução de vazão de água limpa que dali nasce e abastece a represa Billings, água está utilizada constantemente pela população local como fonte de água potável.
+      </p>
+
+      <p>
+        Outra consequência dessa imprudência seria a impermeabilização do solo, fazendo com que as águas pluviais deixem de abastecer o lençol freático e passem a carregar as impurezas e resíduos das ruas diretamente para dentro da Represa, piorando drasticamente sua condição já insalubre.
+      </p>
+
+      <p>
+        Por outro lado, com a implantação do Parque dos Búfalos em 100% da área, boa parte do que hoje é pasto será reflorestado com espécimes da Mata Atlântica, melhorando sobremaneira os serviços ambientais já prestados. Aliás nós, do Movimento em Defesa pelo Parque dos Búfalos, já estamos reflorestando a área. Até o momento já foram plantadas mais de 1.500 árvores nativas da Mata Atlântica na região.
+      </p>
+
+      <p>
+        Lamentavelmente esse empreendimento recebeu da Companhia Ambiental do Estado de São Paulo (CETESB), uma licença incompleta e IRREGULAR para sua edificação. A CETESB é responsável pelo controle, fiscalização, monitoramento e licenciamento de atividades geradoras de poluição, com a preocupação fundamental de preservar e recuperar a qualidade das águas, do ar e do solo. Notoriamente a CETESB não está cumprindo sua função pré-estabelecida, aliás, está cometendo uma infração gravíssima e irreversível, já que, com a autorização da construção dos prédios, parte do Parque dos Búfalos seria destruído e os serviços ambientais e sociais já prestados gratuitamente à população pelo parque, seriam aniquilados.
+        Ocorre que ambas as diretrizes de Proteção e Recuperação dos Mananciais, prescritas na Lei Estadual de Proteção Ambiental e Lei Específica da Billings, estão sendo violadas.
+      </p>
+
     `
   };
-   container.innerHTML = texts[code] || '<p>Conteúdo não encontrado.</p>';
+  container.innerHTML = texts[code] || '<p>Conteúdo não encontrado.</p>';
 }
 
 // Só pro zoom nao bugar tipo muito hard quando o acordion estiver aberto: 
