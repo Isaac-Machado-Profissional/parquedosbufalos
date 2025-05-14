@@ -354,7 +354,7 @@ function showTextTransparency(code, container) {
         Porquanto, precisamos defender o remanescente atual do Parque dos Búfalos, respeitando-se a natureza e os seus elementos, em especial as vulnerabilidades ambientais e faixas de proteção correspondentes, bem como, também, o passivo ambiental e o diagnóstico que considera a população impactada pela perda de uma enorme área ambiental.
       </p>
       <br>
-        <img src="../../assets/transparency/preservation/img2_Preservation.jpg" alt="Imagem com escritura na parede "Sem floresta, não tem água, sem águam não tem vida... Parque dos Búfalos"" class="img-fluid">
+        <img src="../../assets/transparency/preservation/img1_Preservacao.jpg" alt="Imagem com escritura na parede "Sem floresta, não tem água, sem águam não tem vida... Parque dos Búfalos"" class="img-fluid">
       </br>
       <p>
         A área requer atenção incisiva do poder público no sentido de se impor a necessidade de proteção aos interesses difusos e coletivos relacionados à matéria ambiental, principalmente se considerando a época de escassez hídrica em que nos encontramos, justamente e em grande parte por ingerência e omissão por parte do poder público, também no que se refere à conservação do ambiente importante aos recursos hídricos, mas não somente a eles, pois possui importância intrínseca à biodiversidade vegetal que representa por si só, servindo ainda de habitat para fauna, e como estabilizador climático.
