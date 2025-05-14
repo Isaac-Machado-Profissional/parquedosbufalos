@@ -158,7 +158,7 @@ function showTextTransparency(code, container) {
       </p>
           <img src="../../assets/transparency/naturalEnvironment/img1_Meio-Ambiente.jpg" alt="Imagens Aéreas da área de terreno do ano de 1958 do Parque dos Búfalos, recheada de árvores e natureza." class="img-fluid">
       <p>
-        Notória diferença entre as áreas verdes sendo cada vez mais desmatadas e o verde sendo substituído por prédios e casas, como mostra a imagem dentre os anos de 2003-2007:
+        Observe a notória diferença entre as áreas verdes sendo cada vez mais desmatadas e o verde sendo substituído por prédios e casas, como mostra a imagem dentre os anos de 2003-2007:
       </p>
           <img src="../../assets/transparency/naturalEnvironment/img2_Meio-Ambiente.jpg" alt="Imagens do ano de 2007" class="img-fluid">
       <p>

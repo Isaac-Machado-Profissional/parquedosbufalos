@@ -105,7 +105,24 @@ header {
 
 }
 
+button .navbar-toggler {
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
 
+#menuToggle {
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
 
 
 /*HOME-SCREEN: */
