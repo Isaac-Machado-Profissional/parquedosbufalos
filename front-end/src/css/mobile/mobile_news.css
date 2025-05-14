@@ -1,6 +1,5 @@
 @media (min-width: 768px) and (max-width: 1000px) {
- 
-  
+
     .calendar-container iframe {
         width: 100vw !important;
         height: 70vh !important;
@@ -47,8 +46,7 @@
 
 
 @media (min-width: 400px) and (max-width: 768px) {
-   
-      
+
     .calendar-container iframe {
         width: 90vw !important;
         height: 50vh !important;
@@ -67,22 +65,12 @@
         width: 300px !important;
     }
 
-
-    .news-latest .card-title {
-
-        /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
-        /* position: relative; */
-        /* width: 150px; */
-        height: 100px !important;
+    .news-card-horizontal {
+        width: 70% !important;
     }
 
-    .news-latest .card-text {
-        /* position: relative; */
-        width: 140px !important;
-        margin-top: 20px;
-        padding-right: 20px;
-    }
 
+  
 
 
 }
@@ -110,20 +98,5 @@
     }
 
 
-    .news-latest .card-title {
-
-        /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
-        /* position: relative; */
-        /* width: 150px; */
-        height: 180px !important;
-        margin-bottom: 40px !important;
-    }
-
-    .news-latest .card-text {
-        /* position: relative; */
-        width: 80px !important;
-        margin-top: 20px;
-        padding-right: 20px;
-    }
 
 }

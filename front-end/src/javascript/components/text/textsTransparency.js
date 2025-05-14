@@ -154,13 +154,15 @@ function showTextTransparency(code, container) {
         <strong>O Meio Ambiente</strong>, seu conhecimento e proteção requer que observemos que a área a qual está denominada como “Parque dos Búfalos” foi desmatada e teve várias atividades ilegais que aconteceram em sua extensão, crimes como: Queimadas, extração de minérios e desmatamento em toda a sua história. 
       </p>
       <p>
-        Importante observar que a Lei obriga tanto o estado como os “proprietários de terras assegurar e potencializar a função da Bacia Hidrográfica do Reservatório Billings como produtora de água para a Região Metropolitana de São Paulo, garantindo sua qualidade e quantidade; estabelecer as condições e os instrumentos básicos para assegurar e ampliar a produção de água em quantidade e qualidade para abastecimento da população, com o objetivo de promover a preservação, recuperação e conservação dos mananciais da Bacia Hidrográfica do Reservatório Billings.
+        Observe como era a área antes de ser populada pelas pessoas onde imagens áreas do ano de 1958 revela a área como um grande terreno com árvores e natureza:
       </p>
-        <br>
-          <img src="../../assets/transparency/naturalEnvironment/arvore.png" alt="Imagens Aéreas da área de terreno do ano de 1958 do Parque dos Búfalos, recheada de árvores e natureza." class="img-fluid">
-        <br>
-        <p>
-          A vegetação no local é bastante diversificada, composta por 150 espécies, entre arbustivas, arbóreas, trepadeiras, herbáceas, epífitas, subarbustivas e palmeiras estipe.
+          <img src="../../assets/transparency/naturalEnvironment/img1_Meio-Ambiente.jpg" alt="Imagens Aéreas da área de terreno do ano de 1958 do Parque dos Búfalos, recheada de árvores e natureza." class="img-fluid">
+      <p>
+        Notória diferença entre as áreas verdes sendo cada vez mais desmatadas e o verde sendo substituído por prédios e casas, como mostra a imagem dentre os anos de 2003-2007:
+      </p>
+          <img src="../../assets/transparency/naturalEnvironment/img2_Meio-Ambiente.jpg" alt="Imagens do ano de 2007" class="img-fluid">
+      <p>
+          E por este motivo, se faz necessário que defendamos o Parque dos Búfalos com o espaço em verde que se possuí hoje, é literalmente o ar que respiramos em forma de árvores, plantas e natureza em grandes escalas, abrigando cerca de 150 espécies de árvores, entre arbustivas, arbóreas, trepadeiras, herbáceas, epífitas, subarbustivas e palmeiras estipe.
           Espécies nativas do Município de São Paulo: vassoura (Baccharis conyzoides), araticum (Annona dolabripetala Raddi), falso-caraguatá (Eryngium horridum Malme), jerivá (Syagrus romanzoffiana), cambará (Moquiniastrum polymorphum), ingá (Inga sp), jacarandá-paulista (Machaerium villosum), murici (Byrsonima intermedia), manacá-da-serra (Pleroma mutabile), entre outras.
         <br>
       </p>
@@ -204,9 +206,22 @@ function showTextTransparency(code, container) {
       <p>
         <strong>A questão Hídrica</strong> que cerca os arredores do Parque dos Búfalos se faz necessário conhecimento prévio de sua situação e localização, dado que o parque fica colado à Represa Billings.
       </p>
+      <br>
+      <img src="../../assets/transparency/water/img1_Agua.png" alt="Imagem da Represa Billings cercando o Parque dos Búfalos" class="img-fluid">
+      <br>
+
+      <p> 
+        Como sociedade, requer que observemos diretrizes e objetivos consistentes do <a href="https://www.al.sp.gov.br/repositorio/legislacao/lei/1997/lei-9866-28.11.1997.html"> 1° ao 2° artigo da lei n° 9.866/1997</a> que dispõe sobre normas para a proteção e recuperação das bacias hidrográficas dos mananciais de interesse regional do Estado de São Paulo, garantindo os mananciais como prioritários para o abastecimento público das populações atuais e futuras.
+
+      </p>
+      <p>
+        “Área em questão decorre principalmente da proximidade com a área inundável do Reservatório Billings que é responsável pelo fornecimento de água para 1,6 milhões de habitantes nos municípios de Diadema, São Bernardo e parte de Santo André. O terreno está integralmente inserido na Área de Proteção e Recuperação dos Mananciais da Bacia Hidrográfica do Reservatório Billings – APRM-B, instituída pela <a href="https://www.al.sp.gov.br/repositorio/legislacao/lei/2009/lei-13579-13.07.2009.html">lei 13.579/2009</a>” 
+        Assegurar e potencializar a função da Bacia Hidrográfica do Reservatório Billings como produtora de água para a Região Metropolitana de São Paulo, garantindo sua qualidade e quantidade; estabelecer as condições e os instrumentos básicos para assegurar e ampliar a produção de água em quantidade e qualidade para abastecimento da população, com o objetivo de promover a preservação, recuperação e conservação dos mananciais da Bacia Hidrográfica do Reservatório Billings.
+      </p>
+
       <h5 class="text-center">Represa Billings</h5>
       <p>
-        A Represa Billings, construída nos anos 1920 pelo engenheiro norte-americano Asa White Kenney Billings, é uma das maiores reservas de água potável, são 9,8 bilhões de litros de água, com 127 km2 de superfície abrangendo terras de vários municípios. Na época de sua construção, foi responsável por abastecer a Usina Hidrelétrica de Cubatão e assim suprir a crescente demanda do setor industrial que se instalava nos arredores, o que permitiu o crescimento econômico da região, transformando São Paulo no maior polo industrial da América Latina.
+        A Represa Billings, construída no ano de 1920 pelo engenheiro norte-americano Asa White Kenney Billings, é uma das maiores reservas de água potável, são 9,8 bilhões de litros de água, com 127 km2 de superfície abrangendo terras de vários municípios. Na época de sua construção, foi responsável por abastecer a Usina Hidrelétrica de Cubatão e assim suprir a crescente demanda do setor industrial que se instalava nos arredores, o que permitiu o crescimento econômico da região, transformando São Paulo no maior polo industrial da América Latina.
       </p>
       <p> 
         Parte acima retirado do site: https://capital.sp.gov.br/web/meio_ambiente/w/parque-municipal-jardim-apur%C3%A1-b%C3%BAfalos
@@ -326,36 +341,26 @@ function showTextTransparency(code, container) {
     `,
     '6-animais': showAnimals,
     '7-preservacao': `
-    <br>
-      <h5 class="text-center"> Manifesto do Parque dos Búfalos</h5>
       <p>
-        Em março de 2012, o então prefeito da cidade de São Paulo, Gilberto Kassab, decretou de utilidade pública a área conhecida como <strong>Parque dos Búfalos</strong>, visando a preservação ambiental através da futura implantação do parque como área de lazer para a população.
+        Ocorre que ambas as diretrizes de Proteção e Recuperação dos Mananciais, prescritas na lei Estadual de Proteção Ambiental e lei Específica da Billings, estão sendo violadas.
       </p>
       <p>
-        Em dezembro de 2013, o decreto foi revogado pelo atual prefeito, Fernando Haddad, com a intenção de construir moradias populares em cima de 19 nascentes, soterrando as últimas fontes naturais de água, responsáveis por abastecer a atual caixa d’água de São Paulo: a Represa Billings.
+        Nossos governantes são coniventes com essa tragédia ambiental. Além de deixarem de atender as necessidades da população, investem em projetos prejudiciais à própria população, beneficiando somente os grandes capitalistas. Exemplo dessa realidade é a EMCCAMP, uma das maiores empresas doadoras de campanhas políticas nas últimas eleições, além de ter sido citada no inquérito do Ministério Público do Rio de Janeiro por aliciar trabalho escravo. Esses são aqueles que querem soterrar as nascentes do Parque dos Búfalos e acabar com a possibilidade de a natureza seguir com seu curso natural como produtora de água.
       </p>
       <p>
-        Em meio a maior crise de abastecimento hídrico de que temos notícia, é insana a construção de prédios em uma área de manancial, esta especificamente, utilizada para abastecer a região sul e oeste por meio da transposição para o reservatório Guarapiranga. Além desta, está prevista a transposição do chamado Corpo Central para o braço Rio Grande. Assim, as águas da Billings passarão a também abastecer o ABC e o Alto Tietê pela transposição do Rio Grande para o reservatório Taiaçupeba. Essa mesma água ainda é utilizada para a geração de energia na usina de Henry Borden, na cidade de Cubatão, na baixada Santista.
+        Diante desse cenário, a providência urgente e necessária é reverter a ocupação irracional nas Áreas de Proteção aos Mananciais, bem como restaurar a cobertura vegetal nativa, importantíssima como habitat para fauna ameaçada remanescente. O projeto, na configuração em que se apresenta, além de não estar alinhado com o bojo do próprio Plano Diretor, e com os nobres objetivos relacionados ao direito fundamental de moradia/habitação, em convergência com o ambiente ecologicamente equilibrado, serve principalmente ao ganho imobiliário, em prejuízo do ambiente natural social.
       </p>
       <p>
-        Em meio a maior crise de abastecimento hídrico de que temos notícia, é insana a construção de prédios em uma área de manancial, esta especificamente, utilizada para abastecer a região sul e oeste por meio da transposição para o reservatório Guarapiranga. Além desta, está prevista a transposição do chamado Corpo Central para o braço Rio Grande. Assim, as águas da Billings passarão a também abastecer o ABC e o Alto Tietê pela transposição do Rio Grande para o reservatório Taiaçupeba. Essa mesma água ainda é utilizada para a geração de energia na usina de Henry Borden, na cidade de Cubatão, na baixada Santista.
+        Porquanto, precisamos defender o remanescente atual do Parque dos Búfalos, respeitando-se a natureza e os seus elementos, em especial as vulnerabilidades ambientais e faixas de proteção correspondentes, bem como, também, o passivo ambiental e o diagnóstico que considera a população impactada pela perda de uma enorme área ambiental.
       </p>
-
+      <br>
+        <img src="../../assets/transparency/preservation/img2_Preservation.jpg" alt="Imagem com escritura na parede "Sem floresta, não tem água, sem águam não tem vida... Parque dos Búfalos"" class="img-fluid">
+      </br>
       <p>
-        Como se não bastasse, o projeto de construção dos prédios no local é financiado por meio dos nossos impostos – sendo R$ 293,3 milhões vindos da União, R$ 72,8 milhões do Estado e R$ 13,7 milhões provenientes do município de São Paulo. Essa dinheirama toda está sendo destinada à destruição dos nossos mananciais já que a eventual construção dos prédios trará, como consequências, a drástica redução de vazão de água limpa que dali nasce e abastece a represa Billings, água está utilizada constantemente pela população local como fonte de água potável.
+        A área requer atenção incisiva do poder público no sentido de se impor a necessidade de proteção aos interesses difusos e coletivos relacionados à matéria ambiental, principalmente se considerando a época de escassez hídrica em que nos encontramos, justamente e em grande parte por ingerência e omissão por parte do poder público, também no que se refere à conservação do ambiente importante aos recursos hídricos, mas não somente a eles, pois possui importância intrínseca à biodiversidade vegetal que representa por si só, servindo ainda de habitat para fauna, e como estabilizador climático.
       </p>
-
       <p>
-        Outra consequência dessa imprudência seria a impermeabilização do solo, fazendo com que as águas pluviais deixem de abastecer o lençol freático e passem a carregar as impurezas e resíduos das ruas diretamente para dentro da Represa, piorando drasticamente sua condição já insalubre.
-      </p>
-
-      <p>
-        Por outro lado, com a implantação do Parque dos Búfalos em 100% da área, boa parte do que hoje é pasto será reflorestado com espécimes da Mata Atlântica, melhorando sobremaneira os serviços ambientais já prestados. Aliás nós, do Movimento em Defesa pelo Parque dos Búfalos, já estamos reflorestando a área. Até o momento já foram plantadas mais de 1.500 árvores nativas da Mata Atlântica na região.
-      </p>
-
-      <p>
-        Lamentavelmente esse empreendimento recebeu da Companhia Ambiental do Estado de São Paulo (CETESB), uma licença incompleta e IRREGULAR para sua edificação. A CETESB é responsável pelo controle, fiscalização, monitoramento e licenciamento de atividades geradoras de poluição, com a preocupação fundamental de preservar e recuperar a qualidade das águas, do ar e do solo. Notoriamente a CETESB não está cumprindo sua função pré-estabelecida, aliás, está cometendo uma infração gravíssima e irreversível, já que, com a autorização da construção dos prédios, parte do Parque dos Búfalos seria destruído e os serviços ambientais e sociais já prestados gratuitamente à população pelo parque, seriam aniquilados.
-        Ocorre que ambas as diretrizes de Proteção e Recuperação dos Mananciais, prescritas na Lei Estadual de Proteção Ambiental e Lei Específica da Billings, estão sendo violadas.
+       Atualmente predomina uma linha que desvirtua o conceito de meio ambiente ecologicamente equilibrado, bem como de melhoria ambiental, redefinindo-o sob o prestados de forma efetiva por parques sem compromisso ecológico, meros bosques, praças, canteiros ajardinados etc., a despeito de sua importância relativa intrínseca
       </p>
 
     `

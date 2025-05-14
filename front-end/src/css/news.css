@@ -1,8 +1,7 @@
 .news-container {
     margin: 50px auto;
-    padding: 0 1rem;
     /* folga interna nas laterais */
-    max-width: 1200px;
+    max-width: 1140px;
     /* largura máxima em desktop */
     box-sizing: border-box;
 
@@ -12,6 +11,9 @@
     text-align: center;
     margin: 0 auto;
 }
+
+
+
 
 .calendar-container {
     width: 100%;
@@ -31,8 +33,66 @@
 }
 
 
-.news-container h2 {
-    margin-top: 50px;
+.news-highlighted {
+    margin-top: 20px;
+    transition: transform 0.5s ease;
+
+}
+
+.news-highlighted:active {
+    transform: scale(0.80);
+    transform-origin: center center;
+}
+
+
+.news-highlighted a {
+    text-decoration: none;
+    color: #444;
+}
+
+.news-highlighted a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+
+.news-highlighted .card {
+    border: 1px solid #444;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.news-highlighted .card-body {
+    padding: 0px 0px 20px 0px;
+}
+
+.news-highlighted .card-text {
+    width: 800px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+
+.news-highlighted .card-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+}
+.news-highlighted .card-title h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    height: -20px;
 }
 
 .news-highlighted img {
@@ -45,45 +105,6 @@
 
 }
 
-.news-highlighted h5 {
-    margin-top: 30px;
-}
-
-.news-highlighted .card {
-    border: 1px solid #444;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.news-highlighted .card-body {
-    padding: 0px 0px 20px 0px;
-}
-
-.news-highlighted .card-title {
-
-    /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
-    /* position: relative; */
-    /* width: 150px; */
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-self: center;
-    text-align: center;
-    top: -05px;
-    margin-bottom: 20px;
-}
-
-.news-highlighted .card-text {
-    /* position: relative; */
-    width: 800px;
-    justify-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 3vh;
-    margin-top: 20px;
-    padding-right: 20px;
-}
-
 
 
 
@@ -93,17 +114,19 @@
 
 .news-card-horizontal {
     border: 1px solid #000000;
-    overflow: hidden;
     background-color: #fff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    /* animação suave */
 }
 
-.news-img {
-    width: 100%;
-    height: auto;
-    display: block;
+.news-card-horizontal:active {
+    transform: scale(0.90);
+    transform-origin: center center;
 }
+
+
 
 /* Flex container dos cards */
 .news-latest {
@@ -113,6 +136,7 @@
 
 /* Cada card */
 .news-card-horizontal {
+    width: 50%;
     border: 1px solid #444;
     /* borda suave */
     border-radius: 12px;
@@ -120,29 +144,49 @@
 
     flex: 0 0 auto;
     border-radius: 8px;
+    position: relative;
 
     overflow: hidden;
     background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Conteúdo interno do card */
 .news-card-horizontal .card-body {
+    width: 70%;
     display: flex;
     padding: 0px 10px 0px 0px;
+    align-items: center; /* ← ESSENCIAL para centralizar verticalmente */
+    justify-content: center;
     flex-direction: row;
-    height: 150px;
+    height: 150px; /* Ou o valor que você deseja */
 }
 
 .news-card-horizontal .card-text-content {
-    align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    flex: 0 0 30%;
+
+
     display: flex;
     align-items: center;
+    height: 100%;
+
+    flex: 0 0 30%;
+
     justify-content: center;
     padding: 10px;
+}
+
+
+.news-card-horizontal .card-title {
+    border-left: 4px solid rgb(95, 89, 89);
+    padding-left: 10px;
+    margin: 0px;
+    text-align: left;
+
+    display: flex;        
+    align-items: center;  /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 50%;         /* Garante que ocupa toda a altura do card-body */
+    padding-left: 10px;
+    
 }
 
 .news-card-horizontal .news-img {
@@ -150,8 +194,23 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+}
+
+
+
+.news-card-horizontal a {
+    text-decoration: none;
+    color: #444;
+}
+
+.news-card-horizontal a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
 }
 
 
@@ -178,39 +237,73 @@
 }
 
 /* SLIDER CUSTOM */
-/* Slider customizado */
 .scrollbar-range {
-    -webkit-appearance: none;
     appearance: none;
+    -webkit-appearance: none;
     width: 100%;
     height: 8px;
     border-radius: 4px;
     background: linear-gradient(to right,
-            #4caf50 var(--percent, 0%),
-            #ddd var(--percent, 0%));
+            #aaaaaa var(--percent, 0%));
     cursor: pointer;
     touch-action: none;
 }
 
+/* Chrome, Safari, Edge */
 .scrollbar-range::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 24px;
-    width: 60px;
-    background: #555;
+    height: 15px;
+    width: 4rem;
+    background: rgb(11, 128, 67);
     border-radius: 12px;
     cursor: grab;
-    transition: left 0.3s ease, background 0.3s ease;
+    transition: background 0.3s ease;
 }
 
+/* Firefox */
 .scrollbar-range::-moz-range-thumb {
-    height: 24px;
-    width: 60px;
-    background: #555;
+    height: 15px;
+    width: 4rem;
+    background: #aaaaaa;
     border-radius: 12px;
     cursor: grab;
 }
 
+/* Firefox track fix */
+.scrollbar-range::-moz-range-track {
+    background: transparent;
+}
 
+.news-card-horizontal .hover-overlay {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Ao passar o mouse, ela aparece */
+.news-card-horizontal:hover .hover-overlay {
+    opacity: 1;
+}
+
+/* Escurece a imagem de fundo da camada de hover */
+.news-card-horizontal .hover-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
 
 
 
