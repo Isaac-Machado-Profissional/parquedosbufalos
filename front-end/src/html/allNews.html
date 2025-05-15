@@ -64,8 +64,8 @@
                         <li class="nav-item"><a href="./history.html" class="nav-link">História</a></li>
                         <li class="nav-item"><a href="./transparency.html" class="nav-link">Transparência</a>
                         </li>
-                        <li class="nav-item"><a href="./news.html" class="nav-link">Notícias</a></li>
-                        <li class="nav-item"><a href="./about.html" class="nav-link active">Sobre</a></li>
+                        <li class="nav-item"><a href="./news.html" class="nav-link active">Notícias</a></li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link">Sobre</a></li>
                     </ul>
                 </div>
 
@@ -74,8 +74,8 @@
                         <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
                         <li class="nav-item"><a href="./history.html" class="nav-link">História</a></li>
                         <li class="nav-item"><a href="./transparency.html" class="nav-link">Transparência</a></li>
-                        <li class="nav-item"><a href="./news.html" class="nav-link">Notícias</a></li>
-                        <li class="nav-item"><a href="./about.html" class="nav-link active">Sobre</a></li>
+                        <li class="nav-item"><a href="./news.html" class="nav-link active">Notícias</a></li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link">Sobre</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,50 +83,67 @@
     </header>
 
     <main>
-        <div class="aboutUs-container">
+        <div class="allNews-container">
+            <h1>Mais notícias</h1>
 
-            <h1>Sobre Nós</h1>
-            <p>
-                Parque dos Búfalos e sua associação representativa em forma de uma <b>OSCIP</b>(<b>O</b>rganização da
-                <b>S</b>ociedade <b>C</b>ivil de <b>I</b>nteresse <b>P</b>úblico) sem fins lucrativo, legislada e
-                estruturada com respaldo previsto na lei, onde provemos atividades, comunicação, história e diversos
-                projetos onde tentamos trazer um pouco de sustentabilidade a um parque em construção que precisa de apoio e
-                entendimento de sua grandeza, não só a comunidade, como também a grande cidade de São Paulo.
-            </p>
-            <div class="map-brazil-container">
-                <img src="../assets/about/map-brasil.png" alt="Mapa do Brasil" width="800" height="600" class="zoom-img"
-                    id="mapa-brasil" tabindex="0" role="button" aria-label="Ampliar o mapa do Brasil">
+            <div class="catalogNews row g-3">
+                <!-- Cada card -->
+                <div class="blockNew col-6 col-sm-4 col-lg-3">
+                    <a href="./noticias/represaBillings100Anos.html">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="https://images.unsplash.com/photo-1471009901894-1c05ac30d5fe?q=80&w=1470&auto=format&fit=crop"
+                                    alt="Imagem da Notícia Destaque">
+                                <h5 class="card-title">Represa Billings 100 Anos</h5>
 
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blockNew col-6 col-sm-4 col-lg-3">
+                    <a href="./noticias/vistoria.html">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="https://images.pexels.com/photos/31979063/pexels-photo-31979063/free-photo-of-vista-aerea-da-quadra-de-basquete-do-parque-caxias-do-sul.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Imagem da Notícia Destaque">
+                                <h5 class="card-title">Parque dos Búfalos — Núcleo Pilão inaugurado! </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blockNew col-6 col-sm-4 col-lg-3">
+                    <a href="./noticias/bufalosMeioAgrario.html">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="https://images.pexels.com/photos/247512/pexels-photo-247512.jpeg"
+                                    alt="Imagem da Notícia Destaque">
+                                <h5 class="card-title">Búfalos e sua utilização no meio agrário</h5>
+
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blockNew col-6 col-sm-4 col-lg-3">
+                    <a href="./noticias/bufalosForcaImpulso.html">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <img src="https://images.pexels.com/photos/30302414/pexels-photo-30302414/free-photo-of-emocionante-corrida-de-kambala-em-mangaluru-india.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Imagem da Notícia Destaque">
+                                <h5 class="card-title">Búfalos e sua incrível força de impulso</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-
-            <div class="contact-form-container">
-
-                <h1>Forma de Contato</h1>
-                <p> Este é um site da comunidade, para a comunidade, qualquer desavença ou desejo de comunicação oficial,
-                    segue o principal meio: </p>
-                <a href="https://sp156.prefeitura.sp.gov.br/portal/servicos" target="_blank">
-                    <img src="../assets/about/sp156-logo.png" alt="Logo do SP156" width="80px" height="80px">SP156 - Portal
-                </a>
-
-
-            </div>
-
-        </div>
-
-        <div class="newsletter-container" id="newsletter-container">
-            <form id="newsletter-form" class="needs-validation col" novalidate>
-                <h1>Newsletter</h1>
-                <p>Insira seu e-mail e receba notícias e avisos da região!</p>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" required />
-
-                <div class="valid-feedback">E-mail válido!</div>
-                <div class="invalid-feedback">E-mail inválido.</div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-        </form>
         </div>
     </main>
+
+
+
 
     <footer>
         <div class="container footer-container text-center">

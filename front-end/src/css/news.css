@@ -68,16 +68,20 @@
 }
 
 .news-highlighted .card-text {
+ 
     width: 800px;
     justify-self: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 
 .news-highlighted .card-title {
+    width: 80%;
+    padding: 20px;
+    border-top: 4px solid rgb(95, 89, 89);
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
@@ -86,20 +90,6 @@
     align-items: center;
 }
 
-.news-highlighted .card-title::before {
-    content: "";
-    position: absolute;
-    top: -20%;
-    /* ajusta até onde ficar acima do texto */
-    left: 50%;
-    /* centra horizontalmente */
-    transform: translateX(-50%);
-    width: 80%;
-    /* aqui você define o “tamanho” do traço */
-    height: 4px;
-    /* espessura igual ao que era a borda */
-    background-color: rgb(95, 89, 89);
-}
 
 .news-highlighted .card-title h5 {
     font-size: 1.5rem;
@@ -115,13 +105,14 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border: none;
-    
+
     width: 100%;
     height: 300px;
 
     object-fit: cover;
     transition: filter 0.3s ease, opacity 0.3s ease;
-    aspect-ratio: 16 / 9;       
+    aspect-ratio: 16/9;
+    transition: transform 0.3s ease;
 
 
 }
@@ -153,6 +144,7 @@
 .news-latest {
     display: flex;
     gap: 1rem;
+    transform: translateZ(0);     /* promove para GPU layer */
 }
 
 /* Cada card */
@@ -224,7 +216,6 @@
     width: 100%;
     height: 100%;
 
-    aspect-ratio: 16 / 9;       
     object-fit: cover;
     display: block;
 
@@ -232,16 +223,18 @@
     border-bottom-left-radius: 8px;
 
     transition: filter 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease;
 
 }
 
-.news-card-horizontal .card-body:hover .news-img,
 .news-highlighted .card-body:hover img {
-    filter: blur(50%);
-    /* Imagem em tons de cinza */
-    /* :contentReference[oaicite:0]{index=0} */
-    opacity: 0.8;
-    /* Leve escurecimento extra */
+    transform: scale(1.24);    /* aumenta 10% — ajuste ao seu gosto */
+    transition: transform 0.3s ease;
+}
+.news-card-horizontal .card-body:hover .news-img {
+
+    transform: scale(1.04);    /* aumenta 10% — ajuste ao seu gosto */
+    transition: transform 0.3s ease;
 }
 
 .news-card-horizontal a {
@@ -262,9 +255,11 @@
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
-    /* Firefox */
     -ms-overflow-style: none;
-    /* IE10+ */
+    -webkit-overflow-scrolling: touch; /* scroll nativo suave no iOS */
+    will-change: scroll-position;      /* dá dica de GPU accel. */
+    touch-action: pan-x;              /* garante que o toque leve só ao x */
+    transform: translateZ(0);     /* força render em GPU */
 }
 
 .news-scroll-wrapper::-webkit-scrollbar {
@@ -316,37 +311,26 @@
     background: transparent;
 }
 
-.news-card-horizontal .hover-overlay {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 2;
-    text-align: center;
-    padding: 1rem;
+
+/* Animação shimmer fake no fundo enquanto carrega */
+.scrollbar-range.loading {
+    background: linear-gradient(
+        135deg,
+        #e0ffe8 25%,
+        #b6f2cb 50%,
+        #e0ffe8 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer-bg 1.2s infinite linear;
+    pointer-events: none; /* impede uso */
+    opacity: 0.8;
 }
 
-/* Ao passar o mouse, ela aparece */
-.news-card-horizontal:hover .hover-overlay {
-    opacity: 1;
+/* Animação keyframe shimmer */
+@keyframes shimmer-bg {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }
-
-/* Escurece a imagem de fundo da camada de hover */
-.news-card-horizontal .hover-overlay::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
-
 
 
 

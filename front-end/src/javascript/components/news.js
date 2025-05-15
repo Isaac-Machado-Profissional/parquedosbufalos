@@ -1,40 +1,67 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const slider = document.getElementById('progress-slider');
-  const wrapper = document.querySelector('.news-scroll-wrapper');
-  const carousel = document.querySelector('.news-latest');
+    const slider = document.getElementById('progress-slider');
+    const wrapper = document.querySelector('.news-scroll-wrapper');
+    const carousel = document.querySelector('.news-latest');
 
-  function updateLabel(val) {
-      slider.style.setProperty('--percent', val + '%');
-  }
+    let isSyncing = false;
+    let rafPending = false;
+    let maxScroll = 0;
 
-  // Slider → Scroll
-  slider.addEventListener('input', () => {
-      const pct = slider.value / 100;
-      const maxScroll = carousel.scrollWidth - wrapper.clientWidth;
-      wrapper.scrollLeft = pct * maxScroll;
-      updateLabel(slider.value);
-  });
+    const calculateMax = () => {
+        maxScroll = carousel.scrollWidth - wrapper.clientWidth;
+    };
 
-  // Scroll → Slider
-  wrapper.addEventListener('scroll', () => {
-      const maxScroll = carousel.scrollWidth - wrapper.clientWidth;
-      const pct = wrapper.scrollLeft / maxScroll;
-      const val = Math.round(pct * 100);
-      slider.value = val;
-      updateLabel(val);
-  });
+    // Aplica efeito loading visual
+    slider.classList.add('loading');
+    slider.disabled = true; // impede interação antes do load
 
-  // 🔁 Simulação de "destravamento" inicial com animação leve
-  setTimeout(() => {
-      // força scroll 0 → atualiza gradualmente
-      wrapper.scrollLeft = 0;
-      slider.value = 0;
-      updateLabel(0);
+    // 1️⃣ Cálculo inicial de limites
+    window.addEventListener('load', () => {
+        calculateMax();
 
-      const maxScroll = carousel.scrollWidth - wrapper.clientWidth;
+        // Após load completo, tira loading
+        slider.classList.remove('loading');
+        slider.disabled = false;
+    }, { passive: true });
 
-      // scroll suave para a posição "real" (ex: metade do conteúdo visível, opcional)
-      const targetScroll = 0; // ou calcule baseado no que quiser
-      wrapper.scrollTo({ left: targetScroll, behavior: 'smooth' });
-  }, 800); // <- tempo em ms
+    window.addEventListener('resize', calculateMax, { passive: true });
+
+    function updateLabel(val) {
+        slider.style.setProperty('--percent', val + '%');
+    }
+
+    // Slider → Scroll
+    slider.addEventListener('input', () => {
+        if (slider.disabled) return;
+        isSyncing = true;
+        const pct = slider.value / 100;
+        wrapper.scrollLeft = pct * maxScroll;
+        updateLabel(slider.value);
+        requestAnimationFrame(() => { isSyncing = false; });
+    });
+
+    // Scroll → Slider
+    wrapper.addEventListener('scroll', () => {
+        if (isSyncing || rafPending || slider.disabled) return;
+        rafPending = true;
+        requestAnimationFrame(() => {
+            const pct = wrapper.scrollLeft / maxScroll;
+            const val = Math.round(pct * 100);
+            slider.value = val;
+            updateLabel(val);
+            rafPending = false;
+        });
+    }, { passive: true });
+    // Reforça que o wrapper receba o foco após qualquer "hover" ou clique
+    wrapper.addEventListener('mouseenter', () => {
+        wrapper.scrollLeft = wrapper.scrollLeft + 1; // pequena mudança → "reativa"
+        wrapper.scrollLeft = wrapper.scrollLeft - 1;
+    });
+
+    wrapper.addEventListener('touchstart', () => {
+        wrapper.scrollLeft += 1;
+        wrapper.scrollLeft -= 1;
+      }, { passive: true });
+      
+
 });
