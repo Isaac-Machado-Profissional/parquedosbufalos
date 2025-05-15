@@ -85,6 +85,22 @@
     text-align: center;
     align-items: center;
 }
+
+.news-highlighted .card-title::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    /* ajusta até onde ficar acima do texto */
+    left: 50%;
+    /* centra horizontalmente */
+    transform: translateX(-50%);
+    width: 80%;
+    /* aqui você define o “tamanho” do traço */
+    height: 4px;
+    /* espessura igual ao que era a borda */
+    background-color: rgb(95, 89, 89);
+}
+
 .news-highlighted .card-title h5 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -99,10 +115,14 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border: none;
+    
     width: 100%;
     height: 300px;
+
     object-fit: cover;
     transition: filter 0.3s ease, opacity 0.3s ease;
+    aspect-ratio: 16 / 9;       
+
 
 }
 
@@ -137,7 +157,7 @@
 
 /* Cada card */
 .news-card-horizontal {
-    width: 50%;
+    width: 55%;
     border: 1px solid #444;
     /* borda suave */
     border-radius: 12px;
@@ -156,12 +176,14 @@
     width: 70%;
     display: flex;
     padding: 0px 10px 0px 0px;
-    align-items: center; /* ← ESSENCIAL para centralizar verticalmente */
+    align-items: center;
+    /* ← ESSENCIAL para centralizar verticalmente */
     justify-content: center;
     flex-direction: row;
-    height: 250px; /* Ou o valor que você deseja */
+    height: 250px;
+    /* Ou o valor que você deseja */
     min-height: 250px !important;
-        
+
 
 }
 
@@ -185,19 +207,24 @@
     margin: 0px;
     text-align: left;
 
-    display: flex;        
-    align-items: center;  /* Centraliza o texto verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    height: 50%;         /* Garante que ocupa toda a altura do card-body */
+    display: flex;
+    align-items: center;
+    /* Centraliza o texto verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    height: 50%;
+    /* Garante que ocupa toda a altura do card-body */
     padding-left: 10px;
-    
+
 }
 
 .news-card-horizontal .news-img {
     flex: 0 0 70%;
-    min-width: 500px;              
+    min-width: 500px;
     width: 100%;
     height: 100%;
+
+    aspect-ratio: 16 / 9;       
     object-fit: cover;
     display: block;
 
@@ -210,8 +237,11 @@
 
 .news-card-horizontal .card-body:hover .news-img,
 .news-highlighted .card-body:hover img {
-  filter: blur(50%);       /* Imagem em tons de cinza */  /* :contentReference[oaicite:0]{index=0} */
-  opacity: 0.8;                  /* Leve escurecimento extra */
+    filter: blur(50%);
+    /* Imagem em tons de cinza */
+    /* :contentReference[oaicite:0]{index=0} */
+    opacity: 0.8;
+    /* Leve escurecimento extra */
 }
 
 .news-card-horizontal a {
