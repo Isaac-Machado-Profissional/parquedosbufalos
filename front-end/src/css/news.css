@@ -169,11 +169,9 @@
     display: flex;
     padding: 0px 10px 0px 0px;
     align-items: center;
-    /* ← ESSENCIAL para centralizar verticalmente */
     justify-content: center;
     flex-direction: row;
     height: 250px;
-    /* Ou o valor que você deseja */
     min-height: 250px !important;
 
 
@@ -217,7 +215,6 @@
     height: 100%;
 
     object-fit: cover;
-    display: block;
 
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -258,7 +255,6 @@
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch; /* scroll nativo suave no iOS */
     will-change: scroll-position;      /* dá dica de GPU accel. */
-    touch-action: pan-x;              /* garante que o toque leve só ao x */
     transform: translateZ(0);     /* força render em GPU */
 }
 
@@ -267,11 +263,7 @@
     /* Chrome, Safari, Edge */
 }
 
-/* CARROSSEL */
-.news-latest {
-    display: flex;
-    gap: 1rem;
-}
+
 
 /* SLIDER CUSTOM */
 .scrollbar-range {

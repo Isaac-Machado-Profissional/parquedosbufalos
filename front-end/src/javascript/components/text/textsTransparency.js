@@ -151,7 +151,7 @@ function showTextTransparency(code, container) {
   const texts = {
     '1-meio_ambiente': `
       <p>
-        <strong>O Meio Ambiente</strong>, seu conhecimento e proteção requer que observemos que a área a qual está denominada como “Parque dos Búfalos” foi desmatada e teve várias atividades ilegais que aconteceram em sua extensão, crimes como: Queimadas, extração de minérios e desmatamento em toda a sua história. 
+       Seu conhecimento e proteção requer que observemos que a área a qual está denominada como “Parque dos Búfalos” foi desmatada e teve várias atividades ilegais que aconteceram em sua extensão, crimes como: Queimadas, extração de minérios e desmatamento em toda a sua história. 
       </p>
       <p>
         Observe como era a área antes de ser populada pelas pessoas onde imagens áreas do ano de 1958 revela a área como um grande terreno com árvores e natureza:
@@ -161,45 +161,42 @@ function showTextTransparency(code, container) {
         Observe a notória diferença entre as áreas verdes sendo cada vez mais desmatadas e o verde sendo substituído por prédios e casas, como mostra a imagem dentre os anos de 2003-2007:
       </p>
           <img src="../../assets/transparency/naturalEnvironment/img2_Meio-Ambiente.jpg" alt="Imagens do ano de 2007" class="img-fluid">
+
       <p>
-          E por este motivo, se faz necessário que defendamos o Parque dos Búfalos com o espaço em verde que se possuí hoje, é literalmente o ar que respiramos em forma de árvores, plantas e natureza em grandes escalas, abrigando cerca de 150 espécies de árvores, entre arbustivas, arbóreas, trepadeiras, herbáceas, epífitas, subarbustivas e palmeiras estipe.
-          Espécies nativas do Município de São Paulo: vassoura (Baccharis conyzoides), araticum (Annona dolabripetala Raddi), falso-caraguatá (Eryngium horridum Malme), jerivá (Syagrus romanzoffiana), cambará (Moquiniastrum polymorphum), ingá (Inga sp), jacarandá-paulista (Machaerium villosum), murici (Byrsonima intermedia), manacá-da-serra (Pleroma mutabile), entre outras.
-        <br>
+        No Parque dos Búfalos, se encontra 18 APP(Áreas de Preservação Permanente).
       </p>
       <p>
-        Entre as espécies exóticas destacam-se: árvore-polvo (Heptapleurum actinophyllum), mamoeiro (Carica papaya), aspargo (Asparagus), jaqueira (Artocarpus heterophyllus), figueira-benjamim (Ficus benjamina L.), eucalipto (Eucalyptus sp.), pau-incenso (Pittosporum undulatum), goiabeira (Psidium guajava) e outras.
-        Duas espécies encontradas estão vulneráveis de extinção: a papo-de-peru ou jarrinha (Aristolochia cymbifera) e a canela-amarela (Nectandra barbellata). Outras duas encontra-se em perigo de extinção no Brasil e no município: Pleroma riedelianum e a pinheiro-do-paraná (Araucaria angustifólia).
-        Portaria Secretaria Municipal do Verde e do Meio Ambiente - SVMA Nº 38 de 21 de Maio de 2024
-        Medidas preventivas frente aos eventos climáticos extremos nos Parques Naturais Municipais e Parques Urbanos Municipais. 
-        <br>
-        Parte acima retirado do site: https://capital.sp.gov.br/web/meio_ambiente/w/parque-municipal-jardim-apur%C3%A1-b%C3%BAfalos
+        A flora local, ricamente populada, com cerca de 150 espécies de árvores, entre: Arbustivas; arbóreas; trepadeiras, herbáceas; epífitas; subartivas; palmeiras estipe, dentre muitas outras, que podem ser naturalmente vistas ao entorno do Parque dos Búfalos e que precisam continuar lá, provendo nosso ar, este que precisa de melhoria, ou seja, mais árvores em áreas verdes, não menos.  
       </p>
     `,
 
     '2-educacao': `
-    <br>
-      <h5 class="text-center">Luta por escolas</h5>
       <p> 
-        A luta por escolas, é um direito fundamental e uma necessidade urgente para garantir o acesso à educação e ao desenvolvimento de crianças da comunidade do Jardim Apurá.
+        <strong>A luta por escolas</strong>, é um direito fundamental e uma necessidade urgente para garantir o acesso à educação e ao desenvolvimento de crianças da comunidade do Jardim Apurá.
         <br>
-        A falta de escolas adequadas pode gerar desigualdades sociais, prejudicar o desenvolvimento infantil e juvenil, limitando as oportunidades de aprendizado e de crescimento.
+      </p>
+      <div class="map-container d-flex justify-content-center" style="overflow: hidden; height: 430px;">
+        <iframe src="https://www.google.com/maps/d/u/7/embed?mid=1pcR0O3odPY7fj8Pghi9h3_RIl4d4zQ8&ehbc=2E312F&noprof=1" width="640" height="480" style="border: none; margin-top: -50px;"></iframe>
+      </div>
+      <p>
+        Como podemos ver acima, destacado em vermelho todas as escolas que atendem não só a região do Jardim Apurá, como também ao Município de Pedreira(este que soma mais de 40 mil pessoas[IBGE]), além de outras regiões próximas e <strong> metade dos pontos em vermelho sendo de Ensino Infantil particular.</strong>
+        <br>
+        Fazendo então seu entorno populacional, que necessita de uma escola pro seu filho, se vendo na condição de poucas opções de escolas públicas, contribuindo com uma demanda ainda maior de pessoas querendo colocar seus filhos em escolas e ouvindo não, por não haver vagas.
+      </p>
+      <p>
+        Com o crescimento imobiliário na região do Jardim Apurá e com a construção do conjunto de prédios - o Residencial Espanha em 2016, o bairro teve um adensamento extremo e a infraestrutura infelizmente não acompanhou essa demanda crescente de pessoas no bairro. Então serviços básicos ainda hoje ano 2025 estão em falta, como: Hospital, postos de saúde, escolas, creches, transporte público de qualidade...
+      </p>
+      <br>
+      <h5 class="text-center">Luta por escolas</h5>
+      <p>
+        A falta de escolas adequadas pode gerar desigualdades sociais, prejudicando o desenvolvimento infantojuvenil e limitando as oportunidades de aprendizado, crescimento e obtenção de trabalho.
         <br>
         É importante que as autoridades locais e regionais garantam a construção e melhoria de escolas no Jardim Apurá, com o objetivo de que o acesso à educação de qualidade, sejam a todos os moradores.
       </p>
+      
       <p>
-        Em resumo, a luta no Jardim Apurá envolve tanto a transformação de um terreno em parque, como o Parque dos Búfalos, quanto a necessidade de garantir o acesso à educação e a melhoria da qualidade de vida dos moradores, incluindo a construção de novas escolas e melhoria das existentes, que não são muitas. O Jardim Apura conta com somente uma escola estadual, a escola E.E Professor Francisco Alves Mourão, que fica na Rua: Adelina Maria De Jesus, nº15, CEP: 04470-261 – Jardim Apurá – São Paulo – SP, tel: (11) 26588736. A escola atende os anos iniciais que vão do 1º ano do fundamental I, fundamental II que atende o 6º ano ao 9º ano e ensino médio. 
-      </p>
-      <p>
-        Com o crescimento imobiliário na região do Jardim Apurá, com a construção do conjunto de prédios – o Residencial Espanha em 2016, o bairro teve um adensamento extremo e a infraestrutura infelizmente não acompanhou essa demanda crescente de pessoas no bairro. Então serviços básicos ainda hoje ano 2025 estão em falta, como hospital, postos de saúde, escolas, creches, transporte público etc. Porém um problema muito relatado pelos moradores é a falta de escolas na região, pois somente uma escola não suporta a alta demanda de alunos na região. Mães relatam que precisam procurar escolas fora do bairro a alguns quilômetros de distância pois se veem sem saída. Muitas crianças que moram no Jardim Apurá estudam em escolas longe do bairro, como E.E Professor Eugênio Zerbini, que não é tão distante, porém não é dentro do bairro Jardim Apurá, e outras mães são obrigadas a matricular e levar suas crianças todos os dias para o Céu Alvarenga, que é bem distante do bairro. 
-      </p>
-      <p>
-        O bairro conta também com o EMEI Jardim Apurá localizado na Rua: Camilo Angleria, nº 314 – Jardim Bandeirantes – Cep: 04470-310 – São Paulo – SP , Tel: 11-5560-0184 inaugurado em março de 2019. A unidade atende 520 alunos entre os períodos manhã e tarde. 
-      </p>
-      <p>
-        Tem também com o  CEI Irmã Agostina localizado na Rua: Lúcio Dias da Fonseca, nº 27 – Jardim Apurá – São Paulo – SP Cep: 04470-080, e o CEI Amor Perfeito localizado na Rua: Independência, nº 146 – Jardim Apurá – Cep: 04470-010, que atendem as crianças menores a partir dos primeiros meses de vida. Se formos pensar, em um bairro, onde a população de uma hora pra outra cresceu de forma tão rápida, com a chegada de moradias populares, que somadas chegam a mais de 15 mil pessoas a mais do que as que já moravam no bairro, o número de escolas e creches não é suficiente para todos os moradores. 
-      </p>
-      <p>         
-        Nesse pensamento, também sabemos que as demais infraestruturas são muito necessárias, como hospitais, postos, transporte mas a educação é de extrema urgência, principalmente para mães que precisam matricular seus filhos em escolas próximo onde mora e simplesmente escutam que não tem vagas, chega a ser frustrante.
+        É um grave problema muito relatado pelos moradores, a falta de escolas na região, pois somente as escolas existentes não suporta a alta demanda de alunos na região. Mães relatam que precisam procurar escolas fora do bairro a alguns quilômetros de distância pois se veem sem saída. Muitas crianças que moram no Jardim Apurá estudam em escolas, que não no próprio bairro do Jardim Apurá, afetando não só a demanda e a educação, mas também ao transporte público, que já é precário e não atende a demanda de pessoas que precisam se deslocar para estudar.
+        Se formos pensar, em um bairro, onde a população de uma hora pra outra cresceu de forma tão rápida, com a chegada de moradias populares. O número de escolas e creches visivelmente não é suficiente para todos os moradores. 
       </p>
  `,
     '3-agua': `
@@ -210,128 +207,23 @@ function showTextTransparency(code, container) {
       <img src="../../assets/transparency/water/img1_Agua.png" alt="Imagem da Represa Billings cercando o Parque dos Búfalos" class="img-fluid">
       <br>
 
+      <h5 class="text-center">Represa Billings</h5>
+      <p>
+        A Represa Billings, inauguradada no ano de 1925 pelo engenheiro norte-americano Asa White Kenney Billings, reflete uma das maiores reservas de água potável da região metropolitana de São Paulo, capacitada a receber cerca de 11,21 bi. litros de água, com aproximadamente 127 km² de superfície abrangendo terras de vários municípios. 
+        <br>
+        Na época de sua construção, foi responsável por abastecer a Usina Hidrelétrica Henry Borden, localizada em Cubatão e assim suprir a crescente demanda do setor industrial que se instalava nos arredores, o que permitiu o crescimento econômico da região, transformando São Paulo no maior polo industrial da América Latina.
+      </p>
+
       <p> 
         Como sociedade, requer que observemos diretrizes e objetivos consistentes do <a href="https://www.al.sp.gov.br/repositorio/legislacao/lei/1997/lei-9866-28.11.1997.html"> 1° ao 2° artigo da lei n° 9.866/1997</a> que dispõe sobre normas para a proteção e recuperação das bacias hidrográficas dos mananciais de interesse regional do Estado de São Paulo, garantindo os mananciais como prioritários para o abastecimento público das populações atuais e futuras.
 
       </p>
       <p>
-        “Área em questão decorre principalmente da proximidade com a área inundável do Reservatório Billings que é responsável pelo fornecimento de água para 1,6 milhões de habitantes nos municípios de Diadema, São Bernardo e parte de Santo André. O terreno está integralmente inserido na Área de Proteção e Recuperação dos Mananciais da Bacia Hidrográfica do Reservatório Billings – APRM-B, instituída pela <a href="https://www.al.sp.gov.br/repositorio/legislacao/lei/2009/lei-13579-13.07.2009.html">lei 13.579/2009</a>” 
-        Assegurar e potencializar a função da Bacia Hidrográfica do Reservatório Billings como produtora de água para a Região Metropolitana de São Paulo, garantindo sua qualidade e quantidade; estabelecer as condições e os instrumentos básicos para assegurar e ampliar a produção de água em quantidade e qualidade para abastecimento da população, com o objetivo de promover a preservação, recuperação e conservação dos mananciais da Bacia Hidrográfica do Reservatório Billings.
+        Área em questão decorre principalmente da proximidade com a área inundável do Reservatório Billings que é responsável pelo fornecimento de água para 1,6 milhões de habitantes nos municípios de Diadema, São Bernardo e parte de Santo André. O terreno está integralmente inserido na Área de Proteção e Recuperação dos Mananciais da Bacia Hidrográfica do Reservatório Billings - APRM-B, instituída pela <a href="https://www.al.sp.gov.br/repositorio/legislacao/lei/2009/lei-13579-13.07.2009.html">lei 13.579/2009</a> que diz respeito a assegurar e potencializar a função da Bacia Hidrográfica do Reservatório Billings como produtora de água para a Região Metropolitana de São Paulo, garantindo sua qualidade e quantidade; estabelecer as condições e os instrumentos básicos para assegurar e ampliar a produção de água em quantidade e qualidade para abastecimento da população, com o objetivo de promover a preservação, recuperação e conservação dos mananciais da Bacia Hidrográfica do Reservatório Billings.
       </p>
-
-      <h5 class="text-center">Represa Billings</h5>
-      <p>
-        A Represa Billings, construída no ano de 1920 pelo engenheiro norte-americano Asa White Kenney Billings, é uma das maiores reservas de água potável, são 9,8 bilhões de litros de água, com 127 km2 de superfície abrangendo terras de vários municípios. Na época de sua construção, foi responsável por abastecer a Usina Hidrelétrica de Cubatão e assim suprir a crescente demanda do setor industrial que se instalava nos arredores, o que permitiu o crescimento econômico da região, transformando São Paulo no maior polo industrial da América Latina.
-      </p>
-      <p> 
-        Parte acima retirado do site: https://capital.sp.gov.br/web/meio_ambiente/w/parque-municipal-jardim-apur%C3%A1-b%C3%BAfalos
-      </p>
-      <p>
-        Esta Nota Técnica reúne resultados de pesquisas científicas e recomendações para a 
-        gestão da bacia hidrográfica do reservatório Billings. Este documento foi escrito com a colaboração de pesquisadoras e pesquisadores de quatro instituições de ensino e pesquisa, representando equipes de onze instituições. A proposta foi elaborada respondendo a um convite da coordenação do Subcomitê Billings-Tamanduateí.
-      </p>
-      <p>
-        Este convite foi proposto a partir de um evento comemorativo dos 99 anos da Billings, realizado no Teatro Clara Nunes em Diadema, em 27 de março de 2024, organizado pela iniciativa do Subcomitê Billings-Tamanduateí. Neste evento estiveram presentes representantes da prefeitura de Diadema, Fundação Agência Bacia Hidrográfica do Alto Tietê (FABHAT), Movimento em Defesa da Vida (MDV), Consórcio Intermunicipal do Grande ABC, Grupo de Fiscalização Integrada - Billings (GFI-B) da Secretaria de Meio Ambiente, Infraestrutura e Logística; também contou com a participação da deputada estadual Marina Helou, e pesquisadoras(es) da Universidade São Caetano do Sul, Universidade Federal do ABC, Universidade Federal de São Paulo. O evento contou com ampla participação da sociedade civil e de autoridades do município de Diadema. A mensagem central do coordenador do Subcomitê, Sr. Virgílio Farias, foi sobre a necessidade de ampliar as ações para melhoria da qualidade ambiental na bacia da Billings para que nos 100 anos da Billings tenhamos resultados positivos para comemorar. Em especial, destacou a necessidade de atender às normas que determinam que a qualidade da água no reservatório deve atender aos padrões de Classe 1 e 2, conforme Resolução CONAMA nº 357, de 17 de março de 2005.
-      </p>
-      <p>
-        Este documento foi escrito de forma colaborativa e não esgota orientações de pesquisadoras e pesquisadores; há centenas de pesquisas concluídas e em andamento dedicadas à qualidade ambiental na bacia da Billings e a temas de interesse para sua recuperação e proteção. Este documento resume tão somente as contribuições destes pesquisadores. São apresentadas recomendações para os temas qualidade da água, solos e fitorremediação, mudanças climáticas, assentamentos nas margens dos corpos d’água e instrumentos de políticas públicas. O documento sintetiza contribuições relevantes para tomadores de decisão de diferentes instituições responsáveis pelas ações que impactam na qualidade ambiental da Billings. Os responsáveis pela elaboração destas recomendações ficam à disposição para contribuir com os próximos passos do planejamento e gestão desta importante bacia.
-        Documento de pesquisa feito por profissionais de Faculdades do estado de São Paulo, sobre tudo que envolve a Represa Billings. O Material consiste em:
-      </p>
-      <p>
-      <ol class="principal-list list-center">
-        <li>
-          <b>Qualidade da água</b>
-          <ol class="sublist">
-            <li>Cabeceiras do reservatório Billings</li>
-            <li>Reservatório Billings</li>
-            <li>Cianobactérias e cianotoxinas</li>
-            <li>Recomendações</li>
-          </ol>
-        </li>
-
-        <li>
-          <b>Solos e fitorremediação</b>
-          <ol class="sublist">
-            <li>Solos das margens da represa Billings e contaminação por metais</li>
-            <li>Recomendações</li>
-          </ol>
-        </li>
-
-        <li>
-          <b>Clima, tendências, balanço hídrico e cenários futuros</b>
-          <ol class="sublist">
-            <li>Recomendações</li>
-          </ol>
-        </li>
-
-        <li>
-          <b>Assentamentos nas margens da Billings</b>
-          <ol class="sublist">
-            <li>Recomendações</li>
-          </ol>
-        </li>
-
-        <li>
-          <b>Instrumentos de Planejamento e Gestão Ambiental</b>
-        </li>
-      </ol>
-      <p>
-
-      Nota retirada do documento: Contribuições das universidades_APRM-Billings_5jun2024 
-      
-      </p>
-      <p>
-      Autores(as) das pesquisas apresentadas:
-      <br>
-      UFABC:
-      Prof. Ricardo Taniwaki;
-      Prof.ª María Valverde;
-      Felipe Rodrigues de Oliveira;
-      <br>
-      UFPR:
-      Prof. Simone Mendonça dos Santos;
-      <br>
-      UNIFESP:
-      Armando Correa Cezar;
-      Beatriz Dias Bandeira;
-      Beatriz Rodrigues Fraga da Silva;
-      Fernanda Delfino;
-      Jhéssica Saminês Barbalho;
-      Larissa Ribeiro Souza;
-      M.a. Natália Takahashi Margarido;
-      Matheus Matarazzo;
-      Melissa Min Ju Kim;
-      Prof. Diego Barcellos;
-      Prof. Heron Dominguez Torres da Silva;
-      Prof. Werner Hanisch;
-      Prof.ª Carla Grigoletto Duarte;
-      Prof.ª Cristina Souza Freire Nordi;
-      Prof.ª Cristina Viana Niero;
-      Prof. Giovano Candiani;
-      Prof.ª Luciana Aparecida Farias;
-      Prof.ª Rosangela Calado da Costa;
-      <br>
-      USCS:
-      Prof.ª Marta Angela Marcondes;
-      Profa Paula Simone da Costa Larizzatti;
-      Profa Fernanda Amate Lopes;
-      Rafaela Lubianqui Mello Boscolo;
-      Renata Borges Franchi;
-      Leticia Marinho de Oliveira;
-      Fernanda Nunes de Melo;
-      Camila Menezes de Souza;
-      <br>
-      USP:
-      Prof. Luis César Schiesari;
-      </p>
-
-      <p class="text-center">
-        <a href="https://youtu.be/SRsYrpCuh9Y?si=VuGpBXeYo6qefOf-">Billings 100 anos documentário</a>
-      </p>
-
       `,
 
-    '4-construcao': `
+    '4-comunidade': `
       <p><strong>A Construção e reforma do Parque deve ser um ponto importante a </strong> 
       <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.</p>
@@ -342,22 +234,20 @@ function showTextTransparency(code, container) {
     '6-animais': showAnimals,
     '7-preservacao': `
       <p>
-        Ocorre que ambas as diretrizes de Proteção e Recuperação dos Mananciais, prescritas na lei Estadual de Proteção Ambiental e lei Específica da Billings, estão sendo violadas.
+        Sem árvores, sem ar, nisso, todos perdem: a fauna e flora locais perdem, os cidadãos e cidadãs perdem a qualidade de vida, os mananciais perdem, perde-se o direito ao lazer, cultura e esportes… eu, você e a natureza perdemos.
       </p>
+        <img src="../../assets/transparency/preservation/img1_Preservacao.jpg" alt="Imagem com escritura na parede "Sem floresta, não tem água, sem águam não tem vida... Parque dos Búfalos"" class="img-fluid">
       <p>
-        Nossos governantes são coniventes com essa tragédia ambiental. Além de deixarem de atender as necessidades da população, investem em projetos prejudiciais à própria população, beneficiando somente os grandes capitalistas. Exemplo dessa realidade é a EMCCAMP, uma das maiores empresas doadoras de campanhas políticas nas últimas eleições, além de ter sido citada no inquérito do Ministério Público do Rio de Janeiro por aliciar trabalho escravo. Esses são aqueles que querem soterrar as nascentes do Parque dos Búfalos e acabar com a possibilidade de a natureza seguir com seu curso natural como produtora de água.
-      </p>
       <p>
-        Diante desse cenário, a providência urgente e necessária é reverter a ocupação irracional nas Áreas de Proteção aos Mananciais, bem como restaurar a cobertura vegetal nativa, importantíssima como habitat para fauna ameaçada remanescente. O projeto, na configuração em que se apresenta, além de não estar alinhado com o bojo do próprio Plano Diretor, e com os nobres objetivos relacionados ao direito fundamental de moradia/habitação, em convergência com o ambiente ecologicamente equilibrado, serve principalmente ao ganho imobiliário, em prejuízo do ambiente natural social.
+        Diante desse cenário, a providência urgente e necessária se faz em restaurar a cobertura vegetal nativa, importantíssima como habitat para fauna ameaçada remanescente. 
+        <br>
+        O projeto, na configuração em que se apresenta, além de não estar alinhado com o bojo do próprio Plano Diretor, e com os nobres objetivos relacionados ao direito fundamental de moradia/habitação, em convergência com o ambiente ecologicamente equilibrado, serve principalmente ao ganho imobiliário, em prejuízo do ambiente natural social.
       </p>
       <p>
         Porquanto, precisamos defender o remanescente atual do Parque dos Búfalos, respeitando-se a natureza e os seus elementos, em especial as vulnerabilidades ambientais e faixas de proteção correspondentes, bem como, também, o passivo ambiental e o diagnóstico que considera a população impactada pela perda de uma enorme área ambiental.
       </p>
-      <br>
-        <img src="../../assets/transparency/preservation/img1_Preservacao.jpg" alt="Imagem com escritura na parede "Sem floresta, não tem água, sem águam não tem vida... Parque dos Búfalos"" class="img-fluid">
-      </br>
       <p>
-        A área requer atenção incisiva do poder público no sentido de se impor a necessidade de proteção aos interesses difusos e coletivos relacionados à matéria ambiental, principalmente se considerando a época de escassez hídrica em que nos encontramos, justamente e em grande parte por ingerência e omissão por parte do poder público, também no que se refere à conservação do ambiente importante aos recursos hídricos, mas não somente a eles, pois possui importância intrínseca à biodiversidade vegetal que representa por si só, servindo ainda de habitat para fauna, e como estabilizador climático.
+        A área requer atenção incisiva do poder público no sentido de se impor a necessidade de proteção aos interesses difusos e coletivos relacionados à matéria ambiental, principalmente se considerando a época de escassez hídrica em que nos encontramos, em grande parte por ingerência e omissão por parte do poder público, também no que se refere à conservação do ambiente importante aos recursos hídricos, mas não somente a eles, pois possui importância intrínseca à biodiversidade vegetal que representa por si só, servindo ainda de habitat para fauna, e como estabilizador climático.
       </p>
       <p>
        Atualmente predomina uma linha que desvirtua o conceito de meio ambiente ecologicamente equilibrado, bem como de melhoria ambiental, redefinindo-o sob o prestados de forma efetiva por parques sem compromisso ecológico, meros bosques, praças, canteiros ajardinados etc., a despeito de sua importância relativa intrínseca

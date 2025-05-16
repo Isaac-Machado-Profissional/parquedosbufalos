@@ -1,39 +1,61 @@
 const menuToggle = document.getElementById('menuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
-
 let isAnimating = false;
 
-menuToggle.addEventListener('click', () => {
-    if (isAnimating) return;  // Evita múltiplos cliques rápidos
+function lockScroll() { document.body.style.overflow = 'hidden'; }
+function unlockScroll() { document.body.style.overflow = ''; }
+
+function openMenu() {
     isAnimating = true;
+    lockScroll();
+    menuToggle.classList.add('active');
+    mobileMenu.classList.add('open');      // <- visibilidade ativada antes da animação
+    gsap.to(mobileMenu, {
+        x: '0%',
+        duration: 0.5,
+        ease: 'power2.out',
+        onComplete() {
+            isAnimating = false;
+        }
+    });
+}
 
-    const isOpen = mobileMenu.classList.contains('open');
+function closeMenu() {
+    isAnimating = true;
+    menuToggle.classList.remove('active');
+    gsap.to(mobileMenu, {
+        x: '-100%',
+        duration: 0.5,
+        ease: 'power2.in',
+        onComplete() {
+            isAnimating = false;
+            mobileMenu.classList.remove('open');  // só aqui
+            unlockScroll();
+        }
+    });
+}
 
-    if (isOpen) {
-        gsap.to(mobileMenu, {
-            x: "-100%",
-            duration: 0.5,
-            ease: "power2.out",
-            onComplete: () => {
-                mobileMenu.classList.remove('open');
-                menuToggle.classList.remove('open'); // Remove o "X" do botão
-                isAnimating = false;
-            }
-        });
+
+
+menuToggle.addEventListener('click', e => {
+    e.stopPropagation();
+    if (isAnimating) return;
+    if (mobileMenu.classList.contains('open')) {
+        closeMenu();
     } else {
-        mobileMenu.style.visibility = "visible";
-        gsap.fromTo(mobileMenu,
-            { x: "-100%" },
-            {
-                x: "0%",
-                duration: 0.5,
-                ease: "power2.out",
-                onComplete: () => {
-                    mobileMenu.classList.add('open');
-                    menuToggle.classList.add('open'); // Torna o botão um "X"
-                    isAnimating = false;
-                }
-            }
-        );
+        openMenu();
+    }
+});
+
+// FECHAR ao clicar FORA (sem remover .open aqui)
+document.addEventListener('click', e => {
+    if (isAnimating) return;
+    if (
+        mobileMenu.classList.contains('open') &&
+        !mobileMenu.contains(e.target) &&
+        !menuToggle.contains(e.target)
+    ) {
+        closeMenu();  // <— chama apenas a animação de fechar
+        // NÃO remova o .open aqui
     }
 });

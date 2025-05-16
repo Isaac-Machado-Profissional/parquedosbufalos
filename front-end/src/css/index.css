@@ -2,13 +2,7 @@
 html {
     background-color: #ffffff;
     background-color: #343333;
-
-
 }
-
-
-/* Menu lateral escondido inicialmente */
-
 
 
 /* NAVIGATION BUTTONS */
@@ -22,18 +16,14 @@ header {
 }
 
 .navbar-brand img {
-    top: 0px;
     max-width: 80px;
-    max-height: 80px;
 }
 
 .navbar {
     list-style: none;
     gap: 1rem;
-    border-radius: 10px;
     transition: all 0.3s ease;
 }
-
 
 
 .navbar li {
@@ -69,20 +59,17 @@ header {
 
 /* Linha d baixo qnd encosta  */
 .navbar li a::after {
-    content: "";
-    /* Elemento vazio obrigatório */
+    content: ""; /* Elemento vazio obrigatório */
     position: absolute;
     left: 50%;
     bottom: -3px;
-    /* Distância do texto */
-    width: 0%;
-    /* Começa invisível */
+
+    width: 0%;  /* Começa invisível */
     height: 3px;
-    /* Altura da linha */
-    background-color: rgb(0, 0, 0);
-    /* Cor da linha */
+
+    background-color: rgb(0, 0, 0);    /* Cor da linha */
+
     transition: width 0.3s ease, left 0.3s ease;
-    /* Suaviza a animação */
     transform: translateX(-50%);
 
 }

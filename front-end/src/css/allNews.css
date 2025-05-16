@@ -1,78 +1,90 @@
 .more-news {
-    justify-self: center;
+  justify-self: center;
 }
 
 .more-news button {
-    background-color: rgb(11, 128, 67) !important;
-    color: #fff !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0.5rem 1rem !important;
+  background-color: rgb(11, 128, 67) !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.5rem 1rem !important;
 
-    border-radius: 6px;
+  border-radius: 6px;
 }
 
 .more-news button:hover {
-    background-color: rgb(8, 92, 48) !important;
-    color: #fff !important;
-    box-shadow: none !important;
+  background-color: rgb(8, 92, 48) !important;
+  color: #fff !important;
+  box-shadow: none !important;
 }
 
 
 .allNews-container {
-    margin: 50px auto;
-    /* folga interna nas laterais */
-    max-width: 1140px;
-    /* largura máxima em desktop */
-    box-sizing: border-box;
-    padding: 20px; 
+  margin: 50px auto;
+  /* folga interna nas laterais */
+  max-width: 1140px;
+  /* largura máxima em desktop */
+  box-sizing: border-box;
+  padding: 20px;
 
 }
 
 .allNews-container h1 {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 
 
-.catalogNews {
+.catalogNews {}
 
-}
-
-.blockNew {
-
-}
+.blockNew {}
 
 .blockNew .card {
-    overflow: hidden;
+  overflow: hidden;
+  border: none;
 
 }
 
 .blockNew .card-body {
-    border-radius: 8px;
-    padding: 0;
-    overflow: hidden;
-    
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  /* necessário para posicionar elementos filhos com position: absolute */
 }
 
 .blockNew img {
-    width: 100% !important;
-    aspect-ratio: 4/3;
-    filter: blur(1px) brightness(60%); /* Aplica blur e escurece */
+  width: 100% !important;
+  aspect-ratio: 4/3;
+  filter: blur(1px) brightness(60%);
+  object-fit: cover;
+  border-radius: 8px;
 
 }
 
 .blockNew .card-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 80%;
+  z-index: 2;
+}
+
+/* A data fica abaixo da imagem, fora da sobreposição */
+.blockNew .data {
+  color: #333;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  z-index: 1;
 }

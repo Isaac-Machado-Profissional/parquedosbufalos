@@ -32,7 +32,7 @@
 
 .new-Template .share-button {
     padding: .5rem 1rem;
-    background: #444;
+    background-color: rgb(11, 128, 67) !important;
     color: #fff;
     border: none;
     border-radius: .25rem;
@@ -41,7 +41,7 @@
 }
 
 .new-Template .share-button:hover {
-    background: #000000;
+    background-color: rgb(9, 100, 53) !important;
 }
 
 /* Modal overlay */
@@ -133,3 +133,8 @@
     background-color: #4B5563;
 }
 
+.new-Template .data {
+    display: flex;
+    justify-content: end;
+    margin: 40px;
+}

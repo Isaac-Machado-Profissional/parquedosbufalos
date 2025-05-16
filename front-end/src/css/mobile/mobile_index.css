@@ -6,9 +6,8 @@
 }
 
 .navbar-toggler {
-    position: absolute;
-    /* O padrão do botão é absoluto */
-    transition: transform 0.5s ease-out;
+    transition: transform 0.8s ease-in;
+    transition: transform 0.8 ease-out;
     z-index: 1200;
 }
 
@@ -25,7 +24,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 50vw;
+    width: 80vw;
     height: 100vh;
     background: white;
     overflow-y: auto;
@@ -40,6 +39,13 @@
 
 
 @media (max-width: 1000px) {
+    .navbar {
+        list-style: none;
+        gap: 1rem;
+        transition: all 0.3s ease;
+        min-height: 100px;
+    }
+
     .logo-desktop {
         display: none !important;
     }
@@ -78,7 +84,7 @@
 
 
     #mobileMenu {
-        width: 50vw;
+        width: 60vw;
     }
 
     /* Quando o menu estiver ativo */
@@ -107,7 +113,7 @@
         width: 100%;
         max-width: 2000px;
         margin: 20px auto;
-        height: 80vh;
+        height: 100vh;
 
     }
 
