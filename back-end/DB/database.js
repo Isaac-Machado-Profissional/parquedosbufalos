@@ -1,15 +1,16 @@
-//Puxa o cliente mysql2
+require('dotenv').config(); // Carrega as variáveis do .env
 const mysql = require('mysql2');
 
-//Cria a conexão
+// Cria a conexão com o banco de dados
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '1234=abcd',
-  database: 'parquedosbufalos',
-  port: 3306,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT,
 });
 
+// Testa a conexão
 connection.connect((err) => {
   if (err) {
     console.error('Erro ao conectar ao MySQL:', err);
@@ -18,14 +19,4 @@ connection.connect((err) => {
   console.log('Conectado ao MySQL com sucesso!');
 });
 
-connection.query(
-  'SELECT * FROM usuarios_login WHERE NOME_USUARIO = "wallacedi"',
-  function (err, results, fields) {
-    if (err) {
-      console.error('Erro ao executar a consulta:', err);
-      return;
-    }
-    console.log('Resultados:', results); // Exibe as linhas retornadas pelo servidor
-    console.log('Campos:', fields); // Exibe metadados sobre os resultados
-  }
-);
+module.exports = connection;
