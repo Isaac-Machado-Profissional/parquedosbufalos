@@ -1,5 +1,6 @@
 const menuToggle = document.getElementById('menuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
+const menuOverlay = document.getElementById('menuOverlay');
 let isAnimating = false;
 
 function lockScroll() { document.body.style.overflow = 'hidden'; }
@@ -9,7 +10,9 @@ function openMenu() {
     isAnimating = true;
     lockScroll();
     menuToggle.classList.add('active');
-    mobileMenu.classList.add('open');      // <- visibilidade ativada antes da animação
+    mobileMenu.classList.add('open');
+    menuOverlay.classList.add('active'); // <-- Mostra o blur
+
     gsap.to(mobileMenu, {
         x: '0%',
         duration: 0.5,
@@ -23,14 +26,16 @@ function openMenu() {
 function closeMenu() {
     isAnimating = true;
     menuToggle.classList.remove('active');
+
     gsap.to(mobileMenu, {
         x: '-100%',
         duration: 0.5,
         ease: 'power2.in',
         onComplete() {
             isAnimating = false;
-            mobileMenu.classList.remove('open');  // só aqui
+            mobileMenu.classList.remove('open');
             unlockScroll();
+            menuOverlay.classList.remove('active'); // <-- Remove o blur
         }
     });
 }
@@ -59,3 +64,4 @@ document.addEventListener('click', e => {
         // NÃO remova o .open aqui
     }
 });
+

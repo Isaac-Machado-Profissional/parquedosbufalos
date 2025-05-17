@@ -179,25 +179,22 @@ function showTextTransparency(code, container) {
         <iframe src="https://www.google.com/maps/d/u/7/embed?mid=1pcR0O3odPY7fj8Pghi9h3_RIl4d4zQ8&ehbc=2E312F&noprof=1" width="640" height="480" style="border: none; margin-top: -50px;"></iframe>
       </div>
       <p>
-        Como podemos ver acima, destacado em vermelho todas as escolas que atendem não só a região do Jardim Apurá, como também ao Município de Pedreira(este que soma mais de 40 mil pessoas[IBGE]), além de outras regiões próximas e <strong> metade dos pontos em vermelho sendo de Ensino Infantil particular.</strong>
+        Como podemos ver acima, destacado em vermelho todas as <strong>escolas públicas</strong> que atendem não só ao bairro do Jardim Apurá, Santa Amélia, Dorotéia, Guacuri como também como um todo, ao distrito Pedreira(este que soma-se mais de 40 mil pessoas[<a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html?edicao=39499&t=resultados">IBGE 2022 — Agregados por Distritos</a>]).
         <br>
-        Fazendo então seu entorno populacional, que necessita de uma escola pro seu filho, se vendo na condição de poucas opções de escolas públicas, contribuindo com uma demanda ainda maior de pessoas querendo colocar seus filhos em escolas e ouvindo não, por não haver vagas.
-      </p>
-      <p>
-        Com o crescimento imobiliário na região do Jardim Apurá e com a construção do conjunto de prédios - o Residencial Espanha em 2016, o bairro teve um adensamento extremo e a infraestrutura infelizmente não acompanhou essa demanda crescente de pessoas no bairro. Então serviços básicos ainda hoje ano 2025 estão em falta, como: Hospital, postos de saúde, escolas, creches, transporte público de qualidade...
+        Fazendo então seu entorno populacional, este que houve um notório crescimento imobiliário habitacional na região, em conjunto com a construção dos conglomerados de prédios e condomínios, seu adensamento extremo e a infraestrutura infelizmente não acompanharam essa demanda crescente de pessoas no bairro. Então serviços básicos ainda hoje no ano de 2025 estão em falta ou sobrecarregados, como: Hospital, postos de saúde, escolas, creches, transporte público...
       </p>
       <br>
-      <h5 class="text-center">Luta por escolas</h5>
+      <h5 class="text-center">Educação em risco</h5>
+       <p>
+          De fato, um grave problema, por muito relatado pelos moradores, onde diversas mães relatam que precisam procurar escolas fora do bairro, a quilômetros de distância agregando a crianças que moram no Jardim Apurá, mas estudam em escolas, que não no próprio bairro do Jardim Apurá, afetando não só a demanda e a educação de diversas escolas, mas como também ao transporte e vias públicas, prejudicando ainda mais uma área tão trafegada, contribuindo com o aumento do trânsito e da poluição.
+          Se formos pensar, em um bairro, onde a população de uma hora pra outra cresceu de forma tão rápida com a chegada de moradias populares. O número de escolas e creches visivelmente não é suficiente para todos os moradores. 
+      </p>
       <p>
         A falta de escolas adequadas pode gerar desigualdades sociais, prejudicando o desenvolvimento infantojuvenil e limitando as oportunidades de aprendizado, crescimento e obtenção de trabalho.
         <br>
-        É importante que as autoridades locais e regionais garantam a construção e melhoria de escolas no Jardim Apurá, com o objetivo de que o acesso à educação de qualidade, sejam a todos os moradores.
+        É importante que as autoridades locais e regionais garantam a construção de novas escolas e a melhoria das existentes no Jardim Apurá e região, com o objetivo de que o acesso à educação de qualidade seja a todos.
       </p>
-      
-      <p>
-        É um grave problema muito relatado pelos moradores, a falta de escolas na região, pois somente as escolas existentes não suporta a alta demanda de alunos na região. Mães relatam que precisam procurar escolas fora do bairro a alguns quilômetros de distância pois se veem sem saída. Muitas crianças que moram no Jardim Apurá estudam em escolas, que não no próprio bairro do Jardim Apurá, afetando não só a demanda e a educação, mas também ao transporte público, que já é precário e não atende a demanda de pessoas que precisam se deslocar para estudar.
-        Se formos pensar, em um bairro, onde a população de uma hora pra outra cresceu de forma tão rápida, com a chegada de moradias populares. O número de escolas e creches visivelmente não é suficiente para todos os moradores. 
-      </p>
+     
  `,
     '3-agua': `
       <p>
