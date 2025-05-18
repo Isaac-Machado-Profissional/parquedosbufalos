@@ -1,5 +1,6 @@
 .more-news {
   justify-self: center;
+  margin-bottom: 50px;
 }
 
 .more-news button {
@@ -35,10 +36,6 @@
 }
 
 
-
-.catalogNews {}
-
-.blockNew {}
 
 .blockNew .card {
   overflow: hidden;
@@ -80,11 +77,6 @@
 }
 
 /* A data fica abaixo da imagem, fora da sobreposição */
-.blockNew .data {
+.data {
   color: #333;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  z-index: 1;
 }
