@@ -38,7 +38,19 @@
     margin: 40px 80px 40px 80px;
 }
 
-.new-Template .date,
+.new-Template h2 {
+    margin: 40px 80px 40px 80px;
+}
+
+.new-Template img {
+    max-width: 600px;   /* limita o tamanho máximo no PC */
+    height: auto;       /* mantém proporção */
+    display: block;     /* evita gaps inesperados */
+    margin-left: auto;
+    margin-right: auto; /* centraliza imagem no container */
+}
+
+.date,
 .timeRead,
 .author {
     margin-top: 10px;
@@ -46,6 +58,10 @@
     margin-left: 40px;
 }
 
+.new-Template ul {
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
 .share-container {
     text-align: right;

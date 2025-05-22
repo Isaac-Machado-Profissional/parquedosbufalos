@@ -70,11 +70,9 @@
 
 .news-highlighted .card-text {
  
-    width: 800px;
     justify-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 20px;
 }
 

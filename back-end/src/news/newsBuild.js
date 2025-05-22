@@ -3,39 +3,40 @@ const fs = require('fs');
 const ejs = require('ejs');
 const noticias = require('./noticias.json');
 
-// Caminho da pasta front-end onde serão copiadas as páginas e JSON
-const frontendNoticiaDir = path.resolve(__dirname, '..', '..', '..', 'front-end', 'src', 'html', 'noticias', 'todas');
-const frontendJsonPath = path.resolve(__dirname, '..', '..', '..', 'front-end', 'src', 'html', 'noticias', 'todas', 'noticias.json');
+// Caminho base da pasta do front-end
+const frontendBaseDir = path.resolve(__dirname, '..', '..', '..', 'front-end', 'src', 'html', 'noticias');
+const frontendJsonPath = path.join(frontendBaseDir, 'noticias.json');
 
 async function gerarPaginas() {
   const templatePath = path.join(__dirname, 'template.ejs');
 
-  // Garante que a pasta de destino exista
-  fs.mkdirSync(frontendNoticiaDir, { recursive: true });
-
   for (const noticia of noticias) {
     if (!noticia.nomeArquivo) {
-      console.error('Erro: noticia sem nomeArquivo:', noticia.titulo || noticia);
+      console.error('❌ Erro: notícia sem nomeArquivo:', noticia.titulo || noticia);
       continue;
     }
 
+    const data = new Date(noticia.dataPublicacao);
+    const ano = data.getFullYear();
+
     const contexto = { ...noticia };
-
-    // Gera o HTML na pasta de back-end
-    const caminhoArquivo = path.join(__dirname, 'html', 'noticias', 'todas', noticia.nomeArquivo);
-    fs.mkdirSync(path.dirname(caminhoArquivo), { recursive: true });
     
-    const html = await ejs.renderFile(templatePath, contexto);
-    fs.writeFileSync(caminhoArquivo, html, 'utf-8');
-    console.log(`✅ Arquivo criado: ${caminhoArquivo}`);
+    // Caminho do arquivo no back-end
+    const caminhoArquivoBack = path.join(__dirname, 'html', 'noticias', String(ano), noticia.nomeArquivo);
+    fs.mkdirSync(path.dirname(caminhoArquivoBack), { recursive: true });
 
-    // Copia/atualiza o HTML para a pasta de front-end
-    const destinoFront = path.join(frontendNoticiaDir, noticia.nomeArquivo);
+    const html = await ejs.renderFile(templatePath, contexto);
+    fs.writeFileSync(caminhoArquivoBack, html, 'utf-8');
+    console.log(`✅ Arquivo criado: ${caminhoArquivoBack}`);
+
+    // Caminho no front-end por ano
+    const destinoFront = path.join(frontendBaseDir, String(ano), noticia.nomeArquivo);
+    fs.mkdirSync(path.dirname(destinoFront), { recursive: true });
     fs.writeFileSync(destinoFront, html, 'utf-8');
     console.log(`➡️ Copiado para front-end: ${destinoFront}`);
   }
 
-  // Copia/atualiza o JSON para a pasta de front-end
+  // Copia/atualiza o JSON para o front-end
   fs.copyFileSync(path.join(__dirname, 'noticias.json'), frontendJsonPath);
   console.log(`📄 JSON copiado para front-end: ${frontendJsonPath}`);
 }

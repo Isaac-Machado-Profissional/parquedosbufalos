@@ -93,9 +93,8 @@
                 </div>
                 <img src="<%= imagem %>" alt="<%= alt || 'Imagem da notícia' %>" class="img-fluid">
 
-                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center 
-                gx-3 gy-0 gy-md-3">
-                    <div class="date d-flex align-items-center flex-nowrap gap-2">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
+                    <div class="date d-flex align-items-start flex-nowrap gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-calendar-days">
@@ -115,9 +114,8 @@
                         </span>
                     </div>
 
-                    <div class="timeRead d-flex align-items-center flex-nowrap">
+                    <div class="timeRead d-flex justify-content-center align-items-start flex-grow-1 ms-md-n4">
                         <% if (conteudo && conteudo.trim()) { %>
-                            <div class="timeRead d-flex align-items-center flex-nowrap">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"  
                                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock2-icon lucide-clock-2">
                                   <circle cx="12" cy="12" r="10"/>
@@ -128,19 +126,18 @@
                                   <%= calculaTempoLeitura(conteudo) %> min de leitura
                                 <% } %>
                               </span>
-                            </div>
                           <% } %>
                     </div>
 
-                    <div class="author d-flex flex-nowrap align-items-end">
+                    <div class="author d-flex align-items-start">
                         <% if (autorImagem) { %>
-                            <img src="<%= autorImagem %>" alt="Foto do autor" class="rounded-circle" style="width: 32px; height: 32px; object-fit: cover;">
+                            <img src="<%= autorImagem %>" alt="Foto do autor" class="rounded-circle" style="max-width: 32px; height: 32px; object-fit: cover;">
                           <% } else { %>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none"  
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-icon lucide-circle-user"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/>
                             </svg>
                           <% } %>
-                          <span><%= autor %></span>
+                          <span><%- autor %></span>
                     </div>
 
                 </div>
@@ -229,6 +226,7 @@
             Este é um site da Comunidade pra Comunidade!
         </h6>
     </footer>
+    <script src="../../../javascript/mainNoticias.js"></script>
     <script src="../../../javascript/components/newTimeForRead.js"></script>
     <script src="../../../javascript/components/news.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
