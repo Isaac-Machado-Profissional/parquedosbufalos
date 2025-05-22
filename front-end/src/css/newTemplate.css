@@ -42,13 +42,7 @@
     margin: 40px 80px 40px 80px;
 }
 
-.new-Template img {
-    max-width: 600px;   /* limita o tamanho máximo no PC */
-    height: auto;       /* mantém proporção */
-    display: block;     /* evita gaps inesperados */
-    margin-left: auto;
-    margin-right: auto; /* centraliza imagem no container */
-}
+
 
 .date,
 .timeRead,
