@@ -224,12 +224,12 @@
 }
 
 .news-highlighted .card-body:hover img {
-    transform: scale(1.24);    /* aumenta 10% — ajuste ao seu gosto */
+    transform: scale(1.27);    
     transition: transform 0.3s ease;
 }
 .news-card-horizontal .card-body:hover .news-img {
 
-    transform: scale(1.04);    /* aumenta 10% — ajuste ao seu gosto */
+    transform: scale(1.04);    
     transition: transform 0.3s ease;
 }
 

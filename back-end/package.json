@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec \"node src/news/newsBuild.js && node server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "newsbuild": "nodemon --exec src/news/newsBuild"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +18,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "image-size": "^2.0.2",
     "node-fetch": "^2.7.0",
-    "nodemon": "^3.1.9",
-    "save": "^2.9.0"
+    "nodemon": "^3.1.9"
   },
   "devDependencies": {
     "ejs": "^3.1.10"

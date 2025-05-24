@@ -28,10 +28,8 @@
 
 .new-Template img {
     width: 1000px;
-    height: 300px;
+    height: 40vh;
     border-radius: 15px;
-    aspect-ratio: 16/9;
-    object-fit: cover;
 }
 
 .new-Template p {
@@ -40,6 +38,38 @@
 
 .new-Template h2 {
     margin: 40px 80px 40px 80px;
+}
+
+/* Modal principal */
+.img-modal_fullscreen {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagem exibida no modal */
+.img-modal_fullscreen_modal-conteudo {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+/* Botão de fechar */
+.close-img-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 

@@ -1,7 +1,28 @@
-const path = require('path');
+const path = require('path'); 
 const fs = require('fs');
 const ejs = require('ejs');
 const noticias = require('./noticias.json');
+
+// Função para escapar atributos do HTML vinculados a imagem para o GLightbox buildar corretamente
+function escapeAttr(str) {
+  return str.replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+}
+
+// Função para processar imagens com GLightbox no conteúdo
+function processarConteudoComGLightbox(conteudo) {
+  return conteudo.replace(
+    /<img\b([^>]*?)\bsrc=(['"])([^'"]+)\2([^>]*?)\/?>/gi,
+    (match, antesAttrs, quote, src, depoisAttrs) => {
+      const imgTag = `<img${antesAttrs} src="${src}"${depoisAttrs.trim()} />`;
+      return `<a href="${src}" class="glightbox">${imgTag}</a>`;
+    }
+  ).replace(/(<\/a>)(\S)/g, '$1 $2');
+}
+
 
 // Caminho base da pasta do front-end
 const frontendBaseDir = path.resolve(__dirname, '..', '..', '..', 'front-end', 'src', 'html', 'noticias');
@@ -19,8 +40,20 @@ async function gerarPaginas() {
     const data = new Date(noticia.dataPublicacao);
     const ano = data.getFullYear();
 
+    // Primeiro, escapa o atributo alt das imagens dentro do conteúdo da notícia
+    noticia.conteudo = (noticia.conteudo || '').replace(
+      /<img\b([^>]*?)alt=(['"])(.*?)\2([^>]*?)>/gi,
+      (match, beforeAlt, quote, altText, afterAlt) => {
+        const escapedAlt = escapeAttr(altText);
+        return `<img${beforeAlt}alt=${quote}${escapedAlt}${quote}${afterAlt}>`;
+      }
+    );
+
+    // Depois, envolve as imagens com <a> para PhotoSwipe
+    noticia.conteudo = processarConteudoComGLightbox(noticia.conteudo);
+
     const contexto = { ...noticia };
-    
+
     // Caminho do arquivo no back-end
     const caminhoArquivoBack = path.join(__dirname, 'html', 'noticias', String(ano), noticia.nomeArquivo);
     fs.mkdirSync(path.dirname(caminhoArquivoBack), { recursive: true });

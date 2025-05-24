@@ -3,6 +3,7 @@ html {
     background-color: #ffffff;
     background-color: #343333;
 }
+
 /* NAVIGATION BUTTONS */
 
 header {
@@ -211,7 +212,7 @@ button .navbar-toggler {
 }
 
 
-.card-title {
+.atividades-do-parque-container .card-title {
 
     /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
     position: relative;
@@ -225,17 +226,36 @@ button .navbar-toggler {
 
 }
 
-.card-text {
+.atividades-do-parque-container .card-text {
     position: relative;
     margin-right: auto;
     margin-left: auto;
     top: 1vh;
-    margin-top: 40px;
+
     overflow-wrap: break-word;
+    word-wrap: break-word;
     hyphens: auto;
+    
     padding-right: 20px;
     padding-left: 20px;
 }
+
+.atividades-do-parque-container a {
+    color: rgb(105, 105, 105);
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: transparent;
+    transition:
+        color 0.5s ease,
+        text-decoration-color 0.5s ease,
+}
+
+.atividades-do-parque-container a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration-color: rgb(63, 63, 63);
+}
+
 
 
 

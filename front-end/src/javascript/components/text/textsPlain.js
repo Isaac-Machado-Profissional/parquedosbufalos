@@ -6,19 +6,19 @@ function showTextParkManagement(section) {
         content.innerHTML = `
             <ul>
                     <li>
-                        <h3> Votação Bienal para o Representante do Parque </h3>
-                        <p> Votação que ocorre a cada 2 anos para o próximo representante do parque, acompanhe em nossas mídias! </p>
+                        <h3> Votação a representante </h3>
+                        <p> Votação que ocorre a cada 2 anos para o próximo representante do parque, acompanhe-nos! </p>
 
                     </li>
                         
                     <li>
-                        <h3> Constantes Reuniões </h3>
+                        <h3> Constantes reuniões </h3>
                         <p> Acompanhe nosso <strong><a href="../../html/news.html">Calendário de Eventos</a></strong> e receba os links para participação das reuniões do Parque! </p>
                         
                     </li>
                      <li>
-                        <h3> Notícias Mensais </h3>
-                        <p> Inscreva-se em nossa <a href="../../../html/about.html?scrollTo=newsletter" id="newsletter-container">Newsletter</a> e receba as últimas notícias do parque de antemão! </p>
+                        <h3> Notícias mensais </h3>
+                        <p> Cadastre-se em nossa <a href="../../../html/about.html?scrollTo=newsletter" id="newsletter-container">Newsletter</a>, mantendo-se atualizado sobre as oportunidades de fazer a diferença na região! </p>
                         
                     </li>
                     
@@ -28,21 +28,20 @@ function showTextParkManagement(section) {
     } else if (section === 'section2') {
         content.innerHTML = `
             <ul>
+                <li>
+                        <h3> Trabalhos acadêmicos </h3>
+                        <p> Mais de 16 trabalhos acadêmicos concluídos. </p>
+                </li>
+
                 <li> 
-                        <h3> Viva o Verde SP </h3>
-                        <p> Evento ocorrido no ano de 2024 em parceria com a ONU, promovendo um Plano de Gestão Geral para os parques de São Paulo.  </p>
+                        <h3> Plantio de árvores </h3>
+                        <p> Plantio de árvores, com o apoio do CADES, dentre outras instituições e da comunidade.  </p>
                 </li>
 
                 <li>
-                        <h3> Construção do Nosso Parque </h3>
-                        <p> Atividade em colaboração com o C.E.U Alvarenga com o Fundamental 1, ensinando valores fundamentais de sustentabilidade à natureza. </p>
+                        <h3> Atividades de sustentabilidade </h3>
+                        <p> Atividade em colaboração com o C.E.U Alvarenga e outras entidades, ensinando valores fundamentais de sustentabilidade às crianças. </p>
                 </li>
-
-                <li>
-                        <h3> Última atividade importante </h3>
-                        <p> Última atividade importantemente ocorrida no <strong>PASSADO</strong>. </p>
-                </li>
-                
             </ul>
         `;
     }
