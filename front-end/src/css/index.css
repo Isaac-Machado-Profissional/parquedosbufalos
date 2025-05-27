@@ -235,7 +235,7 @@ button .navbar-toggler {
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
-    
+
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -621,6 +621,14 @@ footer {
 }
 
 footer .footer-container a {
+    position: relative;
+    display: inline-block;
+    /* necessário para a linha se comportar corretamente */
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-container a {
     color: white;
     text-decoration: none;
 
@@ -628,7 +636,7 @@ footer .footer-container a {
 
 
 footer .footer-container .row {
-    padding-top: 50px;
+    margin-top: 20px;
     color: white;
     text-align: center;
     gap: 2vw;
@@ -659,4 +667,40 @@ footer .footer-container a:hover::after {
     width: 100%;
     color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
+}
+
+.footer-logo {
+    width: 150px;
+    height: 80px;
+}
+
+.footer-instagram {
+    color: white;
+
+}
+
+.footer-instagram svg {
+    stroke: white;
+    transition: stroke 0.3s ease;
+}
+
+.footer-instagram:hover svg {
+    stroke: #dc2743;
+}
+
+
+.footer-instagram:hover {
+    color: rgb(190, 190, 190);
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.assignature {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
 }

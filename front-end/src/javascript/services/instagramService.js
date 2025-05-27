@@ -1,5 +1,5 @@
 // Pegar o caminho correto do backend
-export const fetchInstagramFeed = async () => {
+export async function fetchInstagramFeed() {
   try {
     const response = await fetch('/api/instagram-feed');
     const data = await response.json();

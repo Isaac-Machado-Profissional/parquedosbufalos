@@ -21,7 +21,9 @@
 
 #mobileMenu {
     transform: translateX(-100%);
-    will-change: transform; /* ajuda com performance */
+    will-change: transform;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
     visibility: hidden;
     position: fixed;
 
@@ -33,7 +35,7 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 
-    background: #fcfcfc;
+    background: whitesmoke;
     overflow-y: auto;
     z-index: 1000;
     padding: 80px 20px;
@@ -46,20 +48,19 @@
 }
 
 .menu-overlay {
+    will-change: opacity;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(1px);
-    /* efeito de desfoque */
-    background-color: rgba(255, 255, 255, 0.4);
-    /* opcional: cor semitransparente */
+    background-color: rgba(255, 255, 255, 0.4); /* opcional: cor semitransparente */
+    
     z-index: 998;
+    
     /* abaixo do menu (mobile) */
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease;
 }
 
 .menu-overlay.active {
@@ -72,6 +73,7 @@
     body {
         padding-top: 80px;
     }
+
     .navbar {
         list-style: none;
         gap: 1rem;
@@ -82,7 +84,7 @@
     .logo-desktop {
         display: none !important;
     }
-    
+
     /* container precisa ser relative para o absolute funcionar */
     .navbar.position-relative .container-fluid {
         position: relative;

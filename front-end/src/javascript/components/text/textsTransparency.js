@@ -163,7 +163,7 @@ function showTextTransparency(code, container) {
           <img src="../../assets/transparency/naturalEnvironment/img2_Meio-Ambiente.jpg" alt="Imagens do ano de 2007" class="img-fluid">
 
       <p>
-        No Parque dos Búfalos, se encontra 18 APP(Áreas de Preservação Permanente).
+        <ul class="text-center"><li>No Parque dos Búfalos, se encontra 18 APP(Áreas de Preservação Permanente).</li></ul>
       </p>
       <p>
         A flora local, ricamente populada, com cerca de 150 espécies de árvores, entre: Arbustivas; arbóreas; trepadeiras, herbáceas; epífitas; subartivas; palmeiras estipe, dentre muitas outras, que podem ser naturalmente vistas ao entorno do Parque dos Búfalos e que precisam continuar lá, provendo nosso ar, este que precisa de melhoria, ou seja, mais árvores em áreas verdes, não menos.  
@@ -226,12 +226,59 @@ function showTextTransparency(code, container) {
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.</p>
     `,
     '5-orgaos_publicos': `
-      <p><strong>Os órgãos públicos deveriam dar a importância necessária a um parque tão grande quanto este, mais de 65 hectares originais de terra <br> </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet rhoncus nibh. Morbi a congue nisi. In rhoncus mauris varius urna elementum, nec sollicitudin velit lacinia. Vivamus nec purus eros. Ut ante ante, accumsan sed vestibulum eget, tempor in magna. Aliquam eu mauris quis dui mattis bibendum sed nec felis. Suspendisse potenti.</p>
+    <br>
+      <h5 class="text-center">Manifesto do Parque dos Búfalos</h5> 
+      
+      <p>
+        Em março de 2012, o então prefeito da cidade de São Paulo, Gilberto Kassab, decretou de utilidade pública a área conhecida como Parque dos Búfalos, visando a preservação ambiental através da futura implantação do parque como área de lazer para a população.
+      </p>
+      
+      <p>
+        Em dezembro de 2013, o decreto foi revogado pelo atual prefeito, Fernando Haddad, com a intenção de construir moradias populares em cima de 19 nascentes, soterrando as últimas fontes naturais de água, responsáveis por abastecer a atual caixa d’água de São Paulo: a Represa Billings.
+      </p>
+      
+      <p
+        >Ocorre que ambas as diretrizes de Proteção e Recuperação dos Mananciais, prescritas na Lei Estadual de Proteção Ambiental e Lei Específica da Billings, estão sendo violadas.
+      </p>
+      
+      <p>
+        Para nossa surpresa, houve revogação do <a href="https://legislacao.prefeitura.sp.gov.br/leis/decreto-53008-de-6-de-marco-de-2012">Decreto Municipal n° 53.008/12 de 06/03/2012</a>(sancionado pelo Prefeito Gilberto Kassab) através do <a href="https://legislacao.prefeitura.sp.gov.br/leis/decreto-54680-de-11-de-dezembro-de-2013/detalhe">Decreto Municipal n° 54.680/13 de 11/12/2013</a>(sancionado pelo Prefeito Fernando Haddad) dias depois da conversa com os representantes da prefeitura. Em seguida à revogação do Decreto, apareceu uma empresa oriunda de Minas Gerais, denominada EMCCAMP RESIDENCIAL S/A, que deu início ao levantamento preliminar para implantação de um loteamento no local, protocolando ainda, pedido de certidão de uso do solo.
+      </p>
+      
+      <p>
+        O movimento em defesa do parque chegou até a indicar outras sete áreas na região mais adequadas para receber o residencial, mas foi ignorado. O atropelo das normas, no entanto, não é privilégio de São Paulo — A Cetesb inclusive é apontada com frequência como um dos mais bem estruturados órgãos ambientais do país.
+      </p>
+      
+      <p>
+        O governador Geraldo Alckmin disse outro dia que o atraso nas obras do metrô era devido a ‘empecilhos ambientais’, diz Luis Enrique Sánchez, professor da Escola Politécnica da Universidade de São Paulo e membro da Associação Internacional para Avaliação de Impacto.
+      </p>
+      <p>
+        “Tenho certeza de que a maioria dos governantes pensa da mesma forma. O meio ambiente, a licença, é visto como um problema.” Não é difícil entender os motivos. Moradia rende mais votos que nascentes. Logo, natureza e licença ambiental viram “empecilhos”. Não à toa, o governo discute a criação da Lei Geral do Licenciamento.
+      </p>
+      
+      <p>
+        Através de ação popular promovida por defensores do Parque dos Búfalos, a qual o autor popular reitera que o Parque dos Búfalos “única área que restou preservada” naquela região de mananciais da Billings(Região que foi irresponsavelmente desmatada, ocupada, degradada e poluída) deve ser integralmente preservada por se enquadrar conforme define o incontroverso Art. 119 da Lei Específica da Billings, no 13.579/2009.
+      </p>
+
+      <p> 
+        Artigo 119 – As áreas ainda preservadas do território da Área de Proteção e Recuperação dos Mananciais do Reservatório Billings, dada sua essencialidade para a recarga hídrica do reservatório e a importância de manutenção de seus atributos naturais, deverão ser objeto de ações integradas entre os Poderes Públicos e a população envolvida, visando conter a expansão urbana das ocupações isoladas existentes à data de publicação da lei.
+      </p>
+      <br>
+      <h5 class="text-center">CETESB assume o erro no licenciamento da forma a qual foi feita.</h5>
+      <p>
+        É impressionante como o lobby imobiliário consegue cometer crimes ao meio ambiente e ainda ganhar licenças aparentemente "lícita" com pareceres políticos. CETESB autoriza empreendimento, mesmo confessando que são os atos administrativo foram ilegais, errados, 193 prédios as margens da represa Billings em cima de 19 nascentes. Parque dos Búfalos, por se tratar de uma área preservada (livre se assentamento populacional) a área é amparada pela Lei Estadual específica da Billings nº 13.579/2009, Artigo 119, dada sua essencialidade para recarga hídrica do reservatório Billings e a importância de manutenção dos seus atributos naturais, devendo ser objeto de ações integradas entre os órgãos públicos e a população envolvida, visando conter a expansão urbana das ocupações isoladas existentes a data da publicação da lei. A Companhia Ambiental do Estado de São Paulo – CETESB é a agência do Governo do Estado responsável pelo controle, fiscalização, monitoramento e licenciamento de atividades geradoras de poluição, com a preocupação fundamental de preservar e recuperar a qualidade das águas, do ar e do solo. Portanto oeste órgão público, que deveria ter como preocupação fundamental preservar e recuperar a qualidade das águas, faz exatamente o oposto, atuando a favor das construtoras e do capital especulativo aprovando projetos absurdos e ilegais que destroem o meio ambiente.
+      </p>
+
+      <div class="video-youtube-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2Nmgyyuk66I?si=8AIdSd4rujTYiorz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+
     `,
     '6-animais': showAnimals,
     '7-preservacao': `
       <p>
-        Sem árvores, sem ar, nisso, todos perdem: a fauna e flora locais perdem, os cidadãos e cidadãs perdem a qualidade de vida, os mananciais perdem, perde-se o direito ao lazer, cultura e esportes… eu, você e a natureza perdemos.
+        Sem árvores, sem ar, nisso todos perdem: a fauna e flora locais perdem, os cidadãos e cidadãs perdem a qualidade de vida, os mananciais perdem, perde-se o direito ao lazer, cultura e esporte… eu, você e a natureza perdemos.
       </p>
         <img src="../../assets/transparency/preservation/img1_Preservacao.jpg" alt="Imagem com escritura na parede "Sem floresta, não tem água, sem águam não tem vida... Parque dos Búfalos"" class="img-fluid">
       <p>

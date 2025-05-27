@@ -5,20 +5,6 @@ const nodemailer = require('nodemailer');
 const connection = require('./DB/database');
 const app = express();
 
-// MIDDLEWARES
-app.use(bodyParser.json());
-
-// Rota para tratar o callback do OAuth (exemplo para Facebook/Instagram)
-app.get('/callback', (req, res) => {
-    const { code } = req.query; // O código de autenticação que o Facebook/Instagram envia
-
-    if (!code) {
-        return res.status(400).send('Código de autorização ausente.');
-    }
-
-    // Exemplo de resposta:
-    res.send(`Código de autorização recebido: ${code}`);
-});
 
 app.get('/db-test', (req, res) => {
     connection.query('SELECT 1 + 1 AS resultado', (err, results) => {

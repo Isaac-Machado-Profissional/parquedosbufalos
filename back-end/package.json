@@ -19,6 +19,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "image-size": "^2.0.2",
+    "node-cron": "^4.0.7",
     "node-fetch": "^2.7.0",
     "nodemon": "^3.1.9"
   },
