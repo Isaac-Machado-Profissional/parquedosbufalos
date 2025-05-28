@@ -26,9 +26,9 @@
     border: 0;
 }
 
-.new-Template img {
+.new-Template .new-thumbnail {
     width: 1000px;
-    height: 40vh;
+    height: 450px;
     border-radius: 15px;
 }
 
@@ -40,36 +40,45 @@
     margin: 40px 80px 40px 80px;
 }
 
+.new-Template .img-event {
+    border-radius: 15px;
+}
+
+.new-Template audio {
+    width: 100%;
+    margin: 20px auto;
+}
+
 /* Modal principal */
 .img-modal_fullscreen {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  justify-content: center;
-  align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
 }
 
 /* Imagem exibida no modal */
 .img-modal_fullscreen_modal-conteudo {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
 }
 
 /* Botão de fechar */
 .close-img-modal {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -83,6 +92,11 @@
 }
 
 .new-Template ul {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.new-Template ol {
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -166,11 +180,13 @@
     transition: background 0.2s;
 }
 
-.share-options a svg {
+.share-options svg path {
     flex-shrink: 0;
     height: 24px;
     width: 24px;
+    fill: rgb(255, 255, 255);
 }
+
 
 .share-options a:hover {
     filter: brightness(0.85);
