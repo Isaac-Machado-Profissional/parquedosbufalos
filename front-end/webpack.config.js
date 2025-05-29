@@ -1,73 +1,110 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const porta = 9000
+const CopyPlugin = require('copy-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+
+const PORT = 9000;
+
+const pages = {
+  index: './src/javascript/index.js',
+  Sobre: './src/javascript/Sobre.js',
+  'Mais-Noticias': './src/javascript/Mais-Noticias.js',
+  Historia: './src/javascript/Historia.js',
+  Noticias: './src/javascript/Noticias.js',
+  Transparencia: './src/javascript/Transparencia.js',
+  newTemplate: './src/javascript/newTemplate.js',
+};
 
 module.exports = {
-  entry: './src/javascript/script.js', // Arquivo de entrada
+  entry: pages,
+
   output: {
-    filename: 'bundle.js', // Nome do bundle gerado
-    path: path.resolve(__dirname, 'dist'), // Caminho para a pasta dist
-    clean: true, // Limpa o diretório dist antes de cada build
+    path: path.resolve(__dirname, 'public'),
+    publicPath: '/',
+    clean: true,
+    filename: '[name].[contenthash].js',        // <-- Remove condição especial aqui
+    chunkFilename: '[name].[contenthash].js',
   },
+
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /node_modules|video.min.js/,
+        exclude: /node_modules|video\.min\.js/,
         use: {
           loader: 'babel-loader',
-          options: {
-            compact: false,
-          },
+          options: { compact: false },
         },
       },
-    
       {
-        test: /\.css$/, 
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
-      },
-      {
-        test: /\.html$/, // Processar arquivos HTML
-        use: ['html-loader'],
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
+
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+    runtimeChunk: false,
+    minimizer: ['...', new CssMinimizerPlugin()],
+  },
+
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './index.html',
-      filename: 'index.html',
-      inject: true,
-    }),
     new MiniCssExtractPlugin({
-      filename: 'style.css', // Nome do arquivo CSS gerado
+      filename: '[name].[contenthash].css',     // <-- Também remove condição especial aqui
+    }),
+
+    ...Object.keys(pages).map((name) => {
+      return new HtmlWebpackPlugin({
+        template: `./src/html/${name}.html`,
+        filename: `${name}.html`,
+        chunks: ['commons', name],
+        inject: true,
+        minify: {
+          removeComments: true,
+          collapseWhitespace: true,
+        },
+      });
+    }),
+
+    new CopyPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, 'src/assets'), to: 'assets' },
+        { from: path.resolve(__dirname, 'src/html/noticias'), to: 'noticias' },
+        {
+          from: path.resolve(__dirname, 'node_modules/glightbox/dist/css/glightbox.min.css'),
+          to: 'vendor/glightbox.min.css',
+        },
+        {
+          from: path.resolve(__dirname, 'node_modules/glightbox/dist/js/glightbox.min.js'),
+          to: 'vendor/glightbox.min.js',
+        },
+      ],
     }),
   ],
-  devServer: { // Configurações do servidor local
-    static: [
-      {
-        directory: path.join(__dirname, ''), // Diretório que vai ser servido
-      },
-      {
-        directory: path.join(__dirname, 'src'), // Pegar também os arquivos HTML para Hot-Swap
-      }
-    ],
+
+  devServer: {
+    static: { directory: path.join(__dirname, 'public') },
     proxy: [
       {
-        context: ['/api'], // Caminho da requisição a ser redirecionada
-        target: 'http://localhost:8080', // Endereço do backend
-        changeOrigin: true, // Para alterar o cabeçalho de origem
-        secure: false, // Se o backend não usar HTTPS, deixe como false
+        context: ['/api'],
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        secure: false,
       },
     ],
-    
-    compress: true, // Ativar compressão gzip
-    port: porta, // Porta 
-    open: true, // Abrir automaticamente o navegador
-    hot: true, // Ativa o Hot Module Replacement (HMR)
+    compress: true,
+    port: PORT,
+    open: true,
+    hot: true,
   },
-  mode: 'development',
+
+  mode: 'production',
 };

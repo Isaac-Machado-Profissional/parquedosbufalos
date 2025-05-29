@@ -6,4 +6,16 @@
         margin: 0 auto;
     }
 
+    
+
+
+}
+
+@media (max-width: 1000px) {
+
+    .new-Template .new-thumbnail {
+        width: 1000px;
+        height: 300px !important;
+        border-radius: 15px;
+    }
 }
