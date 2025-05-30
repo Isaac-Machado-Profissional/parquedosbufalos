@@ -137,7 +137,7 @@ export const renderInstagramPosts = async () => {
     // para melhor delegação de eventos e evitar duplicações.
 
   } else {
-    container.innerHTML = `<p>Nenhum post encontrado.<br> <a href="https://www.instagram.com/parquedostestes/" target="_blank">Ver perfil</a></p>`;
+    container.innerHTML = `<p>Acompanhe em nosos Instagram: <br> <a href="https://www.instagram.com/parquedostestes/" target="_blank">Ver perfil</a></p>`;
   }
 };
 

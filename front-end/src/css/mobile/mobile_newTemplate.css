@@ -6,7 +6,7 @@
         margin: 0 auto;
     }
 
-    
+
 
 
 }
@@ -18,4 +18,12 @@
         height: 300px !important;
         border-radius: 15px;
     }
+
+    .news-card-horizontal .card-body:hover .news-img {
+
+        transform: scale(1.08);
+        transition: transform 0.3s ease;
+    }
+
+
 }

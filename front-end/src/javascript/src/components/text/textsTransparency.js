@@ -158,11 +158,11 @@ function showTextTransparency(code, container) {
       </p>
           <img src="../../assets/transparency/naturalEnvironment/img1_Meio-Ambiente.jpg" alt="Imagens Aéreas da área de terreno do ano de 1958 do Parque dos Búfalos, recheada de árvores e natureza." class="img-fluid">
       <p>
-        Observe a notória diferença entre as áreas verdes sendo cada vez mais desmatadas e o verde sendo substituído por prédios e casas, como mostra a imagem dentre os anos de 2003-2007:
+        Observe a notória diferença entre as áreas verdes sendo cada vez mais desmatadas e o verde sendo substituído por prédios e casas, ainda que antes do conjunto habitacional de 2016, como mostra a imagem dentre os anos de 2003-2007:
       </p>
           <img src="../../assets/transparency/naturalEnvironment/img2_Meio-Ambiente.jpg" alt="Imagens do ano de 2007" class="img-fluid">
       <p>
-        <ul class="text-center"><li>No Parque dos Búfalos, se encontra 18 APP(Áreas de Preservação Permanente).</li></ul>
+        <ul class="text-center"><li>No Parque dos Búfalos, se encontrava 18 APP(Áreas de Preservação Permanente).</li></ul>
       </p>
       <p>
         A flora local, ricamente populada, com cerca de 150 espécies de árvores, entre: Arbustivas; arbóreas; trepadeiras, herbáceas; epífitas; subartivas; palmeiras estipe, dentre muitas outras, que podem ser naturalmente vistas ao entorno do Parque dos Búfalos e que precisam continuar lá, provendo nosso ar, este que precisa de melhoria, ou seja, mais árvores em áreas verdes, não menos.  
