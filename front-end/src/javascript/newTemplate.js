@@ -1,3 +1,5 @@
-import "./src/navbar";
-import "./src/components/newTemplateShare";
-import "./src/components/newTimeForRead";
+
+import "./src/navbar.js";
+import "./src/components/newTemplateShare.js";
+import "./src/components/newTimeForRead.js";
+

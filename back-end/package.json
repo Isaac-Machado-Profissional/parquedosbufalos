@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec \"node src/news/newsBuild.js && node server.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "newsbuild": "nodemon --exec src/news/newsBuild"
+    "build": "nodemon --exec node src/news/newsBuild"
   },
   "keywords": [],
   "author": "",

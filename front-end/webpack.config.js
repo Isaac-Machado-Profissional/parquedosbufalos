@@ -14,6 +14,7 @@ const pages = {
   Noticias: './src/javascript/Noticias.js',
   Transparencia: './src/javascript/Transparencia.js',
   newTemplate: './src/javascript/newTemplate.js',
+  erro404: './src/javascript/erro404.js', 
 };
 
 module.exports = {
@@ -23,7 +24,7 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     publicPath: '/',
     clean: true,
-    filename: '[name].[contenthash].js',        // <-- Remove condição especial aqui
+    filename: '[name].[contenthash].js',       
     chunkFilename: '[name].[contenthash].js',
   },
 
@@ -86,6 +87,12 @@ module.exports = {
           from: path.resolve(__dirname, 'node_modules/glightbox/dist/js/glightbox.min.js'),
           to: 'vendor/glightbox.min.js',
         },
+        {
+          from: path.resolve(__dirname, 'src/./.htaccess'),
+          to: './.htaccess',
+          toType: 'file', 
+          noErrorOnMissing: true, // Permite que o arquivo .htaccess não exista, caso realmente nao
+        },
       ],
     }),
   ],
@@ -104,6 +111,12 @@ module.exports = {
     port: PORT,
     open: true,
     hot: true,
+    historyApiFallback: {
+        rewrites: [
+            { from: /^\/$/, to: '/index.html' },  // Redireciona index.html
+            { from: /./, to: '/erro404.html' } // Fallback se der ruim
+        ]
+    }
   },
 
   mode: 'production',
