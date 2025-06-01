@@ -151,10 +151,10 @@ function showTextTransparency(code, container) {
   const texts = {
     '1-meio_ambiente': `
       <p>
-       Seu conhecimento e proteção requer que observemos que a área a qual está denominada como “Parque dos Búfalos” foi desmatada e teve várias atividades ilegais que aconteceram em sua extensão, crimes como: Queimadas, extração de minérios e desmatamento em toda a sua história. 
+       O conhecimento e a proteção do Parque dos Búfalos exigem que reconheçamos sua história marcada por desmatamento e diversas atividades ilegais ao longo dos anos. Entre os crimes ambientais registrados na área estão queimadas, extração de minérios e o próprio desmatamento, que impactaram profundamente o ecossistema local. 
       </p>
       <p>
-        Observe como era a área antes de ser populada pelas pessoas onde imagens áreas do ano de 1958 revela a área como um grande terreno com árvores e natureza:
+        Observe como era a área antes de ser habitada pelas pessoas onde imagens áreas do ano de 1958 revelam a área como um grande terreno com árvores e natureza:
       </p>
           <img src="../../assets/transparency/naturalEnvironment/img1_Meio-Ambiente.jpg" alt="Imagens Aéreas da área de terreno do ano de 1958 do Parque dos Búfalos, recheada de árvores e natureza." class="img-fluid">
       <p>
@@ -166,7 +166,7 @@ function showTextTransparency(code, container) {
         <ul class="text-center"><li>No Parque dos Búfalos, se encontra 18 APP(Áreas de Preservação Permanente).</li></ul>
       </p>
       <p>
-        A flora local, ricamente populada, com cerca de 150 espécies de árvores, entre: Arbustivas; arbóreas; trepadeiras, herbáceas; epífitas; subartivas; palmeiras estipe, dentre muitas outras, que podem ser naturalmente vistas ao entorno do Parque dos Búfalos e que precisam continuar lá, provendo nosso ar, este que precisa de melhoria, ou seja, mais árvores em áreas verdes, não menos.  
+        A flora local, ricamente populada, com cerca de 150 espécies de árvores, Entre: arbustivas; arbóreas; trepadeiras, herbáceas; epífitas; subartivas; palmeiras estipe, dentre muitas outras, que podem ser naturalmente vistas ao entorno do Parque dos Búfalos e que precisam continuar lá, provendo nosso ar, este que precisa de melhoria, ou seja, mais árvores em áreas verdes, não menos.  
       </p>
     `,
 
@@ -181,13 +181,13 @@ function showTextTransparency(code, container) {
       <p>
         Como podemos ver acima, destacado em vermelho todas as <strong>escolas públicas</strong> que atendem não só ao bairro do Jardim Apurá, Santa Amélia, Dorotéia, Guacuri como também como um todo, ao distrito Pedreira(este que soma-se mais de 40 mil pessoas[<a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html?edicao=39499&t=resultados">IBGE 2022 — Agregados por Distritos</a>]).
         <br>
-        Fazendo então seu entorno populacional, este que houve um notório crescimento imobiliário habitacional na região, em conjunto com a construção dos conglomerados de prédios e condomínios, seu adensamento extremo e a infraestrutura infelizmente não acompanharam essa demanda crescente de pessoas no bairro. Então serviços básicos ainda hoje no ano de 2025 estão em falta ou sobrecarregados, como: Hospital, postos de saúde, escolas, creches, transporte público...
+        Fazendo então seu entorno populacional, este que houve um notório crescimento imobiliário habitacional na região, em conjunto com a construção dos conglomerados de prédios e condomínios, seu adensamento extremo e a infraestrutura infelizmente não acompanharam essa demanda crescente de pessoas no bairro. Então, serviços básicos ainda hoje no ano de 2025 estão em falta ou sobrecarregados, como: hospitais, postos de saúde, escolas, creches, transporte público...
       </p>
       <br>
       <h5 class="text-center">Educação em risco</h5>
        <p>
-          De fato, um grave problema, por muito relatado pelos moradores, onde diversas mães relatam que precisam procurar escolas fora do bairro, a quilômetros de distância agregando a crianças que moram no Jardim Apurá, mas estudam em escolas, que não no próprio bairro do Jardim Apurá, afetando não só a demanda e a educação de diversas escolas, mas como também ao transporte e vias públicas, prejudicando ainda mais uma área tão trafegada, contribuindo com o aumento do trânsito e da poluição.
-          Se formos pensar, em um bairro, onde a população de uma hora pra outra cresceu de forma tão rápida com a chegada de moradias populares. O número de escolas e creches visivelmente não é suficiente para todos os moradores. 
+          De fato, um grave problema, por muito relatado pelos moradores, onde diversas mães relatam que precisam procurar escolas fora do bairro, a quilômetros de distância agregando as crianças que moram no Jardim Apurá, mas estudam em escolas, que não no próprio bairro do Jardim Apurá, afetando não só a demanda e a educação de diversas escolas, mas também ao transporte e vias públicas, prejudicando ainda mais uma área tão trafegada, contribuindo com o aumento do trânsito e da poluição.
+          Se formos pensar, em um bairro, onde a população de uma hora pra outra cresceu de forma tão rápida com a chegada de moradias populares, o número de escolas e creches visivelmente não é suficiente para todos os moradores. 
       </p>
       <p>
         A falta de escolas adequadas pode gerar desigualdades sociais, prejudicando o desenvolvimento infantojuvenil e limitando as oportunidades de aprendizado, crescimento e obtenção de trabalho.
@@ -198,7 +198,7 @@ function showTextTransparency(code, container) {
  `,
     '3-agua': `
       <p>
-        <strong>A questão Hídrica</strong> que cerca os arredores do Parque dos Búfalos se faz necessário conhecimento prévio de sua situação e localização, dado que o parque fica colado à Represa Billings.
+        <strong>A questão hídrica</strong> que cerca os arredores do Parque dos Búfalos, se faz necessário conhecimento prévio de sua situação e localização, dado que o parque fica colado à Represa Billings.
       </p>
       <br>
       <img src="../../assets/transparency/water/img1_Agua.png" alt="Imagem da Represa Billings cercando o Parque dos Búfalos" class="img-fluid">
@@ -266,7 +266,7 @@ function showTextTransparency(code, container) {
       <br>
       <h5 class="text-center">CETESB assume o erro no licenciamento da forma a qual foi feita.</h5>
       <p>
-        É impressionante como o lobby imobiliário consegue cometer crimes ao meio ambiente e ainda ganhar licenças aparentemente "lícita" com pareceres políticos. CETESB autoriza empreendimento, mesmo confessando que são os atos administrativo foram ilegais, errados, 193 prédios as margens da represa Billings em cima de 19 nascentes. Parque dos Búfalos, por se tratar de uma área preservada (livre se assentamento populacional) a área é amparada pela Lei Estadual específica da Billings nº 13.579/2009, Artigo 119, dada sua essencialidade para recarga hídrica do reservatório Billings e a importância de manutenção dos seus atributos naturais, devendo ser objeto de ações integradas entre os órgãos públicos e a população envolvida, visando conter a expansão urbana das ocupações isoladas existentes a data da publicação da lei. A Companhia Ambiental do Estado de São Paulo – CETESB é a agência do Governo do Estado responsável pelo controle, fiscalização, monitoramento e licenciamento de atividades geradoras de poluição, com a preocupação fundamental de preservar e recuperar a qualidade das águas, do ar e do solo. Portanto oeste órgão público, que deveria ter como preocupação fundamental preservar e recuperar a qualidade das águas, faz exatamente o oposto, atuando a favor das construtoras e do capital especulativo aprovando projetos absurdos e ilegais que destroem o meio ambiente.
+        É impressionante como o lobby imobiliário consegue cometer crimes ao meio ambiente e ainda ganhar licenças aparentemente "lícita" com pareceres políticos. CETESB autoriza empreendimento, mesmo confessando que são os atos administrativo foram ilegais, errados, 193 prédios as margens da represa Billings em cima de 19 nascentes. Parque dos Búfalos, por se tratar de uma área preservada (livre se assentamento populacional) a área é amparada pela Lei Estadual específica da Billings nº 13.579/2009, Artigo 119, dada sua essencialidade para recarga hídrica do reservatório Billings e a importância de manutenção dos seus atributos naturais, devendo ser objeto de ações integradas entre os órgãos públicos e a população envolvida, visando conter a expansão urbana das ocupações isoladas existentes a data da publicação da lei. A Companhia Ambiental do Estado de São Paulo – CETESB é a agência do Governo do Estado responsável pelo controle, fiscalização, monitoramento e licenciamento de atividades geradoras de poluição, com a preocupação fundamental de preservar e recuperar a qualidade das águas, do ar e do solo. Portanto este órgão público, que deveria ter como preocupação fundamental preservar e recuperar a qualidade das águas, faz exatamente o oposto, atuando a favor das construtoras e do capital especulativo, aprovando projetos absurdos e ilegais que destroem o meio ambiente.
       </p>
 
       <div class="video-youtube-container">
@@ -294,7 +294,7 @@ function showTextTransparency(code, container) {
         A área requer atenção incisiva do poder público no sentido de se impor a necessidade de proteção aos interesses difusos e coletivos relacionados à matéria ambiental, principalmente se considerando a época de escassez hídrica em que nos encontramos, em grande parte por ingerência e omissão por parte do poder público, também no que se refere à conservação do ambiente importante aos recursos hídricos, mas não somente a eles, pois possui importância intrínseca à biodiversidade vegetal que representa por si só, servindo ainda de habitat para fauna, e como estabilizador climático.
       </p>
       <p>
-       Atualmente predomina uma linha que desvirtua o conceito de meio ambiente ecologicamente equilibrado, bem como de melhoria ambiental, redefinindo-o sob o prestados de forma efetiva por parques sem compromisso ecológico, meros bosques, praças, canteiros ajardinados etc., a despeito de sua importância relativa intrínseca
+       Atualmente, predomina uma linha que desvirtua o conceito de meio ambiente ecologicamente equilibrado, bem como de melhoria ambiental, redefinindo-o sob o prestados de forma efetiva por parques sem compromisso ecológico, meros bosques, praças, canteiros ajardinados etc., a despeito de sua importância relativa intrínseca.
       </p>
 
     `

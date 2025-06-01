@@ -8,7 +8,7 @@ export function showTextParkManagement(section) {
         content.innerHTML = `
             <ul>
                 <li>
-                    <h3> Votação a representante </h3>
+                    <h3> Votação para representante </h3>
                     <p> Votação que ocorre a cada 2 anos para o próximo representante do parque, acompanhe-nos! </p>
                 </li>
                 <li>
