@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec \"node src/news/newsBuild.js && node server.js\"",
-    "build": "nodemon --exec node src/news/newsBuild"
-  },
+    "start": "node server.js",
+    "build": "nodemon --exec node src/news/newsBuild",
+    "pm2": "pm2 start ecosystem.config.js",
+    "pm2:logs": "pm2 logs bufalos-backend",
+    "pm2:save": "pm2 save",
+    "pm2:stop": "pm2 stop bufalos-backend",
+    "pm2:permadelete": "pm2 delete bufalos-backend",
+    "pm2:resurrect": "pm2 resurrect",
+    
+    "pm2:test": "pm2 start test-pm2.js --name test-pm2",
+    "pm2:test:logs": "pm2 logs test-pm2",
+    "pm2:test:stop": "pm2 stop test-pm2 && pm2 delete test-pm2"
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,6 +33,7 @@
     "nodemon": "^3.1.9"
   },
   "devDependencies": {
-    "ejs": "^3.1.10"
+    "ejs": "^3.1.10",
+    "pm2": "^6.0.6"
   }
 }

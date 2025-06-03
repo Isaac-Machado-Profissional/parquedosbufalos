@@ -8,11 +8,11 @@ const PORT = 9000;
 
 const pages = {
   index: './src/javascript/index.js',
-  Sobre: './src/javascript/Sobre.js',
-  'Mais-Noticias': './src/javascript/Mais-Noticias.js',
-  Historia: './src/javascript/Historia.js',
-  Noticias: './src/javascript/Noticias.js',
-  Transparencia: './src/javascript/Transparencia.js',
+  sobre: './src/javascript/sobre.js',
+  'mais-noticias': './src/javascript/mais-noticias.js',
+  historia: './src/javascript/historia.js',
+  noticias: './src/javascript/noticias.js',
+  transparencia: './src/javascript/transparencia.js',
   newTemplate: './src/javascript/newTemplate.js',
   erro404: './src/javascript/erro404.js', 
 };

@@ -1,4 +1,3 @@
-// src/javascript/components/instagramPosts.js
 
 // Importa a função de serviço que busca os dados do Instagram
 import { fetchInstagramFeed } from '../services/instagramService.js';
@@ -133,11 +132,8 @@ export const renderInstagramPosts = async () => {
 
     container.innerHTML = html;
 
-    // Os event listeners para toggle-caption serão gerenciados no index.js
-    // para melhor delegação de eventos e evitar duplicações.
-
   } else {
-    container.innerHTML = `<p>Acompanhe em nosos Instagram: <br> <a href="https://www.instagram.com/parquedostestes/" target="_blank">Ver perfil</a></p>`;
+    container.innerHTML = `<p>Nosso instagram: <br> <a href="https://www.instagram.com/parquedosbufalosjardimapura/" target="_blank">Ver perfil</a></p>`;
   }
 };
 
@@ -157,7 +153,6 @@ export async function loadInstagramFeed() {
   await renderInstagramPosts(); // renderInstagramPosts agora busca os dados internamente
 
   // anima o logo
-  // Use um caminho relativo à pasta public/assets ou o Webpack asset management
   buttonImg.src = '/assets/index/instagram-logo/Instagram-logo-color.png';
   requestAnimationFrame(() => buttonImg.classList.add('reveal'));
 }

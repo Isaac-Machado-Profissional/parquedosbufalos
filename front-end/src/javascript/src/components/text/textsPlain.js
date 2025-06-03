@@ -13,11 +13,11 @@ export function showTextParkManagement(section) {
                 </li>
                 <li>
                     <h3> Constantes reuniões </h3>
-                    <p> Acompanhe nosso <strong><a href="../Noticias.html">Calendário de Eventos</a></strong> e receba os links para participação das reuniões do Parque! </p>
+                    <p> Acompanhe nosso <strong><a href="../noticias.html">Calendário de Eventos</a></strong> e receba os links para participação das reuniões do Parque! </p>
                 </li>
                 <li>
                     <h3> Notícias mensais </h3>
-                    <p> Cadastre-se em nossa <a href="../Sobre.html?scrollTo=newsletter" id="newsletter-container">Newsletter</a>, mantendo-se atualizado sobre as oportunidades de fazer a diferença na região! </p>
+                    <p> Cadastre-se em nossa <a href="../sobre.html?scrollTo=newsletter" id="newsletter-container">Newsletter</a>, mantendo-se atualizado sobre as oportunidades de fazer a diferença na região! </p>
                 </li>
             </ul>       
         `;

@@ -1,8 +1,8 @@
 // Importa e executa textos do gerenciamento de parque
 import "./css.js"
 import "./src/navbar.js";
-import '../assets/video-js-v8.22.0/video.js';
-import '../assets/video-js-v8.22.0/video-js.css';
+import '../assets/libs/video-js-v8.22.0/video.js';
+import '../assets/libs/video-js-v8.22.0/video-js.css';
 import videojs from 'video.js';
 import { showTextParkManagement } from "./src/components/text/textsPlain.js"; // Lógica específica de texto
 import "./src/instagramLoad.js";
