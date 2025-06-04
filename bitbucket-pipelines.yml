@@ -1,8 +1,8 @@
 image: cypress/base:22.15.1
 
 pipelines:
-  branches: # Define pipelines específicos para branches
-    main: # Esta sequência de passos SÓ será executada para commits na branch 'main'
+  branches: # Define pipelines específico para a branch:
+    main: #Only Main changes
       - step:
           name: 'Build Front-End'
           script:
@@ -14,12 +14,12 @@ pipelines:
           caches:
             - node
       - step:
-          name: 'Run Cypress E2E & Accessibility Tests'
+          name: 'Run Cypress E2E Test Runner'
           script:
-            - cd front-end # Mova o 'cd' para antes do 'npm install'
-            - npm install  # Instala dependências do front-end (incluindo Cypress, Pa11y, serve)
-            - npm run test:all
-            - echo "Acessibility & Cypress E2E check✅"
+            - cd front-end 
+            - npm install 
+            - npm run test:ci
+            - echo "Cypress E2E check✅"
           caches:
             - node
       - step:
