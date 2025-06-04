@@ -10,7 +10,8 @@
     "test:cypress": "cypress open",
     "test:cypress:run": "cypress run",
     "test:acessibility": "npx pa11y http://localhost:9000 && npx pa11y http://localhost:9000/historia.html && npx pa11y http://localhost:9000/transparencia.html && npx pa11y http://localhost:9000/noticias.html && npx pa11y http://localhost:9000/sobre.html && npx pa11y http://localhost:9000/mais-noticias.html && npx pa11y http://localhost:9000/noticias/2025/represa-billings-100-anos.html",
-    "test:all": "start-server-and-test test:server http://localhost:9000 \"npm run test:cypress:run && npm run test:acessibility\""
+    "test:all": "start-server-and-test test:server http://localhost:9000 \"npm run test:cypress:run && npm run test:acessibility\"",
+    "test:ci": "start-server-and-test test:server http://localhost:9000 \"npm run test:cypress:run\""
   },
   "proxy": "http://localhost:8080",
   "repository": {
