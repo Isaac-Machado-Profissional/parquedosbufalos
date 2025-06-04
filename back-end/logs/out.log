@@ -1,0 +1,929 @@
+2025-06-02 21:54:00: [02/06/2025, 21:54:00] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+2025-06-02 21:54:01: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+2025-06-02 21:54:01: ⏳ Tempo restante do token atual: 53 dias
+2025-06-02 21:54:01: ✅ Servidor rodando na porta 8080
+02/06/2025 21:55:34: [02/06/2025, 21:55:34] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 21:55:34: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 21:55:34: ⏳ Tempo restante do token atual: 53 dias
+02/06/2025 21:55:34: ✅ Servidor rodando na porta 8080
+02/06/2025 22:00:00: [02/06/2025, 22:00:00] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).
+02/06/2025 22:03:09: [02/06/2025, 22:03:09] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:03:09: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:03:09: ⏳ Tempo restante do token atual: 53 dias
+02/06/2025 22:03:09: ✅ Servidor rodando na porta 8080
+02/06/2025 22:03:24: [02/06/2025, 22:03:24] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:03:25: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:03:25: ⏳ Tempo restante do token atual: 53 dias
+02/06/2025 22:03:25: ✅ Servidor rodando na porta 8080
+02/06/2025 22:05:22: [02/06/2025, 22:05:22] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:05:22: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:05:22: ⏳ Tempo restante do token atual: 53 dias
+02/06/2025 22:05:22: ✅ Servidor rodando na porta 8080
+02/06/2025 22:05:37: [02/06/2025, 22:05:37] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:05:37: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:05:37: ⏳ Tempo restante do token atual: 53 dias
+02/06/2025 22:05:37: ✅ Servidor rodando na porta 8080
+02/06/2025 22:20:53: [02/06/2025, 22:20:53] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:20:53: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:20:53: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:20:53: ✅ Servidor rodando na porta 8080
+02/06/2025 22:21:54: [02/06/2025, 22:21:54] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:21:54: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:21:54: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:21:54: ✅ Servidor rodando na porta 8080
+02/06/2025 22:22:26: [02/06/2025, 22:22:26] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:22:27: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:22:27: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:22:27: ✅ Servidor rodando na porta 8080
+02/06/2025 22:22:43: [02/06/2025, 22:22:43] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:22:44: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:22:44: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:22:44: ✅ Servidor rodando na porta 8080
+02/06/2025 22:23:00: [02/06/2025, 22:23:00] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:23:01: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:23:01: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:23:01: ✅ Servidor rodando na porta 8080
+02/06/2025 22:23:25: [02/06/2025, 22:23:25] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:23:25: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:23:25: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:23:25: ✅ Servidor rodando na porta 8080
+02/06/2025 22:23:41: [02/06/2025, 22:23:41] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:23:41: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:23:41: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:23:41: ✅ Servidor rodando na porta 8080
+02/06/2025 22:23:59: [02/06/2025, 22:23:59] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:24:00: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:24:00: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:24:00: ✅ Servidor rodando na porta 8080
+02/06/2025 22:24:15: [02/06/2025, 22:24:14] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:24:15: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:24:15: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:24:15: ✅ Servidor rodando na porta 8080
+02/06/2025 22:26:50: [02/06/2025, 22:26:50] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:26:51: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:26:51: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:26:51: ✅ Servidor rodando na porta 8080
+02/06/2025 22:27:03: [02/06/2025, 22:27:03] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:27:03: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:27:03: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:27:03: ✅ Servidor rodando na porta 8080
+02/06/2025 22:28:00: [02/06/2025, 22:28:00] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:28:02: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:28:02: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:28:02: ✅ Servidor rodando na porta 8080
+02/06/2025 22:28:35: [02/06/2025, 22:28:35] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:28:35: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:28:35: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:28:35: ✅ Servidor rodando na porta 8080
+02/06/2025 22:28:51: [02/06/2025, 22:28:51] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:28:51: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:28:51: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:28:51: ✅ Servidor rodando na porta 8080
+02/06/2025 22:29:04: [02/06/2025, 22:29:04] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:29:04: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:29:04: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:29:04: ✅ Servidor rodando na porta 8080
+02/06/2025 22:29:30: [02/06/2025, 22:29:30] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:29:31: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:29:31: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:29:31: ✅ Servidor rodando na porta 8080
+02/06/2025 22:30:00: [02/06/2025, 22:30:00] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).
+02/06/2025 22:30:08: [02/06/2025, 22:30:08] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:30:08: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:30:08: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:30:08: ✅ Servidor rodando na porta 8080
+02/06/2025 22:30:36: [02/06/2025, 22:30:36] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:30:37: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:30:37: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:30:37: ✅ Servidor rodando na porta 8080
+02/06/2025 22:31:09: [02/06/2025, 22:31:09] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:31:09: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:31:09: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:31:09: ✅ Servidor rodando na porta 8080
+02/06/2025 22:31:24: [02/06/2025, 22:31:24] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:31:25: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:31:25: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:31:25: ✅ Servidor rodando na porta 8080
+02/06/2025 22:31:41: [02/06/2025, 22:31:41] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:31:41: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:31:41: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:31:41: ✅ Servidor rodando na porta 8080
+02/06/2025 22:34:13: [02/06/2025, 22:34:12] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:34:14: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:34:14: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:34:14: ✅ Servidor rodando na porta 8080
+02/06/2025 22:34:42: [02/06/2025, 22:34:42] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:34:42: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:34:42: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:34:42: ✅ Servidor rodando na porta 8080
+02/06/2025 22:35:07: [02/06/2025, 22:35:07] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:35:07: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:35:07: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:35:07: ✅ Servidor rodando na porta 8080
+02/06/2025 22:35:23: [02/06/2025, 22:35:23] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:35:24: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:35:24: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:35:24: ✅ Servidor rodando na porta 8080
+02/06/2025 22:35:46: [02/06/2025, 22:35:46] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:35:47: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:35:47: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:35:47: ✅ Servidor rodando na porta 8080
+02/06/2025 22:35:58: [02/06/2025, 22:35:58] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:35:58: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:35:58: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:35:58: ✅ Servidor rodando na porta 8080
+02/06/2025 22:36:55: [02/06/2025, 22:36:55] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:36:56: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:36:56: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:36:56: ✅ Servidor rodando na porta 8080
+02/06/2025 22:37:12: [02/06/2025, 22:37:12] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:37:12: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:37:12: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:37:12: ✅ Servidor rodando na porta 8080
+02/06/2025 22:37:59: [02/06/2025, 22:37:59] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:38:00: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:38:00: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:38:00: ✅ Servidor rodando na porta 8080
+02/06/2025 22:38:22: [02/06/2025, 22:38:22] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:38:22: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:38:22: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:38:22: ✅ Servidor rodando na porta 8080
+02/06/2025 22:38:38: [02/06/2025, 22:38:38] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:38:39: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:38:39: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:38:39: ✅ Servidor rodando na porta 8080
+02/06/2025 22:39:05: [02/06/2025, 22:39:05] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:39:06: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:39:06: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:39:06: ✅ Servidor rodando na porta 8080
+02/06/2025 22:39:33: [02/06/2025, 22:39:33] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:39:34: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:39:34: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:39:34: ✅ Servidor rodando na porta 8080
+02/06/2025 22:39:51: [02/06/2025, 22:39:50] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:39:51: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:39:51: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:39:51: ✅ Servidor rodando na porta 8080
+02/06/2025 22:40:41: [02/06/2025, 22:40:41] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:40:42: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:40:42: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:40:42: ✅ Servidor rodando na porta 8080
+02/06/2025 22:40:53: [02/06/2025, 22:40:53] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:40:53: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:40:54: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:40:54: ✅ Servidor rodando na porta 8080
+02/06/2025 22:41:04: [02/06/2025, 22:41:04] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:41:05: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:41:05: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:41:05: ✅ Servidor rodando na porta 8080
+02/06/2025 22:41:21: [02/06/2025, 22:41:21] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:41:23: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:41:23: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:41:23: ✅ Servidor rodando na porta 8080
+02/06/2025 22:45:26: [02/06/2025, 22:45:26] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:45:27: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:45:27: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:45:27: ✅ Servidor rodando na porta 8080
+02/06/2025 22:45:43: [02/06/2025, 22:45:43] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:45:43: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:45:43: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:45:43: ✅ Servidor rodando na porta 8080
+02/06/2025 22:48:13: [02/06/2025, 22:48:13] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:48:14: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:48:14: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:48:14: ✅ Servidor rodando na porta 8080
+02/06/2025 22:57:07: [02/06/2025, 22:57:07] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 22:57:08: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 22:57:08: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 22:57:08: ✅ Servidor rodando na porta 8080
+02/06/2025 23:00:00: [02/06/2025, 23:00:00] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).
+02/06/2025 23:00:26: [02/06/2025, 23:00:26] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 23:00:27: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 23:00:27: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 23:00:27: ✅ Servidor rodando na porta 8080
+02/06/2025 23:02:29: [02/06/2025, 23:02:29] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 23:02:30: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 23:02:30: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 23:02:30: ✅ Servidor rodando na porta 8080
+02/06/2025 23:02:57: [02/06/2025, 23:02:57] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 23:02:58: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 23:02:58: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 23:02:58: ✅ Servidor rodando na porta 8080
+02/06/2025 23:11:01: [02/06/2025, 23:11:01] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 23:11:02: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 23:11:02: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 23:11:02: ✅ Servidor rodando na porta 8080
+02/06/2025 23:11:28: [02/06/2025, 23:11:28] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 23:11:29: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 23:11:29: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 23:11:29: ✅ Servidor rodando na porta 8080
+02/06/2025 23:17:08: [02/06/2025, 23:17:08] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 23:17:09: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 23:17:09: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 23:17:09: ✅ Servidor rodando na porta 8080
+02/06/2025 23:30:00: [02/06/2025, 23:30:00] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).
+02/06/2025 23:56:38: [02/06/2025, 23:56:38] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 23:56:42: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 23:56:42: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 23:56:42: ✅ Servidor rodando na porta 8080
+02/06/2025 23:59:52: [02/06/2025, 23:59:52] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+02/06/2025 23:59:53: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+02/06/2025 23:59:53: ⏳ Tempo restante do token atual: 52 dias
+02/06/2025 23:59:53: ✅ Servidor rodando na porta 8080
+03/06/2025 00:00:00: [03/06/2025, 00:00:00] 🔄 Iniciando refresh do token…
+03/06/2025 00:00:00: [03/06/2025, 00:00:00] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).
+03/06/2025 00:00:01: 🔄 Novo token obtido, expira em 60 dias
+03/06/2025 00:00:01: ✅ .env atualizado com token, data de refresh e validade
+03/06/2025 00:00:01: ✅ Token renovado com sucesso
+03/06/2025 00:00:08: [03/06/2025, 00:00:08] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:00:09: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:00:09: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:00:09: ✅ Servidor rodando na porta 8080
+03/06/2025 00:00:22: [03/06/2025, 00:00:22] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:00:24: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:00:24: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:00:24: ✅ Servidor rodando na porta 8080
+03/06/2025 00:01:18: [03/06/2025, 00:01:17] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:01:19: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:01:19: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:01:19: ✅ Servidor rodando na porta 8080
+03/06/2025 00:01:40: [03/06/2025, 00:01:40] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:01:41: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:01:41: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:01:41: ✅ Servidor rodando na porta 8080
+03/06/2025 00:01:52: [03/06/2025, 00:01:52] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:01:53: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:01:54: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:01:54: ✅ Servidor rodando na porta 8080
+03/06/2025 00:02:06: [03/06/2025, 00:02:06] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:02:07: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:02:07: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:02:07: ✅ Servidor rodando na porta 8080
+03/06/2025 00:02:20: [03/06/2025, 00:02:20] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:02:21: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:02:21: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:02:21: ✅ Servidor rodando na porta 8080
+03/06/2025 00:02:39: [03/06/2025, 00:02:39] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:02:42: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:02:42: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:02:42: ✅ Servidor rodando na porta 8080
+03/06/2025 00:03:09: [03/06/2025, 00:03:09] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:03:10: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:03:10: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:03:10: ✅ Servidor rodando na porta 8080
+03/06/2025 00:03:35: [03/06/2025, 00:03:35] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:03:36: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:03:36: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:03:36: ✅ Servidor rodando na porta 8080
+03/06/2025 00:04:09: [03/06/2025, 00:04:09] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:04:10: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:04:10: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:04:10: ✅ Servidor rodando na porta 8080
+03/06/2025 00:04:18: [03/06/2025, 00:04:18] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:04:20: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:04:20: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:04:20: ✅ Servidor rodando na porta 8080
+03/06/2025 00:11:50: [03/06/2025, 00:11:50] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:11:52: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:11:52: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:11:52: ✅ Servidor rodando na porta 8080
+03/06/2025 00:12:12: [03/06/2025, 00:12:12] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:12:13: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:12:13: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:12:13: ✅ Servidor rodando na porta 8080
+03/06/2025 00:12:42: [03/06/2025, 00:12:42] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:12:44: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:12:44: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:12:44: ✅ Servidor rodando na porta 8080
+03/06/2025 00:12:59: [03/06/2025, 00:12:58] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:13:00: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:13:00: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:13:00: ✅ Servidor rodando na porta 8080
+03/06/2025 00:13:27: [03/06/2025, 00:13:27] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:13:29: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:13:29: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:13:29: ✅ Servidor rodando na porta 8080
+03/06/2025 00:13:51: [03/06/2025, 00:13:51] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:13:52: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:13:52: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:13:52: ✅ Servidor rodando na porta 8080
+03/06/2025 00:14:12: [03/06/2025, 00:14:12] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:14:14: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:14:14: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:14:14: ✅ Servidor rodando na porta 8080
+03/06/2025 00:14:25: [03/06/2025, 00:14:25] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:14:26: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:14:26: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:14:26: ✅ Servidor rodando na porta 8080
+03/06/2025 00:14:51: [03/06/2025, 00:14:51] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:14:52: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:14:52: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:14:52: ✅ Servidor rodando na porta 8080
+03/06/2025 00:15:03: [03/06/2025, 00:15:03] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:15:04: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:15:04: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:15:04: ✅ Servidor rodando na porta 8080
+03/06/2025 00:15:20: [03/06/2025, 00:15:20] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:15:22: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:15:22: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:15:22: ✅ Servidor rodando na porta 8080
+03/06/2025 00:16:05: [03/06/2025, 00:16:05] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:16:07: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:16:07: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:16:07: ✅ Servidor rodando na porta 8080
+03/06/2025 00:16:15: [03/06/2025, 00:16:15] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:16:16: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:16:16: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:16:16: ✅ Servidor rodando na porta 8080
+03/06/2025 00:16:26: [03/06/2025, 00:16:26] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:16:27: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:16:27: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:16:27: ✅ Servidor rodando na porta 8080
+03/06/2025 00:16:41: [03/06/2025, 00:16:40] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:16:42: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:16:42: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:16:42: ✅ Servidor rodando na porta 8080
+03/06/2025 00:16:51: [03/06/2025, 00:16:51] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:16:52: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:16:52: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:16:52: ✅ Servidor rodando na porta 8080
+03/06/2025 00:17:04: [03/06/2025, 00:17:04] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:17:06: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:17:06: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:17:06: ✅ Servidor rodando na porta 8080
+03/06/2025 00:17:20: [03/06/2025, 00:17:20] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:17:21: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:17:21: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:17:21: ✅ Servidor rodando na porta 8080
+03/06/2025 00:17:44: [03/06/2025, 00:17:44] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:17:46: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:17:46: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:17:46: ✅ Servidor rodando na porta 8080
+03/06/2025 00:17:57: [03/06/2025, 00:17:57] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:17:58: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:17:58: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:17:58: ✅ Servidor rodando na porta 8080
+03/06/2025 00:18:08: [03/06/2025, 00:18:08] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:18:09: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:18:09: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:18:09: ✅ Servidor rodando na porta 8080
+03/06/2025 00:18:23: [03/06/2025, 00:18:23] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:18:24: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:18:24: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:18:24: ✅ Servidor rodando na porta 8080
+03/06/2025 00:19:52: [03/06/2025, 00:19:52] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:19:54: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:19:54: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:19:54: ✅ Servidor rodando na porta 8080
+03/06/2025 00:20:04: [03/06/2025, 00:20:04] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:20:05: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:20:05: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:20:05: ✅ Servidor rodando na porta 8080
+03/06/2025 00:20:14: [03/06/2025, 00:20:14] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:20:16: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:20:16: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:20:16: ✅ Servidor rodando na porta 8080
+03/06/2025 00:20:26: [03/06/2025, 00:20:26] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:20:27: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:20:27: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:20:27: ✅ Servidor rodando na porta 8080
+03/06/2025 00:20:47: [03/06/2025, 00:20:46] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:20:48: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:20:48: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:20:48: ✅ Servidor rodando na porta 8080
+03/06/2025 00:20:56: [03/06/2025, 00:20:56] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:20:57: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:20:57: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:20:57: ✅ Servidor rodando na porta 8080
+03/06/2025 00:21:13: [03/06/2025, 00:21:13] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:21:15: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:21:15: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:21:15: ✅ Servidor rodando na porta 8080
+03/06/2025 00:21:25: [03/06/2025, 00:21:25] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:21:26: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:21:26: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:21:26: ✅ Servidor rodando na porta 8080
+03/06/2025 00:21:35: [03/06/2025, 00:21:35] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:21:35: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:21:35: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:21:35: ✅ Servidor rodando na porta 8080
+03/06/2025 00:22:44: [03/06/2025, 00:22:44] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:22:45: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:22:45: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:22:45: ✅ Servidor rodando na porta 8080
+03/06/2025 00:23:17: [03/06/2025, 00:23:17] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:23:18: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:23:18: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:23:18: ✅ Servidor rodando na porta 8080
+03/06/2025 00:23:36: [03/06/2025, 00:23:36] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:23:36: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:23:36: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:23:36: ✅ Servidor rodando na porta 8080
+03/06/2025 00:23:48: [03/06/2025, 00:23:48] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:23:49: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:23:49: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:23:49: ✅ Servidor rodando na porta 8080
+03/06/2025 00:24:11: [03/06/2025, 00:24:11] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:24:11: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:24:11: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:24:11: ✅ Servidor rodando na porta 8080
+03/06/2025 00:24:35: [03/06/2025, 00:24:35] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:24:35: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:24:35: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:24:35: ✅ Servidor rodando na porta 8080
+03/06/2025 00:25:18: [03/06/2025, 00:25:18] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:25:19: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:25:19: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:25:19: ✅ Servidor rodando na porta 8080
+03/06/2025 00:25:34: [03/06/2025, 00:25:34] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:25:34: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:25:34: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:25:34: ✅ Servidor rodando na porta 8080
+03/06/2025 00:25:53: [03/06/2025, 00:25:53] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:25:53: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:25:53: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:25:53: ✅ Servidor rodando na porta 8080
+03/06/2025 00:26:15: [03/06/2025, 00:26:15] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:26:15: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:26:15: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:26:15: ✅ Servidor rodando na porta 8080
+03/06/2025 00:26:48: [03/06/2025, 00:26:48] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:26:49: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:26:49: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:26:49: ✅ Servidor rodando na porta 8080
+03/06/2025 00:30:00: [03/06/2025, 00:30:00] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).
+03/06/2025 00:30:49: [03/06/2025, 00:30:49] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:30:50: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:30:50: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:30:50: ✅ Servidor rodando na porta 8080
+03/06/2025 00:31:11: [03/06/2025, 00:31:11] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:31:11: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:31:11: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:31:11: ✅ Servidor rodando na porta 8080
+03/06/2025 00:31:25: [03/06/2025, 00:31:25] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:31:26: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:31:26: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:31:26: ✅ Servidor rodando na porta 8080
+03/06/2025 00:35:27: [03/06/2025, 00:35:27] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:35:28: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:35:28: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:35:28: ✅ Servidor rodando na porta 8080
+03/06/2025 00:36:41: [03/06/2025, 00:36:41] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:36:43: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:36:43: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:36:43: ✅ Servidor rodando na porta 8080
+03/06/2025 00:37:25: [03/06/2025, 00:37:25] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:37:27: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:37:27: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:37:27: ✅ Servidor rodando na porta 8080
+03/06/2025 00:37:37: [03/06/2025, 00:37:37] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:37:38: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:37:39: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:37:39: ✅ Servidor rodando na porta 8080
+03/06/2025 00:39:14: [03/06/2025, 00:39:14] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:39:15: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:39:15: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:39:15: ✅ Servidor rodando na porta 8080
+03/06/2025 00:42:34: [03/06/2025, 00:42:34] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:42:35: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:42:35: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:42:35: ✅ Servidor rodando na porta 8080
+03/06/2025 00:52:28: [03/06/2025, 00:52:27] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:52:28: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:52:28: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:52:28: ✅ Servidor rodando na porta 8080
+03/06/2025 00:52:41: [03/06/2025, 00:52:41] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:52:42: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:52:42: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:52:42: ✅ Servidor rodando na porta 8080
+03/06/2025 00:53:00: [03/06/2025, 00:53:00] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:53:01: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:53:01: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:53:01: ✅ Servidor rodando na porta 8080
+03/06/2025 00:53:21: [03/06/2025, 00:53:21] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:53:22: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:53:22: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:53:22: ✅ Servidor rodando na porta 8080
+03/06/2025 00:55:56: [03/06/2025, 00:55:56] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:55:57: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:55:57: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:55:57: ✅ Servidor rodando na porta 8080
+03/06/2025 00:59:20: [03/06/2025, 00:59:19] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 00:59:21: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 00:59:21: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 00:59:21: ✅ Servidor rodando na porta 8080
+03/06/2025 00:59:59: [03/06/2025, 00:59:59] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:00:01: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:00:01: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:00:01: ✅ Servidor rodando na porta 8080
+03/06/2025 01:00:17: [03/06/2025, 01:00:17] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:00:18: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:00:18: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:00:18: ✅ Servidor rodando na porta 8080
+03/06/2025 01:00:30: [03/06/2025, 01:00:30] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:00:32: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:00:32: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:00:32: ✅ Servidor rodando na porta 8080
+03/06/2025 01:00:48: [03/06/2025, 01:00:48] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:00:49: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:00:49: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:00:49: ✅ Servidor rodando na porta 8080
+03/06/2025 01:01:23: [03/06/2025, 01:01:23] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:01:25: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:01:25: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:01:25: ✅ Servidor rodando na porta 8080
+03/06/2025 01:01:34: [03/06/2025, 01:01:34] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:01:35: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:01:35: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:01:35: ✅ Servidor rodando na porta 8080
+03/06/2025 01:03:49: [03/06/2025, 01:03:49] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:03:51: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:03:51: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:03:51: ✅ Servidor rodando na porta 8080
+03/06/2025 01:04:01: [03/06/2025, 01:04:01] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:04:02: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:04:02: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:04:02: ✅ Servidor rodando na porta 8080
+03/06/2025 01:14:06: [03/06/2025, 01:14:06] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:14:07: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:14:07: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:14:07: ✅ Servidor rodando na porta 8080
+03/06/2025 01:14:19: [03/06/2025, 01:14:19] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:14:20: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:14:20: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:14:20: ✅ Servidor rodando na porta 8080
+03/06/2025 01:15:21: [03/06/2025, 01:15:21] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:15:23: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:15:23: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:15:23: ✅ Servidor rodando na porta 8080
+03/06/2025 01:15:32: [03/06/2025, 01:15:32] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:15:33: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:15:33: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:15:33: ✅ Servidor rodando na porta 8080
+03/06/2025 01:15:45: [03/06/2025, 01:15:45] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:15:46: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:15:46: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:15:46: ✅ Servidor rodando na porta 8080
+03/06/2025 01:15:56: [03/06/2025, 01:15:56] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:15:57: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:15:57: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:15:57: ✅ Servidor rodando na porta 8080
+03/06/2025 01:16:09: [03/06/2025, 01:16:09] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:16:11: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:16:11: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:16:11: ✅ Servidor rodando na porta 8080
+03/06/2025 01:16:20: [03/06/2025, 01:16:20] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:16:22: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:16:22: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:16:22: ✅ Servidor rodando na porta 8080
+03/06/2025 01:16:30: [03/06/2025, 01:16:30] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:16:31: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:16:31: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:16:31: ✅ Servidor rodando na porta 8080
+03/06/2025 01:16:47: [03/06/2025, 01:16:47] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:16:49: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:16:49: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:16:49: ✅ Servidor rodando na porta 8080
+03/06/2025 01:16:59: [03/06/2025, 01:16:59] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:17:00: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:17:00: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:17:00: ✅ Servidor rodando na porta 8080
+03/06/2025 01:17:10: [03/06/2025, 01:17:10] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:17:12: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:17:12: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:17:12: ✅ Servidor rodando na porta 8080
+03/06/2025 01:17:21: [03/06/2025, 01:17:21] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:17:23: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:17:23: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:17:23: ✅ Servidor rodando na porta 8080
+03/06/2025 01:17:33: [03/06/2025, 01:17:33] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:17:34: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:17:34: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:17:34: ✅ Servidor rodando na porta 8080
+03/06/2025 01:17:51: [03/06/2025, 01:17:51] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:17:52: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:17:52: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:17:52: ✅ Servidor rodando na porta 8080
+03/06/2025 01:18:03: [03/06/2025, 01:18:03] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:18:05: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:18:05: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:18:05: ✅ Servidor rodando na porta 8080
+03/06/2025 01:18:13: [03/06/2025, 01:18:13] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:18:15: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:18:15: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:18:15: ✅ Servidor rodando na porta 8080
+03/06/2025 01:18:30: [03/06/2025, 01:18:30] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:18:31: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:18:31: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:18:31: ✅ Servidor rodando na porta 8080
+03/06/2025 01:18:52: [03/06/2025, 01:18:52] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:18:53: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:18:53: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:18:53: ✅ Servidor rodando na porta 8080
+03/06/2025 01:19:08: [03/06/2025, 01:19:07] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:19:09: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:19:09: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:19:09: ✅ Servidor rodando na porta 8080
+03/06/2025 01:19:20: [03/06/2025, 01:19:20] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:19:22: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:19:22: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:19:22: ✅ Servidor rodando na porta 8080
+03/06/2025 01:19:32: [03/06/2025, 01:19:32] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:19:34: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:19:34: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:19:34: ✅ Servidor rodando na porta 8080
+03/06/2025 01:19:43: [03/06/2025, 01:19:43] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:19:44: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:19:44: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:19:44: ✅ Servidor rodando na porta 8080
+03/06/2025 01:20:49: [03/06/2025, 01:20:49] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:20:51: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:20:51: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:20:51: ✅ Servidor rodando na porta 8080
+03/06/2025 01:21:01: [03/06/2025, 01:21:01] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:21:02: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:21:02: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:21:02: ✅ Servidor rodando na porta 8080
+03/06/2025 01:22:05: [03/06/2025, 01:22:05] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:22:06: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:22:06: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:22:06: ✅ Servidor rodando na porta 8080
+03/06/2025 01:22:16: [03/06/2025, 01:22:16] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:22:16: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:22:16: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:22:16: ✅ Servidor rodando na porta 8080
+03/06/2025 01:22:37: [03/06/2025, 01:22:37] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:22:37: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:22:37: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:22:37: ✅ Servidor rodando na porta 8080
+03/06/2025 01:23:01: [03/06/2025, 01:23:01] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:23:01: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:23:01: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:23:01: ✅ Servidor rodando na porta 8080
+03/06/2025 01:23:17: [03/06/2025, 01:23:17] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:23:17: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:23:17: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:23:17: ✅ Servidor rodando na porta 8080
+03/06/2025 01:23:32: [03/06/2025, 01:23:32] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:23:33: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:23:33: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:23:33: ✅ Servidor rodando na porta 8080
+03/06/2025 01:24:00: [03/06/2025, 01:24:00] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:24:00: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:24:00: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:24:00: ✅ Servidor rodando na porta 8080
+03/06/2025 01:24:13: [03/06/2025, 01:24:13] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:24:14: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:24:14: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:24:14: ✅ Servidor rodando na porta 8080
+03/06/2025 01:25:02: [03/06/2025, 01:25:02] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:25:03: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:25:03: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:25:03: ✅ Servidor rodando na porta 8080
+03/06/2025 01:25:13: [03/06/2025, 01:25:13] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:25:14: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:25:14: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:25:14: ✅ Servidor rodando na porta 8080
+03/06/2025 01:25:25: [03/06/2025, 01:25:25] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:25:26: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:25:26: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:25:26: ✅ Servidor rodando na porta 8080
+03/06/2025 01:25:37: [03/06/2025, 01:25:37] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:25:38: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:25:38: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:25:38: ✅ Servidor rodando na porta 8080
+03/06/2025 01:26:10: [03/06/2025, 01:26:10] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:26:11: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:26:11: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:26:11: ✅ Servidor rodando na porta 8080
+03/06/2025 01:26:39: [03/06/2025, 01:26:39] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:26:39: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:26:39: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:26:39: ✅ Servidor rodando na porta 8080
+03/06/2025 01:26:52: [03/06/2025, 01:26:52] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:26:52: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:26:52: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:26:52: ✅ Servidor rodando na porta 8080
+03/06/2025 01:27:17: [03/06/2025, 01:27:17] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:27:19: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:27:19: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:27:19: ✅ Servidor rodando na porta 8080
+03/06/2025 01:27:52: [03/06/2025, 01:27:52] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:27:52: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:27:52: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:27:52: ✅ Servidor rodando na porta 8080
+03/06/2025 01:28:03: [03/06/2025, 01:28:03] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:28:04: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:28:04: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:28:04: ✅ Servidor rodando na porta 8080
+03/06/2025 01:28:20: [03/06/2025, 01:28:20] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:28:20: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:28:20: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:28:20: ✅ Servidor rodando na porta 8080
+03/06/2025 01:28:45: [03/06/2025, 01:28:44] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:28:45: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:28:45: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:28:45: ✅ Servidor rodando na porta 8080
+03/06/2025 01:29:04: [03/06/2025, 01:29:04] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:29:05: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:29:05: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:29:05: ✅ Servidor rodando na porta 8080
+03/06/2025 01:29:16: [03/06/2025, 01:29:16] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:29:16: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:29:16: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:29:16: ✅ Servidor rodando na porta 8080
+03/06/2025 01:29:52: [03/06/2025, 01:29:52] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:29:53: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:29:53: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:29:53: ✅ Servidor rodando na porta 8080
+03/06/2025 01:30:00: [03/06/2025, 01:30:00] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).
+03/06/2025 01:30:28: [03/06/2025, 01:30:28] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:30:29: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:30:29: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:30:29: ✅ Servidor rodando na porta 8080
+03/06/2025 01:32:08: [03/06/2025, 01:32:08] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:32:09: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:32:09: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:32:09: ✅ Servidor rodando na porta 8080
+03/06/2025 01:32:29: [03/06/2025, 01:32:29] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:32:30: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:32:30: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:32:30: ✅ Servidor rodando na porta 8080
+03/06/2025 01:34:27: [03/06/2025, 01:34:27] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:34:29: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:34:29: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:34:29: ✅ Servidor rodando na porta 8080
+03/06/2025 01:39:52: [03/06/2025, 01:39:52] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:39:53: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:39:53: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:39:53: ✅ Servidor rodando na porta 8080
+03/06/2025 01:42:25: [03/06/2025, 01:42:25] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:42:26: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:42:26: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:42:26: ✅ Servidor rodando na porta 8080
+03/06/2025 01:42:51: [03/06/2025, 01:42:51] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:42:52: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:42:52: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:42:52: ✅ Servidor rodando na porta 8080
+03/06/2025 01:43:19: [03/06/2025, 01:43:19] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:43:20: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:43:20: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:43:20: ✅ Servidor rodando na porta 8080
+03/06/2025 01:43:53: [03/06/2025, 01:43:53] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:43:53: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:43:53: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:43:53: ✅ Servidor rodando na porta 8080
+03/06/2025 01:44:21: [03/06/2025, 01:44:21] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:44:22: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:44:22: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:44:22: ✅ Servidor rodando na porta 8080
+03/06/2025 01:44:31: [03/06/2025, 01:44:31] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:44:32: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:44:32: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:44:32: ✅ Servidor rodando na porta 8080
+03/06/2025 01:45:03: [03/06/2025, 01:45:03] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:45:04: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:45:04: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:45:04: ✅ Servidor rodando na porta 8080
+03/06/2025 01:45:13: [03/06/2025, 01:45:13] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:45:14: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:45:14: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:45:14: ✅ Servidor rodando na porta 8080
+03/06/2025 01:46:08: [03/06/2025, 01:46:08] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:46:08: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:46:08: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:46:08: ✅ Servidor rodando na porta 8080
+03/06/2025 01:46:32: [03/06/2025, 01:46:32] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:46:32: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:46:32: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:46:32: ✅ Servidor rodando na porta 8080
+03/06/2025 01:46:46: [03/06/2025, 01:46:46] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:46:47: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:46:47: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:46:47: ✅ Servidor rodando na porta 8080
+03/06/2025 01:47:28: [03/06/2025, 01:47:28] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:47:29: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:47:29: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:47:29: ✅ Servidor rodando na porta 8080
+03/06/2025 01:48:02: [03/06/2025, 01:48:02] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:48:02: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:48:02: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:48:02: ✅ Servidor rodando na porta 8080
+03/06/2025 01:48:32: [03/06/2025, 01:48:32] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:48:33: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:48:33: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:48:33: ✅ Servidor rodando na porta 8080
+03/06/2025 01:49:04: [03/06/2025, 01:49:04] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:49:05: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:49:05: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:49:05: ✅ Servidor rodando na porta 8080
+03/06/2025 01:49:17: [03/06/2025, 01:49:17] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:49:18: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:49:18: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:49:18: ✅ Servidor rodando na porta 8080
+03/06/2025 01:49:27: [03/06/2025, 01:49:27] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:49:28: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:49:28: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:49:28: ✅ Servidor rodando na porta 8080
+03/06/2025 01:49:46: [03/06/2025, 01:49:45] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:49:46: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:49:46: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:49:46: ✅ Servidor rodando na porta 8080
+03/06/2025 01:51:15: [03/06/2025, 01:51:15] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:51:16: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:51:16: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:51:16: ✅ Servidor rodando na porta 8080
+03/06/2025 01:51:29: [03/06/2025, 01:51:29] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:51:30: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:51:30: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:51:30: ✅ Servidor rodando na porta 8080
+03/06/2025 01:52:05: [03/06/2025, 01:52:05] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 01:52:05: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 01:52:05: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 01:52:05: ✅ Servidor rodando na porta 8080
+03/06/2025 02:00:00: [03/06/2025, 02:00:00] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).
+03/06/2025 02:00:12: [03/06/2025, 02:00:12] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:00:13: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:00:13: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:00:13: ✅ Servidor rodando na porta 8080
+03/06/2025 02:01:29: [03/06/2025, 02:01:29] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:01:31: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:01:31: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:01:31: ✅ Servidor rodando na porta 8080
+03/06/2025 02:02:04: [03/06/2025, 02:02:04] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:02:05: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:02:05: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:02:05: ✅ Servidor rodando na porta 8080
+03/06/2025 02:03:47: [03/06/2025, 02:03:47] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:03:47: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:03:48: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:03:48: ✅ Servidor rodando na porta 8080
+03/06/2025 02:04:31: [03/06/2025, 02:04:31] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:04:32: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:04:32: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:04:32: ✅ Servidor rodando na porta 8080
+03/06/2025 02:05:54: [03/06/2025, 02:05:54] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:05:55: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:05:55: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:05:55: ✅ Servidor rodando na porta 8080
+03/06/2025 02:07:03: [03/06/2025, 02:07:03] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:07:04: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:07:04: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:07:04: ✅ Servidor rodando na porta 8080
+03/06/2025 02:09:45: [03/06/2025, 02:09:45] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:09:45: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:09:45: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:09:45: ✅ Servidor rodando na porta 8080
+03/06/2025 02:11:47: [03/06/2025, 02:11:47] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:11:48: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:11:48: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:11:48: ✅ Servidor rodando na porta 8080
+03/06/2025 02:14:08: [03/06/2025, 02:14:08] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:14:09: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:14:09: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:14:09: ✅ Servidor rodando na porta 8080
+03/06/2025 02:15:27: [03/06/2025, 02:15:27] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:15:28: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:15:28: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:15:28: ✅ Servidor rodando na porta 8080
+03/06/2025 02:24:29: [03/06/2025, 02:24:29] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:24:31: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:24:31: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:24:31: ✅ Servidor rodando na porta 8080
+03/06/2025 02:24:58: [03/06/2025, 02:24:57] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:24:59: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:24:59: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:24:59: ✅ Servidor rodando na porta 8080
+03/06/2025 02:25:14: [03/06/2025, 02:25:14] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:25:14: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:25:14: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:25:14: ✅ Servidor rodando na porta 8080
+03/06/2025 02:25:49: [03/06/2025, 02:25:49] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:25:49: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:25:49: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:25:49: ✅ Servidor rodando na porta 8080
+03/06/2025 02:26:08: [03/06/2025, 02:26:08] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:26:08: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:26:08: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:26:08: ✅ Servidor rodando na porta 8080
+03/06/2025 02:26:28: [03/06/2025, 02:26:28] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:26:29: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:26:29: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:26:29: ✅ Servidor rodando na porta 8080
+03/06/2025 02:26:51: [03/06/2025, 02:26:51] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:26:51: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:26:51: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:26:51: ✅ Servidor rodando na porta 8080
+03/06/2025 02:29:04: [03/06/2025, 02:29:04] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:29:05: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:29:05: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:29:05: ✅ Servidor rodando na porta 8080
+03/06/2025 02:30:00: [03/06/2025, 02:30:00] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).
+03/06/2025 02:30:18: [03/06/2025, 02:30:18] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:30:19: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:30:19: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:30:19: ✅ Servidor rodando na porta 8080
+03/06/2025 02:31:20: [03/06/2025, 02:31:20] 🚀 Aplicação iniciada. PM2 process: 0, NODE_ENV: production
+03/06/2025 02:31:21: ⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.
+03/06/2025 02:31:21: ⏳ Tempo restante do token atual: 59 dias
+03/06/2025 02:31:21: ✅ Servidor rodando na porta 8080

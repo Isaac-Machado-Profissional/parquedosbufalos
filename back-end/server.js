@@ -1,4 +1,8 @@
 require('dotenv').config(); // Carrega as variáveis do .env
+
+// Log inicial do processo (útil para identificar inicialização via PM2)
+console.log(`[${new Date().toLocaleString()}] 🚀 Aplicação iniciada. PM2 process: ${process.env.pm_id ?? 'N/A'}, NODE_ENV: ${process.env.NODE_ENV ?? 'development'}`);
+
 const express = require('express');
 const app = express();
 const cron = require('node-cron');
@@ -37,10 +41,10 @@ function printTokenValidity() {
 }
 
 async function job() {
-  console.log(`[${new Date().toLocaleString()}] 🔄 Iniciando refresh do token…`);
+  console.log(`[${new Date().toLocaleString()}] ⏳ - 🕐 Iniciando refresh do token…`);
   try {
     await refreshInstagramToken(); // supondo que esse service lê e grava o .env internamente
-    console.log('✅ Token renovado com sucesso');
+    console.log('⏳ - ✨ Token renovado com sucesso');
   } catch (err) {
     console.error('❌ Falha ao renovar token:', err.message);
   }
@@ -50,11 +54,21 @@ async function job() {
 cron.schedule('0 0 1 * *', job, {
   timezone: 'America/Sao_Paulo',
 });
+console.log('⏳ Agendamento ativado: Refresh mensal (todo dia 1) do token com node-cron.');
 
-console.log('⏳ Agendamento ativado: Refresh mensal(todo dia 1) do token com node-cron.');
+// Loga a cada 30 minutos só pra indicar que está ativo se HEARTBEAT_LOG{.env} estiver true
+if (process.env.HEARTBEAT_LOG === 'true') {
+  cron.schedule('*/30 * * * *', () => {
+    console.log(`[${new Date().toLocaleString()}] ✅ Ping: aplicação rodando normalmente (HEARTBEAT_LOG(Node.Js[{.env}]) = true).`);
+  }, {
+    timezone: 'America/Sao_Paulo',
+  });
+}
 
 app.listen(porta, () => {
-  console.log(`Servidor rodando na porta ${porta}`);
+  console.log(`✅ Servidor rodando na porta ${porta}`);
 });
+
+
 
 printTokenValidity(); // Exibe a validade do Token Atual ao iniciar o servidor

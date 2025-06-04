@@ -91,6 +91,10 @@
     margin-left: 40px;
 }
 
+.author a {
+    color: #0072ed;
+}
+
 .new-Template ul {
     margin-left: 20%;
     margin-right: 20%;
@@ -207,7 +211,7 @@
     background-color: #1877F2;
 }
 
-.share-twitter {
+.share-x-twitter {
     background-color: #202020;
 }
 

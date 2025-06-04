@@ -74,4 +74,12 @@ async function gerarPaginas() {
   console.log(`📄 JSON copiado para front-end: ${frontendJsonPath}`);
 }
 
-gerarPaginas().catch(err => console.error(err));
+gerarPaginas()
+  .then(() => { 
+    console.log('✨ Todas as notícias foram buildadas e copiadas com sucesso pro Front-END!');
+    console.log('✨ Arquivos com mesmo nome de HTML e LINKS serão atualizados.')
+})
+  .catch(err => {
+    console.error('❌ Ocorreu um erro ao buildar as páginas de notícias')
+    console.error(err);
+  });

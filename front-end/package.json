@@ -4,11 +4,15 @@
   "description": "Remaking site for Parque dos Búfalos.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
     "build": "webpack",
-    "start": "webpack serve"
+    "test:server": "serve public -l 9000",
+    "test:cypress": "cypress open",
+    "test:cypress:run": "cypress run",
+    "test:acessibility": "npx pa11y http://localhost:9000 && npx pa11y http://localhost:9000/historia.html && npx pa11y http://localhost:9000/transparencia.html && npx pa11y http://localhost:9000/noticias.html && npx pa11y http://localhost:9000/sobre.html && npx pa11y http://localhost:9000/mais-noticias.html && npx pa11y http://localhost:9000/noticias/2025/represa-billings-100-anos.html",
+    "test:all": "start-server-and-test test:server http://localhost:9000 \"npm run test:cypress:run && npm run test:acessibility\""
   },
-  "proxy": "http::localhost:8080",
+  "proxy": "http://localhost:8080",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Isaac-Machado-Profissional/parquedosbufalos.git"
@@ -37,21 +41,31 @@
     "@babel/preset-react": "^7.26.3",
     "babel-loader": "^10.0.0",
     "bootstrap": "^5.3.3",
+    "concurrently": "^9.1.2",
+    "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "cypress": "^14.4.0",
+    "cypress-axe": "^1.6.0",
     "html-loader": "^5.1.0",
+    "html-minimizer-webpack-plugin": "^5.0.2",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
+    "pa11y": "^9.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "serve": "^14.2.4",
+    "start-server-and-test": "^2.0.12",
     "swiper": "^11.2.6",
+    "wait-on": "^8.0.3",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
+    "webpack-dev-server": "^5.2.0",
+    "webpack-manifest-plugin": "^5.0.1"
   },
   "dependencies": {
     "axios": "^1.8.4",
     "glightbox": "^3.3.1",
-    "photoswipe": "^5.4.4",
     "video.js": "^8.22.0"
   }
 }
