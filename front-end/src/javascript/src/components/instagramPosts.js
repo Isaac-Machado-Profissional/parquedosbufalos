@@ -133,7 +133,7 @@ export const renderInstagramPosts = async () => {
     container.innerHTML = html;
 
   } else {
-    container.innerHTML = `<p>Nosso instagram: <br> <a href="https://www.instagram.com/parquedosbufalosjardimapura/" target="_blank">Ver perfil</a></p>`;
+    container.innerHTML = `<p>Nosso perfil do instagram: <br> <a href="https://www.instagram.com/parquedosbufalosjardimapura/" target="_blank">Ver perfil</a></p>`;
   }
 };
 

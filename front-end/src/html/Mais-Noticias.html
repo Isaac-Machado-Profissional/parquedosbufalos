@@ -8,8 +8,6 @@
     <link rel="icon" href="./assets/Parque-dos-Bufalos_logo.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/style.css" rel="stylesheet">
-    <script src="../javascript/script.js"></script>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,10 +24,11 @@
 </head>
 
 <body>
-     <header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" id="menuToggle">
+                <button class="navbar-toggler" type="button" id="menuToggle"
+                    aria-label="Abrir e fechar menu de navegação">
                     <span onclick="this.classList.toggle('active')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
                             <g stroke-width="6.5" stroke-linecap="round">
@@ -48,7 +47,7 @@
                     </span>
                 </button>
                 <a href="/" class="navbar-brand logo-mobile d-block d-lg-none mx-auto">
-                    <img src="../assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos"> 
+                    <img src="../assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos">
                 </a>
                 <a href="/" class="navbar-brand logo-desktop d-none d-lg-block">
                     <img src="../assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos">
@@ -84,10 +83,10 @@
 
             <div class="search-filter row mb-4 justify-content-center">
                 <div class="col-md-6">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Buscar por título...">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Buscar por título..." aria-label="Buscar por título" />
                 </div>
                 <div class="col-md-3">
-                    <select id="yearFilter" class="form-select w-auto">
+                    <select id="yearFilter" class="form-select w-auto" aria-label="Filtrar por ano">
                         <option value="">Filtrar por ano</option>
                         <option value="2025">2025</option>
                         <option value="2024">2024</option>
@@ -111,7 +110,7 @@
         </div>
     </main>
 
-  <footer>
+    <footer>
         <div class="container footer-container text-center">
             <div class="d-inline-block">
                 <h4 class="text-center text-white mt-4">Navegação</h4>
@@ -133,8 +132,7 @@
         </div>
         <div class="d-flex justify-content-center mt-5">
             <a href="./">
-                <img src="../assets/Parque-dos-Bufalos1600px.png" alt="Logo do Parque dos Búfalos"
-                    class="footer-logo">
+                <img src="../assets/Parque-dos-Bufalos1600px.png" alt="Logo do Parque dos Búfalos" class="footer-logo">
             </a>
         </div>
         <div class="d-flex justify-content-center m-3">

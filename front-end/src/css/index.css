@@ -624,20 +624,15 @@ footer .footer-container a {
     position: relative;
     display: inline-block;
     /* necessário para a linha se comportar corretamente */
-    color: white;
+    color: #c9c9c9;
     text-decoration: none;
 }
 
-footer .footer-container a {
-    color: white;
-    text-decoration: none;
-
-}
 
 
-footer .footer-container .row {
+footer .footer-container h4 {
     margin-top: 20px;
-    color: white;
+    color: #dddddd;
     text-align: center;
     gap: 2vw;
 
@@ -675,7 +670,7 @@ footer .footer-container a:hover::after {
 }
 
 .footer-instagram {
-    color: white;
+    color: #e0e0e0;
 
 }
 

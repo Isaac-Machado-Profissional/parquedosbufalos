@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Notícias • Parque dos Búfalos</title>
-    <link rel="icon" href="../assets/Parque-dos-Bufalos_logo.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/Parque-dos-Bufalos_logo.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="../javascript/script.js"></script>
-    <link href="../css/style.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +22,11 @@
 </head>
 
 <body>
-     <header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" id="menuToggle">
+                <button class="navbar-toggler" type="button" id="menuToggle"
+                    aria-label="Abrir e fechar menu de navegação">
                     <span onclick="this.classList.toggle('active')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
                             <g stroke-width="6.5" stroke-linecap="round">
@@ -46,10 +45,10 @@
                     </span>
                 </button>
                 <a href="/" class="navbar-brand logo-mobile d-block d-lg-none mx-auto">
-                    <img src="../assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos"> 
+                    <img src="/assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos">
                 </a>
                 <a href="/" class="navbar-brand logo-desktop d-none d-lg-block">
-                    <img src="../assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos">
+                    <img src="/assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos">
                 </a>
                 <div class="mobile-menu d-lg-none" id="mobileMenu">
                     <ul class="navbar navbar-nav nav-button">
@@ -82,7 +81,7 @@
         <div class="news-container">
             <h1>Calendário de Eventos</h1>
             <div class="calendar-container">
-                <iframe
+                <iframe title="Calendário de Eventos do Parque dos Búfalos"
                     src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&hl=pt_BR&showTitle=0&title=%20&showCalendars=0&showTz=0&src=Y29udGF0by5wYXJxdWVkb3NidWZhbG9zQGdtYWlsLmNvbQ&color=%230B8043"
                     style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
@@ -100,7 +99,8 @@
                         </div>
                     </div>
                     <div class="slider-container">
-                        <input id="progress-slider" class="scrollbar-range" type="range" min="0" max="100" value="0" />
+                        <input id="progress-slider" class="scrollbar-range" type="range" min="0" max="100" value="0"
+                            aria-label="Controle de rolagem de notícias" />
                         <div class="range-info">
                             <span id="range-label"></span>
                         </div>
@@ -139,8 +139,7 @@
         </div>
         <div class="d-flex justify-content-center mt-5">
             <a href=".//">
-                <img src="../assets/Parque-dos-Bufalos1600px.png" alt="Logo do Parque dos Búfalos"
-                    class="footer-logo">
+                <img src="/assets/Parque-dos-Bufalos1600px.png" alt="Logo do Parque dos Búfalos" class="footer-logo">
             </a>
         </div>
         <div class="d-flex justify-content-center m-3">

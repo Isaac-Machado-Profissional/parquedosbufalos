@@ -24,7 +24,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" id="menuToggle">
+               <button class="navbar-toggler" type="button" id="menuToggle"
+                    aria-label="Abrir e fechar menu de navegação">
                     <span onclick="this.classList.toggle('active')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
                             <g stroke-width="6.5" stroke-linecap="round">
@@ -43,7 +44,7 @@
                     </span>
                 </button>
                 <a href="/" class="navbar-brand logo-mobile d-block d-lg-none mx-auto">
-                    <img src="/assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos"> 
+                    <img src="/assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos">
                 </a>
                 <a href="/" class="navbar-brand logo-desktop d-none d-lg-block">
                     <img src="/assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos">
@@ -75,15 +76,10 @@
 
     <main>
         <div class="container-home-first-screen">
-            <video autoplay 
-                    poster="/assets/index/1-frame-of-video_Fundo-Site_Parque-dos-Bufalos.png" 
-                    preload="none"
-                    muted
-                    disablePictureInPicture 
-                    playsinline webkit-playsinline 
-                    loop 
-                    controlslist="nodownload nofullscreen noremoteplayback"
-                    style="pointer-events: none;" class="video-background">
+            <video autoplay poster="/assets/index/1-frame-of-video_Fundo-Site_Parque-dos-Bufalos.png" preload="none"
+                muted disablePictureInPicture playsinline webkit-playsinline loop
+                controlslist="nodownload nofullscreen noremoteplayback" style="pointer-events: none;"
+                class="video-background">
                 <source src="/assets/index/video-720p_Fundo-Site_Parque-dos-Bufalos.webm" type="video/webm">
                 Seu navegador não suporta vídeos.
             </video>
@@ -196,8 +192,8 @@
         <div class="opniao-publica-container">
             <h1> Opinião Pública </h1>
             <div class="googlemaps-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29223.8815517036!2d-46.66386912651501!3d-23.712222767405233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce45b7dc68e597%3A0x547c7fe2180ea75d!2sParque%20dos%20B%C3%BAfalos!5e0!3m2!1spt-BR!2sbr!4v1746696037868!5m2!1spt-BR!2sbr"
+                <iframe title="Mapa da localização do Parque dos Búfalos"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29223.8815517036!2d-46.66386912651501!3d-23.712222767405233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce45b7dc68e597%3A0x547c7fe2180ea75d!2sParque%20dos%20B%C3%BAfalos!5e0!3m2!1spt-BR!2sbr!4v1746696037868!5m2!1spt-BR!2sbr" 
                     width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -227,8 +223,7 @@
         </div>
         <div class="d-flex justify-content-center mt-5">
             <a href="./">
-                <img src="/assets/Parque-dos-Bufalos1600px.png" alt="Logo do Parque dos Búfalos"
-                    class="footer-logo">
+                <img src="/assets/Parque-dos-Bufalos1600px.png" alt="Logo do Parque dos Búfalos" class="footer-logo">
             </a>
         </div>
         <div class="d-flex justify-content-center m-3">

@@ -86,7 +86,7 @@
 .contact-form-container a {
     margin-top: 2vh;
     display: flex;
-    
+    color: #0072ed; /* Ou outra cor com contraste suficiente */
     justify-self: center;
     align-items: center;
 }
@@ -194,7 +194,7 @@
 /* Botão de Envio */
 .newsletter-container button {
     /* background: linear-gradient(90deg, #007bff, #0056b3); */
-    background-color: #219445;
+    background-color: #158839;
     margin-top: 3vh;
     margin-bottom: 3vh;
     justify-self: center;

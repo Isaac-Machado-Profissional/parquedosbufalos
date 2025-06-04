@@ -23,10 +23,11 @@
 </head>
 
 <body>
-     <header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" id="menuToggle">
+                <button class="navbar-toggler" type="button" id="menuToggle"
+                    aria-label="Abrir e fechar menu de navegação">
                     <span onclick="this.classList.toggle('active')">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
                             <g stroke-width="6.5" stroke-linecap="round">
@@ -45,7 +46,7 @@
                     </span>
                 </button>
                 <a href="/" class="navbar-brand logo-mobile d-block d-lg-none mx-auto">
-                    <img src="../assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos"> 
+                    <img src="../assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos">
                 </a>
                 <a href="/" class="navbar-brand logo-desktop d-none d-lg-block">
                     <img src="../assets/Parque-dos-Bufalos_logo256px.png" alt="Logo do Parque dos Búfalos">
@@ -96,7 +97,8 @@
             <div class="contact-form-container">
 
                 <h1>Forma de Contato</h1>
-                <p> Este é um site da comunidade, para a comunidade, qualquer desavença, denúncia ou desejo de comunicação
+                <p> Este é um site da comunidade, para a comunidade, qualquer desavença, denúncia ou desejo de
+                    comunicação
                     oficial, segue o principal meio: </p>
                 <a href="https://sp156.prefeitura.sp.gov.br/portal/servicos" target="_blank">
                     <img src="../assets/about/sp156-logo.png" alt="Logo do SP156" width="80px" height="80px">SP156 -
@@ -112,18 +114,16 @@
                 <p>Cadastre seu e-mail, mantendo-se atualizado sobre as oportunidades de fazer a diferença na região!
                 </p>
                 <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail"
-                    required />
+                    required aria-label="Endereço de e-mail para newsletter" />
 
                 <div class="valid-feedback">E-mail válido!</div>
                 <div class="invalid-feedback">E-mail inválido.</div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
-        </form>
-        </div>
     </main>
 
-   <footer>
+    <footer>
         <div class="container footer-container text-center">
             <div class="d-inline-block">
                 <h4 class="text-center text-white mt-4">Navegação</h4>
@@ -145,8 +145,7 @@
         </div>
         <div class="d-flex justify-content-center mt-5">
             <a href=".">
-                <img src="../assets/Parque-dos-Bufalos1600px.png" alt="Logo do Parque dos Búfalos"
-                    class="footer-logo">
+                <img src="../assets/Parque-dos-Bufalos1600px.png" alt="Logo do Parque dos Búfalos" class="footer-logo">
             </a>
         </div>
         <div class="d-flex justify-content-center m-3">
