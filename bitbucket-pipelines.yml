@@ -24,9 +24,10 @@ pipelines:
             - node
       - step:
           name: 'Deploy to deployment-branch'
-          trigger: automatic # Ou 'manual' se preferir acionar manually após sucesso dos testes
+          deployment: production
+          trigger: automatic # Automaticamente starta
           script:
-            - DEPLOYMENT_BRANCH_NAME="deployment" # Ou seu branch de deploy preferido
+            - DEPLOYMENT_BRANCH_NAME="deployment" 
             - mkdir -p ~/.ssh
             - echo $GIT_SSH_KEY | base64 -d > ~/.ssh/id_rsa
             - chmod 600 ~/.ssh/id_rsa
