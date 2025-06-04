@@ -88,10 +88,9 @@ module.exports = {
           to: 'vendor/glightbox.min.js',
         },
         {
-          from: path.resolve(__dirname, 'src/./.htaccess'),
+          from: path.resolve(__dirname, 'src/.htaccess'),
           to: './.htaccess',
           toType: 'file', 
-          noErrorOnMissing: true, // Permite que o arquivo .htaccess não exista, caso realmente nao
         },
       ],
     }),
