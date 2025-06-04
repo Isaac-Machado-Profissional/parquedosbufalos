@@ -48,14 +48,14 @@ pipelines:
             - git rm -rf .
 
             # Copia os novos artefatos de build da localização temporária
-            - cp -a "$TEMP_DEPLOY_DIR"/. 
+            - cp -a "$TEMP_DEPLOY_DIR"/. .
             - rm -rf "$TEMP_DEPLOY_DIR" # Limpa diretório temporário
 
             # --- Commit e Push ---
             - git add -A
             - | # Usando pipe para script multi-linha ou lógica condicional
                 if git status --porcelain | grep .; then # Verifica se há mudanças reais para commitar
-                  git commit -m "Deploy: Automated build from commit $BITBUCKET_COMMIT on $BITBUCKET_BRANCH [skip ci]"
+                  git commit -m "Deploy: Automated build from commit $BITBUCKET_COMMIT on $BITBUCKET_BRANCH"
                   git push origin $DEPLOYMENT_BRANCH_NAME
                   echo "Deploy para $DEPLOYMENT_BRANCH_NAME bem-sucedido."
                 else
