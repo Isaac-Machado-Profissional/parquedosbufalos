@@ -1,4 +1,4 @@
-image: cypress/base:node22.16.0 
+image: cypress/base:22.15.1
 
 pipelines:
   branches: # Define pipelines específicos para branches
