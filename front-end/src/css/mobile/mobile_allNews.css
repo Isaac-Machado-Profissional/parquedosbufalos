@@ -1,0 +1,10 @@
+@media (max-width: 1000px) {
+    .search-filter {
+        margin-left: 0px;
+    }
+    #yearFilter {
+        margin-left: 18%;
+     
+
+    }
+}

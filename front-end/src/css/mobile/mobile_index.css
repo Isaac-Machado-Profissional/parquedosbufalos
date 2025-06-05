@@ -1,0 +1,483 @@
+/*OVERALL SETTINGS: */
+
+/* 2.1: Estado padrão: esconde logo mobile, mostra desktop */
+.logo-mobile {
+    display: none;
+}
+
+.navbar-toggler {
+    transition: transform 0.8s ease-in;
+    transition: transform 0.8 ease-out;
+    z-index: 1200;
+}
+
+/* Quando o menu estiver aberto, o botão navbar-toggler ficará fixo */
+.navbar-toggler.fixed {
+    position: fixed !important;
+    /* Tornar o botão fixo quando o menu estiver aberto */
+    z-index: 1200;
+}
+
+
+#mobileMenu {
+    transform: translateX(-100%);
+    will-change: transform;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    visibility: hidden;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    background: whitesmoke;
+    overflow-y: auto;
+    z-index: 1000;
+    padding: 80px 20px;
+
+}
+
+#mobileMenu.open {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.menu-overlay {
+    will-change: opacity;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* opcional: cor semitransparente */
+    
+    z-index: 998;
+    
+    /* abaixo do menu (mobile) */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .navbar {
+        list-style: none;
+        gap: 1rem;
+        transition: all 0.3s ease;
+        min-height: 100px;
+    }
+
+    .logo-desktop {
+        display: none !important;
+    }
+
+    /* container precisa ser relative para o absolute funcionar */
+    .navbar.position-relative .container-fluid {
+        position: relative;
+    }
+
+    .container-fluid {
+        min-height: 60px !important;
+    }
+
+    /* mostra logo mobile, oculta desktop */
+    .logo-mobile {
+        padding-left: 20px !important;
+        margin: 60px auto -3vh auto;
+        position: absolute;
+
+        display: block;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+
+    .logo-mobile img {
+        margin-right: 20px;
+    }
+
+
+    .logo-desktop {
+        display: none;
+    }
+
+
+
+    #mobileMenu {
+        width: 60vw;
+    }
+
+    /* Quando o menu estiver ativo */
+
+
+    /* Estilização extra */
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+/*CELULAR:*/
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+
+    .container-home-first-screen {
+        position: relative;
+        width: 100%;
+        max-width: 2000px;
+        margin: 20px auto;
+        height: 100vh;
+
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .nav-bar {
+        margin: 0.5rem;
+
+    }
+
+    .nav-button {
+
+        gap: 0.5rem;
+        font-size: 0.5rem;
+
+    }
+
+    .text-home-container h1 {
+        font-size: 2.5rem;
+
+    }
+
+    .text-home-container p {
+        font-size: 1.20rem;
+        white-space: normal;
+    }
+
+    .atividades-do-parque-container {
+        margin-top: 05px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 90%;
+        max-width: 100%;
+        height: 100%;
+        justify-self: center;
+
+    }
+
+    .atividades-do-parque-container h2 {
+        font-size: 0.90rem !important;
+        text-align: center;
+        width: 100% !important;
+
+    }
+
+    .atividades-do-parque-container p {
+        font-size: 0.75rem !important;
+        width: 100% !important;
+        margin-top: -2vh;
+
+    }
+
+    .atividades-do-parque-container img {
+
+        height: 100px;
+    }
+
+    .atividades-do-parque-container .card-body {
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    .atividades-do-parque-container .card-title {
+        width: 100% important;
+        white-space: wrap;
+        display: block;
+    }
+
+    .atividades-do-parque-container .card-body p {
+        /* font-size: 0.8rem !important; */
+        top: -5px;
+        position: relative;
+
+    }
+
+    .parkManagement-menu {
+
+        flex-direction: column;
+        /* um em cima do outro */
+    }
+
+    .parkManagement-menu img {
+
+        /* position: relative; */
+        /* align-items: flex-start; */
+        order: -1;
+        /* object-fit: contain; */
+        justify-items: center;
+        width: 80%;
+        height: auto;
+        margin-top: -35px;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-right: 35px; */
+        margin-bottom: 35px;
+        border-radius: 0px;
+        border-radius: 8px;
+
+    }
+
+    .parkManagement-menu p {
+        font-size: 0.75rem;
+
+    }
+
+    .parkManagement_dynamic-buttons {
+        margin-top: -30px;
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .midias-container {
+
+        justify-self: center;
+        margin-top: 1200px;
+        width: 80%;
+        margin: 0px;
+    }
+
+    .instagram-link {
+        left: 10% !important;
+        right: 10% !important;
+    }
+
+    .footer {
+        justify-self: center;
+    }
+
+    .opniao-publica-container {
+        justify-self: center;
+        width: 80%;
+    }
+
+    .footer .row .container {
+        padding: 0px !important;
+        width: 90vw !important;
+        justify-self: center;
+
+    }
+
+
+}
+
+/*TABLET: */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .img-mountain-background {
+
+        width: 80vw;
+        height: 53%;
+        display: block;
+        max-width: 100%;
+        /* Garante que nunca estoure o container */
+    }
+
+    .instagram-link {
+        margin-top: 20px !important;
+        margin-bottom: 0px !important;
+        left: 10% !important;
+        right: 10% !important;
+    }
+
+
+
+}
+
+
+/* RELÓGIO: */
+@media (min-width: 0px) and (max-width: 400px) {
+
+    .text-home-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .text-home-container p {
+        font-size: 0.80rem;
+
+        white-space: normal;
+        overflow-wrap: break-word
+    }
+
+    h1 {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+
+    .parkManagement-container {
+        margin: 0px;
+        width: 90%;
+        max-width: 100%;
+        height: 100%;
+        justify-self: center;
+    }
+
+    .atividades-do-parque-container {
+        margin-top: 05px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 90%;
+        max-width: 100%;
+        height: 100%;
+        justify-self: center;
+        justify-items: center;
+
+    }
+
+    .atividades-do-parque-container img {
+
+        margin-top: 10px;
+        width: 100vw;
+        height: 20%;
+        max-width: 100% !important;
+        border-radius: 8px;
+
+    }
+
+    .atividades-do-parque-container .card-body {
+        display: block;
+        width: 100% !important;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    .atividades-do-parque-container .card-title {
+        display: block;
+        /* font-size: 0.3rem !important; */
+        white-space: wrap;
+    }
+
+    .atividades-do-parque-container .card-text {
+        /* font-size: 0.3rem !important; */
+        margin-top: 50px;
+        display: inline-block;
+        min-width: 70px !important;
+        position: relative;
+        padding-bottom: 50px;
+        /* top: -20vh; */
+    }
+
+
+    .atividades-do-parque-container .card-body p {
+        width: 100%;
+        margin: 0;
+        /* Garante que o <p> não tenha espaçamento interno extra */
+        white-space: normal;
+
+    }
+
+    .parkManagement-menu {
+
+        flex-direction: column;
+        /* um em cima do outro */
+    }
+
+
+    .parkManagement-menu img {
+
+        /* position: relative; */
+        /* align-items: flex-start; */
+        order: -1;
+        /* object-fit: contain; */
+        justify-items: center;
+        width: 50%;
+        height: auto;
+        margin-top: -35px;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-right: 35px; */
+        margin-bottom: 35px;
+        border-radius: 8px;
+
+    }
+
+    .parkManagement_dynamic-buttons {
+        margin-top: -30px;
+        gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .parkManagement_dynamic-buttons button {
+        width: auto;
+    }
+
+    .parkManagement-menu ul {
+        padding: 0px;
+    }
+
+    .parkManagement_dynamic-buttons button {
+        font-size: 0.5rem;
+        width: auto;
+
+
+
+    }
+
+    .midias-container {
+        width: 80%;
+        margin: 0;
+    }
+
+    .instagram-link {
+        margin-top: 20px !important;
+        margin-bottom: 0px !important;
+        left: 10% !important;
+        right: 10% !important;
+    }
+
+    .opniao-publica-container {
+        width: 80%;
+    }
+
+    .footer,
+    .row,
+    .container {
+        padding: 0px !important;
+        width: 90vw !important;
+    }
+
+}
+
+/*DEPOIS EU CONTINUO*/

@@ -1,26 +1,31 @@
-.placeholder {
-    height: 800px;
-}
-
-
-/*SOBRE NÓS: */
+ /*SOBRE NÓS: */
 
 .aboutUs-container {
     margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
-    width: 1180px;
-    max-width: 90%;
-    height: 1000px;
     justify-self: center;
+    /* width: 1180px; */
+    max-width: 90%;
+    list-style: none;
+    text-align: center;
+   
+    
+}
+
+.aboutUs-container h1 {
+    
     text-align: center;
 }
 
+
 .aboutUs-container p {
-    text-align: center; 
+    width: 80vw;
+    margin: 0 auto;
     /* Verificarei como ficará melhor. */
 
 }
+
 
 
 
@@ -58,18 +63,35 @@
 
 
 
+
 /*FORMAS DE CONTATO: */
 
 .contact-form-container {
-    margin-top: 80px;
+    margin-top: 10vh;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 80px;
-    width: 1180px;
-    max-width: 90%;
+    margin-bottom: 10vh;
     justify-self: center;
+    list-style: none;
     text-align: center;
+    
 }
+
+.contact-form-container p {
+    width: 80vw;
+    margin: 0 auto;
+    
+}
+
+.contact-form-container a {
+    margin-top: 2vh;
+    display: flex;
+    color: #0072ed; /* Ou outra cor com contraste suficiente */
+    justify-self: center;
+    align-items: center;
+}
+
+
 
 
 /* NEWSLETTER: */
@@ -77,10 +99,12 @@
 
 .newsletter-container {
     background: #74C474; 
-    padding: 80px 20px;
-
+    padding: 10%;
+    text-align: center;
 
 }
+
+
 
 /* Grid principal */
 .newsletter-container .row {
@@ -88,27 +112,45 @@
     grid-template-columns: 1fr; /* Define apenas uma coluna central */
     justify-content: center;
     text-align: center;
+    
 }
 
 /* Título */
 
+
 /* Formulário */
+
 .newsletter-container .col {
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0px;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
+    width: 100%;
+
+    
+}
+.newsletter-container .row {
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    
+
+    
+}
+
+.newsletter-container p {
+    margin: 20px;
 }
 
 .newsletter-container .col h1 {
+    margin: 20px;
     color: #000;
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
+
 
 
 /* Input e Botão alinhados em Grid */
@@ -135,30 +177,26 @@
 }
 
 .newsletter-container .form-control {
-    height: calc((1.5em * 1.5) + (.75rem + 5px)) !important;
+    justify-self: center;
+    max-width: 80%;
+    height: calc((1.5rem * 1.5) + (.75rem + 3px)) ;
 }
 
 
 /* Efeito ao Focar no Input */
 .newsletter-container input:focus {
-    border-color: #40ff40;
+    border-color: none;
     outline: none;
-    box-shadow: 0px 0px 8px #40ff40(2, 255, 56, 0.5);
-}
-
-.valid-feedback,
-.invalid-feedback {
-  position: absolute;
-  left: 0;
-  height: 20px;
-  font-size: 0.875em;
+    box-shadow: none;
+    border: 2px solid rgb(134, 134, 134);
 }
 
 /* Botão de Envio */
 .newsletter-container button {
     /* background: linear-gradient(90deg, #007bff, #0056b3); */
-    background-color: #219445;
-    margin-top: 30px;
+    background-color: #158839;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     justify-self: center;
     color: rgb(255, 255, 255);
     padding: 12px;
@@ -173,6 +211,19 @@
 
 /* Efeito Hover no Botão */
 .newsletter-container button:hover {
-    /* background: linear-gradient(90deg, #0056b3, #007bff); */
-    transform: scale(1.05);
+    background: #47be47;
+    /* transform: scale(1.05); */
+}
+
+.newsletter-container button:focus {
+    background-color: #21F421 !important;
+    box-shadow: 0px 0px 8px #74C474 !important;
+    outline: #2d992d !important
+}
+
+
+input .form-control {
+    margin: 0 auto !important;
+    justify-self: center !important;
+    padding: 0 auto auto !important;
 }

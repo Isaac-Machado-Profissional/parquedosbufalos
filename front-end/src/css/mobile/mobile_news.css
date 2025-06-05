@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .calendar-container iframe {
+        width: 100vw !important;
+        height: 70vh !important;
+    }
+
+    .videos-item {
+
+        max-width: 300px !important;
+        /* Limita a largura máxima */
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+
+    }
+
+    .news-highlighted .card-title {
+
+        /* margin-top: 100px; Perguntar pra galera dps ----------------------------------------------*****/
+        /* position: relative; */
+        /* width: 150px; */
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-self: center;
+        text-align: center;
+        top: -05px;
+        margin-bottom: 20px;
+    }
+
+    .news-highlighted .card-text {
+        /* position: relative; */
+        width: 400px !important;
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 3vh;
+        margin-top: 20px;
+        padding-right: 20px;
+
+    }
+
+    .news-card-horizontal {
+        width: 80%;
+    }
+
+
+
+    .news-card-horizontal .card-body {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        /* ← força 100% do pai */
+        padding: 0;
+        height: auto;
+    }
+
+    .news-latest .news-card-horizontal .news-img {
+        width: 100% !important;
+        aspect-ratio: 16 / 9;       /* você pode trocar para 4/3, 1/1, etc */
+        object-fit: cover !important;
+        border-radius: 8px 8px 0 0 !important;
+      }
+
+      .news-card-horizontal .card-title,
+      .news-card-horizontal .card-text-content {
+        flex: none !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+
+    /* detalhe de estilo opcional: título com borda no topo */
+    .news-card-horizontal .card-title {
+        margin: 0 0 10px;
+        border-left: none;
+        border-top: 4px solid rgb(95, 89, 89);
+        text-align: center;
+    }
+
+
+}
+
+
+
+@media (min-width: 400px) and (max-width: 768px) {
+
+    .calendar-container iframe {
+        width: 90vw !important;
+        height: 50vh !important;
+    }
+
+    .videos-item {
+
+        width: 30vw !important;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+
+    }
+
+    .news-card-horizontal {
+        width: 80%;
+    }
+
+
+    .news-card-horizontal .card-body {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        /* ← força 100% do pai */
+        padding: 0;
+        height: auto;
+    }
+
+    .news-latest .news-card-horizontal .news-img {
+        width: 100% !important;
+        aspect-ratio: 16 / 9;       
+        object-fit: cover !important;
+        border-radius: 8px 8px 0 0 !important;
+      }
+
+      .news-card-horizontal .card-title,
+      .news-card-horizontal .card-text-content {
+        flex: none !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+
+    /* detalhe de estilo opcional: título com borda no topo */
+    .news-card-horizontal .card-title {
+        margin: 0 0 10px;
+        border-left: none;
+        border-top: 4px solid rgb(95, 89, 89);
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 400px) {
+
+    .calendar-container iframe {
+        width: 90vw !important;
+        height: 100vh !important;
+    }
+
+    .videos-item {
+
+        width: 30vw !important;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+
+    }
+
+    .news-highlighted .card-text {
+        /* position: relative; */
+        /* margin-top: 20px; */
+        width: 100px !important;
+        margin-top: 20px;
+    }
+
+    .news-card-horizontal {
+        width: 80%;
+    }
+
+
+
+    .news-card-horizontal .card-body {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        /* ← força 100% do pai */
+        padding: 0;
+        height: auto;
+    }
+
+    .news-latest .news-card-horizontal .news-img {
+        width: 100% !important;
+        aspect-ratio: 16 / 9;       /* você pode trocar para 4/3, 1/1, etc */
+        object-fit: cover !important;
+        border-radius: 8px 8px 0 0 !important;
+      }
+
+      .news-card-horizontal .card-title,
+      .news-card-horizontal .card-text-content {
+        flex: none !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+
+    /* detalhe de estilo opcional: título com borda no topo */
+    .news-card-horizontal .card-title {
+        margin: 0 0 10px;
+        border-left: none;
+        border-top: 4px solid rgb(95, 89, 89);
+        text-align: center;
+    }
+
+
+
+}

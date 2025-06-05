@@ -1,0 +1,63 @@
+image: cypress/base:22.15.1
+
+pipelines:
+  branches: # Define pipelines específico para a branch:
+    main: #Only Main changes
+      - step:
+          name: 'Build Front-End'
+          script:
+            - cd front-end
+            - npm install
+            - npm run build
+          artifacts:
+            - front-end/public/** # Artefatos para os próximos passos
+          caches:
+            - node
+      - step:
+          name: 'Run Cypress E2E Test Runner'
+          script:
+            - cd front-end 
+            - npm install 
+            - npm run test:ci
+            - echo "Cypress E2E check✅"
+          caches:
+            - node
+      - step:
+          name: 'Deploy to deployment-branch'
+          deployment: production
+          trigger: automatic # Automaticamente starta
+          script:
+            - DEPLOYMENT_BRANCH_NAME="deployment" 
+            - mkdir -p ~/.ssh
+            - echo $GIT_SSH_KEY | base64 -d > ~/.ssh/id_rsa
+            - chmod 600 ~/.ssh/id_rsa
+            - echo -e "Host bitbucket.org\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/id_rsa" > ~/.ssh/config
+
+            - git config --global user.email "bufalosCI@pipelinebitbucket.com" # Email do bot
+            - git config --global user.name "bufalos pipeline AUTO"
+
+            - TEMP_DEPLOY_DIR=$(mktemp -d)
+            - if [ ! -d "front-end/public" ] || [ -z "$(ls -A front-end/public)" ]; then echo "Artefatos de build (front-end/public/) não encontrados ou vazios!"; ls -R; exit 1; fi
+            - cp -a front-end/public/. "$TEMP_DEPLOY_DIR/"
+
+            # Checkout do Branch de Deploy & Atualização
+            - git fetch origin $DEPLOYMENT_BRANCH_NAME || echo "Branch de deploy $DEPLOYMENT_BRANCH_NAME não encontrado no remote, será criado no push se for novo localmente."
+            - git checkout -B $DEPLOYMENT_BRANCH_NAME origin/$DEPLOYMENT_BRANCH_NAME || git checkout -B $DEPLOYMENT_BRANCH_NAME
+
+            # Limpa o diretório de trabalho do branch de deploy 
+            - git rm -rf .
+
+            # Copia os novos artefatos de build da localização temporária
+            - cp -a "$TEMP_DEPLOY_DIR"/. .
+            - rm -rf "$TEMP_DEPLOY_DIR" # Limpa diretório temporário
+
+            # --- Commit e Push ---
+            - git add -A
+            - | # Usando pipe para script multi-linha ou lógica condicional
+                if git status --porcelain | grep .; then # Verifica se há mudanças reais para commitar
+                  git commit -m "Deploy: Automated build from commit $BITBUCKET_COMMIT on $BITBUCKET_BRANCH"
+                  git push origin $DEPLOYMENT_BRANCH_NAME
+                  echo "Deploy para $DEPLOYMENT_BRANCH_NAME bem-sucedido."
+                else
+                  echo "Sem mudanças para deploy em $DEPLOYMENT_BRANCH_NAME."
+                fi

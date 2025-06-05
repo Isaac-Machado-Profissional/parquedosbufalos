@@ -1,0 +1,334 @@
+.transparency-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.transparency h1 {
+    text-align: center;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    margin: 0 auto;
+
+}
+
+.transparency p {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.text-container {
+    display: flex;
+    height: 50vh;
+}
+
+/* Container geral do accordion */
+.accordion {
+    width: 80%;
+    overflow: hidden;
+    /* transition: max-height 0.5s ease; */
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+
+/* Cada item individual */
+.accordion-item {
+    /* border: 1px solid #a59797; */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+.accordion-header {
+    color: rgb(51, 51, 51);
+    padding: 15px 15px 5px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    background: none;
+
+}
+
+.accordion-header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* espaço entre o ícone e o texto */
+}
+
+.toggle-icon {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 6px;
+    background-color: transparent;
+    stroke: black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estilo "ativo" com fundo preto e ícone branco */
+.toggle-icon.active {
+    background-color: rgb(0, 0, 0);
+    stroke: white;
+}
+
+.accordion-item:not(.active) .custom-card {
+    pointer-events: none;
+    /* opcionalmente: opacity: 0.5; para visual */
+}
+
+
+.accordion-content img {
+    display: block;
+    margin: 10px auto;
+}
+
+
+.accordion-header:hover {
+    color: rgb(0, 0, 0);
+    /* Cor de fundo ao passar o mouse */
+}
+
+.accordion-item.active .accordion-header {
+    color: rgb(0, 0, 0);
+    /* Cor de fundo ao clicar */
+    font-weight: 700;
+}
+
+
+/* NO CLICK DO MOUSE NAO QUERO OUTLINE ESTRANHO*/
+.accordion-header:focus {
+    outline: none;
+    /* Pode trocar a cor/borda */
+    /* border-radius: 10px; */
+}
+
+/* ACESSIBILIDE --- QUANDO DER TAB VAI FICAR FOCADO E COM UM OUTLINE TOP */
+.accordion-header:focus-visible {
+    color: rgb(0, 0, 0);
+    /* Cor de fundo ao passar o mouse */
+    outline: 2px solid #000;
+    /* Pode trocar a cor/borda */
+    outline-offset: -2px;
+    border-radius: 6px;
+}
+
+.accordion-title {
+    /* margin: 0 auto;
+    width: 50%;
+    max-width: 120px; ----- PENSANDO*/
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.432);
+    border-width: 100% !important;
+}
+
+
+.accordion-header .arrow {
+    transition: transform 0.8s ease;
+}
+
+/* Quando o item está ativo, a seta gira 180° */
+.accordion-item.active .accordion-header .arrow {
+    transform: rotate(180deg);
+    border-color: white;
+    /* Borda branca */
+    background-color: black;
+    /* Fundo preto */
+}
+
+/* Dentro do Accordion */
+/* estado fechado */
+.accordion-content {
+    background-color: #d6d6d693;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition:
+        max-height 1s ease;
+}
+
+/* Estado aberto */
+
+
+.accordion-content p {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
+    margin: 0;
+    /* line-height: 1.5; */
+    color: #000;
+    text-align: justify;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    width: 100%;
+}
+
+.animals-row {
+    /* margin-top: -20px; */
+    margin-bottom: 20px;
+}
+
+.col-custom {
+    margin-top: 20px;
+}
+
+/* estado hover-ativo: permite vazar o conteúdo */
+.accordion-content,
+.accordion-item,
+.accordion {
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.8s ease, z-index 0.8s ease;
+    /* Suaviza a transição de z-index */
+}
+
+/* Estados liberados: vaza tudo */
+.custom-card.libera-overflow,
+.accordion-content.libera-overflow,
+.accordion-item.libera-overflow,
+.accordion.libera-overflow {
+    overflow: visible !important;
+}
+
+.custom-card {
+    background-color: #d6d6d693;
+    /* ou qualquer que seja o cinza desejado */
+    position: relative;
+    /* necessário para z-index funcionar corretamente */
+    transition: transform 0.8s ease, z-index 0.8s ease;
+    z-index: 1;
+    cursor: zoom-in;
+}
+
+/* Hover só se não estiver desativado */
+.custom-card:hover:not(.hover-desativado) {
+    transform: scale(1.5);
+    z-index: 999;
+    cursor: zoom-out;
+}
+
+
+
+.transparency-animals .custom-card {
+    position: relative;
+    justify-self: center;
+    border-radius: 15px;
+    width: 100%;
+    aspect-ratio: 1 / 1.1;
+    /* levemente mais alto que quadrado */
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* ocupa toda a coluna */
+    transition: padding 0.3 ease;
+
+}
+
+
+
+.transparency-animals .custom-card img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    margin: 0px;
+    height: 70%;
+    object-fit: cover;
+    background-color: #fff;
+}
+
+.transparency-animals .custom-card p {
+    margin-top: auto;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 4px;
+    color: #000;
+    width: 100%;
+
+}
+
+.transparency-animals .custom-card h7 {
+    border-radius: 15px;
+    font-size: clamp(8px, 2vw, 16px);
+    margin: auto auto auto auto;
+    /* padding: 0px 15% 15% 15%; */
+    text-align: center;
+    color: #000;
+
+}
+
+.list-center {
+    list-style: decimal;
+    /* para números */
+    padding-left: 1.5rem;
+    /* adiciona espaço para o número aparecer */
+    width: 500px;
+    margin: 0 0 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+.list-center li {
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.principal-list {
+    counter-reset: principal;
+    list-style: none;
+    padding-left: 0;
+}
+
+.principal-list>li {
+    counter-increment: principal;
+    counter-reset: subitem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.principal-list>li::before {
+    content: counter(principal) ". ";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.sublist  {
+    list-style: none;
+    counter-reset: subitem;
+    padding-left: 2rem;
+}
+
+.sublist>li {
+    counter-increment: subitem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.sublist>li::before {
+    content: counter(principal) "." counter(subitem) ". ";
+    position: absolute;
+    left: 0;
+}

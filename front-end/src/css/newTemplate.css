@@ -1,0 +1,220 @@
+.new-Template {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    width: 1180px;
+    max-width: 90%;
+    justify-self: center;
+}
+
+.new-Template h1 {
+    margin-bottom: 20px;
+}
+
+.video-youtube-container {
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.video-youtube-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.new-Template .new-thumbnail {
+    width: 1000px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.new-Template p {
+    margin: 40px 80px 40px 80px;
+}
+
+.new-Template h2 {
+    margin: 40px 80px 40px 80px;
+}
+
+.new-Template .img-event {
+    border-radius: 15px;
+}
+
+.new-Template audio {
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* Modal principal */
+.img-modal_fullscreen {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagem exibida no modal */
+.img-modal_fullscreen_modal-conteudo {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+/* Botão de fechar */
+.close-img-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.date,
+.timeRead,
+.author {
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.author a {
+    color: #0072ed;
+}
+
+.new-Template ul {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.new-Template ol {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.share-container {
+    text-align: right;
+    margin-top: 1rem;
+    margin-right: 80px;
+    /* afasta o botão do parágrafo */
+}
+
+.new-Template .share-button {
+    padding: .5rem 1rem;
+    background-color: rgb(11, 128, 67) !important;
+    color: #fff;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.new-Template .share-button:hover {
+    background-color: rgb(9, 100, 53) !important;
+}
+
+/* Modal overlay */
+.share-modal {
+    display: none;
+    /* escondido por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Conteúdo do modal */
+.share-modal-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    width: 90%;
+    max-width: 320px;
+    text-align: center;
+    position: relative;
+}
+
+/* Botão de fechar */
+.share-close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Opções de compartilhamento */
+.share-options {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-top: 1rem;
+}
+
+.share-options a {
+    display: inline-flex;
+    align-items: center;
+    /* Alinha verticalmente */
+    gap: 8px;
+    /* Espaço entre ícone e texto */
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #fff;
+    /* cor base, pode mudar por rede */
+    transition: background 0.2s;
+}
+
+.share-options svg path {
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px;
+    fill: rgb(255, 255, 255);
+}
+
+
+.share-options a:hover {
+    filter: brightness(0.85);
+    /* Escurece em 15% */
+    transform: scale(1.05);
+    text-decoration: none;
+    color: white;
+
+}
+
+
+/* Cores específicas por rede */
+.share-whatsapp {
+    background-color: #25D366;
+}
+
+.share-facebook {
+    background-color: #1877F2;
+}
+
+.share-x-twitter {
+    background-color: #202020;
+}
+
+#copy-link-btn {
+    background-color: #4B5563;
+}

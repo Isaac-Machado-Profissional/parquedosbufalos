@@ -1,0 +1,29 @@
+@media (min-width: 1000px) {
+    .new-Template .img-event {
+        width: 600px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+
+}
+
+@media (max-width: 1000px) {
+
+    .new-Template .new-thumbnail {
+        width: 1000px;
+        height: 300px !important;
+        border-radius: 15px;
+    }
+
+    .news-card-horizontal .card-body:hover .news-img {
+
+        transform: scale(1.08);
+        transition: transform 0.3s ease;
+    }
+
+
+}

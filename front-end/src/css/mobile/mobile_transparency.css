@@ -1,0 +1,13 @@
+@media (min-width: 300px) and (max-width: 768px){
+
+    .transparency h1{
+        hyphens: none;
+
+    }
+    .transparency p{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    
+
+}

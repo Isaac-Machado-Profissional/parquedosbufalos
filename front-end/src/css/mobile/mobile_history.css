@@ -1,0 +1,6 @@
+@media (max-width: 1000px){
+    .timeline {
+        margin-left: 0px !important;
+        margin-right: auto;
+    }
+}

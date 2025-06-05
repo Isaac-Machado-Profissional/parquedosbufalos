@@ -1,0 +1,259 @@
+.instagram-post {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 15px;
+}
+
+.instagram-post img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.instagram-post .card-body {
+  min-height: 250px !important;
+  
+}
+
+p .instagram-caption {
+  margin: 20px auto 0px auto;
+  /* font-size: 14px; */
+  /* line-height: 1.3; */
+}
+
+.instagram-caption {
+  justify-self: center;
+  margin-bottom: 10vh;
+}
+
+.toggle-caption {
+  font-size: 14px;
+  color: #6d6c6c;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle-caption:hover {
+  font-size: 14px;
+  color: #2c2c2c;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  /* cor da linha */
+}
+
+
+.instagram-link {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 20px;
+  left: 30%;
+  right: 30%;
+  display: block;
+  justify-self: center !important;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(243, 238, 238);
+  border-width: 25px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgb(0, 149, 246);
+  font-weight: 700;
+}
+
+.instagram-link:hover {
+  color: rgb(243, 238, 238);
+  text-decoration: none;
+  background-color: rgb(0, 117, 196); /* mesma cor do estado normal */
+}
+
+.card-img-top {
+  border-radius: 0px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+/*MODAL*/
+
+.video-js, .user-active{
+  padding: 50% 50% 50% 50% !important;
+}
+#videoModal video {
+  width: 100%;
+  height: 100%;
+  
+}
+/* VIDEO SETTINGS: */ 
+
+
+
+.video-thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+}
+
+.play-button .bi-circle-fill {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.85); /* fundo */
+  position: absolute;
+  transition: transform 0.3s ease-in, color 0.3s ease-in;
+  
+
+}
+
+.play-button .bi-play-fill {
+  margin-left: 3px;
+  font-size: 3rem;
+  color: black; /* triângulo */
+  position: relative;
+  transition: transform 0.3s ease-in, color 0.3s ease-in;
+
+}
+
+.play-button:hover .bi-circle-fill {
+  color: rgba(0, 0, 0, 0.85); /* muda o fundo */
+  transform: scale(1.2);
+}
+
+
+.play-button:hover .bi-play-fill {
+  color: white; /* muda o play */
+  transform: scale(1.2);
+
+
+}
+
+
+
+   
+/* CARROSSEL SETTINGS: */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Limpa qualquer herança estranha do Bootstrap */
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  margin: 10px !important;
+  width: 30px !important;
+  overflow: visible !important;
+
+}
+
+/* Esconde os ícones padrão */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none !important;
+  /* background-color: white; */
+  
+}
+
+
+.carousel-custom-icon svg, .carousel-custom-icon svg {
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  /* background-color: #000; */
+  border-radius: 55%;
+}
+
+.lni-chevron-left-circle:hover, .lni-chevron-left-circle:hover {
+  color: rgb(0, 0, 0) !important;
+  /* background-color: #000; */
+  border-radius: 55%;
+}
+
+/* BOLINHAS CAROUSEL */
+.carousel-indicators .custom-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 4px;
+  border: none;
+  opacity: 0.7;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
+.carousel-indicators .custom-indicator.active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.carousel-indicators .custom-indicator {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 4px;
+  overflow: hidden;
+  border: none;
+}
+
+.carousel-indicators .custom-indicator .progress-ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0s;
+}
+
+.carousel-indicators .custom-indicator.active .progress-ball {
+  animation: fill-progress-ball 6s linear forwards;
+}
+
+@keyframes fill-progress-ball {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+
+
+/* Hover invertendo as cores */
+
+
+/*VIDEO.JS: */
+
+.video-js .vjs-control-bar {
+  background-color: rgba(255, 255, 255, 0.13) !important; /* ex: preto semitransparente */
+}
+
+/* ou só o painel de volume: */
+
+
+
+.vjs-icon-placeholder {
+  background-color: rgba(255, 255, 255, 0.13) !important; /* ex: preto semitransparente */
+  color: rgb(255, 255, 255) !important; /* Defina a cor que deseja para os ícones, neste caso verde */
+
+}
