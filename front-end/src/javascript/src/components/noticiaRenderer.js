@@ -85,4 +85,7 @@ export function renderNoticias(noticias, containerId = 'showNoticia') {
       container.insertAdjacentHTML('beforeend', cardHTML);
     });
   }
+  const eventNoticiasCarregadas = new CustomEvent('noticiasCarregadas');
+     document.dispatchEvent(eventNoticiasCarregadas);
+
 }

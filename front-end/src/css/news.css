@@ -14,8 +14,6 @@
 
 
 
-
-
 .calendar-container {
     width: 100%;
     display: flex;
@@ -34,14 +32,18 @@
 }
 
 
+
+
+
 .news-highlighted {
     margin-top: 20px;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
+    
 
 }
 
 .news-highlighted:active {
-    transform: scale(0.80);
+    transform: scale(0.90);
     transform-origin: center center;
 }
 
@@ -53,7 +55,7 @@
 
 .news-highlighted a:hover {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #1b1b1b;
 
 }
 
@@ -80,7 +82,7 @@
 .news-highlighted .card-title {
     width: 80%;
     padding: 20px;
-    border-top: 4px solid rgb(95, 89, 89);
+    border-top: 4px solid currentColor;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
@@ -109,32 +111,14 @@
     height: 300px;
 
     object-fit: cover;
-    transition: filter 0.3s ease, opacity 0.3s ease;
     aspect-ratio: 16/9;
     transition: transform 0.3s ease;
 
 
 }
 
-
-
-
-
-
-
-
-.news-card-horizontal {
-    border: 1px solid #000000;
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease;
-    /* animação suave */
-}
-
-.news-card-horizontal:active {
-    transform: scale(0.90);
-    transform-origin: center center;
+.news-highlighted .card-body:hover img {
+    transform: scale(1.27);
 }
 
 
@@ -147,13 +131,15 @@
     /* promove para GPU layer */
 }
 
+
+
 /* Cada card */
 .news-card-horizontal {
     width: 55%;
-    border: 1px solid #444;
-    /* borda suave */
+    border: 1px solid currentColor;
+
     border-radius: 12px;
-    /* bordas arredondadas */
+    margin-bottom: 1rem;
 
     flex: 0 0 auto;
     border-radius: 8px;
@@ -161,7 +147,19 @@
 
     overflow: hidden;
     background-color: #fff;
+
+    transition: transform 0.3s ease;
 }
+
+
+.news-card-horizontal:active {
+    transform: scale(0.90);
+    transform-origin: center center;
+}
+
+
+
+
 
 /* Conteúdo interno do card */
 .news-card-horizontal .card-body {
@@ -192,7 +190,7 @@
 
 
 .news-card-horizontal .card-title {
-    border-left: 4px solid rgb(95, 89, 89);
+    border-left: 4px solid currentColor;
     padding-left: 10px;
     margin: 0px;
     text-align: left;
@@ -219,21 +217,15 @@
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 
-    transition: filter 0.3s ease, opacity 0.3s ease;
     transition: transform 0.3s ease;
 
-}
-
-.news-highlighted .card-body:hover img {
-    transform: scale(1.27);
-    transition: transform 0.3s ease;
 }
 
 .news-card-horizontal .card-body:hover .news-img {
 
     transform: scale(1.04);
-    transition: transform 0.3s ease;
 }
+
 
 .news-card-horizontal a {
     text-decoration: none;
@@ -242,7 +234,7 @@
 
 .news-card-horizontal a:hover {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #1b1b1b;
 
 }
 

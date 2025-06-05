@@ -82,25 +82,22 @@
             <h1>Mais notícias</h1>
 
             <div class="search-filter row mb-4 justify-content-center">
-                <div class="col-md-6">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Buscar por título..." aria-label="Buscar por título" />
-                </div>
-                <div class="col-md-3">
-                    <select id="yearFilter" class="form-select w-auto" aria-label="Filtrar por ano">
-                        <option value="">Filtrar por ano</option>
-                        <option value="2025">2025</option>
-                        <option value="2024">2024</option>
-                        <option value="2023">2023</option>
-                        <option value="2022">2022</option>
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                        <option value="2019">2019</option>
-                        <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
-                        <option value="2015">2015</option>
-                        <option value="2014">2014</option>
-                    </select>
+                <div class="col-12 col-md-9 col-lg-8">
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control has-year-filter-button"
+                            placeholder="Buscar por título:" aria-label="Buscar por título" />
+
+                        <button class="btn dropdown-toggle inside-input-button" type="button" id="yearFilterDropdown"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Filtro
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+
+                        <ul class="dropdown-menu p-2" aria-labelledby="yearFilterDropdown"
+                            id="yearFilterOptions" style="min-width: 180px;">
+                            <li><span class="dropdown-item-text">Carregando anos...</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 

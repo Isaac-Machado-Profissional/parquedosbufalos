@@ -37,11 +37,135 @@
 
 
 
+.form-select {
+  border: none;
+}
+
+.input-group .btn.active-filter {
+  /* Exemplo: uma cor de fundo ou borda diferente para indicar filtro ativo */
+  border-color: var(--bs-primary);
+  /* Ou sua cor de destaque */
+  background-color: var(--bs-primary-bg-subtle);
+  /* Exemplo */
+}
+
+.input-group {
+  position: relative;
+  /* Necessário para o posicionamento absoluto do botão filho */
+}
+
+
+input.form-control:focus {
+  border-color: none;
+  outline: none;
+  box-shadow: none;
+  border: 2px solid rgb(134, 134, 134);
+  border-radius: 6px;
+}
+
+.search-filter:active {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+
+/* Estiliza o input para ter espaço à direita para o botão */
+#searchInput.has-year-filter-button {
+  padding-right: 65px;
+  /* Ajuste este valor conforme a largura do seu botão "(ano)" + espaçamento */
+}
+
+#yearFilterDropdown {
+  box-shadow: none;
+  border: none;
+
+}
+
+#yearFilterDropdown:focus-visible {
+  outline: 2px solid black;
+}
+
+/* Estiliza e posiciona o botão "(ano)" */
+#yearFilterDropdown.inside-input-button {
+  position: absolute;
+  right: 5px;
+  /* Distância da borda direita do input group */
+  top: 50%;
+  transform: translateY(-50%);
+  /* Centraliza verticalmente */
+  z-index: 4;
+  /* Garante que o botão fique sobre o input, se necessário */
+
+  /* Estilos para parecer mais integrado (opcional, ajuste como preferir) */
+  border: none;
+  /* Remove a borda padrão do botão */
+  background-color: transparent;
+  /* Fundo transparente */
+  color: #6c757d;
+  /* Cor do texto (Bootstrap secondary) */
+  /* Remova a seta padrão do dropdown-toggle se quiser só "(ano)" */
+  /* box-shadow: none; */
+  /* Remove qualquer sombra do botão */
+}
+
+/* Remove a seta padrão do dropdown-toggle se você quiser apenas o texto "(ano)" */
+#yearFilterDropdown.inside-input-button::after {
+  display: none;
+  /* Descomente esta linha para remover a setinha */
+}
+
+/* Opcional: Estilo para quando o filtro de ano está ativo */
+#yearFilterDropdown.inside-input-button.active-filter {
+  transition: transform 0.4s ease-in-out;
+  color: var(--bs-primary);
+  /* Cor primária do Bootstrap */
+  font-weight: bold;
+}
+
+/* Estilos base para o SVG dentro do botão */
+#yearFilterDropdown.inside-input-button .lucide-chevron-down-icon {
+  stroke: currentColor;
+  /* Para que o SVG sempre acompanhe a cor do texto do botão */
+  transition: transform 0.4s ease-in-out;
+  /* Sua transição desejada */
+  vertical-align: middle;
+  /* Seu alinhamento vertical */
+}
+
+/* Estilos para o SVG quando ELE TEM a classe 'active' (para rotação) */
+#yearFilterDropdown.inside-input-button .lucide-chevron-down-icon.active {
+  /* Usando a classe 'active' no SVG */
+  transform: rotate(180deg);
+}
+
+
+.blockNew {
+  transition: transform 0.5s ease-in;
+}
+
 .blockNew .card {
   overflow: hidden;
   border: none;
 
 }
+
+.blockNew a {
+  text-decoration: none;
+}
+
+.blockNew:hover {
+
+  text-decoration: none;
+  transform: scale(1.04);
+
+}
+
+.blockNew:active {
+    transform: scale(0.90);
+    transform-origin: center center;
+}
+
 
 .blockNew .card-body {
   border: none;
@@ -55,7 +179,7 @@
 .blockNew img {
   width: 100% !important;
   aspect-ratio: 4/3;
-  filter: blur(1px) brightness(60%);
+  filter: brightness(60%);
   object-fit: cover;
   border-radius: 8px;
 
@@ -74,7 +198,14 @@
   font-weight: 600;
   width: 80%;
   z-index: 2;
+
+  opacity: 1;
 }
+
+
+
+
+
 
 /* A data fica abaixo da imagem, fora da sobreposição */
 .data {
