@@ -56,7 +56,7 @@ pipelines:
             - | # Usando pipe para script multi-linha ou lógica condicional
                 if git status --porcelain | grep .; then # Verifica se há mudanças reais para commitar
                   git commit -m "Deploy: Automated build from commit $BITBUCKET_COMMIT on $BITBUCKET_BRANCH"
-                  git push origin $DEPLOYMENT_BRANCH_NAME
+                  git push --force origin $DEPLOYMENT_BRANCH_NAME
                   echo "Deploy para $DEPLOYMENT_BRANCH_NAME bem-sucedido."
                 else
                   echo "Sem mudanças para deploy em $DEPLOYMENT_BRANCH_NAME."
