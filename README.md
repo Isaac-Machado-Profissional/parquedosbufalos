@@ -1,7 +1,8 @@
 
 # Parque dos Búfalos
+- Live : https://parquedosbufalos.com.br/
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
+Este repositório é uma preview do código público, um pouco desatualizado, com a versão inlive do site acima em um repositório privado.  
 
 ## Extensões para ver o projeto com o Visual Studio
 
